@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 // Importa tu JSON generado por Python
 import type { Legislator, Milestone } from './types';
@@ -89,19 +89,11 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
 
       <div className="flex-1 bg-white p-4 rounded-lg shadow-sm min-h-0">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
-            <defs>
-              <linearGradient id="colorDeuda" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#2563eb" stopOpacity={0.2}/>
-                <stop offset="95%" stopColor="#2563eb" stopOpacity={0}/>
-              </linearGradient>
-            </defs>
+          <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" tick={{fontSize: 10}} />
             <YAxis tickFormatter={(v: number) => `$${v/1000}M`} tick={{fontSize: 10}} width={40}/>
             <Tooltip content={CustomTooltip} />
-            
-            <Area type="monotone" dataKey="total" stroke="#2563eb" fill="url(#colorDeuda)" strokeWidth={2} />
 
             {/* RENDERIZADO DE TODOS LOS HITOS */}
             {allMilestones.map((m, idx) => (
@@ -122,7 +114,9 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
                 }} 
               />
             ))}
-          </AreaChart>
+
+            <Bar dataKey="total" fill="#2563eb" />
+          </BarChart>
         </ResponsiveContainer>
       </div>
     </div>

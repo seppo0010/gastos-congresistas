@@ -10,7 +10,7 @@ export default ({ legisladores, onSelect, selectedId }: { legisladores: Legislat
   );
 
   return (
-    <div className="w-full md:w-80 h-[600px] flex flex-col border-r border-gray-200 bg-white">
+    <div className="w-full md:w-80 h-screen flex flex-col border-r border-gray-200 bg-white">
       <div className="p-4 border-b">
         <h2 className="font-bold text-gray-800">Legisladores</h2>
         <input 
