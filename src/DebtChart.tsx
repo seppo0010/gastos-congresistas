@@ -157,7 +157,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
   return (
     <div className="flex-1 p-6 bg-gray-50 flex flex-col h-full">
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
           <h2 className="text-xl font-bold">Comparativa</h2>
           <div className="relative group">
             <HelpCircle size={18} className="text-gray-400 cursor-help" />
@@ -171,7 +171,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
             </div>
           </div>
           {ipc && (
-            <div className="ml-auto">
+            <div className="sm:ml-auto">
               <label className="flex items-center gap-2 text-xs cursor-pointer select-none bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition-colors">
                 <input 
                   type="checkbox" 
@@ -204,7 +204,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
         </div>
       </div>
 
-      <div className="flex-1 bg-white p-4 rounded-lg shadow-sm min-h-0">
+      <div className="flex-1 bg-white p-4 rounded-lg shadow-sm min-h-48">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
@@ -44,12 +44,29 @@ export default function Dashboard() {
   });
 
   const [warning, setWarning] = useState<string | null>(null);
+  const [showScrollHint, setShowScrollHint] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (warning) {
       const timer = setTimeout(() => setWarning(null), 3000);
       return () => clearTimeout(timer);
     }
+  }, [warning]);
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container || !showScrollHint) return;
+
+    const handleScroll = () => setShowScrollHint(false);
+
+    container.addEventListener('scroll', handleScroll, { once: true });
+    const timer = setTimeout(() => setShowScrollHint(false), 5000);
+
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+      clearTimeout(timer);
+    };
   }, [warning]);
 
   useEffect(() => {
@@ -64,17 +81,31 @@ export default function Dashboard() {
 
   const handleSelect = (legislator: Legislator) => {
     const lWithSlug = legislator as LegislatorWithSlug;
+    const isMobile = window.innerWidth < 768;
+    let selectionChanged = false;
+
     if (selected.some(l => l.cuit === lWithSlug.cuit)) {
       setSelected(prev => prev.filter(l => l.cuit !== lWithSlug.cuit));
+      selectionChanged = true;
     } else if (selected.length >= 4) {
       setWarning("Solo se pueden comparar hasta 4 legisladores");
     } else {
       setSelected(prev => [...prev, lWithSlug]);
+      selectionChanged = true;
+    }
+
+    if (isMobile && selectionChanged) {
+      setShowScrollHint(true);
     }
   };
 
+  const handleScrollToTop = () => {
+    scrollContainerRef.current?.scrollTo({ top: -scrollContainerRef.current?.scrollHeight, behavior: 'smooth' });
+    setShowScrollHint(false);
+  };
+
   return (
-    <div className="flex h-screen bg-gray-100 font-sans overflow-hidden relative">
+    <div ref={scrollContainerRef} className="flex flex-col-reverse md:flex-row h-screen bg-gray-100 font-sans overflow-auto md:overflow-hidden relative">
       <LegislatorSelector 
         legisladores={legisladores} 
         onSelect={handleSelect} 
@@ -89,6 +120,14 @@ export default function Dashboard() {
       {warning && (
         <div className="absolute top-5 right-5 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded shadow-lg z-50">
             {warning}
+        </div>
+      )}
+      {showScrollHint && (
+        <div 
+          onClick={handleScrollToTop}
+          className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg cursor-pointer z-50 text-center"
+        >
+          Gráfico actualizado. <span className="font-bold underline">Click para subir</span>
         </div>
       )}
     </div>
