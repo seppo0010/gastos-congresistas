@@ -30,8 +30,8 @@ export interface Legislator {
 // 4. Estructura Raíz del JSON (Dashboard completo)
 export interface DashboardData {
   meta: {
-    generated_at: string;
     hitos_globales: Milestone[]; // Hitos que aplican a todos
+    ipc: { [date: string]: number }
   };
   data: Legislator[];
 }
