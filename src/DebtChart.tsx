@@ -28,7 +28,12 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
   // 1. Unificar Hitos (Globales + Personales)
   const allMilestones = useMemo(() => {
     const personales = legislator.hitos_personales || [];
-    return [...globalMilestones, ...personales];
+    return Object.values(Object.groupBy([...globalMilestones, ...personales], (m: Milestone) => m.fecha)).map((x) => ({
+      fecha: x[0].fecha,
+      texto: x.map((y) => y.texto).join(', '),
+      color: x[0].color,
+      tipo: x[0].tipo,
+    }))
   }, [legislator, globalMilestones]);
 
   // 2. Procesar Datos de Deuda (Agrupar por mes)
@@ -78,12 +83,11 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
         <h2 className="text-xl font-bold">{legislator.nombre}</h2>
         <div className="flex gap-2 mt-2">
-            {/* Badges de hitos personales para referencia rápida */}
-            {legislator.hitos_personales?.map((h, i) => (
-                <span key={i} className="text-xs px-2 py-1 rounded text-white" style={{backgroundColor: h.color}}>
-                    {h.fecha}: {h.texto}
-                </span>
-            ))}
+          {[legislator.cargo, legislator.distrito, legislator.partido].map((s) => (s || '') !== '' && (
+          <span key={s} className="text-xs px-2 py-1 rounded text-white" style={{backgroundColor: '#2563eb'}}>
+              {s}
+          </span>
+          ))}
         </div>
       </div>
 
@@ -104,13 +108,13 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
                 strokeDasharray="4 2"
                 label={{ 
                     value: m.texto, 
-                    position: 'insideTopLeft', 
+                    position: 'insideTop', 
                     fill: m.color, 
                     fontSize: 10, 
                     fontWeight: 'bold',
                     angle: -90, // Texto vertical para que no se pisen
-                    dx: 10,
-                    dy: 50
+                    textAnchor: 'end',
+                    dx: 4,
                 }} 
               />
             ))}
