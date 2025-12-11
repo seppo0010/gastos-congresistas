@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react';
 
 import type { Legislator } from './types';
+import { COLORS } from './Colors';
 
-export default ({ legisladores, onSelect, selectedId }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedId?: string }) => {
+export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[] }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("todos");
   const [provinceFilter, setProvinceFilter] = useState("todas");
@@ -20,10 +21,10 @@ export default ({ legisladores, onSelect, selectedId }: { legisladores: Legislat
         const provinceMatch = provinceFilter === 'todas' || l.distrito === provinceFilter;
         const partyMatch = partyFilter === 'todos' || l.partido === partyFilter;
 
-        return searchMatch && positionMatch && provinceMatch && partyMatch;
+        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch);
       })
-      .sort((a, b) => a.nombre.localeCompare(b.nombre));
-  }, [legisladores, searchTerm, positionFilter, provinceFilter, partyFilter]);
+      .sort((a, b) => selectedIds.includes(a.cuit) !== selectedIds.includes(b.cuit) ? selectedIds.includes(a.cuit) ? -1 : 1 : a.nombre.localeCompare(b.nombre));
+  }, [legisladores, searchTerm, positionFilter, provinceFilter, partyFilter, selectedIds]);
 
   return (
     <div className="w-full md:w-80 h-screen flex flex-col border-r border-gray-200 bg-white">
@@ -60,15 +61,21 @@ export default ({ legisladores, onSelect, selectedId }: { legisladores: Legislat
         </div>
       </div>
       <div className="flex-1 overflow-y-auto">
-        {filteredAndSorted.map((l: Legislator) => (
-          <button
-            key={l.cuit}
-            onClick={() => onSelect(l)}
-            className={`w-full text-left p-3 hover:bg-gray-50 border-b cursor-pointer ${selectedId === l.cuit ? 'bg-blue-50 border-l-4 border-l-blue-500' : ''}`}
-          >
-            <div className="font-semibold text-sm">{l.nombre}</div>
-          </button>
-        ))}
+        {filteredAndSorted.map((l: Legislator) => {
+          const index = selectedIds.indexOf(l.cuit);
+          const isSelected = index !== -1;
+          const color = isSelected ? COLORS[index % COLORS.length] : undefined;
+          return (
+            <button
+              key={l.cuit}
+              onClick={() => onSelect(l)}
+              className={`w-full text-left p-3 hover:bg-gray-50 border-b cursor-pointer transition-colors ${isSelected ? 'bg-gray-50' : ''}`}
+              style={isSelected ? { borderLeft: `4px solid ${color}` } : {}}
+            >
+              <div className="font-semibold text-sm">{l.nombre}</div>
+            </button>
+          );
+        })}
       </div>
     </div>
   );

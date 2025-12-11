@@ -3,11 +3,13 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 
 // Importa tu JSON generado por Python
 import type { Legislator, Milestone } from './types';
-import { Flag } from 'lucide-react';
+import { Flag, HelpCircle } from 'lucide-react';
+import { COLORS } from './Colors';
 
 interface DebtChartProps {
-  legislator: Legislator;
+  legislators: Legislator[];
   globalMilestones: Milestone[];
+  onRemove?: (legislator: Legislator) => void;
 }
 
 interface Bank {
@@ -16,42 +18,73 @@ interface Bank {
     entidad: string;
 }
 
-interface Group {
-    date: string;
-    total: number;
-    banks: Bank[];
+const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: string): boolean => {
+  return legislator.periodos.filter(p => p.cargo.toLowerCase() === (cargo || '').toLowerCase() && fecha > p.inicio && fecha < p.fin).length > 0
 }
 
-const teniaCargo = (legislator: Legislator, cargo: 'Diputado' | 'Senador', fecha: string): boolean => {
-  return legislator.periodos.filter(p => p.cargo.toLowerCase() === cargo.toLowerCase() && fecha > p.inicio && fecha < p.fin).length > 0
-}
+const GRAY = '#9ca3af';
 
-const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
-  if (!legislator) return <div className="p-10 text-gray-400">Seleccione un legislador</div>;
+const DebtChart = ({ legislators, globalMilestones, onRemove }: DebtChartProps) => {
+  if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
 
   // 1. Unificar Hitos (Globales + Personales)
   const allMilestones = useMemo(() => {
-    const personales = legislator.hitos_personales || [];
-    return Object.values(Object.groupBy([...globalMilestones.filter(m => (
-        ['global', 'voto', 'politico'].includes(m.tipo || '') || teniaCargo(legislator, m.tipo, m.fecha)
-      )), ...personales], (m: Milestone) => m.fecha)).map((x) => ({
-      fecha: x[0].fecha,
-      texto: x.map((y) => y.texto).join(', '),
-      color: x[0].color,
-      tipo: x[0].tipo,
-    }))
-  }, [legislator, globalMilestones]);
+    const personales = legislators.flatMap((l, index) => 
+      (l.hitos_personales || []).map(h => ({
+        ...h,
+        legislatorId: l.cuit,
+        legislatorColor: COLORS[index % COLORS.length]
+      }))
+    );
+
+    const relevantes = globalMilestones.filter(m => (
+      ['global', 'voto', 'politico'].includes(m.tipo || '') || 
+      legislators.some(l => teniaCargo(l, m.tipo, m.fecha))
+    ));
+
+    const grouped = Object.groupBy([...relevantes, ...personales], (m: any) => m.fecha);
+
+    return Object.values(grouped).map((group: any) => {
+      const legislatorIds = new Set(group.map((m: any) => m.legislatorId).filter(Boolean));
+      const hasGlobal = group.some((m: any) => !m.legislatorId);
+      
+      let color = GRAY;
+
+      if (legislatorIds.size === 1 && !hasGlobal) {
+        color = group.find((m: any) => m.legislatorId).legislatorColor;
+      } else if (legislatorIds.size === 0 && hasGlobal && legislators.length === 1) {
+        color = group[0].color;
+      }
+
+      return {
+        fecha: group[0].fecha,
+        texto: group.map((y: any) => y.texto).join(', '),
+        color,
+        tipo: group[0].tipo,
+      }
+    })
+  }, [legislators, globalMilestones]);
 
   // 2. Procesar Datos de Deuda (Agrupar por mes)
   const chartData = useMemo(() => {
-    const grouped: { [key: string]: Group } = {};
-    legislator.historial.forEach(r => {
-      if (!grouped[r.fecha]) grouped[r.fecha] = { date: r.fecha, total: 0, banks: [] };
-      grouped[r.fecha].total += r.monto;
-      grouped[r.fecha].banks.push(r);
+    const grouped: { [key: string]: any } = {};
+    
+    legislators.forEach(l => {
+      l.historial.forEach(r => {
+        if (!grouped[r.fecha]) grouped[r.fecha] = { date: r.fecha, banks: {} };
+        
+        // Sumar al total del legislador en esa fecha
+        if (!grouped[r.fecha][l.cuit]) grouped[r.fecha][l.cuit] = 0;
+        grouped[r.fecha][l.cuit] += r.monto;
+
+        // Guardar detalle de bancos
+        if (!grouped[r.fecha].banks[l.cuit]) grouped[r.fecha].banks[l.cuit] = [];
+        grouped[r.fecha].banks[l.cuit].push(r);
+      });
     });
+
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [legislator]);
+  }, [legislators]);
 
   const formatMoney = (val: number) => `$${new Intl.NumberFormat('es-AR').format(val)}`;
 
@@ -59,27 +92,42 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
   const CustomTooltip = ({ active, payload, label }: { active?: boolean, payload?: any, label?: string | number }) => {
     if (!active || !payload || !payload.length) return null;
     
-    // Buscar si hay un hito en este mes exacto
-    const hitoDelMes = allMilestones.find(m => m.fecha === label);
-
     return (
       <div className="bg-white p-3 border shadow-lg rounded text-xs z-50">
         <p className="font-bold mb-1">{label}</p>
         
-        {hitoDelMes && (
-            <div className="mb-2 p-1 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 font-semibold flex items-center gap-1">
-                <Flag size={10} /> {hitoDelMes.texto}
-            </div>
-        )}
+        {legislators.map((l, idx) => {
+          const item = payload.find((p: any) => p.dataKey === l.cuit);
+          if (!item) return null;
+          const banks = item.payload.banks[l.cuit] || [];
+          
+          const personalMilestones = (l.hitos_personales || []).filter(h => h.fecha === label);
+          const relevantGlobalMilestones = globalMilestones.filter(m => 
+            m.fecha === label && (
+              ['global', 'voto', 'politico'].includes(m.tipo || '') || 
+              teniaCargo(l, m.tipo as any, m.fecha)
+            )
+          );
+          const milestones = [...personalMilestones, ...relevantGlobalMilestones];
 
-        <p className="text-blue-600 font-bold text-sm mb-1">
-          Total: {formatMoney(payload[0].value)}k
-        </p>
-        <div className="opacity-70">
-           {payload[0].payload.banks.map((b: Bank, i: number) => (
-             <div key={i}>{b.entidad.slice(0,15)}... : {formatMoney(b.monto)}k</div>
-           ))}
-        </div>
+          return (
+            <div key={l.cuit} className="mb-2 border-b pb-1 last:border-0">
+              <p className="font-bold text-sm" style={{ color: COLORS[idx % COLORS.length] }}>
+                {l.nombre}: {formatMoney(item.value)}k
+              </p>
+              {milestones.map((m, i) => (
+                <div key={i} className="mb-1 p-1 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 font-semibold flex items-center gap-1">
+                    <Flag size={10} /> {m.texto}
+                </div>
+              ))}
+              <div className="opacity-70 pl-2">
+                {banks.map((b: Bank, i: number) => (
+                  <div key={i}>{b.entidad.slice(0,15)}... : {formatMoney(b.monto)}k</div>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     );
   };
@@ -87,12 +135,36 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
   return (
     <div className="flex-1 p-6 bg-gray-50 flex flex-col h-full">
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
-        <h2 className="text-xl font-bold">{legislator.nombre}</h2>
-        <div className="flex gap-2 mt-2">
-          {[legislator.cargo, legislator.distrito, legislator.partido].map((s) => (s || '') !== '' && (
-          <span key={s} className="text-xs px-2 py-1 rounded text-white" style={{backgroundColor: '#2563eb'}}>
-              {s}
-          </span>
+        <div className="flex items-center gap-2 mb-2">
+          <h2 className="text-xl font-bold">Comparativa</h2>
+          <div className="relative group">
+            <HelpCircle size={18} className="text-gray-400 cursor-help" />
+            <div className="absolute left-0 top-full mt-2 w-80 p-3 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+              <p className="mb-2">
+                Se muestra el stock de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores".
+              </p>
+              <p className="text-yellow-300">
+                Atención: Parte de la información fue procesada automáticamente y podría contener errores.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-4">
+          {legislators.map((l, idx) => (
+            <div 
+              key={l.cuit} 
+              className="flex items-center gap-2 border p-2 rounded cursor-pointer hover:bg-gray-50 transition-colors"
+              onClick={() => onRemove && onRemove(l)}
+            >
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[idx % COLORS.length] }}></div>
+              <div>
+                <div className="font-bold text-sm">{l.nombre}</div>
+                <div className="flex gap-1 mt-1">
+                  {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.partido}</span>}
+                  {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.distrito}</span>}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -125,7 +197,9 @@ const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
               />
             ))}
 
-            <Bar dataKey="total" fill="#2563eb" />
+            {legislators.map((l, idx) => (
+              <Bar key={l.cuit} dataKey={l.cuit} fill={COLORS[idx % COLORS.length]} />
+            ))}
           </BarChart>
         </ResponsiveContainer>
       </div>
