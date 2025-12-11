@@ -22,13 +22,19 @@ interface Group {
     banks: Bank[];
 }
 
+const teniaCargo = (legislator: Legislator, cargo: 'Diputado' | 'Senador', fecha: string): boolean => {
+  return legislator.periodos.filter(p => p.cargo.toLowerCase() === cargo.toLowerCase() && fecha > p.inicio && fecha < p.fin).length > 0
+}
+
 const DebtChart = ({ legislator, globalMilestones }: DebtChartProps) => {
   if (!legislator) return <div className="p-10 text-gray-400">Seleccione un legislador</div>;
 
   // 1. Unificar Hitos (Globales + Personales)
   const allMilestones = useMemo(() => {
     const personales = legislator.hitos_personales || [];
-    return Object.values(Object.groupBy([...globalMilestones, ...personales], (m: Milestone) => m.fecha)).map((x) => ({
+    return Object.values(Object.groupBy([...globalMilestones.filter(m => (
+        ['global', 'voto', 'politico'].includes(m.tipo || '') || teniaCargo(legislator, m.tipo, m.fecha)
+      )), ...personales], (m: Milestone) => m.fecha)).map((x) => ({
       fecha: x[0].fecha,
       texto: x.map((y) => y.texto).join(', '),
       color: x[0].color,

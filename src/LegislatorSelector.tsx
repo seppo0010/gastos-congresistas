@@ -8,8 +8,8 @@ export default ({ legisladores, onSelect, selectedId }: { legisladores: Legislat
   const [provinceFilter, setProvinceFilter] = useState("todas");
   const [partyFilter, setPartyFilter] = useState("todos");
 
-  const provinces = useMemo(() => [...new Set(legisladores.map(l => l.distrito))].sort(), [legisladores]);
-  const parties = useMemo(() => [...new Set(legisladores.map(l => l.partido).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
+  const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito))].sort(), [legisladores]);
+  const parties = useMemo(() => [...new Set(legisladores.filter(l => l.partido !== undefined).map(l => l.partido).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
 
   const filteredAndSorted = useMemo(() => {
     return legisladores

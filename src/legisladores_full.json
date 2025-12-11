@@ -23,25 +23,25 @@
         "fecha": "2024-06",
         "texto": "Ley Bases (Senado)",
         "color": "#ef4444",
-        "tipo": "global"
+        "tipo": "senador"
       },
       {
         "fecha": "2024-08",
         "texto": "Rechazo DNU SIDE (Diputados)",
         "color": "#ef4444",
-        "tipo": "global"
+        "tipo": "diputado"
       },
       {
         "fecha": "2024-09",
         "texto": "Rechazo DNU SIDE (Senadores)",
         "color": "#ef4444",
-        "tipo": "global"
+        "tipo": "senador"
       },
       {
         "fecha": "2024-09",
         "texto": "87 héroes",
         "color": "#ef4444",
-        "tipo": "global"
+        "tipo": "diputado"
       },
       {
         "fecha": "2025-10",
@@ -49,7 +49,43 @@
         "color": "#3b82f6",
         "tipo": "global"
       }
-    ]
+    ],
+    "ipc": {
+      "2023-01": 1203.0,
+      "2023-02": 1282.7,
+      "2023-03": 1381.2,
+      "2023-04": 1497.2,
+      "2023-05": 1613.6,
+      "2023-06": 1709.6,
+      "2023-07": 1818.1,
+      "2023-08": 2044.3,
+      "2023-09": 2304.9,
+      "2023-10": 2496.3,
+      "2023-11": 2816.1,
+      "2023-12": 3533.2,
+      "2024-01": 4261.5,
+      "2024-02": 4825.8,
+      "2024-03": 5357.1,
+      "2024-04": 5830.2,
+      "2024-05": 6073.7,
+      "2024-06": 6351.7,
+      "2024-07": 6607.7,
+      "2024-08": 6883.4,
+      "2024-09": 7122.2,
+      "2024-10": 7314.0,
+      "2024-11": 7491.4,
+      "2024-12": 7694.0,
+      "2025-01": 7864.1,
+      "2025-02": 8053.0,
+      "2025-03": 8353.3,
+      "2025-04": 8585.6,
+      "2025-05": 8714.5,
+      "2025-06": 8855.6,
+      "2025-07": 9024.0,
+      "2025-08": 9193.2,
+      "2025-09": 9384.1,
+      "2025-10": 9603.9
+    }
   },
   "data": [
     {
@@ -383,7 +419,15 @@
       ],
       "distrito": "San Juan",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20326896684",
@@ -1062,7 +1106,20 @@
       ],
       "distrito": "San Juan",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "23134393084",
@@ -1565,7 +1622,25 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "27224913465",
@@ -1776,7 +1851,20 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20202842322",
@@ -2107,7 +2195,15 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20126199830",
@@ -2390,7 +2486,25 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "27281025053",
@@ -2403,17 +2517,17 @@
       "hitos_personales": [
         {
           "fecha": "2023-12",
-          "texto": "Inicio (Senador) en Unidad Ciudadana",
-          "etiqueta": "Unidad Ciudadana",
-          "color": "#808080",
+          "texto": "Fin de mandato (Senador)",
+          "etiqueta": "Fin de Mandato",
+          "color": "#000000",
           "tipo": "politico",
           "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
-          "texto": "Fin de mandato (Senador)",
-          "etiqueta": "Fin de Mandato",
-          "color": "#000000",
+          "texto": "Inicio (Senador) en Unidad Ciudadana",
+          "etiqueta": "Unidad Ciudadana",
+          "color": "#808080",
           "tipo": "politico",
           "cargo": "Senador"
         },
@@ -2794,7 +2908,15 @@
       ],
       "distrito": "Tierra del Fuego",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20164288111",
@@ -2806,17 +2928,17 @@
       "hitos_personales": [
         {
           "fecha": "2023-12",
-          "texto": "Inicio (Senador) en Unión Cívica Radical",
-          "etiqueta": "Unión Cívica Radical",
-          "color": "#D72D2D",
+          "texto": "Fin de mandato (Senador)",
+          "etiqueta": "Fin de Mandato",
+          "color": "#000000",
           "tipo": "politico",
           "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
-          "texto": "Fin de mandato (Senador)",
-          "etiqueta": "Fin de Mandato",
-          "color": "#000000",
+          "texto": "Inicio (Senador) en Unión Cívica Radical",
+          "etiqueta": "Unión Cívica Radical",
+          "color": "#D72D2D",
           "tipo": "politico",
           "cargo": "Senador"
         },
@@ -3433,7 +3555,15 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27160317332",
@@ -3816,7 +3946,15 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20228358771",
@@ -4059,7 +4197,15 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27206790933",
@@ -4430,7 +4576,8 @@
           "situacion": 1,
           "monto": 591
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "23297507044",
@@ -4604,7 +4751,15 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27178602913",
@@ -5023,7 +5178,20 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23144042999",
@@ -5308,7 +5476,25 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20145681023",
@@ -5873,7 +6059,20 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20167432051",
@@ -6576,7 +6775,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20223208380",
@@ -7079,7 +7291,25 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20142311985",
@@ -7762,7 +7992,20 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27059485119",
@@ -8425,7 +8668,25 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20160614200",
@@ -8692,7 +8953,25 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27045697164",
@@ -8967,7 +9246,8 @@
           "situacion": 1,
           "monto": 89
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20135000370",
@@ -9630,7 +9910,25 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20172289801",
@@ -10169,7 +10467,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20297075137",
@@ -10424,7 +10735,15 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27228082746",
@@ -11083,7 +11402,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20248930099",
@@ -11272,7 +11604,25 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27134256244",
@@ -11284,17 +11634,17 @@
       "hitos_personales": [
         {
           "fecha": "2023-12",
-          "texto": "Inicio (Senador) en Juntos Somos Río Negro",
-          "etiqueta": "Juntos Somos Río Negro",
-          "color": "#808080",
+          "texto": "Fin de mandato (Senador)",
+          "etiqueta": "Fin de Mandato",
+          "color": "#000000",
           "tipo": "politico",
           "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
-          "texto": "Fin de mandato (Senador)",
-          "etiqueta": "Fin de Mandato",
-          "color": "#000000",
+          "texto": "Inicio (Senador) en Juntos Somos Río Negro",
+          "etiqueta": "Juntos Somos Río Negro",
+          "color": "#808080",
           "tipo": "politico",
           "cargo": "Senador"
         },
@@ -11515,7 +11865,15 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20102959575",
@@ -12160,7 +12518,15 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27241930837",
@@ -12419,7 +12785,20 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27307358900",
@@ -12788,7 +13167,25 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20137324416",
@@ -13245,7 +13642,20 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27244541629",
@@ -13273,6 +13683,14 @@
         },
         {
           "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Frente de Todos",
+          "etiqueta": "Frente de Todos",
+          "color": "#009ADE",
+          "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-12",
           "texto": "Inicio (Senador) en Unión por la Patria",
           "etiqueta": "Unión por la Patria",
           "color": "#009ADE",
@@ -13286,14 +13704,6 @@
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Senador"
-        },
-        {
-          "fecha": "2023-12",
-          "texto": "Inicio (Diputado) en Frente de Todos",
-          "etiqueta": "Frente de Todos",
-          "color": "#009ADE",
-          "tipo": "politico",
-          "cargo": "Diputado"
         },
         {
           "fecha": "2023-12",
@@ -13718,7 +14128,20 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23146020089",
@@ -14253,7 +14676,20 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "23255671219",
@@ -14708,7 +15144,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20228264130",
@@ -15384,7 +15828,31 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [
+        {
+          "fecha": "2024-12",
+          "texto": "Detenido en Paraguay",
+          "color": "#cccccc"
+        }
+      ],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-02"
+        }
+      ]
     },
     {
       "cuit": "23054388764",
@@ -16053,7 +16521,15 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20287671556",
@@ -16394,7 +16870,20 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "27358891662",
@@ -16406,17 +16895,17 @@
       "hitos_personales": [
         {
           "fecha": "2023-12",
-          "texto": "Inicio (Senador) en Cambio Federal",
-          "etiqueta": "Cambio Federal",
-          "color": "#808080",
+          "texto": "Fin de mandato (Senador)",
+          "etiqueta": "Fin de Mandato",
+          "color": "#000000",
           "tipo": "politico",
           "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
-          "texto": "Fin de mandato (Senador)",
-          "etiqueta": "Fin de Mandato",
-          "color": "#000000",
+          "texto": "Inicio (Senador) en Cambio Federal",
+          "etiqueta": "Cambio Federal",
+          "color": "#808080",
           "tipo": "politico",
           "cargo": "Senador"
         },
@@ -16849,7 +17338,15 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20137384494",
@@ -17696,7 +18193,20 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27146328844",
@@ -18191,7 +18701,25 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27284850780",
@@ -18494,7 +19022,15 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27131600157",
@@ -18763,7 +19299,20 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20217892733",
@@ -19208,7 +19757,20 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20140582906",
@@ -19701,7 +20263,20 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20168063742",
@@ -20000,7 +20575,25 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20168397977",
@@ -20685,7 +21278,20 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20226755447",
@@ -21281,7 +21887,25 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-05"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20143507301",
@@ -22274,7 +22898,25 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20242761031",
@@ -22563,7 +23205,20 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-01"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27133096766",
@@ -23220,7 +23875,25 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23106260729",
@@ -24249,7 +24922,25 @@
       ],
       "distrito": "Tierra del Fuego",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27233835345",
@@ -24526,7 +25217,20 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20054103752",
@@ -25041,7 +25745,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20308560164",
@@ -25300,7 +26012,20 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27248494935",
@@ -25344,17 +26069,17 @@
         },
         {
           "fecha": "2024-05",
-          "texto": "Inicio (Senador) en Unión Cívica Radical",
-          "etiqueta": "Unión Cívica Radical",
-          "color": "#D72D2D",
+          "texto": "Fin de mandato (Senador)",
+          "etiqueta": "Fin de Mandato",
+          "color": "#000000",
           "tipo": "politico",
           "cargo": "Senador"
         },
         {
           "fecha": "2024-05",
-          "texto": "Fin de mandato (Senador)",
-          "etiqueta": "Fin de Mandato",
-          "color": "#000000",
+          "texto": "Inicio (Senador) en Unión Cívica Radical",
+          "etiqueta": "Unión Cívica Radical",
+          "color": "#D72D2D",
           "tipo": "politico",
           "cargo": "Senador"
         },
@@ -25575,7 +26300,25 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2024-05",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27278333855",
@@ -25866,7 +26609,25 @@
       ],
       "distrito": "Tierra del Fuego",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20083775611",
@@ -26415,7 +27176,25 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27228455100",
@@ -27000,7 +27779,25 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27240303626",
@@ -27683,7 +28480,25 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-05"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27330442803",
@@ -28390,7 +29205,20 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27134871119",
@@ -28947,7 +29775,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "23083872489",
@@ -29402,7 +30243,25 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27137073051",
@@ -29701,7 +30560,20 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "27332459185",
@@ -30076,7 +30948,20 @@
       ],
       "distrito": "San Juan",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20111109339",
@@ -30580,7 +31465,25 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2019-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20259109230",
@@ -30702,7 +31605,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20165683316",
@@ -30896,7 +31807,15 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27300816318",
@@ -31132,7 +32051,15 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20357318158",
@@ -31519,7 +32446,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27188873559",
@@ -31982,7 +32917,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27320214217",
@@ -32357,7 +33300,20 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27288299922",
@@ -32820,7 +33776,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27354022074",
@@ -33161,7 +34130,8 @@
           "situacion": 1,
           "monto": 786
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27275988877",
@@ -33532,7 +34502,15 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27165350176",
@@ -33953,7 +34931,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-06",
+          "fin": "2025-04"
+        }
+      ]
     },
     {
       "cuit": "23280344524",
@@ -34462,7 +35448,20 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20241811612",
@@ -35291,7 +36290,15 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20326276287",
@@ -35789,7 +36796,20 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20174484148",
@@ -36114,7 +37134,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27209648909",
@@ -36413,7 +37446,25 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27228857594",
@@ -36680,7 +37731,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27267928539",
@@ -37149,7 +38213,15 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20056678558",
@@ -37556,7 +38628,20 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23270202284",
@@ -37921,7 +39006,20 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20220776795",
@@ -38156,7 +39254,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27332948895",
@@ -38436,7 +39542,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20126966505",
@@ -39335,7 +40449,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20056166069",
@@ -39790,7 +40917,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20245792906",
@@ -40277,7 +41417,15 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27231034981",
@@ -41090,7 +42238,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27290423894",
@@ -41770,7 +42926,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20208736338",
@@ -42161,7 +43330,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20110856793",
@@ -42420,7 +43602,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20263936591",
@@ -42677,7 +43872,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27326867476",
@@ -43206,7 +44414,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27285186779",
@@ -43993,7 +45209,20 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20268386131",
@@ -44368,7 +45597,15 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20108217473",
@@ -44643,7 +45880,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20209253527",
@@ -44902,7 +46152,20 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20314730950",
@@ -45625,7 +46888,15 @@
       ],
       "distrito": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-10",
+          "fin": "2024-11"
+        }
+      ]
     },
     {
       "cuit": "27268384915",
@@ -46082,7 +47353,20 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27103071645",
@@ -46597,7 +47881,8 @@
           "situacion": 1,
           "monto": 1864
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20109452867",
@@ -46972,7 +48257,20 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-11",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20179638283",
@@ -47000,11 +48298,11 @@
         },
         {
           "fecha": "2021-12",
-          "texto": "Inicio (Diputado) en Frente de Todos",
+          "texto": "Inicio (Senador) en Frente de Todos",
           "etiqueta": "Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
-          "cargo": "Diputado"
+          "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
@@ -47255,7 +48553,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20330842025",
@@ -47784,7 +49095,15 @@
       ],
       "distrito": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27254014643",
@@ -48159,7 +49478,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27372984177",
@@ -48197,14 +49529,6 @@
           "fecha": "2025-08",
           "texto": "Pase a coherencia",
           "etiqueta": "coherencia",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2025-10",
-          "texto": "Pase a Coherencia",
-          "etiqueta": "Coherencia",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -48606,7 +49930,15 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20319778110",
@@ -49075,7 +50407,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27139186244",
@@ -49454,7 +50794,20 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20137729947",
@@ -50025,7 +51378,20 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20242395752",
@@ -50392,7 +51758,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20116408997",
@@ -50985,7 +52364,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27364093786",
@@ -51294,7 +52686,15 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20139425163",
@@ -51529,7 +52929,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27115660484",
@@ -51808,7 +53216,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23243350999",
@@ -52271,7 +53692,20 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20257289975",
@@ -52572,7 +54006,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20301177314",
@@ -52883,7 +54330,15 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20178045092",
@@ -53470,7 +54925,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27201070746",
@@ -53730,7 +55198,20 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20114683699",
@@ -53989,7 +55470,20 @@
       ],
       "distrito": "San Juan",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27262351195",
@@ -54338,7 +55832,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27354613285",
@@ -54597,7 +56099,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2022-08"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27344084039",
@@ -55036,7 +56551,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27281591954",
@@ -55065,11 +56588,11 @@
         },
         {
           "fecha": "2021-12",
-          "texto": "Inicio (Diputado) en Unión Cívica Radical",
+          "texto": "Inicio (Senador) en Unión Cívica Radical",
           "etiqueta": "Unión Cívica Radical",
           "color": "#D72D2D",
           "tipo": "politico",
-          "cargo": "Diputado"
+          "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
@@ -55820,7 +57343,20 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20129790351",
@@ -56284,7 +57820,20 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23233977519",
@@ -56499,7 +58048,8 @@
           "situacion": 5,
           "monto": 716
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20286470298",
@@ -56812,7 +58362,15 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20121101735",
@@ -57087,7 +58645,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20305021467",
@@ -57612,7 +59183,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27261225234",
@@ -57871,7 +59455,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20148134902",
@@ -58114,7 +59711,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20250442433",
@@ -58785,7 +60390,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27167354918",
@@ -58958,7 +60571,8 @@
           "situacion": 1,
           "monto": 10149
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20084824403",
@@ -59209,7 +60823,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27321118602",
@@ -59748,7 +61370,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27319281628",
@@ -59999,7 +61634,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20127901628",
@@ -60463,7 +62106,20 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27248854265",
@@ -60943,7 +62599,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20186213476",
@@ -61178,7 +62847,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20184536758",
@@ -61712,7 +63389,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27206757049",
@@ -62325,7 +64015,20 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27135300735",
@@ -62904,7 +64607,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27177344341",
@@ -63155,7 +64871,20 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27146427702",
@@ -63412,7 +65141,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20147877596",
@@ -63450,14 +65192,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -63679,7 +65413,20 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20172884181",
@@ -64118,7 +65865,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27115479968",
@@ -64543,7 +66298,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23124773849",
@@ -65006,7 +66774,15 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20242876203",
@@ -65215,7 +66991,15 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20131823666",
@@ -65570,7 +67354,15 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27345125391",
@@ -65592,14 +67384,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -66235,7 +68019,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27252702194",
@@ -66756,7 +68548,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20174462144",
@@ -67121,7 +68926,15 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20202641629",
@@ -67159,14 +68972,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -67772,7 +69577,20 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27204650972",
@@ -68113,7 +69931,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20303646362",
@@ -68656,7 +70487,15 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20190103200",
@@ -69070,7 +70909,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20207323293",
@@ -69329,7 +71181,20 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27266811425",
@@ -69936,7 +71801,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27255956715",
@@ -70505,7 +72378,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20385700696",
@@ -70890,7 +72776,20 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27396592881",
@@ -71257,7 +73156,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20223799281",
@@ -71508,7 +73415,15 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-02",
+          "fin": "2024-02"
+        }
+      ]
     },
     {
       "cuit": "20085756223",
@@ -71783,7 +73698,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20129170760",
@@ -72334,7 +74262,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20122178022",
@@ -72815,7 +74756,20 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20301123990",
@@ -73068,7 +75022,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23332030159",
@@ -73595,7 +75557,15 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-04",
+          "fin": "2024-04"
+        }
+      ]
     },
     {
       "cuit": "20221313837",
@@ -74336,7 +76306,15 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2024-05"
+        }
+      ]
     },
     {
       "cuit": "20242920644",
@@ -74785,7 +76763,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20224736674",
@@ -75061,7 +77052,20 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27259392638",
@@ -75368,7 +77372,20 @@
       ],
       "distrito": "San Juan",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27273796229",
@@ -75601,7 +77618,8 @@
           "situacion": 1,
           "monto": 462
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27245082725",
@@ -76056,7 +78074,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20279570260",
@@ -76729,7 +78760,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20265696725",
@@ -77436,7 +79480,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23171578434",
@@ -78187,7 +80239,15 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27311140693",
@@ -78439,7 +80499,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27065013253",
@@ -78656,7 +80729,20 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27382663298",
@@ -78907,7 +80993,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20312010713",
@@ -79290,7 +81389,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-08",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27148917987",
@@ -79319,11 +81431,11 @@
         },
         {
           "fecha": "2021-12",
-          "texto": "Inicio (Diputado) en PRO",
+          "texto": "Inicio (Senador) en PRO",
           "etiqueta": "PRO",
           "color": "#FFD700",
           "tipo": "politico",
-          "cargo": "Diputado"
+          "cargo": "Senador"
         },
         {
           "fecha": "2023-12",
@@ -79566,7 +81678,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20249020258",
@@ -80131,7 +82256,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20321652566",
@@ -80666,7 +82804,20 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27234850666",
@@ -80923,7 +83074,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2022-10"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27262456744",
@@ -81388,7 +83552,20 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27257858842",
@@ -81434,14 +83611,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -82383,7 +84552,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-09"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27327136025",
@@ -82421,14 +84603,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -82644,7 +84818,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20245096152",
@@ -83215,7 +85397,15 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27244008483",
@@ -84000,7 +86190,20 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20249979954",
@@ -84058,7 +86261,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23082070699",
@@ -84454,7 +86670,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20244166246",
@@ -84751,7 +86980,20 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-08",
+          "fin": "2025-11"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-11",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27165495239",
@@ -85238,7 +87480,20 @@
       ],
       "distrito": "Corrientes",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27225074467",
@@ -85507,7 +87762,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20179184401",
@@ -85830,7 +88098,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20225253324",
@@ -86177,7 +88458,8 @@
           "situacion": 1,
           "monto": 2343
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27284286702",
@@ -86436,7 +88718,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20114609286",
@@ -86981,7 +89276,20 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-07",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20121899311",
@@ -87526,7 +89834,20 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-09"
+        }
+      ]
     },
     {
       "cuit": "20165030398",
@@ -87779,7 +90100,20 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23249413089",
@@ -88015,7 +90349,15 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20160116006",
@@ -88471,7 +90813,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23165838009",
@@ -88996,7 +91351,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27357336193",
@@ -89381,7 +91744,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20280759881",
@@ -89616,7 +91992,15 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20229030680",
@@ -90169,7 +92553,15 @@
       ],
       "distrito": "San Juan",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27226511844",
@@ -90540,7 +92932,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20176238918",
@@ -91049,7 +93454,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20174850292",
@@ -91366,7 +93784,20 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20182874532",
@@ -92159,7 +94590,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20202980210",
@@ -92598,7 +95037,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20273754041",
@@ -93073,7 +95520,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27324151031",
@@ -93520,7 +95975,15 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20279217714",
@@ -93748,7 +96211,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-07"
+        }
+      ]
     },
     {
       "cuit": "27235705473",
@@ -94239,7 +96715,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27267107721",
@@ -95164,7 +97653,20 @@
       ],
       "distrito": "Formosa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20178882873",
@@ -95415,7 +97917,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27372218865",
@@ -95716,7 +98231,20 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20248770253",
@@ -95927,7 +98455,15 @@
       ],
       "distrito": "Neuquén",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20341247781",
@@ -96232,7 +98768,20 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27282985263",
@@ -96671,7 +99220,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27262133988",
@@ -97284,7 +99841,15 @@
       ],
       "distrito": "San Luis",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20279611412",
@@ -97435,7 +100000,15 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20186082134",
@@ -97670,7 +100243,15 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20178562038",
@@ -98161,7 +100742,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27286014858",
@@ -98458,7 +101052,20 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20309499450",
@@ -98793,7 +101400,20 @@
       ],
       "distrito": "Catamarca",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27172595621",
@@ -98831,14 +101451,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -99150,7 +101762,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20334340660",
@@ -99883,7 +102508,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20112641875",
@@ -100098,7 +102731,8 @@
           "situacion": 1,
           "monto": 10201
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27256325689",
@@ -100663,7 +103297,15 @@
       ],
       "distrito": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20128983458",
@@ -100982,7 +103624,20 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27184959416",
@@ -101241,7 +103896,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20242671652",
@@ -101896,7 +104564,15 @@
       ],
       "distrito": "Chubut",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20240419034",
@@ -102657,7 +105333,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20178692713",
@@ -102918,7 +105607,20 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27334945958",
@@ -103147,7 +105849,15 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-09",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20251970743",
@@ -103267,7 +105977,20 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27280582536",
@@ -103784,7 +106507,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20310895955",
@@ -104239,7 +106970,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27256151524",
@@ -104802,7 +107541,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20338868244",
@@ -104846,17 +107598,17 @@
         },
         {
           "fecha": "2023-12",
-          "texto": "Inicio (Diputado) en Unión por la Patria",
-          "etiqueta": "Unión por la Patria",
-          "color": "#009ADE",
+          "texto": "Inicio (Diputado) en Unión Cívica Radical",
+          "etiqueta": "Unión Cívica Radical",
+          "color": "#D72D2D",
           "tipo": "politico",
           "cargo": "Diputado"
         },
         {
           "fecha": "2023-12",
-          "texto": "Inicio (Diputado) en Unión Cívica Radical",
-          "etiqueta": "Unión Cívica Radical",
-          "color": "#D72D2D",
+          "texto": "Inicio (Diputado) en Unión por la Patria",
+          "etiqueta": "Unión por la Patria",
+          "color": "#009ADE",
           "tipo": "politico",
           "cargo": "Diputado"
         },
@@ -105281,7 +108033,20 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2022-08",
+          "fin": "2022-08"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27167558742",
@@ -105937,7 +108702,20 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20161572749",
@@ -106604,7 +109382,15 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "23202055869",
@@ -106845,7 +109631,15 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27235214933",
@@ -107272,7 +110066,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-06",
+          "fin": "2025-07"
+        }
+      ]
     },
     {
       "cuit": "23238322464",
@@ -108450,7 +111252,15 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23146233759",
@@ -108709,7 +111519,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20245738723",
@@ -108964,7 +111787,15 @@
       ],
       "distrito": "Misiones",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "27145408909",
@@ -109315,7 +112146,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20168070838",
@@ -109816,7 +112655,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27324133963",
@@ -110067,7 +112919,20 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20161912078",
@@ -110278,7 +113143,15 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20176149923",
@@ -110719,7 +113592,20 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27232050107",
@@ -110966,7 +113852,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20213862996",
@@ -111217,7 +114111,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20139019408",
@@ -112280,7 +115187,20 @@
       ],
       "distrito": "Chaco",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20177354490",
@@ -112586,7 +115506,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20080476842",
@@ -112719,7 +115652,20 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23111038589",
@@ -113446,7 +116392,15 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27288605993",
@@ -113697,7 +116651,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20291515011",
@@ -113947,7 +116914,15 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20227777436",
@@ -114606,7 +117581,20 @@
       ],
       "distrito": "Mendoza",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20240494419",
@@ -115539,7 +118527,20 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20188835814",
@@ -115822,7 +118823,20 @@
       ],
       "distrito": "Río Negro",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20229511131",
@@ -116373,7 +119387,8 @@
           "situacion": 1,
           "monto": 3595
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "23337997589",
@@ -116395,14 +119410,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -116624,7 +119631,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20149980548",
@@ -117081,7 +120096,15 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20243992371",
@@ -117548,7 +120571,25 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20209210739",
@@ -118023,7 +121064,15 @@
       ],
       "distrito": "Santa Cruz",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "23137026104",
@@ -118652,7 +121701,20 @@
       ],
       "distrito": "Santiago del Estero",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20141889185",
@@ -119311,7 +122373,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-03"
+        }
+      ]
     },
     {
       "cuit": "27161641737",
@@ -119357,14 +122432,6 @@
           "fecha": "2024-10",
           "texto": "Pase a Democracia para siempre",
           "etiqueta": "Democracia para siempre",
-          "color": "#808080",
-          "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Pase a Democracia para Siempre",
-          "etiqueta": "Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
           "cargo": "Diputado"
@@ -119658,7 +122725,20 @@
       ],
       "distrito": "La Pampa",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2021-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27329016817",
@@ -119931,7 +123011,15 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20174549053",
@@ -120264,7 +123352,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20253485478",
@@ -120523,7 +123624,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27182307349",
@@ -120692,7 +123801,15 @@
       ],
       "distrito": "Salta",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20245607068",
@@ -121155,7 +124272,15 @@
       ],
       "distrito": "Entre Ríos",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20146757066",
@@ -121594,7 +124719,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2024-02",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27280877188",
@@ -122041,7 +125174,15 @@
       ],
       "distrito": "Santa Fe",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20112830325",
@@ -122256,7 +125397,8 @@
           "situacion": 1,
           "monto": 290
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20162164040",
@@ -122442,7 +125584,20 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27245043223",
@@ -122494,7 +125649,20 @@
       ],
       "distrito": "Jujuy",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-07",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20172493379",
@@ -122704,7 +125872,20 @@
       ],
       "distrito": "La Rioja",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "24240124552",
@@ -122950,7 +126131,15 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20258693109",
@@ -123008,7 +126197,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20266723181",
@@ -123052,7 +126254,15 @@
       ],
       "distrito": "Córdoba",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2023-12"
+        }
+      ]
     },
     {
       "cuit": "20323020516",
@@ -123632,7 +126842,8 @@
           "situacion": 1,
           "monto": 412
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20336276188",
@@ -124074,7 +127285,8 @@
           "situacion": 1,
           "monto": 591
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20258871112",
@@ -124300,7 +127512,8 @@
           "situacion": 1,
           "monto": 1557
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27264849638",
@@ -124598,7 +127811,8 @@
           "situacion": 1,
           "monto": 431
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "23113647604",
@@ -125232,7 +128446,8 @@
           "situacion": 3,
           "monto": 4963
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27176050034",
@@ -125596,7 +128811,8 @@
           "situacion": 1,
           "monto": 6703
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27352538626",
@@ -125816,7 +129032,8 @@
           "situacion": 1,
           "monto": 1877
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27254532164",
@@ -126096,7 +129313,8 @@
           "situacion": 1,
           "monto": 3846
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27241384727",
@@ -126406,7 +129624,8 @@
           "situacion": 1,
           "monto": 596
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27226005531",
@@ -126596,7 +129815,20 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2024-06"
+        }
+      ]
     },
     {
       "cuit": "20253596814",
@@ -126750,7 +129982,8 @@
           "situacion": 1,
           "monto": 2448
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20219307757",
@@ -126796,7 +130029,8 @@
           "situacion": 1,
           "monto": 4243
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20327299264",
@@ -127154,7 +130388,8 @@
           "situacion": 1,
           "monto": 246
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20179418046",
@@ -127596,7 +130831,8 @@
           "situacion": 1,
           "monto": 1017
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20133677586",
@@ -127912,7 +131148,8 @@
           "situacion": 1,
           "monto": 1329
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20336951292",
@@ -128066,7 +131303,8 @@
           "situacion": 1,
           "monto": 2974
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20423258609",
@@ -128220,7 +131458,8 @@
           "situacion": 1,
           "monto": 480
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20303559680",
@@ -128368,7 +131607,8 @@
           "situacion": 1,
           "monto": 1356
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20358926933",
@@ -128516,7 +131756,8 @@
           "situacion": 1,
           "monto": 4269
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20269684438",
@@ -128712,7 +131953,8 @@
           "situacion": 1,
           "monto": 859
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20217318670",
@@ -129088,7 +132330,8 @@
           "situacion": 1,
           "monto": 2537
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20341556253",
@@ -129326,7 +132569,8 @@
           "situacion": 1,
           "monto": 5355
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20228130770",
@@ -129600,7 +132844,8 @@
           "situacion": 1,
           "monto": 2023
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "23304576774",
@@ -129784,7 +133029,8 @@
           "situacion": 1,
           "monto": 50
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20168368373",
@@ -129992,7 +133238,8 @@
           "situacion": 1,
           "monto": 927
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27327025533",
@@ -130146,7 +133393,8 @@
           "situacion": 1,
           "monto": 3443
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "23221392094",
@@ -130732,7 +133980,8 @@
           "situacion": 1,
           "monto": 1502
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27305499108",
@@ -131030,7 +134279,8 @@
           "situacion": 1,
           "monto": 3258
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20256611210",
@@ -131358,7 +134608,8 @@
           "situacion": 1,
           "monto": 11174
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27296966075",
@@ -131524,7 +134775,8 @@
           "situacion": 1,
           "monto": 182
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27347466331",
@@ -131936,7 +135188,8 @@
           "situacion": 1,
           "monto": 2965
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20210031856",
@@ -132258,7 +135511,8 @@
           "situacion": 1,
           "monto": 4760
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27314401234",
@@ -132982,7 +136236,8 @@
           "situacion": 2,
           "monto": 1217
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20133010298",
@@ -133166,7 +136421,8 @@
           "situacion": 1,
           "monto": 4812
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27282719938",
@@ -133320,7 +136576,8 @@
           "situacion": 1,
           "monto": 51
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20219540125",
@@ -133534,7 +136791,25 @@
       ],
       "distrito": "Ciudad de Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-05"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Senador",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "27225573641",
@@ -133688,7 +136963,8 @@
           "situacion": 1,
           "monto": 2499
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27200012513",
@@ -134130,7 +137406,8 @@
           "situacion": 1,
           "monto": 7357
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27233105193",
@@ -134306,7 +137583,15 @@
       ],
       "distrito": "Tucumán",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20200592167",
@@ -134664,7 +137949,8 @@
           "situacion": 1,
           "monto": 3642
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27122857714",
@@ -134866,7 +138152,8 @@
           "situacion": 1,
           "monto": 6288
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20263667000",
@@ -135224,7 +138511,8 @@
           "situacion": 1,
           "monto": 6991
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20266508329",
@@ -135522,7 +138810,8 @@
           "situacion": 1,
           "monto": 4543
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20328293162",
@@ -136078,7 +139367,8 @@
           "situacion": 1,
           "monto": 350
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27204775708",
@@ -136280,7 +139570,8 @@
           "situacion": 1,
           "monto": 1076
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20303347659",
@@ -136434,7 +139725,8 @@
           "situacion": 1,
           "monto": 784
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27421829816",
@@ -136576,7 +139868,8 @@
           "situacion": 1,
           "monto": 201
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20250816031",
@@ -136994,7 +140287,8 @@
           "situacion": 1,
           "monto": 370
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20174122777",
@@ -137394,7 +140688,8 @@
           "situacion": 1,
           "monto": 62
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20228949907",
@@ -137794,7 +141089,8 @@
           "situacion": 1,
           "monto": 4922
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27184140115",
@@ -138092,7 +141388,8 @@
           "situacion": 1,
           "monto": 5357
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27127995236",
@@ -138234,7 +141531,8 @@
           "situacion": 1,
           "monto": 1591
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20184725976",
@@ -138364,7 +141662,8 @@
           "situacion": 1,
           "monto": 419
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27307017496",
@@ -138518,7 +141817,8 @@
           "situacion": 1,
           "monto": 5804
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20296629597",
@@ -138792,7 +142092,8 @@
           "situacion": 1,
           "monto": 5754
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20270878181",
@@ -139234,7 +142535,8 @@
           "situacion": 1,
           "monto": 4980
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27241001070",
@@ -139532,7 +142834,8 @@
           "situacion": 1,
           "monto": 7896
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20113717506",
@@ -139830,7 +143133,8 @@
           "situacion": 1,
           "monto": 3026
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20162915119",
@@ -140200,7 +143504,8 @@
           "situacion": 1,
           "monto": 982
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27349910298",
@@ -140360,7 +143665,8 @@
           "situacion": 1,
           "monto": 4381
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27318487222",
@@ -140664,7 +143970,8 @@
           "situacion": 1,
           "monto": 1210
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "23083626739",
@@ -140846,7 +144153,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Senador"
+      "cargo": "Senador",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Senador",
+          "inicio": "2019-12",
+          "fin": "2021-12"
+        }
+      ]
     },
     {
       "cuit": "27357276328",
@@ -140934,7 +144249,8 @@
           "situacion": 1,
           "monto": 121
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20187947740",
@@ -141106,7 +144422,8 @@
           "situacion": 1,
           "monto": 5045
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20229354036",
@@ -141344,7 +144661,8 @@
           "situacion": 1,
           "monto": 1183
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20223522514",
@@ -141498,7 +144816,8 @@
           "situacion": 1,
           "monto": 488
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27231385776",
@@ -141772,7 +145091,8 @@
           "situacion": 1,
           "monto": 226
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20249577163",
@@ -142040,7 +145360,8 @@
           "situacion": 1,
           "monto": 4977
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20266676531",
@@ -142338,7 +145659,8 @@
           "situacion": 1,
           "monto": 1429
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20379994580",
@@ -142672,7 +145994,8 @@
           "situacion": 1,
           "monto": 67
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20147385375",
@@ -142946,7 +146269,8 @@
           "situacion": 1,
           "monto": 1599
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20257564569",
@@ -143100,7 +146424,8 @@
           "situacion": 1,
           "monto": 1577
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20233803252",
@@ -143380,7 +146705,8 @@
           "situacion": 1,
           "monto": 651
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27178894590",
@@ -143492,7 +146818,8 @@
           "situacion": 1,
           "monto": 2405
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27277083561",
@@ -143870,7 +147197,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2022-12"
+        }
+      ]
     },
     {
       "cuit": "27340841366",
@@ -144276,7 +147611,8 @@
           "situacion": 1,
           "monto": 330
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20260191951",
@@ -144790,7 +148126,8 @@
           "situacion": 1,
           "monto": 1522
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27226680565",
@@ -145226,7 +148563,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato/Renuncia",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2024-06"
+        }
+      ]
     },
     {
       "cuit": "27213201617",
@@ -145524,7 +148874,8 @@
           "situacion": 1,
           "monto": 1107
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27057991025",
@@ -145822,7 +149173,8 @@
           "situacion": 1,
           "monto": 392
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20270799044",
@@ -145886,7 +149238,8 @@
           "situacion": 1,
           "monto": 528
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27330723578",
@@ -145909,7 +149262,8 @@
           "situacion": 1,
           "monto": 207863
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20270502661",
@@ -146351,7 +149705,8 @@
           "situacion": 1,
           "monto": 1528
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27104003465",
@@ -146631,7 +149986,8 @@
           "situacion": 1,
           "monto": 447
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27295495540",
@@ -147001,7 +150357,20 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2021-12",
+          "fin": "2023-12"
+        },
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2025-12"
+        }
+      ]
     },
     {
       "cuit": "20249630161",
@@ -147443,7 +150812,8 @@
           "situacion": 1,
           "monto": 583
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27142715916",
@@ -147633,7 +151003,8 @@
           "situacion": 1,
           "monto": 3462
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27277670718",
@@ -147685,7 +151056,8 @@
           "situacion": 1,
           "monto": 1011
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27177269323",
@@ -147983,7 +151355,8 @@
           "situacion": 1,
           "monto": 2051
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20122958397",
@@ -148275,7 +151648,8 @@
           "situacion": 1,
           "monto": 769
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20304639335",
@@ -148555,7 +151929,15 @@
       ],
       "distrito": "Buenos Aires",
       "partido": "Fin de Mandato",
-      "cargo": "Diputado"
+      "cargo": "Diputado",
+      "mis_hitos": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-06",
+          "fin": "2025-06"
+        }
+      ]
     },
     {
       "cuit": "20253856409",
@@ -148775,7 +152157,8 @@
           "situacion": 1,
           "monto": 3204
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20318128031",
@@ -149007,7 +152390,8 @@
           "situacion": 1,
           "monto": 2116
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20284663447",
@@ -149563,7 +152947,8 @@
           "situacion": 1,
           "monto": 483
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27239991810",
@@ -149591,7 +152976,8 @@
           "situacion": 1,
           "monto": 725
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20249775461",
@@ -149757,7 +153143,8 @@
           "situacion": 1,
           "monto": 4403
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20185623212",
@@ -149977,7 +153364,8 @@
           "situacion": 1,
           "monto": 2666
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20169551139",
@@ -150179,7 +153567,8 @@
           "situacion": 1,
           "monto": 1035
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27339516524",
@@ -150435,7 +153824,8 @@
           "situacion": 1,
           "monto": 39
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20305063291",
@@ -150595,7 +153985,8 @@
           "situacion": 1,
           "monto": 6341
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27360187867",
@@ -151013,7 +154404,8 @@
           "situacion": 1,
           "monto": 508
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27252182379",
@@ -151401,7 +154793,8 @@
           "situacion": 1,
           "monto": 10361
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20377965605",
@@ -151447,7 +154840,8 @@
           "situacion": 1,
           "monto": 30
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20254116239",
@@ -151619,7 +155013,8 @@
           "situacion": 1,
           "monto": 1659
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27260405069",
@@ -151635,7 +155030,8 @@
           "situacion": 1,
           "monto": 6900
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27251917642",
@@ -152095,7 +155491,8 @@
           "situacion": 1,
           "monto": 156
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27311439397",
@@ -152249,7 +155646,8 @@
           "situacion": 1,
           "monto": 1896
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20187750637",
@@ -152571,7 +155969,8 @@
           "situacion": 1,
           "monto": 6781
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20119584486",
@@ -152869,7 +156268,8 @@
           "situacion": 1,
           "monto": 2296
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20166669643",
@@ -153011,7 +156411,8 @@
           "situacion": 1,
           "monto": 2218
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27119883364",
@@ -153369,7 +156770,8 @@
           "situacion": 1,
           "monto": 226
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20169543489",
@@ -153577,7 +156979,8 @@
           "situacion": 1,
           "monto": 18509
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20314731353",
@@ -153731,7 +157134,8 @@
           "situacion": 1,
           "monto": 3203
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27343351750",
@@ -154161,7 +157565,8 @@
           "situacion": 1,
           "monto": 3118
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "20180715119",
@@ -154315,7 +157720,8 @@
           "situacion": 1,
           "monto": 1505
         }
-      ]
+      ],
+      "periodos": []
     },
     {
       "cuit": "27286063190",
@@ -154463,7 +157869,8 @@
           "situacion": 1,
           "monto": 1900
         }
-      ]
+      ],
+      "periodos": []
     }
   ]
 }
