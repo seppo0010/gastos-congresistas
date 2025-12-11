@@ -135,7 +135,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
           return (
             <div key={l.cuit} className="mb-2 border-b pb-1 last:border-0">
               <p className="font-bold text-sm" style={{ color: COLORS[idx % COLORS.length] }}>
-                {l.nombre}: {formatMoney(item.value)}k
+                {l.nombre}: {formatMoney(Math.round(item.value*1000))}
               </p>
               {milestones.map((m, i) => (
                 <div key={i} className="mb-1 p-1 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 font-semibold flex items-center gap-1">
