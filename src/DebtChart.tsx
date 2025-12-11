@@ -159,9 +159,9 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
           <h2 className="text-xl font-bold">Comparativa</h2>
-          <div className="relative group">
+          <div className="relative group outline-none" tabIndex={0}>
             <HelpCircle size={18} className="text-gray-400 cursor-help" />
-            <div className="absolute left-0 top-full mt-2 w-80 p-3 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+            <div className="absolute left-0 top-full mt-2 w-80 p-3 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity pointer-events-none z-50">
               <p className="mb-2">
                 Se muestra el titak de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.
               </p>
