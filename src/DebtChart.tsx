@@ -141,7 +141,7 @@ const DebtChart = ({ legislators, globalMilestones, onRemove }: DebtChartProps) 
             <HelpCircle size={18} className="text-gray-400 cursor-help" />
             <div className="absolute left-0 top-full mt-2 w-80 p-3 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
               <p className="mb-2">
-                Se muestra el stock de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores".
+                Se muestra el titak de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.
               </p>
               <p className="text-yellow-300">
                 Atención: Parte de la información fue procesada automáticamente y podría contener errores.
