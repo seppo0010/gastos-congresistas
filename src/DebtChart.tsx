@@ -188,7 +188,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
               className="text-xs border border-gray-300 rounded px-2 py-1 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none"
             >
               <option value="nominal">Pesos (Nominal)</option>
-              {ipc && <option value="real">Pesos (Ajustado por inflación)</option>}
+              {ipc && <option value="real">Pesos (Ajustado por inflación a precios de {ipcDates[ipcDates.length - 1]})</option>}
               {mep && <option value="usd">Dólares (MEP)</option>}
             </select>
           </div>
@@ -219,7 +219,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" tick={{fontSize: 10}} />
             <YAxis 
-              tickFormatter={(v: number) => currencyMode === 'usd' ? `US$${v/1000}k` : `$${v/1000}M`} 
+              tickFormatter={(v: number) => currencyMode === 'usd' ? `US$${v/1000}k ` : `$${v/1000}M`} 
               tick={{fontSize: 10}} 
               width={currencyMode === 'usd' ? 50 : 40}
             />
