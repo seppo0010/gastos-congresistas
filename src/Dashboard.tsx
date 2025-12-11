@@ -83,6 +83,7 @@ export default function Dashboard() {
       <DebtChart 
         legislators={selected} 
         globalMilestones={meta.hitos_globales} 
+        ipc={meta.ipc}
         onRemove={handleSelect}
       />
       {warning && (

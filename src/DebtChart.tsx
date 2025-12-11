@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 // Importa tu JSON generado por Python
@@ -9,6 +9,7 @@ import { COLORS } from './Colors';
 interface DebtChartProps {
   legislators: Legislator[];
   globalMilestones: Milestone[];
+  ipc?: { [date: string]: number };
   onRemove?: (legislator: Legislator) => void;
 }
 
@@ -24,8 +25,8 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 
 const GRAY = '#9ca3af';
 
-const DebtChart = ({ legislators, globalMilestones, onRemove }: DebtChartProps) => {
-  if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
+const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartProps) => {
+  const [adjustInflation, setAdjustInflation] = useState(false);
 
   // 1. Unificar Hitos (Globales + Personales)
   const allMilestones = useMemo(() => {
@@ -68,23 +69,39 @@ const DebtChart = ({ legislators, globalMilestones, onRemove }: DebtChartProps) 
   // 2. Procesar Datos de Deuda (Agrupar por mes)
   const chartData = useMemo(() => {
     const grouped: { [key: string]: any } = {};
+
+    let latestIPC = 0;
+    if (adjustInflation && ipc) {
+      const dates = Object.keys(ipc).sort();
+      if (dates.length > 0) latestIPC = ipc[dates[dates.length - 1]];
+    }
     
     legislators.forEach(l => {
       l.historial.forEach(r => {
         if (!grouped[r.fecha]) grouped[r.fecha] = { date: r.fecha, banks: {} };
         
+        let monto = r.monto;
+        if (adjustInflation && ipc && latestIPC > 0) {
+          const val = ipc[r.fecha];
+          if (val) {
+            monto = (monto * latestIPC) / val;
+          }
+        }
+
         // Sumar al total del legislador en esa fecha
         if (!grouped[r.fecha][l.cuit]) grouped[r.fecha][l.cuit] = 0;
-        grouped[r.fecha][l.cuit] += r.monto;
+        grouped[r.fecha][l.cuit] += monto;
 
         // Guardar detalle de bancos
         if (!grouped[r.fecha].banks[l.cuit]) grouped[r.fecha].banks[l.cuit] = [];
-        grouped[r.fecha].banks[l.cuit].push(r);
+        grouped[r.fecha].banks[l.cuit].push({ ...r, monto });
       });
     });
 
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [legislators]);
+  }, [legislators, adjustInflation, ipc]);
+
+  if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
 
   const formatMoney = (val: number) => `$${new Intl.NumberFormat('es-AR').format(val)}`;
 
@@ -148,6 +165,19 @@ const DebtChart = ({ legislators, globalMilestones, onRemove }: DebtChartProps) 
               </p>
             </div>
           </div>
+          {ipc && (
+            <div className="ml-auto">
+              <label className="flex items-center gap-2 text-xs cursor-pointer select-none bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition-colors">
+                <input 
+                  type="checkbox" 
+                  checked={adjustInflation} 
+                  onChange={e => setAdjustInflation(e.target.checked)} 
+                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span>Ajustar por inflación</span>
+              </label>
+            </div>
+          )}
         </div>
         <div className="flex flex-wrap gap-4">
           {legislators.map((l, idx) => (
