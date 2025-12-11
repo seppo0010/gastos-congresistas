@@ -115,6 +115,7 @@ export default function Dashboard() {
         legislators={selected} 
         globalMilestones={meta.hitos_globales} 
         ipc={meta.ipc}
+        mep={meta.mep}
         onRemove={handleSelect}
       />
       {warning && (

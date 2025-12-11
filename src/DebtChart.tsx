@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 // Importa tu JSON generado por Python
-import type { Legislator, Milestone } from './types';
+import type { Legislator, Milestone, CurrencyMode } from './types';
 import { Flag, HelpCircle } from 'lucide-react';
 import { COLORS } from './Colors';
 
@@ -10,6 +10,7 @@ interface DebtChartProps {
   legislators: Legislator[];
   globalMilestones: Milestone[];
   ipc?: { [date: string]: number };
+  mep?: { [date: string]: number };
   onRemove?: (legislator: Legislator) => void;
 }
 
@@ -25,8 +26,8 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 
 const GRAY = '#9ca3af';
 
-const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartProps) => {
-  const [adjustInflation, setAdjustInflation] = useState(false);
+const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtChartProps) => {
+  const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
 
   // 1. Unificar Hitos (Globales + Personales)
   const allMilestones = useMemo(() => {
@@ -77,7 +78,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
     const grouped: { [key: string]: any } = {};
 
     let latestIPC = 0;
-    if (adjustInflation && ipc) {
+    if (currencyMode === 'real' && ipc) {
       if (ipcDates.length > 0) latestIPC = ipc[ipcDates[ipcDates.length - 1]];
     }
     
@@ -86,10 +87,17 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
         if (!grouped[r.fecha]) grouped[r.fecha] = { date: r.fecha, banks: {} };
         
         let monto = r.monto;
-        if (adjustInflation && ipc && latestIPC > 0) {
+        if (currencyMode === 'real' && ipc && latestIPC > 0) {
           const val = ipc[r.fecha];
           if (val) {
             monto = (monto * latestIPC) / val;
+          }
+        } else if (currencyMode === 'usd' && mep) {
+          const val = mep[r.fecha];
+          if (val && val > 0) {
+            monto = (monto * 1000) / val;
+          } else {
+            monto = 0;
           }
         }
 
@@ -104,11 +112,14 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
     });
 
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [legislators, adjustInflation, ipc, ipcDates]);
+  }, [legislators, currencyMode, ipc, mep, ipcDates]);
 
   if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
 
-  const formatMoney = (val: number) => `$${new Intl.NumberFormat('es-AR').format(val)}`;
+  const formatMoney = (val: number) => {
+    if (currencyMode === 'usd') return `US$ ${new Intl.NumberFormat('es-AR').format(Math.round(val))}`;
+    return `$${new Intl.NumberFormat('es-AR').format(Math.round(val * 1000))}`;
+  };
 
   // Tooltip Personalizado con Hitos
   const CustomTooltip = ({ active, payload, label }: { active?: boolean, payload?: any, label?: string | number }) => {
@@ -135,7 +146,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
           return (
             <div key={l.cuit} className="mb-2 border-b pb-1 last:border-0">
               <p className="font-bold text-sm" style={{ color: COLORS[idx % COLORS.length] }}>
-                {l.nombre}: {formatMoney(Math.round(item.value*1000))}
+                {l.nombre}: {formatMoney(item.value)}
               </p>
               {milestones.map((m, i) => (
                 <div key={i} className="mb-1 p-1 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 font-semibold flex items-center gap-1">
@@ -144,7 +155,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
               ))}
               <div className="opacity-70 pl-2">
                 {banks.map((b: Bank, i: number) => (
-                  <div key={i}>{b.entidad}: {formatMoney(Math.round(b.monto*1000))}</div>
+                  <div key={i}>{b.entidad}: {formatMoney(b.monto)}</div>
                 ))}
               </div>
             </div>
@@ -170,19 +181,17 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
               </p>
             </div>
           </div>
-          {ipc && (
-            <div className="sm:ml-auto">
-              <label className="flex items-center gap-2 text-xs cursor-pointer select-none bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition-colors">
-                <input 
-                  type="checkbox" 
-                  checked={adjustInflation} 
-                  onChange={e => setAdjustInflation(e.target.checked)} 
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                />
-                <span>Ajustar por inflación (a precios de {ipcDates[ipcDates.length - 1]})</span>
-              </label>
-            </div>
-          )}
+          <div className="sm:ml-auto">
+            <select 
+              value={currencyMode} 
+              onChange={e => setCurrencyMode(e.target.value as CurrencyMode)}
+              className="text-xs border border-gray-300 rounded px-2 py-1 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            >
+              <option value="nominal">Pesos (Nominal)</option>
+              {ipc && <option value="real">Pesos (Ajustado por inflación)</option>}
+              {mep && <option value="usd">Dólares (MEP)</option>}
+            </select>
+          </div>
         </div>
         <div className="flex flex-wrap gap-4">
           {legislators.map((l, idx) => (
@@ -209,7 +218,11 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
           <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" tick={{fontSize: 10}} />
-            <YAxis tickFormatter={(v: number) => `$${v/1000}M`} tick={{fontSize: 10}} width={40}/>
+            <YAxis 
+              tickFormatter={(v: number) => currencyMode === 'usd' ? `US$${v/1000}k` : `$${v/1000}M`} 
+              tick={{fontSize: 10}} 
+              width={currencyMode === 'usd' ? 50 : 40}
+            />
             <Tooltip content={CustomTooltip} />
 
             {/* RENDERIZADO DE TODOS LOS HITOS */}

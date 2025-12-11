@@ -32,6 +32,13 @@ export interface DashboardData {
   meta: {
     hitos_globales: Milestone[]; // Hitos que aplican a todos
     ipc: { [date: string]: number }
+    mep: { [date: string]: number }
   };
   data: Legislator[];
 }
+
+// 5. Opciones de visualización de moneda
+export type CurrencyMode =
+  | 'nominal' // Pesos corrientes (valor histórico)
+  | 'real'    // Pesos constantes (ajustado por IPC)
+  | 'usd';    // Dólares (ajustado por MEP)
