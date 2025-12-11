@@ -66,14 +66,19 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
     })
   }, [legislators, globalMilestones]);
 
+  const ipcDates = useMemo(() => {
+    const r = Object.keys(ipc || {});
+    r.sort();
+    return r;
+  }, [ipc]);
+
   // 2. Procesar Datos de Deuda (Agrupar por mes)
   const chartData = useMemo(() => {
     const grouped: { [key: string]: any } = {};
 
     let latestIPC = 0;
     if (adjustInflation && ipc) {
-      const dates = Object.keys(ipc).sort();
-      if (dates.length > 0) latestIPC = ipc[dates[dates.length - 1]];
+      if (ipcDates.length > 0) latestIPC = ipc[ipcDates[ipcDates.length - 1]];
     }
     
     legislators.forEach(l => {
@@ -99,7 +104,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
     });
 
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [legislators, adjustInflation, ipc]);
+  }, [legislators, adjustInflation, ipc, ipcDates]);
 
   if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
 
@@ -139,7 +144,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
               ))}
               <div className="opacity-70 pl-2">
                 {banks.map((b: Bank, i: number) => (
-                  <div key={i}>{b.entidad.slice(0,15)}... : {formatMoney(b.monto)}k</div>
+                  <div key={i}>{b.entidad}: {formatMoney(Math.round(b.monto*1000))}</div>
                 ))}
               </div>
             </div>
@@ -174,7 +179,7 @@ const DebtChart = ({ legislators, globalMilestones, ipc, onRemove }: DebtChartPr
                   onChange={e => setAdjustInflation(e.target.checked)} 
                   className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                 />
-                <span>Ajustar por inflación</span>
+                <span>Ajustar por inflación (a precios de {ipcDates[ipcDates.length - 1]})</span>
               </label>
             </div>
           )}
