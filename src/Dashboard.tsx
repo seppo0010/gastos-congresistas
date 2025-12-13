@@ -1,9 +1,10 @@
-import { useState, useEffect, useMemo, useRef } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
 import dbCargada from './legisladores_full.json';
 import type { DashboardData, Legislator } from './types';
+import { List, BarChart3 } from 'lucide-react';
 
 const slugify = (text: string) => {
   return text
@@ -44,8 +45,8 @@ export default function Dashboard() {
   });
 
   const [warning, setWarning] = useState<string | null>(null);
-  const [showScrollHint, setShowScrollHint] = useState(false);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [mobileView, setMobileView] = useState<'list' | 'chart'>('list');
+  const [isFabVisible, setIsFabVisible] = useState(true);
 
   useEffect(() => {
     if (warning) {
@@ -55,19 +56,10 @@ export default function Dashboard() {
   }, [warning]);
 
   useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container || !showScrollHint) return;
-
-    const handleScroll = () => setShowScrollHint(false);
-
-    container.addEventListener('scroll', handleScroll, { once: true });
-    const timer = setTimeout(() => setShowScrollHint(false), 5000);
-
-    return () => {
-      container.removeEventListener('scroll', handleScroll);
-      clearTimeout(timer);
-    };
-  }, [warning]);
+    if (selected.length === 0) {
+      setMobileView('list');
+    }
+  }, [selected]);
 
   useEffect(() => {
     const url = new URL(window.location.href);
@@ -95,40 +87,51 @@ export default function Dashboard() {
     }
 
     if (isMobile && selectionChanged) {
-      setShowScrollHint(true);
+      setMobileView('chart');
+      setIsFabVisible(true);
     }
   };
 
-  const handleScrollToTop = () => {
-    scrollContainerRef.current?.scrollTo({ top: -scrollContainerRef.current?.scrollHeight, behavior: 'smooth' });
-    setShowScrollHint(false);
+  const handleListScroll = (direction: 'up' | 'down') => {
+    setIsFabVisible(direction === 'up');
   };
 
   return (
-    <div ref={scrollContainerRef} className="flex flex-col-reverse md:flex-row h-screen bg-gray-100 font-sans overflow-auto md:overflow-hidden relative">
-      <LegislatorSelector 
-        legisladores={legisladores} 
-        onSelect={handleSelect} 
-        selectedIds={selected.map(l => l.cuit)} 
-      />
-      <DebtChart 
-        legislators={selected} 
-        globalMilestones={meta.hitos_globales} 
-        ipc={meta.ipc}
-        mep={meta.mep}
-        onRemove={handleSelect}
-      />
+    <div className="flex flex-col md:flex-row h-screen bg-gray-100 font-sans overflow-hidden relative">
+      <div className={`md:hidden fixed bottom-6 right-6 z-50 transition-transform duration-300 ${isFabVisible ? 'translate-y-0' : 'translate-y-24'}`}>
+        <button
+          onClick={() => {
+            setMobileView(v => v === 'list' ? 'chart' : 'list');
+            setIsFabVisible(true);
+          }}
+          className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-xl flex items-center justify-center transition-colors"
+        >
+          {mobileView === 'list' ? <BarChart3 size={24} /> : <List size={24} />}
+        </button>
+      </div>
+
+      <div className={`absolute inset-0 z-20 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:w-auto md:translate-x-0 ${mobileView === 'list' ? 'translate-x-0' : '-translate-x-full'}`}>
+        <LegislatorSelector 
+          legisladores={legisladores} 
+          onSelect={handleSelect} 
+          selectedIds={selected.map(l => l.cuit)} 
+          onScroll={handleListScroll}
+        />
+      </div>
+
+      <div className={`absolute inset-0 z-10 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:flex-1 md:translate-x-0 ${mobileView === 'chart' ? 'translate-x-0' : 'translate-x-full'}`}>
+        <DebtChart 
+          legislators={selected} 
+          globalMilestones={meta.hitos_globales} 
+          ipc={meta.ipc}
+          mep={meta.mep}
+          onRemove={handleSelect}
+        />
+      </div>
+
       {warning && (
         <div className="absolute top-5 right-5 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded shadow-lg z-50">
             {warning}
-        </div>
-      )}
-      {showScrollHint && (
-        <div 
-          onClick={handleScrollToTop}
-          className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg cursor-pointer z-50 text-center"
-        >
-          Gráfico actualizado. <span className="font-bold underline">Click para subir</span>
         </div>
       )}
     </div>

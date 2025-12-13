@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect, useRef } from 'react';
 
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
@@ -20,13 +20,26 @@ const getDebtStats = (l: Legislator) => {
   };
 };
 
-export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[] }) => {
+export default ({ legisladores, onSelect, selectedIds = [], onScroll }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[], onScroll?: (direction: 'up' | 'down') => void }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("todos");
   const [provinceFilter, setProvinceFilter] = useState("todas");
   const [partyFilter, setPartyFilter] = useState("todos");
   const [sortOrder, setSortOrder] = useState("nombre_asc");
+  const lastScrollTop = useRef(0);
+
+  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const currentScrollTop = e.currentTarget.scrollTop;
+    if (onScroll) {
+      if (currentScrollTop > lastScrollTop.current && currentScrollTop > 10) {
+        onScroll('down');
+      } else if (currentScrollTop < lastScrollTop.current) {
+        onScroll('up');
+      }
+    }
+    lastScrollTop.current = currentScrollTop;
+  };
 
   const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito))].sort(), [legisladores]);
   const parties = useMemo(() => [...new Set(legisladores.filter(l => l.partido !== undefined).map(l => l.partido).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
@@ -76,7 +89,7 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
   }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, selectedIds, sortOrder, debtStats]);
 
   return (
-    <div className="w-full md:w-80 h-screen flex flex-col border-r border-gray-200 bg-white">
+    <div className="w-full md:w-80 h-full flex flex-col border-r border-gray-200 bg-white">
       <div className="p-4 border-b">
         <h2 className="font-bold text-gray-800">Legisladores ({filteredAndSorted.length})</h2>
         <input
@@ -130,7 +143,7 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
           </button>
         </div>
       </div>
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto" onScroll={handleScroll}>
         {filteredAndSorted.map((l: Legislator) => {
           const index = selectedIds.indexOf(l.cuit);
           const isSelected = index !== -1;
