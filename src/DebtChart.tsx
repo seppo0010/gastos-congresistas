@@ -274,7 +274,8 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis 
               dataKey="date" 
-              tick={{fontSize: 10, angle: isMobile ? -45 : 0}} 
+              tick={{fontSize: 10}} 
+              angle={isMobile ? -45 : 0}
               textAnchor={isMobile ? "end" : "middle"}
               height={isMobile ? 40 : 30}
               interval={xAxisInterval} 
