@@ -132,6 +132,29 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
     return Math.floor(ticks / 15); // Aim for ~15 ticks
   }, [isMobile, chartData.length]);
 
+  const yAxisTickFormatter = (value: number) => {
+    if (currencyMode === 'usd') {
+      if (Math.abs(value) >= 1000000) {
+        return `US$${(value / 1000000).toLocaleString('es-AR', { maximumFractionDigits: 1 })}M`;
+      }
+      if (Math.abs(value) >= 1000) {
+        return `US$${(value / 1000).toLocaleString('es-AR', { maximumFractionDigits: 1 })}k`;
+      }
+      return `US$${value.toLocaleString('es-AR')}`;
+    } else { // ARS (nominal or real), value is in thousands of pesos.
+      if (Math.abs(value) >= 1000000) { // 1,000,000k = 1B
+        return `$${(value / 1000000).toLocaleString('es-AR', { maximumFractionDigits: 1 })}B`;
+      }
+      if (Math.abs(value) >= 1000) { // 1,000k = 1M
+        return `$${(value / 1000).toLocaleString('es-AR', { maximumFractionDigits: 1 })}M`;
+      }
+      if (value > 0) {
+        return `$${value.toLocaleString('es-AR', { maximumFractionDigits: 0 })}k`;
+      }
+      return '$0';
+    }
+  };
+
   if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
 
   const formatMoney = (val: number) => {
@@ -256,9 +279,9 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
               interval={xAxisInterval} 
             />
             <YAxis 
-              tickFormatter={(v: number) => currencyMode === 'usd' ? `US$${v/1000}k ` : `$${v/1000}M`} 
-              tick={{fontSize: 10}} 
-              width={currencyMode === 'usd' ? 50 : 40}
+              tickFormatter={yAxisTickFormatter}
+              tick={{fontSize: 11}} 
+              width={65}
             />
             <Tooltip content={CustomTooltip} />
 
