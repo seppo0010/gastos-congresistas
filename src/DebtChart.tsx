@@ -174,7 +174,8 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
             <HelpCircle size={18} className="text-gray-400 cursor-help" />
             <div className="absolute left-0 top-full mt-2 w-80 p-3 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity pointer-events-none z-50">
               <p className="mb-2">
-                Se muestra el titak de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.
+                Se muestra el total de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.<br />
+                Los datos de bloque y distrito vienen de <a target='_blank' rel='nofollow' href='https://argentinadatos.com/'></a>
               </p>
               <p className="text-yellow-300">
                 Atención: Parte de la información fue procesada automáticamente y podría contener errores.
