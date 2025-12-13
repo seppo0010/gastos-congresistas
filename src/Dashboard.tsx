@@ -1,10 +1,11 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
 import dbCargada from './legisladores_full.json';
 import type { DashboardData, Legislator } from './types';
-import { List, BarChart3 } from 'lucide-react';
+import { List, BarChart3, Share2, Download, HelpCircle, X } from 'lucide-react';
+import { toPng } from 'html-to-image';
 
 const slugify = (text: string) => {
   return text
@@ -46,7 +47,16 @@ export default function Dashboard() {
 
   const [warning, setWarning] = useState<string | null>(null);
   const [mobileView, setMobileView] = useState<'list' | 'chart'>('list');
-  const [isFabVisible, setIsFabVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [copied, setCopied] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
+  const chartRef = useRef<{ getChartElement: () => HTMLDivElement | null }>(null);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (warning) {
@@ -73,7 +83,6 @@ export default function Dashboard() {
 
   const handleSelect = (legislator: Legislator) => {
     const lWithSlug = legislator as LegislatorWithSlug;
-    const isMobile = window.innerWidth < 768;
     let selectionChanged = false;
 
     if (selected.some(l => l.cuit === lWithSlug.cuit)) {
@@ -88,26 +97,81 @@ export default function Dashboard() {
 
     if (isMobile && selectionChanged) {
       setMobileView('chart');
-      setIsFabVisible(true);
     }
   };
 
-  const handleListScroll = (direction: 'up' | 'down') => {
-    setIsFabVisible(direction === 'up');
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Gastos Congresistas',
+          url: window.location.href,
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      });
+    }
+  };
+
+  const handleDownload = () => {
+    const chartElement = chartRef.current?.getChartElement();
+    if (!chartElement) {
+      return;
+    }
+
+    toPng(chartElement, { cacheBust: true, backgroundColor: '#FFFFFF' })
+      .then((dataUrl) => {
+        const link = document.createElement('a');
+        link.download = 'comparativa-gastos.png';
+        link.href = dataUrl;
+        link.click();
+      })
+      .catch((err) => {
+        console.error('oops, something went wrong!', err);
+      });
   };
 
   return (
     <div className="flex flex-col md:flex-row h-screen bg-gray-100 font-sans overflow-hidden relative">
-      <div className={`md:hidden fixed bottom-6 right-6 z-50 transition-transform duration-300 ${isFabVisible ? 'translate-y-0' : 'translate-y-24'}`}>
+      <div className="md:hidden fixed top-4 right-4 z-50 flex flex-col gap-2 items-end">
         <button
           onClick={() => {
             setMobileView(v => v === 'list' ? 'chart' : 'list');
-            setIsFabVisible(true);
           }}
           className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-xl flex items-center justify-center transition-colors"
         >
           {mobileView === 'list' ? <BarChart3 size={24} /> : <List size={24} />}
         </button>
+        {mobileView === 'chart' && (
+          <div className="flex flex-col gap-2 items-end">
+            <button 
+              onClick={() => setShowHelp(true)}
+              className="bg-white p-3 rounded-full shadow-lg text-gray-600"
+              title="Ayuda"
+            >
+              <HelpCircle size={20} />
+            </button>
+            <button 
+              onClick={handleShare}
+              className="bg-white p-3 rounded-full shadow-lg text-gray-600"
+              title="Compartir"
+            >
+              <Share2 size={20} />
+            </button>
+            <button 
+              onClick={handleDownload}
+              className="bg-white p-3 rounded-full shadow-lg text-gray-600"
+              title="Descargar Imagen"
+            >
+              <Download size={20} />
+            </button>
+          </div>
+        )}
       </div>
 
       <div className={`absolute inset-0 z-20 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:w-auto md:translate-x-0 ${mobileView === 'list' ? 'translate-x-0' : '-translate-x-full'}`}>
@@ -115,23 +179,46 @@ export default function Dashboard() {
           legisladores={legisladores} 
           onSelect={handleSelect} 
           selectedIds={selected.map(l => l.cuit)} 
-          onScroll={handleListScroll}
         />
       </div>
 
       <div className={`absolute inset-0 z-10 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:flex-1 md:translate-x-0 ${mobileView === 'chart' ? 'translate-x-0' : 'translate-x-full'}`}>
-        <DebtChart 
+        <DebtChart
+          ref={chartRef}
           legislators={selected} 
           globalMilestones={meta.hitos_globales} 
           ipc={meta.ipc}
           mep={meta.mep}
           onRemove={handleSelect}
+          isMobile={isMobile}
+          copied={copied}
+          onShare={handleShare}
+          onDownload={handleDownload}
+          onShowHelp={() => setShowHelp(true)}
         />
       </div>
 
       {warning && (
         <div className="absolute top-5 right-5 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded shadow-lg z-50">
             {warning}
+        </div>
+      )}
+
+      {showHelp && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setShowHelp(false)}>
+          <div className="bg-white p-6 rounded-lg shadow-xl max-w-sm relative" onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowHelp(false)} className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 cursor-pointer">
+              <X size={20} />
+            </button>
+            <h3 className="font-bold text-lg mb-2">Información</h3>
+            <p className="mb-4 text-sm text-gray-600">
+              Se muestra el total de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.<br />
+              Los datos de bloque y distrito vienen de <a target='_blank' rel='nofollow' href='https://argentinadatos.com/' className="text-blue-600 hover:underline">argentinadatos.com</a>.
+            </p>
+            <p className="text-xs text-yellow-800 bg-yellow-50 p-2 rounded border border-yellow-200">
+              Atención: Parte de la información fue procesada automáticamente y podría contener errores.
+            </p>
+          </div>
         </div>
       )}
     </div>

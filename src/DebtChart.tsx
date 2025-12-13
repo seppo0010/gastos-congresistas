@@ -1,9 +1,9 @@
-import { useMemo, useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { useMemo, useState, useRef, forwardRef, useImperativeHandle } from 'react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Brush } from 'recharts';
 
 // Importa tu JSON generado por Python
 import type { Legislator, Milestone, CurrencyMode } from './types';
-import { Flag, HelpCircle } from 'lucide-react';
+import { Flag, HelpCircle, Share2, Download } from 'lucide-react';
 import { COLORS } from './Colors';
 
 interface DebtChartProps {
@@ -12,6 +12,11 @@ interface DebtChartProps {
   ipc?: { [date: string]: number };
   mep?: { [date: string]: number };
   onRemove?: (legislator: Legislator) => void;
+  isMobile?: boolean;
+  copied?: boolean;
+  onShare?: () => void;
+  onDownload?: () => void;
+  onShowHelp?: () => void;
 }
 
 interface Bank {
@@ -26,8 +31,13 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 
 const GRAY = '#9ca3af';
 
-const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtChartProps) => {
+const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemove, isMobile, copied, onShare, onDownload, onShowHelp }: DebtChartProps, ref) => {
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
+  const chartContainerRef = useRef<HTMLDivElement>(null);
+
+  useImperativeHandle(ref, () => ({
+    getChartElement: () => chartContainerRef.current,
+  }));
 
   // 1. Unificar Hitos (Globales + Personales)
   const allMilestones = useMemo(() => {
@@ -114,6 +124,14 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
   }, [legislators, currencyMode, ipc, mep, ipcDates]);
 
+
+  const xAxisInterval = useMemo(() => {
+    if (!isMobile) return 0;
+    const ticks = chartData.length;
+    if (ticks <= 20) return 0; // Show all for up to 20 ticks
+    return Math.floor(ticks / 15); // Aim for ~15 ticks
+  }, [isMobile, chartData.length]);
+
   if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
 
   const formatMoney = (val: number) => {
@@ -170,26 +188,38 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
           <h2 className="text-xl font-bold">Comparativa</h2>
-          <div className="relative group outline-none" tabIndex={0}>
-            <HelpCircle size={18} className="text-gray-400 cursor-help" />
-            <div className="absolute left-0 top-full mt-2 w-80 p-3 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity pointer-events-none z-50">
-              <p className="mb-2">
-                Se muestra el total de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.<br />
-                Los datos de bloque y distrito vienen de <a target='_blank' rel='nofollow' href='https://argentinadatos.com/'></a>
-              </p>
-              <p className="text-yellow-300">
-                Atención: Parte de la información fue procesada automáticamente y podría contener errores.
-              </p>
-            </div>
-          </div>
-          <div className="sm:ml-auto">
+          {!isMobile && onShowHelp && (
+            <button onClick={onShowHelp} className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors" title="Ayuda">
+              <HelpCircle size={18} />
+            </button>
+          )}
+          <div className="sm:ml-auto flex items-center gap-2">
+            {copied && <span className="text-sm text-green-600 font-semibold animate-pulse mr-2">¡Link copiado!</span>}
+            {onShare && (
+              <button 
+                onClick={onShare}
+                className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors hidden md:block"
+                title="Compartir"
+              >
+                <Share2 size={18} />
+              </button>
+            )}
+            {onDownload && (
+              <button 
+                onClick={onDownload}
+                className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors hidden md:block"
+                title="Descargar Imagen"
+              >
+                <Download size={18} />
+              </button>
+            )}
             <select 
               value={currencyMode} 
               onChange={e => setCurrencyMode(e.target.value as CurrencyMode)}
               className="text-xs border border-gray-300 rounded px-2 py-1 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none"
             >
               <option value="nominal">Pesos (Nominal)</option>
-              {ipc && <option value="real">Pesos (Ajustado por inflación a precios de {ipcDates[ipcDates.length - 1]})</option>}
+              {ipc && <option value="real">Pesos (Ajustado por inflación a precios de {ipcDates.length > 0 ? ipcDates[ipcDates.length - 1] : ''})</option>}
               {mep && <option value="usd">Dólares (MEP)</option>}
             </select>
           </div>
@@ -214,11 +244,17 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
         </div>
       </div>
 
-      <div className="flex-1 bg-white p-4 rounded-lg shadow-sm min-h-48">
+      <div ref={chartContainerRef} className="flex-1 bg-white p-4 rounded-lg shadow-sm min-h-48">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
+          <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: isMobile ? 30 : 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="date" tick={{fontSize: 10}} />
+            <XAxis 
+              dataKey="date" 
+              tick={{fontSize: 10, angle: isMobile ? -45 : 0}} 
+              textAnchor={isMobile ? "end" : "middle"}
+              height={isMobile ? 40 : 30}
+              interval={xAxisInterval} 
+            />
             <YAxis 
               tickFormatter={(v: number) => currencyMode === 'usd' ? `US$${v/1000}k ` : `$${v/1000}M`} 
               tick={{fontSize: 10}} 
@@ -249,11 +285,12 @@ const DebtChart = ({ legislators, globalMilestones, ipc, mep, onRemove }: DebtCh
             {legislators.map((l, idx) => (
               <Bar key={l.cuit} dataKey={l.cuit} fill={COLORS[idx % COLORS.length]} />
             ))}
+            <Brush dataKey="date" height={25} stroke={GRAY} tickFormatter={() => ''} />
           </BarChart>
         </ResponsiveContainer>
       </div>
     </div>
   );
-};
+});
 
 export default DebtChart;
