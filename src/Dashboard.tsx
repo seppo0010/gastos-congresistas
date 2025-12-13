@@ -1,11 +1,10 @@
-import { useState, useEffect, useMemo, useRef } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
 import dbCargada from './legisladores_full.json';
 import type { DashboardData, Legislator } from './types';
-import { List, BarChart3, Share2, Download, HelpCircle, X } from 'lucide-react';
-import { toPng } from 'html-to-image';
+import { List, BarChart3, Share2, HelpCircle, X } from 'lucide-react';
 
 const slugify = (text: string) => {
   return text
@@ -50,7 +49,6 @@ export default function Dashboard() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [copied, setCopied] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
-  const chartRef = useRef<{ getChartElement: () => HTMLDivElement | null }>(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -118,24 +116,6 @@ export default function Dashboard() {
     }
   };
 
-  const handleDownload = () => {
-    const chartElement = chartRef.current?.getChartElement();
-    if (!chartElement) {
-      return;
-    }
-
-    toPng(chartElement, { cacheBust: true, backgroundColor: '#FFFFFF' })
-      .then((dataUrl) => {
-        const link = document.createElement('a');
-        link.download = 'comparativa-gastos.png';
-        link.href = dataUrl;
-        link.click();
-      })
-      .catch((err) => {
-        console.error('oops, something went wrong!', err);
-      });
-  };
-
   return (
     <div className="flex flex-col md:flex-row h-screen bg-gray-100 font-sans overflow-hidden relative">
       <div className="md:hidden fixed top-4 right-4 z-50 flex flex-col gap-2 items-end">
@@ -163,13 +143,6 @@ export default function Dashboard() {
             >
               <Share2 size={20} />
             </button>
-            <button 
-              onClick={handleDownload}
-              className="bg-white p-3 rounded-full shadow-lg text-gray-600"
-              title="Descargar Imagen"
-            >
-              <Download size={20} />
-            </button>
           </div>
         )}
       </div>
@@ -184,7 +157,6 @@ export default function Dashboard() {
 
       <div className={`absolute inset-0 z-10 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:flex-1 md:translate-x-0 ${mobileView === 'chart' ? 'translate-x-0' : 'translate-x-full'}`}>
         <DebtChart
-          ref={chartRef}
           legislators={selected} 
           globalMilestones={meta.hitos_globales} 
           ipc={meta.ipc}
@@ -193,7 +165,6 @@ export default function Dashboard() {
           isMobile={isMobile}
           copied={copied}
           onShare={handleShare}
-          onDownload={handleDownload}
           onShowHelp={() => setShowHelp(true)}
         />
       </div>

@@ -3,7 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 
 // Importa tu JSON generado por Python
 import type { Legislator, Milestone, CurrencyMode } from './types';
-import { Flag, HelpCircle, Share2, Download } from 'lucide-react';
+import { Flag, HelpCircle, Share2 } from 'lucide-react';
 import { COLORS } from './Colors';
 
 interface DebtChartProps {
@@ -15,7 +15,6 @@ interface DebtChartProps {
   isMobile?: boolean;
   copied?: boolean;
   onShare?: () => void;
-  onDownload?: () => void;
   onShowHelp?: () => void;
 }
 
@@ -31,7 +30,7 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 
 const GRAY = '#9ca3af';
 
-const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemove, isMobile, copied, onShare, onDownload, onShowHelp }: DebtChartProps, ref) => {
+const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemove, isMobile, copied, onShare, onShowHelp }: DebtChartProps, ref) => {
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
   const chartContainerRef = useRef<HTMLDivElement>(null);
 
@@ -132,6 +131,17 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
     return Math.floor(ticks / 15); // Aim for ~15 ticks
   }, [isMobile, chartData.length]);
 
+  const xAxisTickFormatter = (date: string) => {
+    const [year, month] = date.split('-');
+    const d = new Date(parseInt(year), parseInt(month) - 1);
+    
+    // Capitalize first letter and remove period
+    const monthStr = d.toLocaleDateString('es-AR', { month: 'short' });
+    const formattedMonth = monthStr.charAt(0).toUpperCase() + monthStr.slice(1).replace('.', '');
+  
+    return `${formattedMonth} '${year.substring(2)}`;
+  };
+
   const yAxisTickFormatter = (value: number) => {
     if (currencyMode === 'usd') {
       if (Math.abs(value) >= 1000000) {
@@ -227,15 +237,6 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
                 <Share2 size={18} />
               </button>
             )}
-            {onDownload && (
-              <button 
-                onClick={onDownload}
-                className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors hidden md:block"
-                title="Descargar Imagen"
-              >
-                <Download size={18} />
-              </button>
-            )}
             <select 
               value={currencyMode} 
               onChange={e => setCurrencyMode(e.target.value as CurrencyMode)}
@@ -277,6 +278,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
               textAnchor={isMobile ? "end" : "middle"}
               height={isMobile ? 40 : 30}
               interval={xAxisInterval} 
+              tickFormatter={xAxisTickFormatter}
             />
             <YAxis 
               tickFormatter={yAxisTickFormatter}
