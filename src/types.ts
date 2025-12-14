@@ -27,6 +27,7 @@ export interface Legislator {
   periodos: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];
   posible_crédito: boolean;
   cambios_nivel: boolean;
+  color?: string;
 
 }
 

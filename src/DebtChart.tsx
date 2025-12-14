@@ -44,7 +44,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
       (l.hitos_personales || []).map(h => ({
         ...h,
         legislatorId: l.cuit,
-        legislatorColor: COLORS[index % COLORS.length]
+        legislatorColor: l.color || COLORS[index % COLORS.length]
       }))
     );
 
@@ -196,7 +196,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
 
           return (
             <div key={l.cuit} className="mb-2 border-b pb-1 last:border-0">
-              <p className="font-bold text-sm" style={{ color: COLORS[idx % COLORS.length] }}>
+              <p className="font-bold text-sm" style={{ color: l.color || COLORS[idx % COLORS.length] }}>
                 {l.nombre}: {formatMoney(item.value)}
               </p>
               {milestones.map((m, i) => (
@@ -255,7 +255,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
               className="flex items-center gap-2 border p-2 rounded cursor-pointer hover:bg-gray-50 transition-colors"
               onClick={() => onRemove && onRemove(l)}
             >
-              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[idx % COLORS.length] }}></div>
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: l.color || COLORS[idx % COLORS.length] }}></div>
               <div>
                 <div className="font-bold text-sm">{l.nombre}</div>
                 <div className="flex gap-1 mt-1">
@@ -309,7 +309,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
             ))}
 
             {legislators.map((l, idx) => (
-              <Bar key={l.cuit} dataKey={l.cuit} fill={COLORS[idx % COLORS.length]} />
+              <Bar key={l.cuit} dataKey={l.cuit} fill={l.color || COLORS[idx % COLORS.length]} />
             ))}
             <Brush dataKey="date" height={25} stroke={GRAY} tickFormatter={() => ''} />
           </BarChart>

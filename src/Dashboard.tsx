@@ -5,6 +5,7 @@ import LegislatorSelector from './LegislatorSelector';
 import dbCargada from './legisladores_full.json';
 import type { DashboardData, Legislator } from './types';
 import { List, BarChart3, Share2, HelpCircle, X } from 'lucide-react';
+import { COLORS } from './Colors';
 
 const slugify = (text: string) => {
   return text
@@ -41,7 +42,8 @@ export default function Dashboard() {
   const [selected, setSelected] = useState<LegislatorWithSlug[]>(() => {
     const params = new URLSearchParams(window.location.search);
     const slugs = params.get('legisladores')?.split(',') || [];
-    return slugs.map(s => legisladores.find(l => l.slug === s)).filter((l): l is LegislatorWithSlug => !!l).slice(0, 4);
+    const found = slugs.map(s => legisladores.find(l => l.slug === s)).filter((l): l is LegislatorWithSlug => !!l).slice(0, 4);
+    return found.map((l, i) => ({ ...l, color: COLORS[i % COLORS.length] }));
   });
 
   const [warning, setWarning] = useState<string | null>(null);
@@ -89,7 +91,9 @@ export default function Dashboard() {
     } else if (selected.length >= 4) {
       setWarning("Solo se pueden comparar hasta 4 legisladores");
     } else {
-      setSelected(prev => [...prev, lWithSlug]);
+      const usedColors = new Set(selected.map(l => l.color));
+      const nextColor = COLORS.find(c => !usedColors.has(c)) || COLORS[selected.length % COLORS.length];
+      setSelected(prev => [...prev, { ...lWithSlug, color: nextColor }]);
       selectionChanged = true;
     }
 
@@ -152,6 +156,7 @@ export default function Dashboard() {
           legisladores={legisladores} 
           onSelect={handleSelect} 
           selectedIds={selected.map(l => l.cuit)} 
+          selectedColors={selected.reduce((acc, l) => ({ ...acc, [l.cuit]: l.color! }), {} as Record<string, string>)}
         />
       </div>
 

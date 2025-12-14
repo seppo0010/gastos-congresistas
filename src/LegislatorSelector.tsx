@@ -21,7 +21,7 @@ const getDebtStats = (l: Legislator) => {
   };
 };
 
-export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[] }) => {
+export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[], selectedColors?: Record<string, string> }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("todos");
@@ -163,7 +163,7 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
         {filteredAndSorted.map((l: Legislator) => {
           const index = selectedIds.indexOf(l.cuit);
           const isSelected = index !== -1;
-          const color = isSelected ? COLORS[index % COLORS.length] : undefined;
+          const color = isSelected ? (selectedColors[l.cuit] || COLORS[index % COLORS.length]) : undefined;
           const { max } = debtStats.get(l.cuit)!;
 
           return (
