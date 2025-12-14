@@ -11,7 +11,7 @@ export interface Milestone {
   fecha: string;    // Formato ISO "YYYY-MM"
   texto: string;    // Ej: "Voto Ley Bases"
   color: string;    // Hex code: "#ef4444"
-  tipo?: 'global' | 'personal' | 'voto' | 'politico' | 'senadores' | 'diputados'; // Opcional, para lógica de filtrado visual
+  tipo?: 'global' | 'personal' | 'voto' | 'politico' | 'economico' | 'senadores' | 'diputados'; // Opcional, para lógica de filtrado visual
 }
 
 // 3. El Legislador (La entidad principal)
@@ -24,7 +24,10 @@ export interface Legislator {
   distrito: string;
   partido: string;
   cargo: string;
-  periodos: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[]
+  periodos: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];
+  posible_crédito: boolean;
+  cambios_nivel: boolean;
+
 }
 
 // 4. Estructura Raíz del JSON (Dashboard completo)

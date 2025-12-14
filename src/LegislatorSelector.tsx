@@ -1,4 +1,5 @@
 import { useMemo, useState, useEffect } from 'react';
+import { Home, AlertCircle } from 'lucide-react';
 
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
@@ -26,6 +27,8 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
   const [positionFilter, setPositionFilter] = useState("todos");
   const [provinceFilter, setProvinceFilter] = useState("todas");
   const [partyFilter, setPartyFilter] = useState("todos");
+  const [creditFilter, setCreditFilter] = useState("todos");
+  const [levelChangeFilter, setLevelChangeFilter] = useState("todos");
   const [sortOrder, setSortOrder] = useState("nombre_asc");
 
   const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito))].sort(), [legisladores]);
@@ -55,7 +58,10 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
         const provinceMatch = provinceFilter === 'todas' || l.distrito === provinceFilter;
         const partyMatch = partyFilter === 'todos' || l.partido === partyFilter;
 
-        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch);
+        const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.posible_crédito : !l.posible_crédito);
+        const levelChangeMatch = levelChangeFilter === 'todos' || (levelChangeFilter === 'si' ? l.cambios_nivel : !l.cambios_nivel);
+
+        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && creditMatch && levelChangeMatch);
       })
       .sort((a, b) => {
         const aSelected = selectedIds.includes(a.cuit);
@@ -73,7 +79,7 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
 
         return 0;
       });
-  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, selectedIds, sortOrder, debtStats]);
+  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, creditFilter, levelChangeFilter, selectedIds, sortOrder, debtStats]);
 
   return (
     <div className="w-full md:w-80 h-full flex flex-col border-r border-gray-200 bg-white">
@@ -117,12 +123,35 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
               {parties.map(p => <option key={p} value={p}>{p}</option>)}
             </select>
           </div>
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label htmlFor="credit" className="block text-gray-600 text-xs font-semibold mb-1">Posible Crédito*</label>
+              <select id="credit" value={creditFilter} onChange={e => setCreditFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                <option value="todos">Todos</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="levelChange" className="block text-gray-600 text-xs font-semibold mb-1">Cambios Nivel*</label>
+              <select id="levelChange" value={levelChangeFilter} onChange={e => setLevelChangeFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                <option value="todos">Todos</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+          <p className="text-[10px] text-gray-500 leading-tight">
+            * Estos indicadores son heurísticas inferidas a partir de los montos.
+          </p>
           <button
             onClick={() => {
               setSearchTerm("");
               setPositionFilter("todos");
               setProvinceFilter("todas");
               setPartyFilter("todos");
+              setCreditFilter("todos");
+              setLevelChangeFilter("todos");
             }}
             className="w-full py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 text-xs font-semibold rounded transition-colors"
           >
@@ -145,7 +174,19 @@ export default ({ legisladores, onSelect, selectedIds = [] }: { legisladores: Le
               style={isSelected ? { borderLeft: `4px solid ${color}` } : {}}
             >
               <div className="flex justify-between items-center w-full">
-                <div className="font-semibold text-sm truncate mr-2 flex-1">{l.nombre}</div>
+                <div className="font-semibold text-sm mr-2 flex-1 flex items-center gap-1 min-w-0">
+                  <span className="truncate">{l.nombre}</span>
+                  {l.posible_crédito && (
+                    <div title="Tiene un posible crédito. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
+                      <Home size={14} className="text-green-600" />
+                    </div>
+                  )}
+                  {l.cambios_nivel && (
+                    <div title="Tiene un cambio de nivel en su deuda. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
+                      <AlertCircle size={14} className="text-orange-500" />
+                    </div>
+                  )}
+                </div>
                 {max > 0 && (
                   <span className="text-xs text-gray-500 whitespace-nowrap bg-gray-100 px-1.5 py-0.5 rounded">
                     {new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', notation: "compact", compactDisplay: "short" }).format(max * 1000)}

@@ -417,7 +417,9 @@
       "partido": "Alianza Unión por la Patria",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20326896684",
@@ -432,6 +434,13 @@
           "texto": "Inicio (Senador) en Alianza la Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-04",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -1065,7 +1074,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "23134393084",
@@ -1497,7 +1508,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27224913465",
@@ -1653,7 +1666,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20202842322",
@@ -1953,7 +1968,9 @@
       "partido": "Alianza Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20126199830",
@@ -1975,6 +1992,13 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -2188,7 +2212,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27281025053",
@@ -2561,7 +2587,9 @@
       "partido": "Alianza Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20164288111",
@@ -3185,7 +3213,9 @@
       "partido": "Frente Cambia Mendoza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27160317332",
@@ -3200,6 +3230,13 @@
           "texto": "Inicio (Senador) en Partido Renovador Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -3545,7 +3582,9 @@
       "partido": "Partido Renovador Federal",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20228358771",
@@ -3773,7 +3812,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27206790933",
@@ -4145,7 +4186,9 @@
           "monto": 591
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23297507044",
@@ -4312,7 +4355,9 @@
       "partido": "Alianza por Santa Cruz",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27178602913",
@@ -4334,6 +4379,13 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -4691,7 +4743,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "23144042999",
@@ -4706,6 +4760,13 @@
           "texto": "Inicio (Senador) en Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -4913,7 +4974,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20145681023",
@@ -5423,7 +5486,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20167432051",
@@ -6091,7 +6156,9 @@
           "inicio": "2019-12",
           "fin": "2021-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20223208380",
@@ -6530,7 +6597,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Alianza Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20142311985",
@@ -6540,6 +6609,13 @@
         "senadores2023/dic2024/salino.pdf"
       ],
       "hitos_personales": [
+        {
+          "fecha": "2023-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
         {
           "fecha": "2023-12",
           "texto": "Inicio (Senador) en Alianza Unión por la Patria",
@@ -7166,7 +7242,9 @@
       "partido": "Alianza Unión por la Patria",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27059485119",
@@ -7766,7 +7844,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20160614200",
@@ -7994,7 +8074,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27045697164",
@@ -8282,7 +8364,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20135000370",
@@ -8889,7 +8973,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Alianza Unión por la Patria",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20172289801",
@@ -8904,6 +8990,20 @@
           "texto": "Inicio (Senador) en Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -9381,7 +9481,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20297075137",
@@ -9396,6 +9498,13 @@
           "texto": "Inicio (Senador) en Partido Renovador Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -9621,7 +9730,9 @@
       "partido": "Partido Renovador Federal",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27228082746",
@@ -10257,7 +10368,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20248930099",
@@ -10390,7 +10503,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27134256244",
@@ -10405,6 +10520,27 @@
           "texto": "Inicio (Senador) en Juntos Somos Río Negro",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -10618,7 +10754,9 @@
       "partido": "Juntos Somos Río Negro",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20102959575",
@@ -11248,7 +11386,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27241930837",
@@ -11464,7 +11604,9 @@
           "monto": 2991
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27307358900",
@@ -11486,6 +11628,41 @@
           "texto": "Inicio (Senador) en Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -11777,7 +11954,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20137324416",
@@ -11792,6 +11971,13 @@
           "texto": "Inicio (Senador) en Frente Renovador de la Concordia-Innovación Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -12203,7 +12389,9 @@
       "partido": "Frente Renovador de la Concordia-Innovación Federal",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27244541629",
@@ -12239,6 +12427,13 @@
           "texto": "Inicio (Senador) en Alianza Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -12632,7 +12827,9 @@
           "inicio": "2019-12",
           "fin": "2023-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23146020089",
@@ -13088,7 +13285,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23255671219",
@@ -13541,7 +13740,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Alianza Unión por la Patria",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20228264130",
@@ -13556,6 +13757,13 @@
           "texto": "Inicio (Senador) en Alianza Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         },
         {
@@ -14165,7 +14373,9 @@
           "inicio": "2019-12",
           "fin": "2024-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23054388764",
@@ -14795,7 +15005,9 @@
       "partido": "Alianza Unión por la Patria",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20287671556",
@@ -14810,6 +15022,13 @@
           "texto": "Inicio (Senador) en Alianza la Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -15089,7 +15308,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "27358891662",
@@ -15521,7 +15742,9 @@
       "partido": "Juntos por el Cambio Chubut",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20137384494",
@@ -15543,6 +15766,34 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -16344,7 +16595,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27146328844",
@@ -16783,7 +17036,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Alianza Unión por la Patria",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27284850780",
@@ -17071,7 +17326,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27131600157",
@@ -17086,6 +17343,13 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio Chubut",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -17269,7 +17533,9 @@
       "partido": "Juntos por el Cambio Chubut",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20217892733",
@@ -17683,7 +17949,9 @@
       "partido": "Eco + Vamos Corrientes",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20140582906",
@@ -18121,7 +18389,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20168063742",
@@ -18356,7 +18626,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20168397977",
@@ -19010,7 +19282,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20226755447",
@@ -19026,6 +19300,13 @@
           "texto": "Inicio (Senador) en Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -19527,7 +19808,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20143507301",
@@ -20464,7 +20747,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20242761031",
@@ -20698,7 +20983,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27133096766",
@@ -21299,7 +21586,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23106260729",
@@ -21314,6 +21603,13 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio Tierra Del Fuego",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -22289,7 +22585,9 @@
       "partido": "Juntos por el Cambio Tierra Del Fuego",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27233835345",
@@ -22535,7 +22833,9 @@
       "partido": "Frente Renovador de la Concordia-Innovación Federal",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20054103752",
@@ -23027,7 +23327,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20308560164",
@@ -23255,7 +23557,9 @@
       "partido": "Alianza por Santa Cruz",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27248494935",
@@ -23270,6 +23574,13 @@
           "texto": "Inicio (Senador) en Eco + Vamos Corrientes",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -23483,7 +23794,9 @@
       "partido": "Eco + Vamos Corrientes",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27278333855",
@@ -23711,7 +24024,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20083775611",
@@ -24197,7 +24512,9 @@
       "partido": "Frente de Todos",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27228455100",
@@ -24726,7 +25043,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27240303626",
@@ -24741,6 +25060,41 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -25362,7 +25716,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27330442803",
@@ -25377,6 +25733,13 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2025-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -26046,7 +26409,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27134871119",
@@ -26539,7 +26904,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Hacemos por Córdoba",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23083872489",
@@ -26561,6 +26928,27 @@
           "texto": "Inicio (Senador) en Juntos por el Cambio",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2023-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -26954,7 +27342,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27137073051",
@@ -27202,7 +27592,9 @@
           "inicio": "2019-12",
           "fin": "2021-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27332459185",
@@ -27217,6 +27609,20 @@
           "texto": "Inicio (Senador) en Alianza Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Senador"
         }
       ],
@@ -27538,7 +27944,9 @@
       "partido": "Alianza Unión por la Patria",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20111109339",
@@ -27971,7 +28379,9 @@
       "partido": "Frente Cívico por Santiago",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20259109230",
@@ -28078,7 +28488,9 @@
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20165683316",
@@ -28233,7 +28645,9 @@
       "partido": "Alianza Unión por la Patria",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27300816318",
@@ -28475,7 +28889,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20357318158",
@@ -28860,7 +29276,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27188873559",
@@ -28896,6 +29314,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -29350,7 +29775,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "27320214217",
@@ -29706,7 +30133,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27288299922",
@@ -30151,7 +30580,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27354022074",
@@ -30493,7 +30924,9 @@
           "monto": 786
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27275988877",
@@ -30854,7 +31287,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27165350176",
@@ -31295,7 +31730,9 @@
           "inicio": "2024-06",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23280344524",
@@ -31801,7 +32238,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20241811612",
@@ -31816,6 +32255,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -32636,7 +33082,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20326276287",
@@ -32666,6 +33114,13 @@
           "texto": "Pase a La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -33114,7 +33569,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20174484148",
@@ -33442,7 +33899,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27209648909",
@@ -33457,6 +33916,27 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -33707,7 +34187,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27228857594",
@@ -33976,7 +34458,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27267928539",
@@ -34451,7 +34935,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20056678558",
@@ -34480,6 +34966,20 @@
           "texto": "Inicio (Diputado) en Unión Cívica Radical",
           "color": "#D72D2D",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -34867,7 +35367,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23270202284",
@@ -35222,7 +35724,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20220776795",
@@ -35251,6 +35755,20 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -35477,7 +35995,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27332948895",
@@ -35755,7 +36275,9 @@
           "inicio": "2023-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20126966505",
@@ -36670,7 +37192,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20056166069",
@@ -37136,7 +37660,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20245792906",
@@ -37629,7 +38155,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27231034981",
@@ -37644,6 +38172,27 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -38440,7 +38989,9 @@
           "inicio": "2023-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27290423894",
@@ -38456,6 +39007,13 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -39102,7 +39660,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20208736338",
@@ -39117,6 +39677,13 @@
           "texto": "Inicio (Diputado) en Cordoba Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -39152,6 +39719,27 @@
           "texto": "Pase a Encuentro Federal",
           "color": "#228B22",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -39486,7 +40074,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20110856793",
@@ -39734,7 +40324,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20263936591",
@@ -39988,7 +40580,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27326867476",
@@ -40003,6 +40597,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -40523,7 +41124,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27285186779",
@@ -40559,6 +41162,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -41318,7 +41928,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20268386131",
@@ -41691,7 +42303,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20108217473",
@@ -41748,6 +42362,13 @@
           "texto": "Pase a Encuentro Federal",
           "color": "#228B22",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -41979,7 +42600,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20209253527",
@@ -42246,7 +42869,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20314730950",
@@ -42256,6 +42881,13 @@
         "diputados2023/oct2025/garramuno.pdf"
       ],
       "hitos_personales": [
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
         {
           "fecha": "2025-02",
           "texto": "Inicio (Diputado) en Somos Fueguinos",
@@ -42943,7 +43575,9 @@
           "inicio": "2025-02",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27268384915",
@@ -43396,7 +44030,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27103071645",
@@ -43963,7 +44599,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20109452867",
@@ -44683,7 +45321,9 @@
           "inicio": "2023-11",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20179638283",
@@ -44957,7 +45597,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20330842025",
@@ -44972,6 +45614,20 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -45492,7 +46148,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27254014643",
@@ -45510,10 +46168,31 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2023-03",
           "texto": "Pase a Buenos Aires Libre",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -45855,7 +46534,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27372984177",
@@ -46209,6 +46890,20 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2025-03",
           "texto": "Pase a Transformación b.t",
           "color": "#808080",
@@ -46220,6 +46915,13 @@
           "texto": "Pase a Transformación",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -46633,7 +47335,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20319778110",
@@ -47108,7 +47812,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27139186244",
@@ -47137,6 +47843,20 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -47488,7 +48208,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20137729947",
@@ -47510,6 +48232,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -48048,7 +48777,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20242395752",
@@ -48416,7 +49147,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20116408997",
@@ -49018,7 +49751,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27364093786",
@@ -49332,7 +50067,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20139425163",
@@ -49599,7 +50336,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27115660484",
@@ -49880,7 +50619,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23243350999",
@@ -49916,6 +50657,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -50346,7 +51094,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20257289975",
@@ -50636,7 +51386,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20301177314",
@@ -50665,6 +51417,13 @@
           "texto": "Pase a Liga del Interior Eli",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -50927,7 +51686,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20178045092",
@@ -50942,6 +51703,27 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -51504,7 +52286,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27201070746",
@@ -51753,7 +52537,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20114683699",
@@ -52015,7 +52801,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27262351195",
@@ -52370,7 +53158,9 @@
           "inicio": "2024-01",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27354613285",
@@ -52399,6 +53189,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -52630,7 +53427,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27344084039",
@@ -53089,7 +53888,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27281591954",
@@ -53112,6 +53913,41 @@
           "texto": "Inicio (Diputado) en Unión Cívica Radical",
           "color": "#D72D2D",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -53854,7 +54690,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20129790351",
@@ -54300,7 +55138,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23233977519",
@@ -54516,7 +55356,9 @@
           "monto": 716
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20286470298",
@@ -54835,7 +55677,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20121101735",
@@ -55107,7 +55951,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20305021467",
@@ -55132,6 +55978,13 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2023-12",
           "texto": "Pase a Hacemos Coalición Federal",
           "color": "#228B22",
@@ -55146,10 +55999,31 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2024-05",
           "texto": "Pase a Coalición Cívica",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -55634,7 +56508,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27261225234",
@@ -55670,6 +56546,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -55901,7 +56784,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20148134902",
@@ -56149,7 +57034,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20250442433",
@@ -56850,7 +57737,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27167354918",
@@ -56879,6 +57768,13 @@
           "texto": "Pase a Independencia",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -57063,7 +57959,9 @@
           "inicio": "2023-11",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20084824403",
@@ -57332,7 +58230,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27321118602",
@@ -57868,7 +58768,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27319281628",
@@ -58116,7 +59018,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20127901628",
@@ -58569,7 +59473,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27248854265",
@@ -59050,7 +59956,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20186213476",
@@ -59266,7 +60174,9 @@
           "monto": 1725
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20184536758",
@@ -59790,7 +60700,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27206757049",
@@ -60392,7 +61304,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27135300735",
@@ -60973,7 +61887,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27177344341",
@@ -61221,7 +62137,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27146427702",
@@ -61475,7 +62393,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20147877596",
@@ -61742,7 +62662,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20172884181",
@@ -62162,7 +63084,9 @@
           "monto": 49
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27115479968",
@@ -62212,6 +63136,13 @@
           "texto": "Pase a Encuentro Federal",
           "color": "#228B22",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -62588,7 +63519,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23124773849",
@@ -62624,6 +63557,20 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -63078,7 +64025,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20242876203",
@@ -63093,6 +64042,13 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -63284,7 +64240,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20131823666",
@@ -63299,6 +64257,20 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -63645,7 +64617,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27345125391",
@@ -63663,10 +64637,24 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2024-06",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2024-10",
           "texto": "Pase a Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -64307,7 +65295,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27252702194",
@@ -64832,7 +65822,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20174462144",
@@ -64842,6 +65834,13 @@
         "diputados2023/dic2024/avila-jorge.pdf"
       ],
       "hitos_personales": [
+        {
+          "fecha": "2023-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
         {
           "fecha": "2023-12",
           "texto": "Inicio (Diputado) en Cambio Federal",
@@ -65208,7 +66207,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20202641629",
@@ -65226,10 +66227,52 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2024-10",
           "texto": "Pase a Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -65840,7 +66883,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27204650972",
@@ -65876,6 +66921,13 @@
           "texto": "Pase a Coalición Cívica",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -66168,7 +67220,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20303646362",
@@ -66183,6 +67237,20 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -66709,7 +67777,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20190103200",
@@ -66739,6 +67809,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -67132,7 +68209,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20207323293",
@@ -67168,6 +68247,20 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -67394,7 +68487,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27266811425",
@@ -68007,7 +69102,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27255956715",
@@ -68029,6 +69126,13 @@
           "texto": "Inicio (Diputado) en Unión Cívica Radical",
           "color": "#D72D2D",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -68573,7 +69677,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20385700696",
@@ -68947,7 +70053,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27396592881",
@@ -69320,7 +70428,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20223799281",
@@ -69329,7 +70439,36 @@
         "diputados2023/oct2025/ali.pdf",
         "diputados2023/dic2024/ali.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO SUPERVIELLE S.A.",
@@ -69536,7 +70675,9 @@
           "monto": 121947
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20085756223",
@@ -69812,7 +70953,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20129170760",
@@ -70360,7 +71503,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20122178022",
@@ -70844,7 +71989,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20301123990",
@@ -71103,7 +72250,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23332030159",
@@ -71620,7 +72769,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20221313837",
@@ -71635,6 +72786,13 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -72359,7 +73517,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20242920644",
@@ -72824,7 +73984,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20224736674",
@@ -73087,7 +74249,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27259392638",
@@ -73109,6 +74273,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -73383,7 +74554,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27273796229",
@@ -73617,7 +74790,9 @@
           "monto": 462
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27245082725",
@@ -73653,6 +74828,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -74088,7 +75270,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20279570260",
@@ -74750,7 +75934,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20265696725",
@@ -75475,7 +76661,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23171578434",
@@ -76222,7 +77410,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27311140693",
@@ -76259,6 +77449,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -76485,7 +77682,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27065013253",
@@ -76703,7 +77902,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27382663298",
@@ -76951,7 +78152,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20312010713",
@@ -77328,7 +78531,9 @@
           "inicio": "2023-08",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27148917987",
@@ -77577,7 +78782,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20249020258",
@@ -77599,6 +78806,13 @@
           "texto": "Pase a Futuro y Libertad",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -78131,7 +79345,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20321652566",
@@ -78655,7 +79871,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27234850666",
@@ -78921,7 +80139,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27262456744",
@@ -78943,6 +80163,27 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -79367,7 +80608,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27257858842",
@@ -79396,6 +80639,13 @@
           "texto": "Pase a Democracia para Siempre",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -80342,7 +81592,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27327136025",
@@ -80584,7 +81836,9 @@
           "inicio": "2023-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20245096152",
@@ -81168,7 +82422,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27244008483",
@@ -82300,7 +83556,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20249979954",
@@ -82355,7 +83613,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23082070699",
@@ -82762,7 +84022,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20244166246",
@@ -83023,7 +84285,9 @@
           "inicio": "2024-08",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27165495239",
@@ -83511,7 +84775,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27225074467",
@@ -83547,6 +84813,13 @@
           "texto": "Inicio (Diputado) en Unión Cívica Radical",
           "color": "#D72D2D",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -83796,7 +85069,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20179184401",
@@ -84123,7 +85398,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20225253324",
@@ -84496,7 +85773,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27284286702",
@@ -84744,7 +86023,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20114609286",
@@ -85286,7 +86567,9 @@
           "inicio": "2023-07",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20121899311",
@@ -85828,7 +87111,9 @@
           "inicio": "2023-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20165030398",
@@ -86082,7 +87367,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23249413089",
@@ -86343,7 +87630,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20160116006",
@@ -86359,6 +87648,13 @@
           "texto": "Inicio (Diputado) en Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -86796,7 +88092,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23165838009",
@@ -87326,7 +88624,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27357336193",
@@ -87700,7 +89000,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20280759881",
@@ -87715,6 +89017,20 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -87941,7 +89257,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20229030680",
@@ -87956,6 +89274,34 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -88500,7 +89846,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27226511844",
@@ -88550,6 +89898,13 @@
           "texto": "Pase a Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -88896,7 +90251,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20176238918",
@@ -89402,7 +90759,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20174850292",
@@ -89411,7 +90770,15 @@
         "diputados2023/dic2024/baldassi.pdf",
         "diputados2023/oct2025/baldassi.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DEL SOL S.A.",
@@ -89684,7 +91051,9 @@
           "monto": 186
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20182874532",
@@ -90483,7 +91852,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20202980210",
@@ -90498,6 +91869,13 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -90928,7 +92306,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20273754041",
@@ -90943,6 +92323,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -91409,7 +92796,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27324151031",
@@ -91424,6 +92813,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-10",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -91854,7 +93250,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20279217714",
@@ -92079,7 +93477,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27235705473",
@@ -92560,7 +93960,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27267107721",
@@ -93486,7 +94888,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20178882873",
@@ -93746,7 +95150,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27372218865",
@@ -94033,7 +95439,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20248770253",
@@ -94240,7 +95648,9 @@
           "inicio": "2023-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20341247781",
@@ -94262,6 +95672,34 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -94542,7 +95980,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27282985263",
@@ -94987,7 +96427,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27262133988",
@@ -95613,7 +97055,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20279611412",
@@ -95770,7 +97214,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20186082134",
@@ -95792,6 +97238,13 @@
           "texto": "Inicio (Diputado) en Innovacion Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -96018,7 +97471,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20178562038",
@@ -96518,7 +97973,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27286014858",
@@ -96796,7 +98253,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20309499450",
@@ -97111,7 +98570,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27172595621",
@@ -97470,7 +98931,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20334340660",
@@ -97485,6 +98948,13 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -98209,7 +99679,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20112641875",
@@ -98450,7 +99922,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27256325689",
@@ -98461,10 +99935,38 @@
       ],
       "hitos_personales": [
         {
+          "fecha": "2023-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2023-12",
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -99021,7 +100523,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20128983458",
@@ -99336,7 +100840,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27184959416",
@@ -99577,7 +101083,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20242671652",
@@ -100238,7 +101746,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20240419034",
@@ -100996,7 +102506,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20178692713",
@@ -101231,7 +102743,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27334945958",
@@ -101466,7 +102980,9 @@
           "inicio": "2024-09",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20251970743",
@@ -101575,7 +103091,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27280582536",
@@ -102098,7 +103616,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20310895955",
@@ -102571,7 +104091,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27256151524",
@@ -103150,7 +104672,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20338868244",
@@ -103193,6 +104717,13 @@
           "texto": "Inicio (Diputado) en Unión por la Patria",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2023-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -103628,7 +105159,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27167558742",
@@ -104273,7 +105806,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20161572749",
@@ -104957,7 +106492,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23202055869",
@@ -105204,7 +106741,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27235214933",
@@ -105637,7 +107176,9 @@
           "inicio": "2024-06",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23238322464",
@@ -105653,6 +107194,13 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -106821,7 +108369,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "23146233759",
@@ -107069,7 +108619,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20245738723",
@@ -107091,6 +108643,20 @@
           "texto": "Pase a Innovación Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -107329,7 +108895,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27145408909",
@@ -107678,7 +109246,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20168070838",
@@ -108188,7 +109758,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27324133963",
@@ -108556,6 +110128,34 @@
           "cargo": "Diputado"
         },
         {
+          "fecha": "2023-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
           "fecha": "2025-12",
           "texto": "Fin de mandato (Diputado)",
           "color": "#000000",
@@ -108779,7 +110379,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20161912078",
@@ -108996,7 +110598,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20176149923",
@@ -109444,7 +111048,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27232050107",
@@ -109697,7 +111303,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20213862996",
@@ -109964,7 +111572,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20139019408",
@@ -111016,7 +112626,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20177354490",
@@ -111032,6 +112644,20 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -111312,7 +112938,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20080476842",
@@ -111446,7 +113074,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23111038589",
@@ -111461,6 +113091,20 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -112179,7 +113823,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27288605993",
@@ -112439,7 +114085,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20291515011",
@@ -112455,6 +114103,27 @@
           "texto": "Inicio (Diputado) en La Libertad Avanza",
           "color": "#8A2BE2",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-08",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -112687,7 +114356,9 @@
           "inicio": "2023-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20227777436",
@@ -113355,7 +115026,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20240494419",
@@ -114269,7 +115942,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20188835814",
@@ -114548,7 +116223,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20229511131",
@@ -114557,7 +116234,36 @@
         "diputados2023/oct2025/laspina.pdf",
         "diputados2023/dic2024/laspina.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.U.",
@@ -115100,7 +116806,9 @@
           "monto": 3595
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23337997589",
@@ -115348,7 +117056,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20149980548",
@@ -115811,7 +117521,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20243992371",
@@ -116262,7 +117974,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20209210739",
@@ -116277,6 +117991,13 @@
           "texto": "Inicio (Diputado) en Por Santa Cruz",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -116743,7 +118464,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "23137026104",
@@ -117388,7 +119111,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20141889185",
@@ -118037,7 +119762,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27161641737",
@@ -118357,7 +120084,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27329016817",
@@ -118628,7 +120357,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20174549053",
@@ -118970,7 +120701,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20253485478",
@@ -119235,7 +120968,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27182307349",
@@ -119257,6 +120992,13 @@
           "texto": "Inicio (Diputado) en Innovacion Federal",
           "color": "#808080",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -119417,7 +121159,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20245607068",
@@ -119883,7 +121627,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20146757066",
@@ -120328,7 +122074,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27280877188",
@@ -120343,6 +122091,20 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -120780,7 +122542,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20112830325",
@@ -120996,7 +122760,9 @@
           "monto": 290
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20162164040",
@@ -121183,7 +122949,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27245043223",
@@ -121225,7 +122993,9 @@
           "inicio": "2023-06",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20172493379",
@@ -121436,7 +123206,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "24240124552",
@@ -121654,7 +123426,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20258693109",
@@ -121728,7 +123502,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20266723181",
@@ -121770,7 +123546,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20323020516",
@@ -121778,7 +123556,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/hadad.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "CREDICUOTAS CONSUMO S.A.",
@@ -122351,7 +124137,9 @@
           "monto": 412
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20336276188",
@@ -122359,7 +124147,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/gonzales.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-09",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
@@ -122794,7 +124590,9 @@
           "monto": 591
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20258871112",
@@ -123032,7 +124830,9 @@
       "distrito": "Mendoza",
       "cargo": "Diputado",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27264849638",
@@ -123331,7 +125131,9 @@
           "monto": 431
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23113647604",
@@ -123339,7 +125141,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/de-la-rosa.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-12",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
@@ -123966,7 +125776,9 @@
           "monto": 4963
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27176050034",
@@ -124331,7 +126143,9 @@
           "monto": 6703
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27352538626",
@@ -124552,7 +126366,9 @@
           "monto": 1877
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27254532164",
@@ -124566,6 +126382,20 @@
           "texto": "Fin de mandato (Diputado)",
           "color": "#000000",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         }
       ],
@@ -124844,7 +126674,9 @@
       "distrito": "Santa Fe",
       "cargo": "Diputado",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27241384727",
@@ -125155,7 +126987,9 @@
           "monto": 596
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27226005531",
@@ -125335,7 +127169,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20253596814",
@@ -125490,7 +127326,9 @@
           "monto": 2448
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20219307757",
@@ -125537,7 +127375,9 @@
           "monto": 4243
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20327299264",
@@ -125896,7 +127736,9 @@
           "monto": 246
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20179418046",
@@ -126339,7 +128181,9 @@
           "monto": 1017
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20133677586",
@@ -126656,7 +128500,9 @@
           "monto": 1329
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20336951292",
@@ -126811,7 +128657,9 @@
           "monto": 2974
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20423258609",
@@ -126966,7 +128814,9 @@
           "monto": 480
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20303559680",
@@ -127115,7 +128965,9 @@
           "monto": 1356
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20358926933",
@@ -127264,7 +129116,9 @@
           "monto": 4269
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20269684438",
@@ -127461,7 +129315,9 @@
           "monto": 859
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20217318670",
@@ -127838,7 +129694,9 @@
           "monto": 2537
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20341556253",
@@ -127846,7 +129704,22 @@
       "pdf_paths": [
         "diputados2025/sep2025/urien.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
@@ -128077,7 +129950,9 @@
           "monto": 5355
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20228130770",
@@ -128085,7 +129960,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/roberto.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-08",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
@@ -128352,7 +130235,9 @@
           "monto": 2023
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "23304576774",
@@ -128537,7 +130422,9 @@
           "monto": 50
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20168368373",
@@ -128746,7 +130633,9 @@
           "monto": 927
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27327025533",
@@ -128901,7 +130790,9 @@
           "monto": 3443
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "23221392094",
@@ -129488,7 +131379,9 @@
           "monto": 1502
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27305499108",
@@ -129787,7 +131680,9 @@
           "monto": 3258
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20256611210",
@@ -130116,7 +132011,9 @@
           "monto": 11174
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27296966075",
@@ -130283,7 +132180,9 @@
           "monto": 182
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27347466331",
@@ -130696,7 +132595,9 @@
           "monto": 2965
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20210031856",
@@ -130704,7 +132605,22 @@
       "pdf_paths": [
         "diputados2025/sep2025/farias.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-03",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO CREDICOOP COOPERATIVO LIMITADO",
@@ -131019,7 +132935,9 @@
           "monto": 4760
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27314401234",
@@ -131027,7 +132945,22 @@
       "pdf_paths": [
         "diputados2025/sep2025/lanesan.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE SANTA CRUZ S.A.",
@@ -131744,7 +133677,9 @@
           "monto": 1217
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20133010298",
@@ -131929,7 +133864,9 @@
           "monto": 4812
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27282719938",
@@ -132084,7 +134021,9 @@
           "monto": 51
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20219540125",
@@ -132258,7 +134197,9 @@
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27225573641",
@@ -132413,7 +134354,9 @@
           "monto": 2499
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27200012513",
@@ -132856,7 +134799,9 @@
           "monto": 7357
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27233105193",
@@ -133051,7 +134996,9 @@
           "inicio": "2023-12",
           "fin": "2027-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20200592167",
@@ -133410,7 +135357,9 @@
           "monto": 3642
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27122857714",
@@ -133613,7 +135562,9 @@
           "monto": 6288
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20263667000",
@@ -133972,7 +135923,9 @@
           "monto": 6991
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20266508329",
@@ -134271,7 +136224,9 @@
           "monto": 4543
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20328293162",
@@ -134828,7 +136783,9 @@
           "monto": 350
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27204775708",
@@ -135031,7 +136988,9 @@
           "monto": 1076
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20303347659",
@@ -135186,7 +137145,9 @@
           "monto": 784
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27421829816",
@@ -135329,7 +137290,9 @@
           "monto": 201
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20250816031",
@@ -135748,7 +137711,9 @@
           "monto": 370
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20174122777",
@@ -136149,7 +138114,9 @@
           "monto": 62
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20228949907",
@@ -136550,7 +138517,9 @@
           "monto": 4922
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27184140115",
@@ -136849,7 +138818,9 @@
           "monto": 5357
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27127995236",
@@ -136992,7 +138963,9 @@
           "monto": 1591
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20184725976",
@@ -137123,7 +139096,9 @@
           "monto": 419
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27307017496",
@@ -137278,7 +139253,9 @@
           "monto": 5804
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20296629597",
@@ -137553,7 +139530,9 @@
           "monto": 5754
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20270878181",
@@ -137996,7 +139975,9 @@
           "monto": 4980
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27241001070",
@@ -138295,7 +140276,9 @@
           "monto": 7896
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20113717506",
@@ -138594,7 +140577,9 @@
           "monto": 3026
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20162915119",
@@ -138965,7 +140950,9 @@
           "monto": 982
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27349910298",
@@ -139126,7 +141113,9 @@
           "monto": 4381
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27318487222",
@@ -139134,7 +141123,29 @@
       "pdf_paths": [
         "diputados2025/sep2025/gallardo.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2023-10",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -139431,7 +141442,9 @@
           "monto": 1210
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "23083626739",
@@ -139611,7 +141624,9 @@
           "inicio": "2019-12",
           "fin": "2021-08"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27357276328",
@@ -139700,7 +141715,9 @@
           "monto": 121
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20187947740",
@@ -139708,7 +141725,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/patiño.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-07",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO BMA S.A.U.",
@@ -139873,7 +141898,9 @@
           "monto": 5045
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20229354036",
@@ -140112,7 +142139,9 @@
           "monto": 1183
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20223522514",
@@ -140267,7 +142296,9 @@
           "monto": 488
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27231385776",
@@ -140542,7 +142573,9 @@
           "monto": 226
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20249577163",
@@ -140811,7 +142844,9 @@
           "monto": 4977
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20266676531",
@@ -141110,7 +143145,9 @@
           "monto": 1429
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20379994580",
@@ -141445,7 +143482,9 @@
           "monto": 67
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20147385375",
@@ -141453,7 +143492,22 @@
       "pdf_paths": [
         "diputados2025/sep2025/basualdo-atilio.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-02",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE FORMOSA S.A.",
@@ -141720,7 +143774,9 @@
           "monto": 1599
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20257564569",
@@ -141875,7 +143931,9 @@
           "monto": 1577
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20233803252",
@@ -142156,7 +144214,9 @@
           "monto": 651
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27178894590",
@@ -142269,7 +144329,9 @@
           "monto": 2405
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27277083561",
@@ -142290,6 +144352,20 @@
           "texto": "Fin de mandato (Diputado)",
           "color": "#000000",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
           "cargo": "Diputado"
         }
       ],
@@ -142653,7 +144729,9 @@
           "inicio": "2019-12",
           "fin": "2022-12"
         }
-      ]
+      ],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "27340841366",
@@ -142661,7 +144739,29 @@
       "pdf_paths": [
         "diputados2025/sep2025/mondaca.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO PROVINCIA DEL NEUQUÉN SOCIEDAD ANÓNIMA",
@@ -143060,7 +145160,9 @@
           "monto": 330
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20260191951",
@@ -143081,6 +145183,20 @@
           "texto": "Pase a Frente de Todos",
           "color": "#009ADE",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         }
       ],
@@ -143594,7 +145710,9 @@
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Frente de Todos",
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27226680565",
@@ -144027,7 +146145,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27213201617",
@@ -144035,7 +146155,22 @@
       "pdf_paths": [
         "diputados2025/sep2025/zigaran.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO MACRO S.A.",
@@ -144326,7 +146461,9 @@
           "monto": 1107
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27057991025",
@@ -144625,7 +146762,9 @@
           "monto": 392
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20270799044",
@@ -144690,7 +146829,9 @@
           "monto": 528
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27330723578",
@@ -144699,7 +146840,15 @@
         "diputados2025/sep2025/frias.pdf",
         "senadores2025/dic2025/frias.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-09",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -144714,7 +146863,9 @@
           "monto": 207863
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20270502661",
@@ -145157,7 +147308,9 @@
           "monto": 1528
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27104003465",
@@ -145438,7 +147591,9 @@
           "monto": 447
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27295495540",
@@ -145805,7 +147960,9 @@
           "inicio": "2021-12",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20249630161",
@@ -146248,7 +148405,9 @@
           "monto": 583
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27142715916",
@@ -146450,7 +148609,9 @@
       "distrito": "Entre Rios",
       "cargo": "Diputado",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27277670718",
@@ -146503,7 +148664,9 @@
           "monto": 1011
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27177269323",
@@ -146802,7 +148965,9 @@
           "monto": 2051
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20122958397",
@@ -146810,7 +148975,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/jaldo.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-12",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO MACRO S.A.",
@@ -147095,7 +149268,9 @@
           "monto": 769
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20304639335",
@@ -147109,6 +149284,13 @@
           "texto": "Inicio (Diputado) en PRO",
           "color": "#FFD700",
           "tipo": "politico",
+          "cargo": "Diputado"
+        },
+        {
+          "fecha": "2025-07",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -147365,7 +149547,9 @@
           "inicio": "2025-03",
           "fin": "2025-12"
         }
-      ]
+      ],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20253856409",
@@ -147373,7 +149557,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/carrancio.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-11",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
@@ -147586,7 +149778,9 @@
           "monto": 3204
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": false
     },
     {
       "cuit": "20318128031",
@@ -147594,7 +149788,29 @@
       "pdf_paths": [
         "diputados2025/sep2025/pelli.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2023-10",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-04",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2024-09",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -147819,7 +150035,9 @@
           "monto": 2116
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": true,
+      "cambios_nivel": true
     },
     {
       "cuit": "20284663447",
@@ -147827,7 +150045,15 @@
       "pdf_paths": [
         "diputados2025/sep2025/hartfield.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
@@ -148376,7 +150602,9 @@
           "monto": 483
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27239991810",
@@ -148405,7 +150633,9 @@
           "monto": 725
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20249775461",
@@ -148572,7 +150802,9 @@
           "monto": 4403
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20185623212",
@@ -148793,7 +151025,9 @@
           "monto": 2666
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20169551139",
@@ -148801,7 +151035,22 @@
       "pdf_paths": [
         "diputados2025/sep2025/schneider.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-01",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        },
+        {
+          "fecha": "2025-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "NUEVO BANCO DE ENTRE RÍOS S.A.",
@@ -148996,7 +151245,9 @@
           "monto": 1035
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "27339516524",
@@ -149253,7 +151504,9 @@
           "monto": 39
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20305063291",
@@ -149414,7 +151667,9 @@
           "monto": 6341
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27360187867",
@@ -149833,7 +152088,9 @@
           "monto": 508
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27252182379",
@@ -149841,7 +152098,15 @@
       "pdf_paths": [
         "senadores2025/sep2025/royon.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2024-10",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
@@ -150222,7 +152487,9 @@
           "monto": 10361
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20377965605",
@@ -150281,7 +152548,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20254116239",
@@ -150454,7 +152723,9 @@
           "monto": 1659
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27260405069",
@@ -150471,7 +152742,9 @@
           "monto": 6900
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27251917642",
@@ -150932,7 +153205,9 @@
           "monto": 156
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27311439397",
@@ -151087,7 +153362,9 @@
           "monto": 1896
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20187750637",
@@ -151410,7 +153687,9 @@
           "monto": 6781
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20119584486",
@@ -151709,7 +153988,9 @@
           "monto": 2296
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20166669643",
@@ -151852,7 +154133,9 @@
           "monto": 2218
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27119883364",
@@ -152211,7 +154494,9 @@
           "monto": 226
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "20169543489",
@@ -152220,6 +154505,13 @@
         "senadores2025/sep2025/capitanich.pdf"
       ],
       "hitos_personales": [
+        {
+          "fecha": "2024-05",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Senador"
+        },
         {
           "fecha": "2025-12",
           "texto": "Inicio (Senador) en Fuerza Patria",
@@ -152432,7 +154724,9 @@
       "partido": "Fuerza Patria",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20314731353",
@@ -152587,7 +154881,9 @@
           "monto": 3203
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27343351750",
@@ -152595,7 +154891,15 @@
       "pdf_paths": [
         "senadores2025/sep2025/monte-de-oca.pdf"
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-06",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Legislador"
+        }
+      ],
       "historial": [
         {
           "entidad": "BANCO PROVINCIA DE TIERRA DEL FUEGO O. P.",
@@ -153018,7 +155322,9 @@
           "monto": 3118
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": true
     },
     {
       "cuit": "20180715119",
@@ -153173,7 +155479,9 @@
           "monto": 1505
         }
       ],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     },
     {
       "cuit": "27286063190",
@@ -153334,7 +155642,9 @@
       "partido": "Alianza la Libertad Avanza",
       "cargo": "Senador",
       "mis_hitos": [],
-      "periodos": []
+      "periodos": [],
+      "posible_crédito": false,
+      "cambios_nivel": false
     }
   ]
 }
