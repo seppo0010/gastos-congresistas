@@ -11636,34 +11636,6 @@
           "color": "#ef4444",
           "tipo": "economico",
           "cargo": "Senador"
-        },
-        {
-          "fecha": "2023-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
         }
       ],
       "historial": [
@@ -11956,7 +11928,7 @@
       "partido": "Frente de Todos",
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "20137324416",
@@ -15769,7 +15741,7 @@
           "cargo": "Senador"
         },
         {
-          "fecha": "2023-08",
+          "fecha": "2023-09",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -15777,13 +15749,6 @@
         },
         {
           "fecha": "2024-08",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-12",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -25068,34 +25033,6 @@
           "color": "#ef4444",
           "tipo": "economico",
           "cargo": "Senador"
-        },
-        {
-          "fecha": "2023-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Senador"
         }
       ],
       "historial": [
@@ -25718,7 +25655,7 @@
       "mis_hitos": [],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "27330442803",
@@ -46182,14 +46119,14 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2023-10",
+          "fecha": "2023-11",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-02",
+          "fecha": "2024-03",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -46915,13 +46852,6 @@
           "texto": "Pase a Transformación",
           "color": "#808080",
           "tipo": "politico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2025-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
           "cargo": "Diputado"
         },
         {
@@ -53923,34 +53853,6 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2023-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
           "fecha": "2025-12",
           "texto": "Fin de mandato (Diputado)",
           "color": "#000000",
@@ -54692,7 +54594,7 @@
         }
       ],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "20129790351",
@@ -55999,13 +55901,6 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
           "fecha": "2024-05",
           "texto": "Pase a Coalición Cívica",
           "color": "#808080",
@@ -56013,14 +55908,7 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
+          "fecha": "2024-05",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -64651,13 +64539,6 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-12",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
           "fecha": "2027-12",
           "texto": "Fin de mandato (Diputado)",
           "color": "#000000",
@@ -65297,7 +65178,7 @@
         }
       ],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "27252702194",
@@ -66234,14 +66115,14 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2023-07",
+          "fecha": "2023-08",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
           "cargo": "Diputado"
         },
         {
-          "fecha": "2023-11",
+          "fecha": "2023-12",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -66255,21 +66136,14 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-10",
+          "fecha": "2024-11",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
           "cargo": "Diputado"
         },
         {
-          "fecha": "2025-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2025-06",
+          "fecha": "2025-03",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -70446,27 +70320,6 @@
           "color": "#ef4444",
           "tipo": "economico",
           "cargo": "Legislador"
-        },
-        {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
-        },
-        {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
         }
       ],
       "historial": [
@@ -70677,7 +70530,7 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "20085756223",
@@ -80174,13 +80027,6 @@
         },
         {
           "fecha": "2024-12",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2025-08",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -95682,21 +95528,7 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
+          "fecha": "2024-05",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -99956,14 +99788,14 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-10",
+          "fecha": "2024-11",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
           "cargo": "Diputado"
         },
         {
-          "fecha": "2025-02",
+          "fecha": "2025-03",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -110135,27 +109967,6 @@
           "cargo": "Diputado"
         },
         {
-          "fecha": "2024-02",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-06",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
           "fecha": "2025-12",
           "texto": "Fin de mandato (Diputado)",
           "color": "#000000",
@@ -110381,7 +110192,7 @@
         }
       ],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "20161912078",
@@ -114114,13 +113925,6 @@
         },
         {
           "fecha": "2025-03",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Diputado"
-        },
-        {
-          "fecha": "2025-08",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -125141,15 +124945,7 @@
       "pdf_paths": [
         "diputados2025/sep2025/de-la-rosa.pdf"
       ],
-      "hitos_personales": [
-        {
-          "fecha": "2024-12",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
-        }
-      ],
+      "hitos_personales": [],
       "historial": [
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
@@ -125778,7 +125574,7 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "27176050034",
@@ -141130,20 +140926,6 @@
           "color": "#ef4444",
           "tipo": "economico",
           "cargo": "Legislador"
-        },
-        {
-          "fecha": "2024-04",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
-        },
-        {
-          "fecha": "2024-10",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
         }
       ],
       "historial": [
@@ -141444,7 +141226,7 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": false
     },
     {
       "cuit": "23083626739",
@@ -149797,14 +149579,7 @@
           "cargo": "Legislador"
         },
         {
-          "fecha": "2024-04",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "Legislador"
-        },
-        {
-          "fecha": "2024-09",
+          "fecha": "2024-05",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
