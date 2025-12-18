@@ -31,7 +31,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const [levelChangeFilter, setLevelChangeFilter] = useState("todos");
   const [sortOrder, setSortOrder] = useState("nombre_asc");
 
-  const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito))].sort(), [legisladores]);
+  const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
   const parties = useMemo(() => [...new Set(legisladores.filter(l => l.partido !== undefined).map(l => l.partido).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
 
   const debtStats = useMemo(() => {

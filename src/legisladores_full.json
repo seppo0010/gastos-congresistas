@@ -4188,7 +4188,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "23297507044",
@@ -4739,7 +4741,7 @@
           "monto": 76
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
@@ -6146,7 +6148,7 @@
           "monto": 2884
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Juntos por el Cambio",
       "cargo": "Senador",
       "mis_hitos": [],
@@ -10499,7 +10501,7 @@
           "monto": 89
         }
       ],
-      "distrito": "Rio Negro",
+      "distrito": "Río Negro",
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Frente de Todos",
@@ -11606,7 +11608,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27307358900",
@@ -26837,7 +26841,7 @@
           "monto": 3305
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Hacemos por Córdoba",
@@ -28816,7 +28820,7 @@
           "monto": 3678
         }
       ],
-      "distrito": "Neuquen",
+      "distrito": "Neuquén",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -29203,7 +29207,7 @@
           "monto": 297
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -30060,7 +30064,7 @@
           "monto": 824
         }
       ],
-      "distrito": "Neuquen",
+      "distrito": "Neuquén",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -30863,7 +30867,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27275988877",
@@ -31214,7 +31220,7 @@
           "monto": 2106
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -33826,7 +33832,7 @@
           "monto": 1392
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -34385,7 +34391,7 @@
           "monto": 5712
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Coalición Cívica",
@@ -37114,7 +37120,7 @@
           "monto": 513
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "PRO",
@@ -38916,7 +38922,7 @@
           "monto": 1656
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -39587,7 +39593,7 @@
           "monto": 157
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -40001,7 +40007,7 @@
           "monto": 358770
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Encuentro Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -41850,7 +41856,7 @@
           "monto": 1012
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -42522,7 +42528,7 @@
           "monto": 7859
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Encuentro Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -43502,7 +43508,7 @@
           "monto": 3279
         }
       ],
-      "distrito": "Tierra del Fuego",
+      "distrito": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "partido": "Somos Fueguinos",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -43958,7 +43964,7 @@
         }
       ],
       "distrito": "Salta",
-      "partido": "Innovacion Federal",
+      "partido": "Innovación Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [
@@ -46075,7 +46081,7 @@
           "monto": 796
         }
       ],
-      "distrito": "Tierra del Fuego",
+      "distrito": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -49666,7 +49672,7 @@
           "monto": 4096
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -49988,7 +49994,7 @@
         }
       ],
       "distrito": "Misiones",
-      "partido": "Innovacion Federal",
+      "partido": "Innovación Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [
@@ -51606,7 +51612,7 @@
           "monto": 879
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Liga del Interior Eli",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -53078,7 +53084,7 @@
           "monto": 1160
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -55030,7 +55036,7 @@
           "monto": 482
         }
       ],
-      "distrito": "Rio Negro",
+      "distrito": "Río Negro",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -55260,7 +55266,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20286470298",
@@ -56386,7 +56394,7 @@
           "monto": 186239
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Coalición Cívica",
@@ -56657,7 +56665,7 @@
           "monto": 10322
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Unión por la Patria",
@@ -57610,7 +57618,7 @@
           "monto": 184
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Coalición Cívica",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -57837,7 +57845,7 @@
           "monto": 10149
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Independencia",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -59834,7 +59842,7 @@
           "monto": 1305
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Encuentro Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -60064,7 +60072,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20184536758",
@@ -62974,7 +62984,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27115479968",
@@ -64495,7 +64507,7 @@
           "monto": 12487
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -65166,7 +65178,7 @@
           "monto": 1506
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Democracia para Siempre",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -68068,7 +68080,7 @@
           "monto": 1235
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -69541,7 +69553,7 @@
           "monto": 3535
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Unión Cívica Radical",
@@ -69917,7 +69929,7 @@
           "monto": 5312
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -70530,7 +70542,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20085756223",
@@ -70796,7 +70810,7 @@
           "monto": 54
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Republicanos Unidos",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -71346,7 +71360,7 @@
           "monto": 110
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "PRO",
@@ -74092,7 +74106,7 @@
           "monto": 4060
         }
       ],
-      "distrito": "Neuquen",
+      "distrito": "Neuquén",
       "partido": "Liga del Interior Eli",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -74645,7 +74659,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27245082725",
@@ -75108,7 +75124,7 @@
           "monto": 4040
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -75777,7 +75793,7 @@
           "monto": 651
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Unión Cívica Radical",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -77253,7 +77269,7 @@
           "monto": 570
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -77740,7 +77756,7 @@
           "monto": 2914
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -78374,7 +78390,7 @@
           "monto": 6972
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Encuentro Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -83449,7 +83465,7 @@
           "monto": 44
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -85609,7 +85625,7 @@
           "monto": 2343
         }
       ],
-      "distrito": "Neuquen",
+      "distrito": "Neuquén",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -85859,7 +85875,7 @@
           "monto": 241
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Unión Cívica Radical",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -86403,7 +86419,7 @@
           "monto": 3610
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Unión Cívica Radical",
@@ -87461,7 +87477,7 @@
           "monto": 7356
         }
       ],
-      "distrito": "Rio Negro",
+      "distrito": "Río Negro",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -88460,7 +88476,7 @@
           "monto": 1639
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Mid - Movimiento de Integración y Desarrollo",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -90899,7 +90915,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20182874532",
@@ -93796,7 +93814,7 @@
           "monto": 838
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -95484,7 +95502,7 @@
           "monto": 229
         }
       ],
-      "distrito": "Neuquen",
+      "distrito": "Neuquén",
       "partido": "Movimiento Popular  Neuquino",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -97036,7 +97054,7 @@
           "monto": 4480
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -97294,7 +97312,7 @@
         }
       ],
       "distrito": "Salta",
-      "partido": "Innovacion Federal",
+      "partido": "Innovación Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [
@@ -98753,7 +98771,7 @@
           "monto": 1538
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Democracia para Siempre",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -100345,7 +100363,7 @@
           "monto": 4461
         }
       ],
-      "distrito": "Tierra del Fuego",
+      "distrito": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -100663,7 +100681,7 @@
         }
       ],
       "distrito": "Misiones",
-      "partido": "Innovacion Federal",
+      "partido": "Innovación Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [
@@ -102328,7 +102346,7 @@
           "monto": 198
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión Cívica Radical",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -102565,7 +102583,7 @@
           "monto": 155
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Unión Cívica Radical",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -102802,7 +102820,7 @@
           "monto": 202
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -103913,7 +103931,7 @@
           "monto": 2673
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Encuentro Federal",
@@ -106314,7 +106332,7 @@
           "monto": 1853
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "cargo": "Diputado",
       "mis_hitos": [],
       "partido": "Encuentro Federal",
@@ -106998,8 +107016,8 @@
           "monto": 124
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
-      "partido": "Partido Obrero -Frente de Izquierda y de Trabajadores -Unida",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
+      "partido": "Frente de Izquierda",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [
@@ -108191,7 +108209,7 @@
           "monto": 18878
         }
       ],
-      "distrito": "Rio Negro",
+      "distrito": "Río Negro",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -109068,7 +109086,7 @@
           "monto": 2884
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -110180,7 +110198,7 @@
           "monto": 182962
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Creo",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -110844,7 +110862,7 @@
           "monto": 3136
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -111104,7 +111122,7 @@
           "monto": 4183
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -113624,7 +113642,7 @@
           "monto": 24959
         }
       ],
-      "distrito": "Rio Negro",
+      "distrito": "Río Negro",
       "partido": "PRO",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -113881,7 +113899,7 @@
           "monto": 2119
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -114150,7 +114168,7 @@
           "monto": 27031
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -116017,7 +116035,7 @@
           "monto": 1277
         }
       ],
-      "distrito": "Rio Negro",
+      "distrito": "Río Negro",
       "partido": "Innovación Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -116612,7 +116630,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "23337997589",
@@ -117315,7 +117335,7 @@
           "monto": 1146
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -120151,7 +120171,7 @@
           "monto": 141
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -120954,7 +120974,7 @@
         }
       ],
       "distrito": "Salta",
-      "partido": "Innovacion Federal",
+      "partido": "Innovación Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [
@@ -121421,7 +121441,7 @@
           "monto": 982
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "partido": "Encuentro Federal",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -122566,7 +122586,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20162164040",
@@ -122738,7 +122760,7 @@
           "monto": 56
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Unión por la Patria",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -123220,7 +123242,7 @@
           "monto": 2888
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "Liga del Interior Eli",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -123340,7 +123362,7 @@
           "monto": 801
         }
       ],
-      "distrito": "Cordoba",
+      "distrito": "Córdoba",
       "partido": "La Libertad Avanza",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -123943,7 +123965,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20336276188",
@@ -124396,7 +124420,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20258871112",
@@ -124636,7 +124662,8 @@
       "mis_hitos": [],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "partido": null
     },
     {
       "cuit": "27264849638",
@@ -124937,7 +124964,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "23113647604",
@@ -125574,7 +125603,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27176050034",
@@ -125941,7 +125972,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27352538626",
@@ -126164,7 +126197,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27254532164",
@@ -126472,7 +126507,8 @@
       "mis_hitos": [],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "partido": null
     },
     {
       "cuit": "27241384727",
@@ -126785,7 +126821,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27226005531",
@@ -126955,7 +126993,7 @@
           "monto": 951
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "partido": "Frente de Izquierda",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -127124,7 +127162,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20219307757",
@@ -127173,7 +127213,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20327299264",
@@ -127534,7 +127576,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20179418046",
@@ -127979,7 +128023,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20133677586",
@@ -128298,7 +128344,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20336951292",
@@ -128455,7 +128503,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20423258609",
@@ -128612,7 +128662,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20303559680",
@@ -128763,7 +128815,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20358926933",
@@ -128914,7 +128968,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20269684438",
@@ -129113,7 +129169,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20217318670",
@@ -129492,7 +129550,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20341556253",
@@ -129748,7 +129808,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20228130770",
@@ -130033,7 +130095,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "23304576774",
@@ -130220,7 +130284,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20168368373",
@@ -130431,7 +130497,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27327025533",
@@ -130588,7 +130656,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "23221392094",
@@ -131177,7 +131247,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27305499108",
@@ -131478,7 +131550,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20256611210",
@@ -131809,7 +131883,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27296966075",
@@ -131978,7 +132054,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27347466331",
@@ -132393,7 +132471,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20210031856",
@@ -132733,7 +132813,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27314401234",
@@ -133475,7 +133557,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20133010298",
@@ -133662,7 +133746,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27282719938",
@@ -133819,7 +133905,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20219540125",
@@ -133989,7 +134077,7 @@
           "monto": 1482
         }
       ],
-      "distrito": "Ciudad de Buenos Aires",
+      "distrito": "Ciudad Autónoma de Buenos Aires",
       "cargo": "Senador",
       "mis_hitos": [],
       "partido": "Juntos por el Cambio",
@@ -134152,7 +134240,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27200012513",
@@ -134597,7 +134687,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27233105193",
@@ -134782,7 +134874,7 @@
           "monto": 88
         }
       ],
-      "distrito": "Tucuman",
+      "distrito": "Tucumán",
       "partido": "Independencia",
       "cargo": "Diputado",
       "mis_hitos": [],
@@ -135155,7 +135247,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27122857714",
@@ -135360,7 +135454,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20263667000",
@@ -135721,7 +135817,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20266508329",
@@ -136022,7 +136120,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20328293162",
@@ -136581,7 +136681,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27204775708",
@@ -136786,7 +136888,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20303347659",
@@ -136943,7 +137047,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27421829816",
@@ -137088,7 +137194,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20250816031",
@@ -137509,7 +137617,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20174122777",
@@ -137912,7 +138022,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20228949907",
@@ -138315,7 +138427,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27184140115",
@@ -138616,7 +138730,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27127995236",
@@ -138761,7 +138877,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20184725976",
@@ -138894,7 +139012,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27307017496",
@@ -139051,7 +139171,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20296629597",
@@ -139328,7 +139450,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20270878181",
@@ -139773,7 +139897,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27241001070",
@@ -140074,7 +140200,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20113717506",
@@ -140375,7 +140503,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20162915119",
@@ -140748,7 +140878,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27349910298",
@@ -140911,7 +141043,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27318487222",
@@ -141226,7 +141360,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "23083626739",
@@ -141499,7 +141635,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20187947740",
@@ -141682,7 +141820,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20229354036",
@@ -141923,7 +142063,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20223522514",
@@ -142080,7 +142222,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27231385776",
@@ -142357,7 +142501,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20249577163",
@@ -142628,7 +142774,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20266676531",
@@ -142929,7 +143077,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20379994580",
@@ -143266,7 +143416,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20147385375",
@@ -143558,7 +143710,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20257564569",
@@ -143715,7 +143869,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20233803252",
@@ -143998,7 +144154,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27178894590",
@@ -144113,7 +144271,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27277083561",
@@ -144944,7 +145104,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20260191951",
@@ -146245,7 +146407,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27057991025",
@@ -146546,7 +146710,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20270799044",
@@ -146613,7 +146779,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27330723578",
@@ -146647,7 +146815,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20270502661",
@@ -147092,7 +147262,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27104003465",
@@ -147375,7 +147547,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27295495540",
@@ -148189,7 +148363,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27142715916",
@@ -148388,12 +148564,13 @@
           "monto": 3462
         }
       ],
-      "distrito": "Entre Rios",
+      "distrito": "Entre Ríos",
       "cargo": "Diputado",
       "mis_hitos": [],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "partido": null
     },
     {
       "cuit": "27277670718",
@@ -148448,7 +148625,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27177269323",
@@ -148749,7 +148928,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20122958397",
@@ -149052,7 +149233,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20304639335",
@@ -149562,7 +149745,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20318128031",
@@ -149812,7 +149997,9 @@
       ],
       "periodos": [],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20284663447",
@@ -150379,7 +150566,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27239991810",
@@ -150410,7 +150599,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20249775461",
@@ -150579,7 +150770,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20185623212",
@@ -150802,7 +150995,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20169551139",
@@ -151022,7 +151217,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27339516524",
@@ -151281,7 +151478,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20305063291",
@@ -151444,7 +151643,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27360187867",
@@ -151865,7 +152066,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27252182379",
@@ -152264,7 +152467,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20377965605",
@@ -152500,7 +152705,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27260405069",
@@ -152519,7 +152726,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27251917642",
@@ -152982,7 +153191,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27311439397",
@@ -153139,7 +153350,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20187750637",
@@ -153464,7 +153677,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20119584486",
@@ -153765,7 +153980,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20166669643",
@@ -153910,7 +154127,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27119883364",
@@ -154271,7 +154490,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20169543489",
@@ -154658,7 +154879,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27343351750",
@@ -155099,7 +155322,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "20180715119",
@@ -155256,7 +155481,9 @@
       ],
       "periodos": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "distrito": null,
+      "partido": null
     },
     {
       "cuit": "27286063190",
