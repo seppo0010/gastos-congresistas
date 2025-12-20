@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from 'react';
-import { Home, AlertCircle } from 'lucide-react';
+import { Home, AlertCircle, X } from 'lucide-react';
 
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
@@ -170,28 +170,35 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
             <button
               key={l.cuit}
               onClick={() => onSelect(l)}
-              className={`w-full text-left p-3 hover:bg-gray-50 border-b cursor-pointer transition-colors ${isSelected ? 'bg-gray-50' : ''}`}
-              style={isSelected ? { borderLeft: `4px solid ${color}` } : {}}
+              className={`w-full text-left p-3 border-b cursor-pointer transition-colors flex items-center gap-3 ${isSelected ? 'bg-gray-50' : 'hover:bg-gray-50'}`}
             >
-              <div className="flex justify-between items-center w-full">
-                <div className="font-semibold text-sm mr-2 flex-1 flex items-center gap-1 min-w-0">
-                  <span className="truncate">{l.nombre}</span>
-                  {l.posible_crédito && (
-                    <div title="Tiene un posible crédito. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
-                      <Home size={14} className="text-green-600" />
-                    </div>
-                  )}
-                  {l.cambios_nivel && (
-                    <div title="Tiene un cambio de nivel en su deuda. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
-                      <AlertCircle size={14} className="text-orange-500" />
-                    </div>
+              <div
+                className="w-4 h-4 flex-shrink-0 rounded-sm flex items-center justify-center"
+                style={{ backgroundColor: isSelected ? color : 'transparent' }}
+              >
+                {isSelected && <X size={12} className="text-white" />}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex justify-between items-center w-full">
+                  <div className="font-semibold text-sm mr-2 flex-1 flex items-center gap-1 min-w-0">
+                    <span className="truncate">{l.nombre}</span>
+                    {l.posible_crédito && (
+                      <div title="Tiene un posible crédito. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
+                        <Home size={14} className="text-green-600" />
+                      </div>
+                    )}
+                    {l.cambios_nivel && (
+                      <div title="Tiene un cambio de nivel en su deuda. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
+                        <AlertCircle size={14} className="text-orange-500" />
+                      </div>
+                    )}
+                  </div>
+                  {max > 0 && (
+                    <span className="text-xs text-gray-500 whitespace-nowrap bg-gray-100 px-1.5 py-0.5 rounded">
+                      {new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', notation: "compact", compactDisplay: "short" }).format(max * 1000)}
+                    </span>
                   )}
                 </div>
-                {max > 0 && (
-                  <span className="text-xs text-gray-500 whitespace-nowrap bg-gray-100 px-1.5 py-0.5 rounded">
-                    {new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', notation: "compact", compactDisplay: "short" }).format(max * 1000)}
-                  </span>
-                )}
               </div>
             </button>
           );
