@@ -153,7 +153,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           )}
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label htmlFor="credit" className="block text-gray-600 text-xs font-semibold mb-1">Posible Crédito*</label>
+              <label htmlFor="credit" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1"><Home size={14} className="text-green-600" />Posible Crédito*</label>
               <select id="credit" value={creditFilter} onChange={e => setCreditFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todos</option>
                 <option value="si">Sí</option>
@@ -161,7 +161,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
               </select>
             </div>
             <div>
-              <label htmlFor="levelChange" className="block text-gray-600 text-xs font-semibold mb-1">Cambios Nivel*</label>
+              <label htmlFor="levelChange" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1"><AlertCircle size={14} className="text-orange-500" />Cambios Nivel*</label>
               <select id="levelChange" value={levelChangeFilter} onChange={e => setLevelChangeFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todos</option>
                 <option value="si">Sí</option>
