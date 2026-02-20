@@ -18,17 +18,17 @@ export interface Milestone {
 export interface Legislator {
   cuit: string;     // Identificador único (Ej: "20326896684")
   nombre: string;   // Nombre completo
-  pdf_paths: string[]; // Lista de archivos fuente procesados
+  pdf_paths?: string[]; // Lista de archivos fuente procesados
   hitos_personales: Milestone[]; // Eventos específicos de esta persona
   historial: DebtRecord[];       // Lista cruda de deudas (sin agrupar)
-  distrito: string;
-  partido: string;
+  distrito?: string;  // Solo legisladores
+  partido?: string;   // Solo legisladores
   cargo: string;
-  periodos: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];
+  unidad?: string;    // Solo funcionarios del ejecutivo (ej: "Ministerio de Salud")
+  periodos?: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];  // Solo legisladores
   posible_crédito: boolean;
   cambios_nivel: boolean;
   color?: string;
-
 }
 
 // 4. Estructura Raíz del JSON (Dashboard completo)

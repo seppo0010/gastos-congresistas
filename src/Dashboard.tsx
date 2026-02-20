@@ -3,6 +3,7 @@ import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
 import dbCargada from './legisladores_full.json';
+import politicosDb from './politicos_full.json';
 import type { DashboardData, Legislator } from './types';
 import { List, BarChart3, Share2, HelpCircle, X } from 'lucide-react';
 import { COLORS } from './Colors';
@@ -22,11 +23,20 @@ const slugify = (text: string) => {
 type LegislatorWithSlug = Legislator & { slug: string };
 
 export default function Dashboard() {
-  const { meta, data: rawLegisladores } = dbCargada as DashboardData; 
+  const { meta, data: rawLegisladores } = dbCargada as DashboardData;
+  const { data: rawPoliticos } = politicosDb as DashboardData;
 
   const legisladores = useMemo(() => {
+    const politicosByCuit = new Map(rawPoliticos.map(p => [p.cuit, p]));
+    const merged = rawLegisladores.map(l => {
+      const pol = politicosByCuit.get(l.cuit);
+      return pol ? { ...l, unidad: pol.unidad } : l;
+    });
+    const legCuits = new Set(rawLegisladores.map(l => l.cuit));
+    const combined = [...merged, ...rawPoliticos.filter(p => !legCuits.has(p.cuit))];
+
     const seen = new Map<string, number>();
-    return rawLegisladores.map(l => {
+    return combined.map(l => {
       let slug = slugify(l.nombre);
       if (seen.has(slug)) {
         const count = seen.get(slug)! + 1;
@@ -89,7 +99,7 @@ export default function Dashboard() {
       setSelected(prev => prev.filter(l => l.cuit !== lWithSlug.cuit));
       selectionChanged = true;
     } else if (selected.length >= 4) {
-      setWarning("Solo se pueden comparar hasta 4 legisladores");
+      setWarning("Solo se pueden comparar hasta 4 personas");
     } else {
       const usedColors = new Set(selected.map(l => l.color));
       const nextColor = COLORS.find(c => !usedColors.has(c)) || COLORS[selected.length % COLORS.length];
@@ -188,8 +198,8 @@ export default function Dashboard() {
             </button>
             <h3 className="font-bold text-lg mb-2">Información</h3>
             <p className="mb-4 text-sm text-gray-600">
-              Se muestra el total de deuda que cada legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.<br />
-              Los datos de bloque y distrito vienen de <a target='_blank' rel='nofollow' href='https://argentinadatos.com/' className="text-blue-600 hover:underline">argentinadatos.com</a>.
+              Se muestra el total de deuda que cada funcionario/legislador tiene cada mes según lo reportado por el BCRA en la "Central de Deudores", usualmente eso representa los gastos de tarjeta, pero no hay forma de saber si se pagó el total o si tiene un crédito.<br />
+              Los datos de bloque y distrito de los legisladores vienen de <a target='_blank' rel='nofollow' href='https://argentinadatos.com/' className="text-blue-600 hover:underline">argentinadatos.com</a>.
             </p>
             <p className="text-xs text-yellow-800 bg-yellow-50 p-2 rounded border border-yellow-200">
               Atención: Parte de la información fue procesada automáticamente y podría contener errores.

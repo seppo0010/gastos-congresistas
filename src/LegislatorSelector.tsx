@@ -27,12 +27,14 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const [positionFilter, setPositionFilter] = useState("todos");
   const [provinceFilter, setProvinceFilter] = useState("todas");
   const [partyFilter, setPartyFilter] = useState("todos");
+  const [unitFilter, setUnitFilter] = useState("todas");
   const [creditFilter, setCreditFilter] = useState("todos");
   const [levelChangeFilter, setLevelChangeFilter] = useState("todos");
   const [sortOrder, setSortOrder] = useState("nombre_asc");
 
   const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
   const parties = useMemo(() => [...new Set(legisladores.filter(l => l.partido !== undefined).map(l => l.partido).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
+  const units = useMemo(() => [...new Set(legisladores.filter(l => l.unidad !== undefined).map(l => l.unidad).filter(u => (u || '').trim() !== ''))].sort(), [legisladores]);
 
   const debtStats = useMemo(() => {
     const stats = new Map<string, { max: number; avg: number }>();
@@ -49,19 +51,32 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
     return () => clearTimeout(handler);
   }, [searchTerm]);
 
+  useEffect(() => {
+    if (positionFilter === 'apn') {
+      setProvinceFilter('todas');
+      setPartyFilter('todos');
+    } else if (positionFilter === 'legisladores') {
+      setUnitFilter('todas');
+    }
+  }, [positionFilter]);
+
   const filteredAndSorted = useMemo(() => {
     return legisladores
       .filter(l => {
         const searchMatch = debouncedSearchTerm === "" || l.nombre.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
 
-        const positionMatch = positionFilter === 'todos' || (l.cargo || '').toLocaleLowerCase() === positionFilter;
+        const isLegislador = !!l.periodos;
+        const positionMatch = positionFilter === 'todos' ||
+          (positionFilter === 'legisladores' && isLegislador) ||
+          (positionFilter === 'apn' && !isLegislador);
         const provinceMatch = provinceFilter === 'todas' || l.distrito === provinceFilter;
         const partyMatch = partyFilter === 'todos' || l.partido === partyFilter;
+        const unitMatch = unitFilter === 'todas' || l.unidad === unitFilter;
 
         const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.posible_crédito : !l.posible_crédito);
         const levelChangeMatch = levelChangeFilter === 'todos' || (levelChangeFilter === 'si' ? l.cambios_nivel : !l.cambios_nivel);
 
-        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && creditMatch && levelChangeMatch);
+        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && creditMatch && levelChangeMatch);
       })
       .sort((a, b) => {
         const aSelected = selectedIds.includes(a.cuit);
@@ -79,12 +94,12 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
 
         return 0;
       });
-  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, creditFilter, levelChangeFilter, selectedIds, sortOrder, debtStats]);
+  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, creditFilter, levelChangeFilter, selectedIds, sortOrder, debtStats]);
 
   return (
     <div className="w-full md:w-80 h-full flex flex-col border-r border-gray-200 bg-white">
       <div className="p-4 border-b">
-        <h2 className="font-bold text-gray-800">Legisladores ({filteredAndSorted.length})</h2>
+        <h2 className="font-bold text-gray-800">Funcionarios ({filteredAndSorted.length})</h2>
         <input
           className="w-full mt-2 p-2 border rounded text-sm"
           placeholder="Buscar..."
@@ -102,27 +117,40 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
             </select>
           </div>
           <div>
-            <label htmlFor="position" className="block text-gray-600 text-xs font-semibold mb-1">Cargo</label>
+            <label htmlFor="position" className="block text-gray-600 text-xs font-semibold mb-1">Poder</label>
             <select id="position" value={positionFilter} onChange={e => setPositionFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
               <option value="todos">Todos</option>
-              <option value="diputado">Diputado/a</option>
-              <option value="senador">Senador/a</option>
+              <option value="legisladores">Legislativo</option>
+              <option value="apn">Ejecutivo</option>
             </select>
           </div>
-          <div>
-            <label htmlFor="province" className="block text-gray-600 text-xs font-semibold mb-1">Provincia</label>
-            <select id="province" value={provinceFilter} onChange={e => setProvinceFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
-              <option value="todas">Todas</option>
-              {provinces.map(p => <option key={p} value={p}>{p}</option>)}
-            </select>
-          </div>
-          <div>
-            <label htmlFor="party" className="block text-gray-600 text-xs font-semibold mb-1">Bloque</label>
-            <select id="party" value={partyFilter} onChange={e => setPartyFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
-              <option value="todos">Todos</option>
-              {parties.map(p => <option key={p} value={p}>{p}</option>)}
-            </select>
-          </div>
+          {positionFilter === 'legisladores' && (
+            <div>
+              <label htmlFor="province" className="block text-gray-600 text-xs font-semibold mb-1">Provincia</label>
+              <select id="province" value={provinceFilter} onChange={e => setProvinceFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                <option value="todas">Todas</option>
+                {provinces.map(p => <option key={p} value={p}>{p}</option>)}
+              </select>
+            </div>
+          )}
+          {positionFilter === 'legisladores' && (
+            <div>
+              <label htmlFor="party" className="block text-gray-600 text-xs font-semibold mb-1">Bloque</label>
+              <select id="party" value={partyFilter} onChange={e => setPartyFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                <option value="todos">Todos</option>
+                {parties.map(p => <option key={p} value={p}>{p}</option>)}
+              </select>
+            </div>
+          )}
+          {positionFilter === 'apn' && (
+            <div>
+              <label htmlFor="unit" className="block text-gray-600 text-xs font-semibold mb-1">Unidad</label>
+              <select id="unit" value={unitFilter} onChange={e => setUnitFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                <option value="todas">Todas</option>
+                {units.map(u => <option key={u} value={u}>{u}</option>)}
+              </select>
+            </div>
+          )}
           <div className="grid grid-cols-2 gap-2">
             <div>
               <label htmlFor="credit" className="block text-gray-600 text-xs font-semibold mb-1">Posible Crédito*</label>
@@ -150,6 +178,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
               setPositionFilter("todos");
               setProvinceFilter("todas");
               setPartyFilter("todos");
+              setUnitFilter("todas");
               setCreditFilter("todos");
               setLevelChangeFilter("todos");
             }}

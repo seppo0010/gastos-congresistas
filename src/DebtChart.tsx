@@ -25,7 +25,7 @@ interface Bank {
 }
 
 const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: string): boolean => {
-  return legislator.periodos.filter(p => p.cargo.toLowerCase() === (cargo || '').toLowerCase() && fecha > p.inicio && fecha < p.fin).length > 0
+  return (legislator.periodos || []).filter(p => p.cargo.toLowerCase() === (cargo || '').toLowerCase() && fecha > p.inicio && fecha < p.fin).length > 0
 }
 
 const GRAY = '#9ca3af';
@@ -165,7 +165,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
     }
   };
 
-  if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 legisladores</div>;
+  if (legislators.length === 0) return <div className="p-10 text-gray-400">Seleccione hasta 4 funcionarios</div>;
 
   const formatMoney = (val: number) => {
     if (currencyMode === 'usd') return `US$ ${new Intl.NumberFormat('es-AR').format(Math.round(val))}`;
@@ -258,9 +258,10 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
               <div className="w-3 h-3 rounded-full" style={{ backgroundColor: l.color || COLORS[idx % COLORS.length] }}></div>
               <div>
                 <div className="font-bold text-sm">{l.nombre}</div>
-                <div className="flex gap-1 mt-1">
+                <div className="flex gap-1 mt-1 flex-wrap">
                   {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.partido}</span>}
                   {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.distrito}</span>}
+                  {l.unidad && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.unidad}</span>}
                 </div>
               </div>
             </div>
