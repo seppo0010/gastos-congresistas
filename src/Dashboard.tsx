@@ -51,7 +51,7 @@ export default function Dashboard() {
 
   const [selected, setSelected] = useState<LegislatorWithSlug[]>(() => {
     const params = new URLSearchParams(window.location.search);
-    const slugs = params.get('legisladores')?.split(',') || [];
+    const slugs = (params.get('funcionarios') || params.get('legisladores'))?.split(',') || [];
     const found = slugs.map(s => legisladores.find(l => l.slug === s)).filter((l): l is LegislatorWithSlug => !!l).slice(0, 4);
     return found.map((l, i) => ({ ...l, color: COLORS[i % COLORS.length] }));
   });
@@ -84,8 +84,10 @@ export default function Dashboard() {
   useEffect(() => {
     const url = new URL(window.location.href);
     if (selected.length > 0) {
-      url.searchParams.set('legisladores', selected.map(l => l.slug).join(','));
+      url.searchParams.set('funcionarios', selected.map(l => l.slug).join(','));
+      url.searchParams.delete('legisladores');
     } else {
+      url.searchParams.delete('funcionarios');
       url.searchParams.delete('legisladores');
     }
     window.history.replaceState({}, '', url);
