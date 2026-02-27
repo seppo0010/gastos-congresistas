@@ -1,5 +1,5 @@
 import { useMemo, useState, useRef, forwardRef, useImperativeHandle } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Brush } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, ReferenceDot, Brush } from 'recharts';
 
 // Importa tu JSON generado por Python
 import type { Legislator, Milestone, CurrencyMode } from './types';
@@ -53,16 +53,35 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 }
 
 const GRAY = '#9ca3af';
+const ORANGE = '#FFA800';
 
-const DebtChart = forwardRef(({ 
-  legislators, 
-  globalMilestones, 
-  ipc, 
-  mep, 
-  onRemove, 
-  isMobile, 
-  copied, 
-  onShare, 
+const CustomEconomicMarker = (props: any) => {
+  const { cx, cy, color } = props;
+  if (!cx || !cy) return null;
+  return (
+    <g>
+      <line
+        x1={cx - 15}
+        x2={cx + 15}
+        y1={cy}
+        y2={cy}
+        stroke={color}
+        strokeWidth={3}
+        strokeLinecap="round"
+      />
+    </g>
+  );
+};
+
+const DebtChart = forwardRef(({
+  legislators,
+  globalMilestones,
+  ipc,
+  mep,
+  onRemove,
+  isMobile,
+  copied,
+  onShare,
   onShowHelp,
   includeFamiliares = false,
   onToggleFamiliares
@@ -75,9 +94,33 @@ const DebtChart = forwardRef(({
     getChartElement: () => chartContainerRef.current,
   }));
 
+  const ipcDates = useMemo(() => {
+    const r = Object.keys(ipc || {});
+    r.sort();
+    return r;
+  }, [ipc]);
+
+  const latestIPC = useMemo(() => {
+    if (currencyMode === 'real' && ipc && ipcDates.length > 0) {
+      return ipc[ipcDates[ipcDates.length - 1]];
+    }
+    return 0;
+  }, [currencyMode, ipc, ipcDates]);
+
+  const convertMonto = (monto: number, fecha: string) => {
+    if (currencyMode === 'real' && ipc && latestIPC > 0) {
+      const val = ipc[fecha];
+      if (val) return (monto * latestIPC) / val;
+    } else if (currencyMode === 'usd' && mep) {
+      const val = mep[fecha];
+      return (val && val > 0) ? (monto * 1000) / val : 0;
+    }
+    return monto;
+  };
+
   // 1. Unificar Hitos (Globales + Personales)
-  const allMilestones = useMemo(() => {
-    const personales = legislators.flatMap((l, index) => 
+  const { verticalMilestones, economicMilestones } = useMemo(() => {
+    const personales = legislators.flatMap((l, index) =>
       (l.hitos_personales || []).map(h => ({
         ...h,
         legislatorId: l.cuit,
@@ -86,16 +129,26 @@ const DebtChart = forwardRef(({
     );
 
     const relevantes = globalMilestones.filter(m => (
-      ['global', 'voto', 'politico'].includes(m.tipo || '') || 
+      ['global', 'voto', 'politico'].includes(m.tipo || '') ||
       legislators.some(l => teniaCargo(l, m.tipo, m.fecha))
     ));
 
-    const grouped = Object.groupBy([...relevantes, ...personales], (m: any) => m.fecha);
+    const all = [...relevantes, ...personales];
 
-    return Object.values(grouped).map((group: any) => {
+    // Milestones with monto are economic
+    const eco = all.filter(m => m.monto != null).map(m => ({
+      ...m,
+      color: ORANGE,
+      convertedMonto: convertMonto((m.monto || 0) / 1000, m.fecha)
+    }));
+
+    // Grouping only for vertical milestones
+    const grouped = Object.groupBy(all.filter(m => m.monto == null), (m: any) => m.fecha);
+
+    const vertical = Object.values(grouped).map((group: any) => {
       const legislatorIds = new Set(group.map((m: any) => m.legislatorId).filter(Boolean));
       const hasGlobal = group.some((m: any) => !m.legislatorId);
-      
+
       let color = GRAY;
 
       if (legislatorIds.size === 1 && !hasGlobal) {
@@ -110,14 +163,10 @@ const DebtChart = forwardRef(({
         color,
         tipo: group[0].tipo,
       }
-    })
-  }, [legislators, globalMilestones]);
+    });
 
-  const ipcDates = useMemo(() => {
-    const r = Object.keys(ipc || {});
-    r.sort();
-    return r;
-  }, [ipc]);
+    return { verticalMilestones: vertical, economicMilestones: eco };
+  }, [legislators, globalMilestones, currencyMode, latestIPC, ipc, mep]);
 
   // 2a. Calcular segmentos únicos (cuit × deudor × entidad) con total acumulado
   const barSegments = useMemo(() => {
@@ -185,22 +234,6 @@ const DebtChart = forwardRef(({
   const chartData = useMemo(() => {
     const grouped: { [key: string]: any } = {};
 
-    let latestIPC = 0;
-    if (currencyMode === 'real' && ipc) {
-      if (ipcDates.length > 0) latestIPC = ipc[ipcDates[ipcDates.length - 1]];
-    }
-
-    const convertMonto = (monto: number, fecha: string) => {
-      if (currencyMode === 'real' && ipc && latestIPC > 0) {
-        const val = ipc[fecha];
-        if (val) return (monto * latestIPC) / val;
-      } else if (currencyMode === 'usd' && mep) {
-        const val = mep[fecha];
-        return (val && val > 0) ? (monto * 1000) / val : 0;
-      }
-      return monto;
-    };
-
     const ensureEntry = (fecha: string, cuit: string) => {
       if (!grouped[fecha]) grouped[fecha] = { date: fecha, banks: {} };
       if (!grouped[fecha].banks[cuit]) grouped[fecha].banks[cuit] = { propio: [], familiares: {} };
@@ -233,7 +266,7 @@ const DebtChart = forwardRef(({
     });
 
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [legislators, currencyMode, ipc, mep, ipcDates, includeFamiliares]);
+  }, [legislators, currencyMode, ipc, mep, ipcDates, includeFamiliares, latestIPC]);
 
 
   const xAxisInterval = useMemo(() => {
@@ -246,11 +279,11 @@ const DebtChart = forwardRef(({
   const xAxisTickFormatter = (date: string) => {
     const [year, month] = date.split('-');
     const d = new Date(parseInt(year), parseInt(month) - 1);
-    
+
     // Capitalize first letter and remove period
     const monthStr = d.toLocaleDateString('es-AR', { month: 'short' });
     const formattedMonth = monthStr.charAt(0).toUpperCase() + monthStr.slice(1).replace('.', '');
-  
+
     return `${formattedMonth} '${year.substring(2)}`;
   };
 
@@ -409,8 +442,8 @@ const DebtChart = forwardRef(({
         </div>
         <div className="flex flex-wrap gap-4">
           {legislators.map((l, idx) => (
-            <div 
-              key={l.cuit} 
+            <div
+              key={l.cuit}
               className="flex items-center gap-2 border p-2 rounded cursor-pointer hover:bg-gray-50 transition-colors"
               onClick={() => onRemove && onRemove(l)}
             >
@@ -439,41 +472,21 @@ const DebtChart = forwardRef(({
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: isMobile ? 30 : 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis 
-              dataKey="date" 
-              tick={{fontSize: 10}} 
+            <XAxis
+              dataKey="date"
+              tick={{fontSize: 10}}
               angle={isMobile ? -45 : 0}
               textAnchor={isMobile ? "end" : "middle"}
               height={isMobile ? 40 : 30}
-              interval={xAxisInterval} 
+              interval={xAxisInterval}
               tickFormatter={xAxisTickFormatter}
             />
-            <YAxis 
+            <YAxis
               tickFormatter={yAxisTickFormatter}
-              tick={{fontSize: 11}} 
+              tick={{fontSize: 11}}
               width={65}
             />
             <Tooltip content={CustomTooltip} />
-
-            {/* RENDERIZADO DE TODOS LOS HITOS */}
-            {allMilestones.map((m, idx) => (
-              <ReferenceLine 
-                key={idx} 
-                x={m.fecha} 
-                stroke={m.color} 
-                strokeDasharray="4 2"
-                label={{ 
-                    value: m.texto, 
-                    position: 'insideTop', 
-                    fill: m.color, 
-                    fontSize: 10, 
-                    fontWeight: 'bold',
-                    angle: -90, // Texto vertical para que no se pisen
-                    textAnchor: 'end',
-                    dx: 4,
-                }} 
-              />
-            ))}
 
             {legislators.flatMap((l, idx) => {
               const propioKeys = [...barSegments.entries()]
@@ -494,6 +507,35 @@ const DebtChart = forwardRef(({
                 />
               ));
             })}
+
+            {/* RENDERIZADO DE TODOS LOS HITOS */}
+            {verticalMilestones.map((m, idx) => (
+              <ReferenceLine
+                key={`vert-${idx}`}
+                x={m.fecha}
+                stroke={m.color}
+                strokeDasharray="4 2"
+                label={{
+                    value: m.texto,
+                    position: 'insideTop',
+                    fill: m.color,
+                    fontSize: 10,
+                    fontWeight: 'bold',
+                    angle: -90, // Texto vertical para que no se pisen
+                    textAnchor: 'end',
+                    dx: 4,
+                }}
+              />
+            ))}
+
+            {economicMilestones.map((m, idx) => (
+              <ReferenceDot
+                key={`eco-${idx}`}
+                x={m.fecha}
+                y={m.convertedMonto}
+                shape={<CustomEconomicMarker color={m.color} />}
+              />
+            ))}
             <Brush dataKey="date" height={25} stroke={GRAY} tickFormatter={() => ''} />
           </BarChart>
         </ResponsiveContainer>

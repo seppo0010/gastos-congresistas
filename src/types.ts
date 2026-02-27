@@ -11,6 +11,7 @@ export interface Milestone {
   fecha: string;    // Formato ISO "YYYY-MM"
   texto: string;    // Ej: "Voto Ley Bases"
   color: string;    // Hex code: "#ef4444"
+  monto?: number;   // Monto en pesos (opcional)
   tipo?: 'global' | 'personal' | 'voto' | 'politico' | 'economico' | 'senadores' | 'diputados'; // Opcional, para lógica de filtrado visual
 }
 
