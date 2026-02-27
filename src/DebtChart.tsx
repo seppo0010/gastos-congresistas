@@ -16,6 +16,8 @@ interface DebtChartProps {
   copied?: boolean;
   onShare?: () => void;
   onShowHelp?: () => void;
+  includeFamiliares?: boolean;
+  onToggleFamiliares?: () => void;
 }
 
 interface Bank {
@@ -52,9 +54,20 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 
 const GRAY = '#9ca3af';
 
-const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemove, isMobile, copied, onShare, onShowHelp }: DebtChartProps, ref) => {
+const DebtChart = forwardRef(({ 
+  legislators, 
+  globalMilestones, 
+  ipc, 
+  mep, 
+  onRemove, 
+  isMobile, 
+  copied, 
+  onShare, 
+  onShowHelp,
+  includeFamiliares = false,
+  onToggleFamiliares
+}: DebtChartProps, ref) => {
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
-  const [includeFamiliares, setIncludeFamiliares] = useState(false);
   const chartContainerRef = useRef<HTMLDivElement>(null);
 
 
@@ -372,7 +385,7 @@ const DebtChart = forwardRef(({ legislators, globalMilestones, ipc, mep, onRemov
               </button>
             )}
             <button
-              onClick={() => setIncludeFamiliares(v => !v)}
+              onClick={onToggleFamiliares}
               className={`flex items-center gap-1 text-xs px-2 py-1 rounded border transition-colors ${
                 includeFamiliares
                   ? 'bg-blue-600 text-white border-blue-600'

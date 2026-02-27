@@ -56,6 +56,11 @@ export default function Dashboard() {
     return found.map((l, i) => ({ ...l, color: COLORS[i % COLORS.length] }));
   });
 
+  const [includeFamiliares, setIncludeFamiliares] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('familiares') === 'true';
+  });
+
   const [warning, setWarning] = useState<string | null>(null);
   const [mobileView, setMobileView] = useState<'list' | 'chart'>('list');
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -90,8 +95,15 @@ export default function Dashboard() {
       url.searchParams.delete('funcionarios');
       url.searchParams.delete('legisladores');
     }
+
+    if (includeFamiliares) {
+      url.searchParams.set('familiares', 'true');
+    } else {
+      url.searchParams.delete('familiares');
+    }
+
     window.history.replaceState({}, '', url);
-  }, [selected]);
+  }, [selected, includeFamiliares]);
 
   const handleSelect = (legislator: Legislator) => {
     const lWithSlug = legislator as LegislatorWithSlug;
@@ -184,6 +196,8 @@ export default function Dashboard() {
           copied={copied}
           onShare={handleShare}
           onShowHelp={() => setShowHelp(true)}
+          includeFamiliares={includeFamiliares}
+          onToggleFamiliares={() => setIncludeFamiliares(v => !v)}
         />
       </div>
 
