@@ -115,18 +115,6 @@
       "historial": [
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 328
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 641
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
           "fecha": "2024-02",
           "situacion": 1,
           "monto": 36
@@ -388,6 +376,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 280
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 871
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 58
         }
       ],
       "hitos_personales": [],
@@ -400,36 +400,6 @@
       "cargo": "Presidente/a",
       "unidad": "Organismo Regulador de Seguridad de Presas",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 146
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 5
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 275
-        },
-        {
-          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 28
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 39
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -921,6 +891,30 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 56
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 238
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 152
+        },
+        {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2026-01",
+          "situacion": 4,
+          "monto": 262
+        },
+        {
+          "entidad": "CENCOSUD S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 28
         }
       ],
       "hitos_personales": [],
@@ -933,18 +927,6 @@
       "cargo": "Director/a Ejecutivo/a",
       "unidad": "Comisión Nacional de Evaluación de Tecnologías Sanitarias y Excelencia Clínica (CONETEC)",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1340
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 213
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -1292,6 +1274,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 76
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1558
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 870
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 75
         }
       ],
       "hitos_personales": [],
@@ -1304,12 +1304,6 @@
       "cargo": "Miembro en representación del Consejo Interuniversitario Nacional",
       "unidad": "Comisión Nacional de Evaluación y Acreditación Universitaria",
       "historial": [
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1349
-        },
         {
           "entidad": "BANCO PATAGONIA S.A.",
           "fecha": "2024-02",
@@ -1447,6 +1441,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1354
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2838
         }
       ],
       "hitos_personales": [],
@@ -1459,12 +1459,6 @@
       "cargo": "Interventor/a",
       "unidad": "Ente Nacional Regulador del Gas",
       "historial": [
-        {
-          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 4429
-        },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-02",
@@ -1602,6 +1596,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5406
+        },
+        {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 5184
         }
       ],
       "hitos_personales": [],
@@ -1614,24 +1614,6 @@
       "cargo": "Director/a Ejecutivo/a",
       "unidad": "Agencia de Recaudación y Control Aduanero",
       "historial": [
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 627
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 220
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3
-        },
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -1925,6 +1907,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 31
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 6608
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 31
         }
       ],
       "hitos_personales": [],
@@ -1937,24 +1931,6 @@
       "cargo": "Ministro",
       "unidad": "Ministerio de Justicia",
       "historial": [
-        {
-          "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 71
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1489
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 430
-        },
         {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
@@ -2326,6 +2302,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 3718
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4620
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2790
         }
       ],
       "hitos_personales": [],
@@ -2338,18 +2326,6 @@
       "cargo": "Comisario/a",
       "unidad": "Instituto Nacional de la Propiedad Industrial",
       "historial": [
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 85
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1298
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -2607,6 +2583,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 3667
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 131
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3482
         }
       ],
       "hitos_personales": [],
@@ -2864,6 +2852,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 285
+        },
+        {
+          "entidad": "NUEVO BANCO DE SANTA FE SA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 428
+        },
+        {
+          "entidad": "TARJETA NARANJA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 560
         }
       ],
       "hitos_personales": [],
@@ -2876,24 +2876,6 @@
       "cargo": "Presidente/a - Director/a Titular",
       "unidad": "Agencia de Publicidad del Estado Sociedad Anónima Unipersonal (APE S.A.U.)",
       "historial": [
-        {
-          "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1252
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2264
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 216
-        },
         {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
@@ -3301,6 +3283,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4265
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 8228
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 108
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2952
         }
       ],
       "hitos_personales": [
@@ -3321,24 +3321,6 @@
       "cargo": "Interventor/a",
       "unidad": "Ente Nacional Regulador de la Electricidad",
       "historial": [
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 3,
-          "monto": 116
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 118
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 5
-        },
         {
           "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
           "fecha": "2024-02",
@@ -3650,6 +3632,18 @@
           "fecha": "2025-12",
           "situacion": 5,
           "monto": 33
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 646
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 5,
+          "monto": 33
         }
       ],
       "hitos_personales": [],
@@ -3662,18 +3656,6 @@
       "cargo": "Jefe/a",
       "unidad": "Policía Federal Argentina",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3854
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1631
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -3961,6 +3943,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 388
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1636
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 911
         }
       ],
       "hitos_personales": [],
@@ -3973,18 +3967,6 @@
       "cargo": "Presidente/a",
       "unidad": "YPF S.A.",
       "historial": [
-        {
-          "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3307
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 4660
-        },
         {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
@@ -4290,6 +4272,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4811
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 11238
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7039
         }
       ],
       "hitos_personales": [
@@ -4331,12 +4325,6 @@
       "cargo": "Presidente/a",
       "unidad": "Ente Regulador de Agua y Saneamiento",
       "historial": [
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 728
-        },
         {
           "entidad": "BANCO BMA S.A.U.",
           "fecha": "2024-02",
@@ -4474,6 +4462,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 2611
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2940
         }
       ],
       "hitos_personales": [],
@@ -4486,18 +4480,6 @@
       "cargo": "Presidente/a",
       "unidad": "Instituto Nacional de Cine y Artes Audiovisuales",
       "historial": [
-        {
-          "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1307
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 256
-        },
         {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
@@ -4517,16 +4499,16 @@
           "monto": 1180
         },
         {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 2
-        },
-        {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-03",
           "situacion": 1,
           "monto": 506
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2024-03",
+          "situacion": 1,
+          "monto": 2
         },
         {
           "entidad": "Banco GGAL SA",
@@ -4737,6 +4719,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4487
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4372
         }
       ],
       "hitos_personales": [],
@@ -4749,18 +4737,6 @@
       "cargo": "Presidente/a",
       "unidad": "Energía Argentina S.A.",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1518
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2420
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -5036,6 +5012,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 2638
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4583
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 8192
         }
       ],
       "hitos_personales": [],
@@ -5050,33 +5038,9 @@
       "historial": [
         {
           "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 738
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 68
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 16149
-        },
-        {
-          "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
           "situacion": 1,
           "monto": 7161
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 77
         },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
@@ -5085,22 +5049,28 @@
           "monto": 5843
         },
         {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2024-02",
+          "situacion": 1,
+          "monto": 77
+        },
+        {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-03",
           "situacion": 1,
           "monto": 10519
         },
         {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 99
-        },
-        {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-03",
           "situacion": 1,
           "monto": 4559
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2024-03",
+          "situacion": 1,
+          "monto": 99
         },
         {
           "entidad": "Banco GGAL SA",
@@ -5389,6 +5359,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 13099
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 2,
+          "monto": 22469
         }
       ],
       "hitos_personales": [
@@ -5409,12 +5385,6 @@
       "cargo": "Prefecto Nacional Naval",
       "unidad": "Prefectura Naval Argentina",
       "historial": [
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 750
-        },
         {
           "entidad": "BANCO PATAGONIA S.A.",
           "fecha": "2024-02",
@@ -5576,6 +5546,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 669
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 30
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 965
         }
       ],
       "hitos_personales": [],
@@ -5588,18 +5570,6 @@
       "cargo": "Jefe/a",
       "unidad": "Estado Mayor General de la Armada Argentina",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 549
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 83
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -5875,6 +5845,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 116
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1110
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 136
         }
       ],
       "hitos_personales": [],
@@ -5887,12 +5869,6 @@
       "cargo": "Ministro",
       "unidad": "Ministerio del Interior",
       "historial": [
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1178
-        },
         {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-02",
@@ -6090,6 +6066,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1573
+        },
+        {
+          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2488
         }
       ],
       "hitos_personales": [
@@ -6126,45 +6108,21 @@
       "historial": [
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2015
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 126
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 4987
-        },
-        {
-          "entidad": "BRUBANK S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
           "situacion": 1,
           "monto": 3601
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 347
         },
         {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-02",
           "situacion": 1,
           "monto": 3731
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-02",
+          "situacion": 1,
+          "monto": 347
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -6179,16 +6137,16 @@
           "monto": 4897
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 173
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-03",
           "situacion": 1,
           "monto": 4180
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-03",
+          "situacion": 1,
+          "monto": 173
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -6203,16 +6161,16 @@
           "monto": 5360
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 169
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-04",
           "situacion": 1,
           "monto": 2580
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-04",
+          "situacion": 1,
+          "monto": 169
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -6227,16 +6185,16 @@
           "monto": 4679
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 270
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-05",
           "situacion": 1,
           "monto": 3557
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-05",
+          "situacion": 1,
+          "monto": 270
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -6251,16 +6209,16 @@
           "monto": 9334
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 481
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-06",
           "situacion": 1,
           "monto": 2966
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-06",
+          "situacion": 1,
+          "monto": 481
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -6275,16 +6233,16 @@
           "monto": 9140
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 258
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-07",
           "situacion": 1,
           "monto": 2598
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-07",
+          "situacion": 1,
+          "monto": 258
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6293,16 +6251,16 @@
           "monto": 6840
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 579
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-08",
           "situacion": 1,
           "monto": 2455
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-08",
+          "situacion": 1,
+          "monto": 579
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6311,16 +6269,16 @@
           "monto": 3307
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 430
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-09",
           "situacion": 1,
           "monto": 1875
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-09",
+          "situacion": 1,
+          "monto": 430
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6329,16 +6287,16 @@
           "monto": 3098
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 369
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-10",
           "situacion": 1,
           "monto": 5191
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-10",
+          "situacion": 1,
+          "monto": 369
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6347,16 +6305,16 @@
           "monto": 6681
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 402
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-11",
           "situacion": 1,
           "monto": 4725
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-11",
+          "situacion": 1,
+          "monto": 402
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6365,16 +6323,16 @@
           "monto": 2843
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 262
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2024-12",
           "situacion": 1,
           "monto": 2438
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2024-12",
+          "situacion": 1,
+          "monto": 262
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6383,16 +6341,16 @@
           "monto": 840
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 283
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-01",
           "situacion": 1,
           "monto": 1587
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-01",
+          "situacion": 1,
+          "monto": 283
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6401,16 +6359,16 @@
           "monto": 310
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 240
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-02",
           "situacion": 1,
           "monto": 1307
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-02",
+          "situacion": 1,
+          "monto": 240
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6419,16 +6377,16 @@
           "monto": 830
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 138
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-03",
           "situacion": 1,
           "monto": 2526
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-03",
+          "situacion": 1,
+          "monto": 138
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6437,16 +6395,16 @@
           "monto": 2176
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 141
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-04",
           "situacion": 1,
           "monto": 1846
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-04",
+          "situacion": 1,
+          "monto": 141
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6455,16 +6413,16 @@
           "monto": 2275
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 224
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-05",
           "situacion": 1,
           "monto": 2020
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-05",
+          "situacion": 1,
+          "monto": 224
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6473,16 +6431,16 @@
           "monto": 3904
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 473
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-06",
           "situacion": 1,
           "monto": 1774
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-06",
+          "situacion": 1,
+          "monto": 473
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6491,16 +6449,16 @@
           "monto": 2895
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 308
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-07",
           "situacion": 1,
           "monto": 2124
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-07",
+          "situacion": 1,
+          "monto": 308
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6509,16 +6467,16 @@
           "monto": 1939
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 400
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-08",
           "situacion": 1,
           "monto": 2602
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-08",
+          "situacion": 1,
+          "monto": 400
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6527,16 +6485,16 @@
           "monto": 2919
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 286
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-09",
           "situacion": 1,
           "monto": 2603
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-09",
+          "situacion": 1,
+          "monto": 286
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6545,16 +6503,16 @@
           "monto": 2597
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 430
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-10",
           "situacion": 1,
           "monto": 896
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-10",
+          "situacion": 1,
+          "monto": 430
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6563,16 +6521,16 @@
           "monto": 1436
         },
         {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 286
-        },
-        {
           "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
           "fecha": "2025-11",
           "situacion": 1,
           "monto": 1587
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2025-11",
+          "situacion": 1,
+          "monto": 286
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -6581,16 +6539,34 @@
           "monto": 2147
         },
         {
+          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
+          "fecha": "2025-12",
+          "situacion": 1,
+          "monto": 1255
+        },
+        {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 253
         },
         {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
           "situacion": 1,
-          "monto": 1255
+          "monto": 2431
+        },
+        {
+          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2712
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 608
         }
       ],
       "hitos_personales": [
@@ -6611,24 +6587,6 @@
       "cargo": "Ministro",
       "unidad": "Ministerio de Relaciones Exteriores, Comercio Internacional y Culto",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 8787
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3193
-        },
-        {
-          "entidad": "BRUBANK S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -7000,6 +6958,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 8770
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 612
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 61
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7509
         }
       ],
       "hitos_personales": [
@@ -7027,12 +7003,6 @@
       "cargo": "Ministro",
       "unidad": "Ministerio de Defensa",
       "historial": [
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1569
-        },
         {
           "entidad": "BANCO PATAGONIA S.A.",
           "fecha": "2024-02",
@@ -7170,6 +7140,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5010
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 5432
         }
       ],
       "hitos_personales": [],
@@ -7182,18 +7158,6 @@
       "cargo": "Jefe/a",
       "unidad": "Estado Mayor General de la Fuerza Aérea Argentina",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 762
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 178
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -7445,6 +7409,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1484
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1575
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1105
         }
       ],
       "hitos_personales": [],
@@ -7457,18 +7433,6 @@
       "cargo": "Presidente/a - Director/a Titular Clase 'C'",
       "unidad": "Aerolíneas Argentinas S.A.",
       "historial": [
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1134
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2729
-        },
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -7744,6 +7708,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1161
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7160
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1686
         }
       ],
       "hitos_personales": [],
@@ -7756,18 +7732,6 @@
       "cargo": "Presidente/a",
       "unidad": "Comisión Nacional Antidopaje",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1407
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3825
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -8043,6 +8007,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 13540
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1944
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 10755
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 32
         }
       ],
       "hitos_personales": [],
@@ -8055,12 +8037,6 @@
       "cargo": "Presidente - Director/a Titular",
       "unidad": "Administración de Infraestructuras Ferroviarias S.A.",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2000
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -8198,6 +8174,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 2655
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2680
         }
       ],
       "hitos_personales": [],
@@ -8210,12 +8192,6 @@
       "cargo": "Presidente/a",
       "unidad": "Instituto Nacional de la Propiedad Industrial",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 665
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -8437,6 +8413,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5028
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7650
         }
       ],
       "hitos_personales": [],
@@ -8449,24 +8431,6 @@
       "cargo": "Director/a Ejecutivo/a",
       "unidad": "Administración Nacional de la Seguridad Social ",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 408
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 693
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1527
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -8976,6 +8940,30 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 448
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1466
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 134
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 5047
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 255
         }
       ],
       "hitos_personales": [
@@ -8996,30 +8984,6 @@
       "cargo": "Secretario/a",
       "unidad": "Secretaría de Inteligencia de Estado",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 215
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2134
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 13
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 377
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -9051,16 +9015,16 @@
           "monto": 2835
         },
         {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 57
-        },
-        {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-03",
           "situacion": 1,
           "monto": 1184
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2024-03",
+          "situacion": 1,
+          "monto": 57
         },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
@@ -9093,16 +9057,16 @@
           "monto": 4125
         },
         {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 10
-        },
-        {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-05",
           "situacion": 1,
           "monto": 1348
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2024-05",
+          "situacion": 1,
+          "monto": 10
         },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
@@ -9117,16 +9081,16 @@
           "monto": 3752
         },
         {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 11
-        },
-        {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-06",
           "situacion": 1,
           "monto": 2129
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2024-06",
+          "situacion": 1,
+          "monto": 11
         },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
@@ -9451,6 +9415,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4095
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3417
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2668
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7850
         }
       ],
       "hitos_personales": [
@@ -9471,24 +9453,6 @@
       "cargo": "Interventor/a",
       "unidad": "EDUC.AR Sociedad Anónima Unipersonal",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 109
-        },
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 98
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1403
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -9956,6 +9920,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 2463
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4307
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 9879
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2369
         }
       ],
       "hitos_personales": [
@@ -9983,12 +9965,6 @@
       "cargo": "Director/a",
       "unidad": "Dirección Nacional del Servicio Penitenciario Federal",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2321
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -10132,6 +10108,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5420
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4429
         }
       ],
       "hitos_personales": [],
@@ -10144,12 +10126,6 @@
       "cargo": "Presidente",
       "unidad": "Presidencia de la Nación",
       "historial": [
-        {
-          "entidad": "BANCO SUPERVIELLE S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 431
-        },
         {
           "entidad": "BANCO SUPERVIELLE S.A.",
           "fecha": "2024-02",
@@ -10265,22 +10241,10 @@
           "monto": 1090
         },
         {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 30
-        },
-        {
           "entidad": "BANCO SUPERVIELLE S.A.",
           "fecha": "2025-09",
           "situacion": 1,
           "monto": 1092
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 30
         },
         {
           "entidad": "BANCO SUPERVIELLE S.A.",
@@ -10289,28 +10253,28 @@
           "monto": 1102
         },
         {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 30
-        },
-        {
           "entidad": "BANCO SUPERVIELLE S.A.",
           "fecha": "2025-11",
           "situacion": 1,
           "monto": 1150
         },
         {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 63
-        },
-        {
           "entidad": "BANCO SUPERVIELLE S.A.",
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1151
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 98
+        },
+        {
+          "entidad": "BANCO SUPERVIELLE S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1054
         }
       ],
       "hitos_personales": [],
@@ -10323,18 +10287,6 @@
       "cargo": "Presidente - Director/a Titular",
       "unidad": "Correo Oficial de la República Argentina Sociedad Anónima",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 19
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 648
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -10610,6 +10562,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1855
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 89
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 920
         }
       ],
       "hitos_personales": [],
@@ -10789,6 +10753,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 58053
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 56884
         }
       ],
       "hitos_personales": [
@@ -10805,6 +10775,13 @@
           "color": "#f97316",
           "tipo": "economico",
           "cargo": "Presidente/a"
+        },
+        {
+          "fecha": "2025-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": true,
@@ -10816,30 +10793,6 @@
       "cargo": "Presidente/a",
       "unidad": "Empresa Argentina de Soluciones Satelitales - ARSAT S.A.",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 623
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3333
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 48
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1804
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -11241,6 +11194,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4995
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2222
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 35
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 6917
         }
       ],
       "hitos_personales": [],
@@ -11253,18 +11224,6 @@
       "cargo": "Presidente/a",
       "unidad": "Construcción de Vivienda para la Armada Sociedad Anónima Unipersonal (COVIARA S.A.U.)",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2219
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 7779
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -11540,6 +11499,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 3958
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3896
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3266
         }
       ],
       "hitos_personales": [],
@@ -11552,24 +11523,6 @@
       "cargo": "Presidente/a - Director/a",
       "unidad": "Banco de la Nación Argentina Sociedad Anónima (BNA S.A.)",
       "historial": [
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1169
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 52
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3217
-        },
         {
           "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -12103,6 +12056,30 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 3122
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1564
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2360
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 283
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3822
         }
       ],
       "hitos_personales": [
@@ -12123,12 +12100,6 @@
       "cargo": "Presidente/a",
       "unidad": "Instituto Nacional de Tecnología Agropecuaria",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1698
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -12386,6 +12357,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 2788
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 8683
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3635
         }
       ],
       "hitos_personales": [],
@@ -12398,24 +12381,6 @@
       "cargo": "Presidente/a - Director/a Titular",
       "unidad": "Operadora Ferroviaria S.A.",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1620
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 790
-        },
-        {
-          "entidad": "VOLKSWAGEN FINANCIAL SERVICES COMPAÑIA FINANCIERA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1352
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -12829,6 +12794,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 750
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7274
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 522
         }
       ],
       "hitos_personales": [],
@@ -12841,30 +12818,6 @@
       "cargo": "Presidente/a",
       "unidad": "Banco Central de la República Argentina",
       "historial": [
-        {
-          "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 269
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 996
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 6216
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 294
-        },
         {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
@@ -13374,6 +13327,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 16300
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 921
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1227
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 12066
         }
       ],
       "hitos_personales": [
@@ -13394,12 +13365,6 @@
       "cargo": "Presidente/a",
       "unidad": "Organismo Regulador del Sistema Nacional de Aeropuertos",
       "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2394
-        },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-02",
@@ -13597,6 +13562,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5202
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4255
         }
       ],
       "hitos_personales": [],
@@ -13609,18 +13580,6 @@
       "cargo": "Presidente - Director/a Titular Clase 'A'",
       "unidad": "Agua y Saneamientos Argentinos S.A. ",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 367
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 608
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -13824,6 +13783,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 6358
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 6067
         }
       ],
       "hitos_personales": [],
@@ -13836,24 +13801,6 @@
       "cargo": "Presidente/a Consejo Directivo",
       "unidad": "Autoridad de Cuenca Matanza Riachuelo",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 417
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 6
-        },
-        {
-          "entidad": "NUEVO BANCO DEL CHACO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 366
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -14291,6 +14238,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 424
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2796
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3273
+        },
+        {
+          "entidad": "NUEVO BANCO DEL CHACO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2033
         }
       ],
       "hitos_personales": [],
@@ -14303,18 +14268,6 @@
       "cargo": "Presidente/a",
       "unidad": "Tribunal Fiscal de la Nación",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 5149
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 187
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -14596,6 +14549,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 7840
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 14081
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 13405
         }
       ],
       "hitos_personales": [],
@@ -14608,24 +14573,6 @@
       "cargo": "Presidente/a - Director/a Titular",
       "unidad": "Fábrica Argentina de Aviones 'Brig. San Martín' S.A.",
       "historial": [
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 14808
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 22
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 4472
-        },
         {
           "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
           "fecha": "2024-02",
@@ -14997,11 +14944,23 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 11039
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 92
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 16085
         }
       ],
       "hitos_personales": [
         {
-          "fecha": "2024-06",
+          "fecha": "2024-07",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
@@ -15017,12 +14976,6 @@
       "cargo": "Jefe de Gabinete de Ministros",
       "unidad": "Jefatura de Gabinete de Ministros",
       "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 4374
-        },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-02",
@@ -15160,6 +15113,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 10181
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 9355
         }
       ],
       "hitos_personales": [],
@@ -15172,12 +15131,6 @@
       "cargo": "Presidente/a - Director/a Titular",
       "unidad": "Intercargo Sociedad Anónima Unipersonal",
       "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1772
-        },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-02",
@@ -15293,16 +15246,16 @@
           "monto": 10488
         },
         {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 38
-        },
-        {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2025-09",
           "situacion": 1,
           "monto": 10215
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2025-09",
+          "situacion": 1,
+          "monto": 38
         },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
@@ -15321,6 +15274,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 9065
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 10320
         }
       ],
       "hitos_personales": [],
@@ -15333,12 +15292,6 @@
       "cargo": "Procurador/a",
       "unidad": "Procuración del Tesoro de la Nación",
       "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2951
-        },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-02",
@@ -15476,6 +15429,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 7433
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 8864
         }
       ],
       "hitos_personales": [],
@@ -15488,30 +15447,6 @@
       "cargo": "Presidente - Director/a Titular en representación de DECAHF",
       "unidad": "Ferrocarriles Argentinos S.A.",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3602
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 995
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 665
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2002
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -15781,6 +15716,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1115
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1669
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2539
         }
       ],
       "hitos_personales": [
@@ -15801,18 +15748,6 @@
       "cargo": "Interventor/a",
       "unidad": "Agencia Regulatoria de la Industria del Cáñamo y del Cannabis Medicinal (ARICCAME)",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 631
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1714
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -16088,6 +16023,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5960
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2646
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 7656
         }
       ],
       "hitos_personales": [],
@@ -16100,18 +16047,6 @@
       "cargo": "Presidente - Director/a Titular",
       "unidad": "Casa de Moneda Sociedad Anónima Unipersonal",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 588
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 465
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -16399,6 +16334,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 877
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 284
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 948
         }
       ],
       "hitos_personales": [],
@@ -16411,12 +16358,6 @@
       "cargo": "Presidente/a y Director/a Representante del Ministerio de Defensa",
       "unidad": "Instituto de Ayuda Financiera para Pago de Retiros y Pensiones Militares",
       "historial": [
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 26379
-        },
         {
           "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
           "fecha": "2024-02",
@@ -16566,10 +16507,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 64041
+        },
+        {
+          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 63318
         }
       ],
-      "hitos_personales": [],
-      "posible_crédito": false,
+      "hitos_personales": [
+        {
+          "fecha": "2024-02",
+          "texto": "Posible crédito",
+          "color": "#ef4444",
+          "tipo": "economico",
+          "cargo": "Presidente/a y Director/a Representante del Ministerio de Defensa"
+        }
+      ],
+      "posible_crédito": true,
       "cambios_nivel": false
     },
     {
@@ -16578,12 +16533,6 @@
       "cargo": "Presidente/a",
       "unidad": "Agencia de Planificación",
       "historial": [
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 978
-        },
         {
           "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
           "fecha": "2024-02",
@@ -16757,11 +16706,25 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 168
+        },
+        {
+          "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 35337
         }
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Presidente/a"
+        }
+      ],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": true
     },
     {
       "cuit": "20303981560",
@@ -16769,30 +16732,6 @@
       "cargo": "Presidente - Representante del Poder Ejecutivo Nacional",
       "unidad": "Instituto Nacional de la Yerba Mate",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 3987
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 5162
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 236
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 24
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -17170,11 +17109,43 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 13750
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2188
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2050
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 647
+        },
+        {
+          "entidad": "VOLKSWAGEN FINANCIAL SERVICES COMPAÑIA FINANCIERA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 12500
         }
       ],
-      "hitos_personales": [],
+      "hitos_personales": [
+        {
+          "fecha": "2025-11",
+          "texto": "Cambio nivel deuda",
+          "color": "#f97316",
+          "tipo": "economico",
+          "cargo": "Presidente - Representante del Poder Ejecutivo Nacional"
+        }
+      ],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": true
     },
     {
       "cuit": "20309470037",
@@ -17182,18 +17153,6 @@
       "cargo": "Director/a",
       "unidad": "Instituto Nacional de Investigación y Desarrollo Pesquero",
       "historial": [
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1212
-        },
-        {
-          "entidad": "VOLKSWAGEN FINANCIAL SERVICES COMPAÑIA FINANCIERA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2005
-        },
         {
           "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
           "fecha": "2024-02",
@@ -17427,6 +17386,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 30
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 5422
+        },
+        {
+          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 52
         }
       ],
       "hitos_personales": [],
@@ -17439,18 +17410,6 @@
       "cargo": "Presidente/a",
       "unidad": "Instituto Nacional de Tecnología Industrial",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 18
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 172
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -17714,6 +17673,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 322
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 991
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1353
         }
       ],
       "hitos_personales": [],
@@ -17726,18 +17697,6 @@
       "cargo": "Presidente/a - Director/a Titular",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2335
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 397
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -18043,6 +18002,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 108
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2864
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 822
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 795
         }
       ],
       "hitos_personales": [],
@@ -18186,6 +18163,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1719
+        },
+        {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2039
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 9074
+        },
+        {
+          "entidad": "MERCADOLIBRE S.R.L.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1860
         }
       ],
       "hitos_personales": [],
@@ -18198,18 +18193,6 @@
       "cargo": "Presidente/a",
       "unidad": "Registro Nacional de Trabajadores Rurales y Empleadores",
       "historial": [
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 210
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 752
-        },
         {
           "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
           "fecha": "2024-02",
@@ -18485,6 +18468,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 789
+        },
+        {
+          "entidad": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 940
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 741
         }
       ],
       "hitos_personales": [],
@@ -18497,18 +18492,6 @@
       "cargo": "Superintendente/a",
       "unidad": "Superintendencia de Riesgos del Trabajo",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 771
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 421
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -18760,6 +18743,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 336
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 444
+        },
+        {
+          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 338
         }
       ],
       "hitos_personales": [],
@@ -18772,12 +18767,6 @@
       "cargo": "Director/a Nacional",
       "unidad": "Instituto Nacional de Prevención Sísmica",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 41
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -18915,6 +18904,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 466
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 668
         }
       ],
       "hitos_personales": [],
@@ -18927,18 +18922,6 @@
       "cargo": "Presidente/a - Director/a Titular",
       "unidad": "Fabricaciones Militares Sociedad Anónima Unipersonal",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 700
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 613
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -19214,6 +19197,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 6120
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4152
+        },
+        {
+          "entidad": "BANCO MACRO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4391
         }
       ],
       "hitos_personales": [],
@@ -19226,12 +19221,6 @@
       "cargo": "Jefe/a de Estado Mayor Conjunto de las Fuerzas Armadas",
       "unidad": "Estado Mayor Conjunto de las Fuerzas Armadas",
       "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 4122
-        },
         {
           "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
           "fecha": "2024-02",
@@ -19441,6 +19430,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 8436
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2902
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 9984
         }
       ],
       "hitos_personales": [],
@@ -19453,12 +19454,6 @@
       "cargo": "Jefe/a",
       "unidad": "Estado Mayor General del Ejército Argentino",
       "historial": [
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 419
-        },
         {
           "entidad": "BANCO PATAGONIA S.A.",
           "fecha": "2024-02",
@@ -19602,6 +19597,12 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 278
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 313
         }
       ],
       "hitos_personales": [],
@@ -19614,18 +19615,6 @@
       "cargo": "Ministra",
       "unidad": "Ministerio de Capital Humano",
       "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 120
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 343
-        },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -20009,6 +19998,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4524
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 577
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2319
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4904
         }
       ],
       "hitos_personales": [],
@@ -20021,24 +20028,6 @@
       "cargo": "Ministra",
       "unidad": "Ministerio de Seguridad Nacional",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 201
-        },
-        {
-          "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 112
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 210
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -20446,6 +20435,24 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 2050
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2874
+        },
+        {
+          "entidad": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1077
+        },
+        {
+          "entidad": "BANCO HIPOTECARIO S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2031
         }
       ],
       "hitos_personales": [],
@@ -20458,12 +20465,6 @@
       "cargo": "Presidente - Director/a Titular",
       "unidad": "Desarrollo del Capital Humano Ferroviario Sociedad Anónima con Participación Estatal Mayoritaria",
       "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 809
-        },
         {
           "entidad": "BANCO BBVA ARGENTINA S.A.",
           "fecha": "2024-02",
@@ -20637,6 +20638,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 78
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3274
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 94
         }
       ],
       "hitos_personales": [],
@@ -20684,6 +20697,12 @@
           "fecha": "2025-10",
           "situacion": 1,
           "monto": 1501
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 280
         }
       ],
       "hitos_personales": [],
@@ -20696,24 +20715,6 @@
       "cargo": "Director/a Regional - Vocal",
       "unidad": "Organismo Regulador de Seguridad de Presas",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 32
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 140
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 637
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -21043,6 +21044,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 5000
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4038
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 6110
         }
       ],
       "hitos_personales": [],
@@ -21055,18 +21068,6 @@
       "cargo": "Presidente/a -  Director/a Titular en representación del Ministerio de Economía",
       "unidad": "Empresa Argentina de Navegación Aérea S.A.",
       "historial": [
-        {
-          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 734
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 183
-        },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-02",
@@ -21342,6 +21343,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 325
+        },
+        {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4405
+        },
+        {
+          "entidad": "BANCO PATAGONIA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 280
         }
       ],
       "hitos_personales": [],
@@ -21354,24 +21367,6 @@
       "cargo": "Presidente/a",
       "unidad": "Instituto de Obra Social de las Fuerzas Armadas",
       "historial": [
-        {
-          "entidad": "BANCO SUPERVIELLE S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 605
-        },
-        {
-          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 802
-        },
-        {
-          "entidad": "BANCO CREDICOOP COOPERATIVO LIMITADO",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2
-        },
         {
           "entidad": "BANCO SUPERVIELLE S.A.",
           "fecha": "2024-02",
@@ -21809,6 +21804,30 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 4438
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 263
+        },
+        {
+          "entidad": "BANCO SUPERVIELLE S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 1620
+        },
+        {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 947
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2161
         }
       ],
       "hitos_personales": [],
@@ -21822,40 +21841,22 @@
       "unidad": "Secretaría General",
       "historial": [
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1955
-        },
-        {
-          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1506
-        },
-        {
-          "entidad": "BRUBANK S.A.U.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 2
-        },
-        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
           "situacion": 1,
           "monto": 56
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 493
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-02",
           "situacion": 1,
           "monto": 429
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-02",
+          "situacion": 1,
+          "monto": 493
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -21870,16 +21871,16 @@
           "monto": 1716
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 507
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-03",
           "situacion": 1,
           "monto": 89
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-03",
+          "situacion": 1,
+          "monto": 507
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -21894,16 +21895,16 @@
           "monto": 1515
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 528
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-04",
           "situacion": 1,
           "monto": 545
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-04",
+          "situacion": 1,
+          "monto": 528
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -21918,16 +21919,16 @@
           "monto": 53
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 1354
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-05",
           "situacion": 1,
           "monto": 252
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-05",
+          "situacion": 1,
+          "monto": 1354
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -21942,16 +21943,16 @@
           "monto": 131
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 212
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-06",
           "situacion": 1,
           "monto": 296
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-06",
+          "situacion": 1,
+          "monto": 212
         },
         {
           "entidad": "BRUBANK S.A.U.",
@@ -21966,12 +21967,6 @@
           "monto": 523
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 731
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2024-07",
           "situacion": 1,
@@ -21979,9 +21974,9 @@
         },
         {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-08",
+          "fecha": "2024-07",
           "situacion": 1,
-          "monto": 651
+          "monto": 731
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -21990,16 +21985,16 @@
           "monto": 673
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-08",
+          "situacion": 1,
+          "monto": 651
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-09",
           "situacion": 1,
           "monto": 135
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 612
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -22008,16 +22003,16 @@
           "monto": 498
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-09",
+          "situacion": 1,
+          "monto": 612
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-10",
           "situacion": 1,
           "monto": 203
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 655
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -22026,16 +22021,16 @@
           "monto": 232
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-10",
+          "situacion": 1,
+          "monto": 655
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-11",
           "situacion": 1,
           "monto": 33
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 444
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -22044,16 +22039,16 @@
           "monto": 95
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-11",
+          "situacion": 1,
+          "monto": 444
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-12",
           "situacion": 1,
           "monto": 70
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 865
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -22062,16 +22057,16 @@
           "monto": 110
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2024-12",
+          "situacion": 1,
+          "monto": 865
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2025-01",
           "situacion": 1,
           "monto": 138
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 853
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -22080,16 +22075,16 @@
           "monto": 223
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-01",
+          "situacion": 1,
+          "monto": 853
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2025-02",
           "situacion": 1,
           "monto": 127
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 525
         },
         {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
@@ -22098,22 +22093,28 @@
           "monto": 224
         },
         {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-02",
+          "situacion": 1,
+          "monto": 525
+        },
+        {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2025-03",
           "situacion": 1,
           "monto": 114
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 883
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-03",
           "situacion": 1,
           "monto": 107
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-03",
+          "situacion": 1,
+          "monto": 883
         },
         {
           "entidad": "MERCADOLIBRE S.R.L.",
@@ -22128,16 +22129,16 @@
           "monto": 104
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 913
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-04",
           "situacion": 1,
           "monto": 107
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-04",
+          "situacion": 1,
+          "monto": 913
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22146,16 +22147,16 @@
           "monto": 93
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 1556
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-05",
           "situacion": 1,
           "monto": 116
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-05",
+          "situacion": 1,
+          "monto": 1556
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22164,16 +22165,16 @@
           "monto": 84
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 598
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-06",
           "situacion": 1,
           "monto": 125
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-06",
+          "situacion": 1,
+          "monto": 598
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22182,16 +22183,16 @@
           "monto": 77
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 666
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-07",
           "situacion": 1,
           "monto": 123
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-07",
+          "situacion": 1,
+          "monto": 666
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22200,16 +22201,16 @@
           "monto": 68
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 653
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-08",
           "situacion": 1,
           "monto": 123
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-08",
+          "situacion": 1,
+          "monto": 653
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22218,16 +22219,16 @@
           "monto": 63
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 1233
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-09",
           "situacion": 1,
           "monto": 127
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-09",
+          "situacion": 1,
+          "monto": 1233
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22236,16 +22237,16 @@
           "monto": 56
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 828
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-10",
           "situacion": 1,
           "monto": 117
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-10",
+          "situacion": 1,
+          "monto": 828
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22254,16 +22255,16 @@
           "monto": 50
         },
         {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 958
-        },
-        {
           "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
           "fecha": "2025-11",
           "situacion": 1,
           "monto": 123
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2025-11",
+          "situacion": 1,
+          "monto": 958
         },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
@@ -22272,16 +22273,34 @@
           "monto": 46
         },
         {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2025-12",
+          "situacion": 1,
+          "monto": 121
+        },
+        {
           "entidad": "BANCO SANTANDER ARGENTINA S.A.",
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 1181
         },
         {
-          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
-          "fecha": "2025-12",
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
           "situacion": 1,
-          "monto": 121
+          "monto": 40
+        },
+        {
+          "entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.U.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 444
+        },
+        {
+          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 2090
         }
       ],
       "hitos_personales": [],
@@ -22294,18 +22313,6 @@
       "cargo": "Vicepresidente",
       "unidad": "Presidencia de la Nación",
       "historial": [
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1132
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 680
-        },
         {
           "entidad": "BANCO DE LA NACION ARGENTINA",
           "fecha": "2024-02",
@@ -22581,6 +22588,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 108
+        },
+        {
+          "entidad": "BANCO DE LA NACION ARGENTINA",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 4921
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 110
         }
       ],
       "hitos_personales": [
@@ -22608,18 +22627,6 @@
       "cargo": "Presidente/a",
       "unidad": "Banco de Inversión y Comercio Exterior S.A.",
       "historial": [
-        {
-          "entidad": "Banco GGAL SA",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 1852
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-01",
-          "situacion": 1,
-          "monto": 274
-        },
         {
           "entidad": "Banco GGAL SA",
           "fecha": "2024-02",
@@ -22907,6 +22914,18 @@
           "fecha": "2025-12",
           "situacion": 1,
           "monto": 622
+        },
+        {
+          "entidad": "BANCO BBVA ARGENTINA S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 3210
+        },
+        {
+          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+          "fecha": "2026-01",
+          "situacion": 1,
+          "monto": 651
         }
       ],
       "hitos_personales": [],
