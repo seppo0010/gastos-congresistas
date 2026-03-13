@@ -143,7 +143,10 @@ const DebtChart = forwardRef(({
     }));
 
     // Grouping only for vertical milestones
-    const grouped = Object.groupBy(all.filter(m => m.monto == null), (m: any) => m.fecha);
+    const grouped = all.filter(m => m.monto == null).reduce((acc: Record<string, any[]>, m: any) => {
+      (acc[m.fecha] ??= []).push(m);
+      return acc;
+    }, {});
 
     const vertical = Object.values(grouped).map((group: any) => {
       const legislatorIds = new Set(group.map((m: any) => m.legislatorId).filter(Boolean));
