@@ -617,27 +617,31 @@ const DebtChart = forwardRef(({
                 <Share2 size={18} />
               </button>
             )}
-            <button
-              onClick={onToggleFamiliares}
-              className={`flex items-center gap-1 text-xs px-2 py-1 rounded border transition-colors ${
-                includeFamiliares
-                  ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-gray-50 text-gray-600 border-gray-300 hover:bg-gray-100'
-              }`}
-              title="Incluir deuda de familiares"
-            >
-              <Users size={13} />
-              Familiares
-            </button>
-            <select
-              value={currencyMode}
-              onChange={e => setCurrencyMode(e.target.value as CurrencyMode)}
-              className="text-xs border border-gray-300 rounded px-2 py-1 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none"
-            >
-              <option value="nominal">Pesos (Nominal)</option>
-              {ipc && <option value="real">Pesos (Ajustado por inflación a precios de {ipcDates.length > 0 ? ipcDates[ipcDates.length - 1] : ''})</option>}
-              {mep && <option value="usd">Dólares (MEP)</option>}
-            </select>
+            <div className="flex w-full items-center gap-2 sm:w-auto">
+              <label
+                htmlFor="include-familiares"
+                className="flex items-center gap-2 text-xs text-gray-700 whitespace-nowrap px-2 py-1 rounded border border-gray-300 bg-gray-50"
+                title="Incluir deuda de familiares"
+              >
+                <input
+                  id="include-familiares"
+                  type="checkbox"
+                  checked={includeFamiliares}
+                  onChange={() => onToggleFamiliares?.()}
+                  className="h-3.5 w-3.5 accent-blue-600"
+                />
+                Incluir familiares
+              </label>
+              <select
+                value={currencyMode}
+                onChange={e => setCurrencyMode(e.target.value as CurrencyMode)}
+                className="min-w-0 flex-1 text-xs border border-gray-300 rounded px-2 py-1 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none sm:flex-none"
+              >
+                <option value="nominal">Pesos (Nominal)</option>
+                {ipc && <option value="real">Pesos (Ajustado por inflación a precios de {ipcDates.length > 0 ? ipcDates[ipcDates.length - 1] : ''})</option>}
+                {mep && <option value="usd">Dólares (MEP)</option>}
+              </select>
+            </div>
           </div>
         </div>
         <div className="flex gap-3 overflow-x-auto pb-1 md:flex-wrap md:overflow-visible md:pb-0">
