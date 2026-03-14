@@ -210,7 +210,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           </button>
         </div>
       </div>
-      <div className="flex-1 overflow-y-auto">
+      <div className="selector-results-scroll flex-1 overflow-y-auto px-2 md:px-0">
         {filteredAndSorted.map((l: Legislator) => {
           const index = selectedIds.indexOf(l.cuit);
           const isSelected = index !== -1;
@@ -220,7 +220,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
             <button
               key={l.cuit}
               onClick={() => onSelect(l)}
-              className={`w-full text-left p-3 border-b cursor-pointer transition-colors flex items-center gap-3 ${isSelected ? 'bg-gray-50' : 'hover:bg-gray-50'}`}
+              className={`w-full text-left p-3 border-b border-gray-200 cursor-pointer transition-colors flex items-center gap-3 rounded-md md:rounded-none ${isSelected ? 'bg-gray-50' : 'hover:bg-gray-50'}`}
             >
               <div
                 className="w-4 h-4 flex-shrink-0 rounded-sm flex items-center justify-center"

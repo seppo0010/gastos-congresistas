@@ -64,6 +64,32 @@ export default function App() {
             >
               github.com/seppo0010/gastos-congresistas
             </a>
+            <div className="mt-3 space-y-1 text-xs text-gray-600">
+              <p>
+                Autor: Sebastian Waisbrot (
+                <a
+                  href="https://github.com/seppo0010"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-700 underline-offset-4 transition hover:text-blue-800 hover:underline"
+                >
+                  seppo0010
+                </a>
+                )
+              </p>
+              <p>
+                Andres Snitcofsky (diseno, viz y ux):
+                {' '}
+                <a
+                  href="https://visualizando.ar"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-700 underline-offset-4 transition hover:text-blue-800 hover:underline"
+                >
+                  visualizando.ar
+                </a>
+              </p>
+            </div>
             <p className="mt-3 text-xs text-gray-500">Hecho para exploracion publica y periodismo de datos.</p>
           </div>
         </div>
