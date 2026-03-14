@@ -425,8 +425,8 @@ const DebtChart = forwardRef(({
   };
 
   return (
-    <div className="flex-1 p-6 bg-gray-50 flex flex-col h-full">
-      <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
+    <div className="flex-1 p-2 md:p-6 bg-gray-50 flex flex-col h-full">
+      <div className="bg-white p-2 md:p-4 rounded-lg shadow-sm mb-4">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
           <h2 className="text-xl font-bold">Comparativa</h2>
           {!isMobile && onShowHelp && (
@@ -496,7 +496,7 @@ const DebtChart = forwardRef(({
         </div>
       </div>
 
-      <div ref={chartContainerRef} className="flex-1 bg-white p-4 rounded-lg shadow-sm min-h-48">
+      <div ref={chartContainerRef} className="flex-1 min-h-48 md:bg-white md:p-4 md:rounded-lg md:shadow-sm">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: isMobile ? 30 : 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
