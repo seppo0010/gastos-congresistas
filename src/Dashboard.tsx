@@ -5,7 +5,7 @@ import LegislatorSelector from './LegislatorSelector';
 import dbCargada from './legisladores_full.json';
 import politicosDb from './politicos_full.json';
 import type { DashboardData, Legislator } from './types';
-import { List, BarChart3, Share2, HelpCircle, X } from 'lucide-react';
+import { Share2, HelpCircle, X } from 'lucide-react';
 import { COLORS } from './Colors';
 
 const slugify = (text: string) => {
@@ -186,37 +186,39 @@ export default function Dashboard() {
           </button>
         </div>
       )}
-      <div className={`md:hidden fixed top-4 right-4 z-50 flex flex-col gap-2 items-end ${showMobileLanding ? 'hidden' : ''}`}>
-        <button
-          onClick={() => {
-            setMobileView(v => v === 'list' ? 'chart' : 'list');
-          }}
-          className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-xl flex items-center justify-center transition-colors"
-          title={mobileView === 'list' ? 'Ver gráfico' : 'Ver lista'}
-        >
-          {mobileView === 'list' ? <BarChart3 size={24} /> : <List size={24} />}
-        </button>
-        {mobileView === 'chart' && (
-          <div className="flex flex-col gap-2 items-end">
-            <button 
-              onClick={() => setShowHelp(true)}
-              className="bg-white p-3 rounded-full shadow-lg text-gray-600"
-              title="Ayuda"
+      {!showMobileLanding && (
+        <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-b border-gray-200 px-3 py-2">
+          <div className="flex items-center justify-between gap-2">
+            <button
+              onClick={() => setMobileView(v => v === 'list' ? 'chart' : 'list')}
+              className="text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg px-3 py-1.5 transition-colors"
             >
-              <HelpCircle size={20} />
+              {mobileView === 'list' ? 'Grafico comparativo >' : '< Seleccionar funcionarios'}
             </button>
-            <button 
-              onClick={handleShare}
-              className="bg-white p-3 rounded-full shadow-lg text-gray-600"
-              title="Compartir"
-            >
-              <Share2 size={20} />
-            </button>
-          </div>
-        )}
-      </div>
 
-      <div className={`absolute inset-0 z-20 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:w-auto md:translate-x-0 ${mobileView === 'list' ? 'translate-x-0' : '-translate-x-full'}`}>
+            {mobileView === 'chart' && (
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={() => setShowHelp(true)}
+                  className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+                  title="Ayuda"
+                >
+                  <HelpCircle size={18} />
+                </button>
+                <button
+                  onClick={handleShare}
+                  className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+                  title="Compartir"
+                >
+                  <Share2 size={18} />
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      <div className={`absolute inset-0 z-20 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:w-auto md:translate-x-0 ${mobileView === 'list' ? 'translate-x-0' : '-translate-x-full'} ${showMobileLanding ? '' : 'pt-14 md:pt-0'}`}>
         <LegislatorSelector 
           legisladores={legisladores} 
           onSelect={handleSelect} 
@@ -225,7 +227,7 @@ export default function Dashboard() {
         />
       </div>
 
-      <div className={`absolute inset-0 z-10 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:flex-1 md:translate-x-0 ${mobileView === 'chart' ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`absolute inset-0 z-10 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:flex-1 md:translate-x-0 ${mobileView === 'chart' ? 'translate-x-0' : 'translate-x-full'} ${showMobileLanding ? '' : 'pt-14 md:pt-0'}`}>
         <DebtChart
           legislators={selected} 
           globalMilestones={meta.hitos_globales} 
