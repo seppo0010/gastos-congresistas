@@ -3,7 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 
 // Importa tu JSON generado por Python
 import type { Legislator, Milestone, CurrencyMode } from './types';
-import { Flag, HelpCircle, Share2, Users } from 'lucide-react';
+import { Eye, EyeOff, Flag, HelpCircle, Share2, Users, X } from 'lucide-react';
 import { COLORS } from './Colors';
 
 interface DebtChartProps {
@@ -12,12 +12,14 @@ interface DebtChartProps {
   ipc?: { [date: string]: number };
   mep?: { [date: string]: number };
   onRemove?: (legislator: Legislator) => void;
+  onToggleVisibility?: (cuit: string) => void;
   isMobile?: boolean;
   copied?: boolean;
   onShare?: () => void;
   onShowHelp?: () => void;
   includeFamiliares?: boolean;
   onToggleFamiliares?: () => void;
+  hiddenIds?: Set<string>;
 }
 
 interface Bank {
@@ -52,6 +54,15 @@ function tintColor(hex: string, amount: number): string {
   const ng = Math.round(g + (255 - g) * amount);
   const nb = Math.round(b + (255 - b) * amount);
   return `#${nr.toString(16).padStart(2, '0')}${ng.toString(16).padStart(2, '0')}${nb.toString(16).padStart(2, '0')}`;
+}
+
+function withAlpha(hex: string, alpha: number): string {
+  const normalized = hex.replace('#', '');
+  if (!/^[0-9a-fA-F]{6}$/.test(normalized)) return hex;
+  const r = parseInt(normalized.slice(0, 2), 16);
+  const g = parseInt(normalized.slice(2, 4), 16);
+  const b = parseInt(normalized.slice(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
 function getMilestoneChipStyle(color?: string): MilestoneChipStyle {
@@ -94,15 +105,22 @@ const DebtChart = forwardRef(({
   ipc,
   mep,
   onRemove,
+  onToggleVisibility,
   isMobile,
   copied,
   onShare,
   onShowHelp,
   includeFamiliares = false,
-  onToggleFamiliares
+  onToggleFamiliares,
+  hiddenIds = new Set<string>(),
 }: DebtChartProps, ref) => {
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
   const chartContainerRef = useRef<HTMLDivElement>(null);
+
+  const visibleLegislators = useMemo(
+    () => legislators.filter(l => !hiddenIds.has(l.cuit)),
+    [legislators, hiddenIds]
+  );
 
 
   useImperativeHandle(ref, () => ({
@@ -135,7 +153,7 @@ const DebtChart = forwardRef(({
 
   // 1. Unificar Hitos (Globales + Personales)
   const { verticalMilestones, economicMilestones } = useMemo(() => {
-    const personales = legislators.flatMap((l, index) =>
+    const personales = visibleLegislators.flatMap((l, index) =>
       (l.hitos_personales || []).map(h => ({
         ...h,
         legislatorId: l.cuit,
@@ -145,7 +163,7 @@ const DebtChart = forwardRef(({
 
     const relevantes = globalMilestones.filter(m => (
       ['global', 'voto', 'politico'].includes(m.tipo || '') ||
-      legislators.some(l => teniaCargo(l, m.tipo, m.fecha))
+      visibleLegislators.some(l => teniaCargo(l, m.tipo, m.fecha))
     ));
 
     const all = [...relevantes, ...personales];
@@ -171,7 +189,7 @@ const DebtChart = forwardRef(({
 
       if (legislatorIds.size === 1 && !hasGlobal) {
         color = group.find((m: any) => m.legislatorId).legislatorColor;
-      } else if (legislatorIds.size === 0 && hasGlobal && legislators.length === 1) {
+      } else if (legislatorIds.size === 0 && hasGlobal && visibleLegislators.length === 1) {
         color = group[0].color;
       }
 
@@ -184,13 +202,13 @@ const DebtChart = forwardRef(({
     });
 
     return { verticalMilestones: vertical, economicMilestones: eco };
-  }, [legislators, globalMilestones, currencyMode, latestIPC, ipc, mep]);
+  }, [visibleLegislators, globalMilestones, currencyMode, latestIPC, ipc, mep]);
 
   // 2a. Calcular segmentos únicos (cuit × deudor × entidad) con total acumulado
   const barSegments = useMemo(() => {
     const map = new Map<string, SegmentInfo>();
 
-    legislators.forEach(l => {
+    visibleLegislators.forEach(l => {
       l.historial.forEach(r => {
         const key = `${l.cuit}${SEP}propio${SEP}${r.entidad}`;
         const existing = map.get(key);
@@ -211,13 +229,13 @@ const DebtChart = forwardRef(({
     });
 
     return map;
-  }, [legislators, includeFamiliares]);
+  }, [visibleLegislators, includeFamiliares]);
 
   // 2b. Asignar colores a cada segmento (tintes del color base del político)
   const segmentColors = useMemo(() => {
     const colorMap = new Map<string, string>();
 
-    legislators.forEach((l, idx) => {
+    visibleLegislators.forEach((l, idx) => {
       const baseColor = l.color || COLORS[idx % COLORS.length];
 
       const propioKeys = [...barSegments.entries()]
@@ -246,7 +264,7 @@ const DebtChart = forwardRef(({
     });
 
     return colorMap;
-  }, [legislators, barSegments]);
+  }, [visibleLegislators, barSegments]);
 
   // 2c. Procesar Datos de Deuda (Agrupar por mes)
   const chartData = useMemo(() => {
@@ -257,7 +275,7 @@ const DebtChart = forwardRef(({
       if (!grouped[fecha].banks[cuit]) grouped[fecha].banks[cuit] = { propio: [], familiares: {} };
     };
 
-    legislators.forEach(l => {
+    visibleLegislators.forEach(l => {
       // Historial propio
       l.historial.forEach(r => {
         ensureEntry(r.fecha, l.cuit);
@@ -284,7 +302,7 @@ const DebtChart = forwardRef(({
     });
 
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [legislators, currencyMode, ipc, mep, ipcDates, includeFamiliares, latestIPC]);
+  }, [visibleLegislators, currencyMode, ipc, mep, ipcDates, includeFamiliares, latestIPC]);
 
 
   const xAxisInterval = useMemo(() => {
@@ -500,7 +518,7 @@ const DebtChart = forwardRef(({
       <div className="bg-white p-3 border shadow-lg rounded text-xs z-50 max-w-xs">
         <p className="font-bold mb-1">{label}</p>
 
-        {legislators.map((l, idx) => {
+        {visibleLegislators.map((l, idx) => {
           const lPayloads = payload.filter((p: any) => p.dataKey.startsWith(l.cuit + SEP));
           if (lPayloads.length === 0) return null;
           const total = lPayloads.reduce((sum: number, p: any) => sum + (p.value || 0), 0);
@@ -515,7 +533,7 @@ const DebtChart = forwardRef(({
           );
           const milestones = [
             ...personalMilestones.map(m => ({ ...m, displayColor: l.color || COLORS[idx % COLORS.length] })),
-            ...relevantGlobalMilestones.map(m => ({ ...m, displayColor: m.color || (legislators.length === 1 ? (l.color || COLORS[idx % COLORS.length]) : GRAY) })),
+            ...relevantGlobalMilestones.map(m => ({ ...m, displayColor: m.color || (visibleLegislators.length === 1 ? (l.color || COLORS[idx % COLORS.length]) : GRAY) })),
           ];
           const familiarEntries = Object.entries(banks.familiares as { [parentesco: string]: Bank[] });
 
@@ -622,31 +640,48 @@ const DebtChart = forwardRef(({
             </select>
           </div>
         </div>
-        <div className="flex flex-wrap gap-4">
-          {legislators.map((l, idx) => (
+        <div className="flex gap-3 overflow-x-auto pb-1 md:flex-wrap md:overflow-visible md:pb-0">
+          {legislators.map((l, idx) => {
+            const cardColor = l.color || COLORS[idx % COLORS.length];
+            return (
             <div
               key={l.cuit}
-              className="flex items-center gap-2 border p-2 rounded cursor-pointer hover:bg-gray-50 transition-colors"
-              onClick={() => onRemove && onRemove(l)}
+              className="flex items-center gap-2 p-2 rounded shrink-0 w-[75vw] max-w-[360px] md:w-auto"
+              style={{ border: `1px solid ${cardColor}`, backgroundColor: withAlpha(cardColor, 0.2) }}
             >
-              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: l.color || COLORS[idx % COLORS.length] }}></div>
-              <div>
-                <div className="font-bold text-sm flex items-center gap-1">
-                  {l.nombre}
+              <div className="flex flex-col items-center gap-1.5 shrink-0">
+                <button
+                  onClick={() => onRemove && onRemove(l)}
+                  title="Quitar"
+                  className="text-gray-400 hover:text-red-500 transition-colors cursor-pointer"
+                >
+                  <X size={15} />
+                </button>
+                <button
+                  onClick={() => onToggleVisibility?.(l.cuit)}
+                  title={hiddenIds.has(l.cuit) ? 'Mostrar en gráfico' : 'Ocultar en gráfico'}
+                  className={`transition-colors cursor-pointer ${hiddenIds.has(l.cuit) ? 'text-gray-300 hover:text-gray-500' : 'text-gray-500 hover:text-gray-700'}`}
+                >
+                  {hiddenIds.has(l.cuit) ? <EyeOff size={15} /> : <Eye size={15} />}
+                </button>
+              </div>
+              <div className="min-w-0 max-w-full">
+                <div className={`font-bold text-sm flex items-center gap-1 min-w-0 ${hiddenIds.has(l.cuit) ? 'text-gray-400' : ''}`}>
+                  <span className="truncate">{l.nombre}</span>
                   {l.familiares && l.familiares.length > 0 && (
                     <span title="Tiene datos de familiares" className="flex">
                       <Users size={13} className="text-blue-400 shrink-0" />
                     </span>
                   )}
                 </div>
-                <div className="flex gap-1 mt-1 flex-wrap">
-                  {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.partido}</span>}
-                  {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.distrito}</span>}
-                  {l.unidad && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{l.unidad}</span>}
+                <div className="flex gap-1 mt-1 min-w-0">
+                  {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.partido}</span>}
+                  {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.distrito}</span>}
+                  {l.unidad && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.unidad}</span>}
                 </div>
               </div>
             </div>
-          ))}
+          )})}
         </div>
       </div>
 
@@ -692,7 +727,7 @@ const DebtChart = forwardRef(({
             />
             <Tooltip content={CustomTooltip} />
 
-            {legislators.flatMap((l, idx) => {
+            {visibleLegislators.flatMap((l, idx) => {
               const propioKeys = [...barSegments.entries()]
                 .filter(([, v]) => v.cuit === l.cuit && !v.isFamiliar)
                 .sort((a, b) => b[1].totalMonto - a[1].totalMonto)

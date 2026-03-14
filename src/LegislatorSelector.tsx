@@ -216,7 +216,6 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           const isSelected = index !== -1;
           const color = isSelected ? (selectedColors[l.cuit] || COLORS[index % COLORS.length]) : undefined;
           const { max } = debtStats.get(l.cuit)!;
-
           return (
             <button
               key={l.cuit}

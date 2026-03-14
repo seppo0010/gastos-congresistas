@@ -61,6 +61,7 @@ export default function Dashboard() {
     return params.get('familiares') === 'true';
   });
 
+  const [hiddenIds, setHiddenIds] = useState<Set<string>>(new Set());
   const [warning, setWarning] = useState<string | null>(null);
   const [mobileView, setMobileView] = useState<'list' | 'chart'>('list');
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -128,6 +129,10 @@ export default function Dashboard() {
 
     if (isMobile && selectionChanged) {
       setMobileView('chart');
+    }
+    // Clean up hiddenIds for removed legislator
+    if (selected.some(l => l.cuit === lWithSlug.cuit)) {
+      setHiddenIds(prev => { const next = new Set(prev); next.delete(lWithSlug.cuit); return next; });
     }
   };
 
@@ -233,6 +238,8 @@ export default function Dashboard() {
           onShowHelp={() => setShowHelp(true)}
           includeFamiliares={includeFamiliares}
           onToggleFamiliares={() => setIncludeFamiliares(v => !v)}
+          hiddenIds={hiddenIds}
+          onToggleVisibility={(cuit) => setHiddenIds(prev => { const next = new Set(prev); next.has(cuit) ? next.delete(cuit) : next.add(cuit); return next; })}
         />
       </div>
 
