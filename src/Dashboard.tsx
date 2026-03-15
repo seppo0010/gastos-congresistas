@@ -2,8 +2,6 @@ import { useState, useEffect, useMemo } from 'react'
 import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
-import dbCargada from './legisladores_full.json';
-import politicosDb from './politicos_full.json';
 import type { DashboardData, Legislator } from './types';
 import { Share2, HelpCircle, X } from 'lucide-react';
 import { COLORS } from './Colors';
@@ -22,9 +20,14 @@ const slugify = (text: string) => {
 
 type LegislatorWithSlug = Legislator & { slug: string };
 
-export default function Dashboard() {
-  const { meta, data: rawLegisladores } = dbCargada as DashboardData;
-  const { data: rawPoliticos } = politicosDb as DashboardData;
+interface DashboardProps {
+  dbData: DashboardData;
+  politicosData: DashboardData;
+}
+
+export default function Dashboard({ dbData, politicosData }: DashboardProps) {
+  const { meta, data: rawLegisladores } = dbData;
+  const { data: rawPoliticos } = politicosData;
 
   const legisladores = useMemo(() => {
     const politicosByCuit = new Map(rawPoliticos.map(p => [p.cuit, p]));

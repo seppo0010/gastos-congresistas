@@ -1,7 +1,5 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
-import dbCargada from './legisladores_full.json';
-import politicosDb from './politicos_full.json';
 import type { DashboardData } from './types';
 
 function scrollToExplorer() {
@@ -11,10 +9,24 @@ function scrollToExplorer() {
 }
 
 export default function App() {
-  const { data: rawLegisladores } = dbCargada as DashboardData;
-  const { data: rawPoliticos } = politicosDb as DashboardData;
+  const [dbData, setDbData] = useState<DashboardData | null>(null);
+  const [politicosData, setPoliticosData] = useState<DashboardData | null>(null);
+
+  useEffect(() => {
+    Promise.all([
+      fetch('/legisladores_full.json').then(r => r.json()),
+      fetch('/politicos_full.json').then(r => r.json()),
+    ]).then(([db, pol]) => {
+      setDbData(db);
+      setPoliticosData(pol);
+    });
+  }, []);
 
   const heroMetrics = useMemo(() => {
+    if (!dbData || !politicosData) return null;
+    const rawLegisladores = dbData.data;
+    const rawPoliticos = politicosData.data;
+
     const politicosByCuit = new Map(rawPoliticos.map((p) => [p.cuit, p]));
     const merged = rawLegisladores.map((l) => {
       const pol = politicosByCuit.get(l.cuit);
@@ -51,7 +63,7 @@ export default function App() {
       funcionariosCount: combined.length,
       latestMonthLabel,
     };
-  }, [rawLegisladores, rawPoliticos]);
+  }, [dbData, politicosData]);
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800">
@@ -76,11 +88,15 @@ export default function App() {
               <div className="grid grid-cols-2 gap-2 pt-1">
                 <div className="rounded-lg border border-blue-200 bg-white/70 px-2.5 py-2">
                   <p className="text-[10px] font-semibold uppercase leading-tight tracking-wide text-blue-700">Funcionarios registrados</p>
-                  <p className="mt-0.5 text-lg font-black leading-tight text-gray-900 md:text-xl">{heroMetrics.funcionariosCount.toLocaleString('es-AR')}</p>
+                  <p className="mt-0.5 text-lg font-black leading-tight text-gray-900 md:text-xl">
+                    {heroMetrics ? heroMetrics.funcionariosCount.toLocaleString('es-AR') : '…'}
+                  </p>
                 </div>
                 <div className="rounded-lg border border-blue-200 bg-white/70 px-2.5 py-2">
                   <p className="text-[10px] font-semibold uppercase leading-tight tracking-wide text-blue-700">Ultimo mes disponible</p>
-                  <p className="mt-0.5 text-sm font-black leading-tight text-gray-900 md:text-base">{heroMetrics.latestMonthLabel || 'Sin datos'}</p>
+                  <p className="mt-0.5 text-sm font-black leading-tight text-gray-900 md:text-base">
+                    {heroMetrics ? (heroMetrics.latestMonthLabel || 'Sin datos') : '…'}
+                  </p>
                 </div>
               </div>
             </div>
@@ -98,7 +114,13 @@ export default function App() {
         </section>
 
         <section id="explorador" className="h-screen w-full border-b border-gray-200 bg-gray-100">
-          <Dashboard />
+          {dbData && politicosData ? (
+            <Dashboard dbData={dbData} politicosData={politicosData} />
+          ) : (
+            <div className="flex h-full items-center justify-center">
+              <p className="text-gray-500">Cargando datos…</p>
+            </div>
+          )}
         </section>
       </main>
 
