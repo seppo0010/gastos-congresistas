@@ -37,6 +37,11 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const parties = useMemo(() => [...new Set(legisladores.filter(l => l.partido !== undefined).map(l => l.partido).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
   const units = useMemo(() => [...new Set(legisladores.filter(l => l.unidad !== undefined).map(l => l.unidad).filter(u => (u || '').trim() !== ''))].sort(), [legisladores]);
 
+  const garantiaFecha = useMemo(() => {
+    const l = legisladores.find(l => l.hipoteca_bcra.tiene && l.hipoteca_bcra.fecha);
+    return l?.hipoteca_bcra.fecha ?? null;
+  }, [legisladores]);
+
   const debtStats = useMemo(() => {
     const stats = new Map<string, { max: number; avg: number }>();
     legisladores.forEach(l => {
@@ -74,7 +79,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
         const partyMatch = partyFilter === 'todos' || l.partido === partyFilter;
         const unitMatch = unitFilter === 'todas' || l.unidad === unitFilter;
 
-        const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.posible_crédito : !l.posible_crédito);
+        const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.hipoteca_bcra.tiene : !l.hipoteca_bcra.tiene);
         const levelChangeMatch = levelChangeFilter === 'todos' || (levelChangeFilter === 'si' ? l.cambios_nivel : !l.cambios_nivel);
         const hasFamiliares = l.familiares && l.familiares.length > 0;
         const familiaresMatch = familiaresFilter === 'todos' || (familiaresFilter === 'si' ? hasFamiliares : !hasFamiliares);
@@ -158,8 +163,8 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           <div className="grid grid-cols-3 gap-2">
             <div>
               <label htmlFor="credit" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1">
-                <span title="Posible crédito" className="flex"><Home size={14} className="text-green-600" /></span>
-                Crédito*
+                <span title="Garantía preferida (hipoteca/prenda)" className="flex"><Home size={14} className="text-green-600" /></span>
+                Garantía†
               </label>
               <select id="credit" value={creditFilter} onChange={e => setCreditFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todos</option>
@@ -169,7 +174,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
             </div>
             <div>
               <label htmlFor="levelChange" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1">
-                <span title="Cambio de nivel" className="flex"><AlertCircle size={14} className="text-orange-500" /></span>
+                <span title="Cambio de nivel de deuda*" className="flex"><AlertCircle size={14} className="text-orange-500" /></span>
                 Nivel*
               </label>
               <select id="levelChange" value={levelChangeFilter} onChange={e => setLevelChangeFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
@@ -190,8 +195,9 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
               </select>
             </div>
           </div>
-          <p className="text-[10px] text-gray-500 leading-tight">
-            * Estos indicadores son heurísticas inferidas a partir de los montos.
+          <p className="text-[10px] text-gray-500 leading-tight space-y-0.5">
+            {garantiaFecha && <span className="block">† Garantía al {garantiaFecha} (hipoteca/prenda según BCRA).</span>}
+            <span className="block">* Cambio de nivel: heurística inferida a partir de los montos.</span>
           </p>
           <button
             onClick={() => {
@@ -232,8 +238,8 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
                 <div className="flex justify-between items-center w-full">
                   <div className="font-semibold text-sm mr-2 flex-1 flex items-center gap-1 min-w-0">
                     <span className="truncate">{l.nombre}</span>
-                    {l.posible_crédito && (
-                      <div title="Tiene un posible crédito. Este indicador es una heurística inferida a partir de los montos." className="shrink-0 flex">
+                    {l.hipoteca_bcra.tiene && (
+                      <div title="Tiene garantía preferida (hipoteca/prenda) registrada en el BCRA." className="shrink-0 flex">
                         <Home size={14} className="text-green-600" />
                       </div>
                     )}

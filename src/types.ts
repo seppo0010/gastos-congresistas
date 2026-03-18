@@ -33,7 +33,7 @@ export interface Legislator {
   cargo: string;
   unidad?: string;    // Solo funcionarios del ejecutivo (ej: "Ministerio de Salud")
   periodos?: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];  // Solo legisladores
-  posible_crédito: boolean;
+  hipoteca_bcra: { tiene: boolean; monto_miles_pesos?: number; entidades?: string[]; fecha?: string };
   cambios_nivel: boolean;
   familiares?: Familiar[];
   color?: string;

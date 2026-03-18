@@ -392,7 +392,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20102021291",
@@ -919,7 +922,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20131324236",
@@ -1296,7 +1302,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20132084263",
@@ -1451,7 +1460,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20134281635",
@@ -1606,7 +1618,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20139651317",
@@ -1923,7 +1938,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20142222567",
@@ -2318,7 +2336,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20142236916",
@@ -2599,7 +2620,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20145588465",
@@ -2868,7 +2892,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20149615262",
@@ -3313,7 +3340,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20161007707",
@@ -3648,7 +3678,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20162136748",
@@ -3959,7 +3992,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20162609263",
@@ -4317,7 +4353,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20162665589",
@@ -4472,7 +4511,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20164983146",
@@ -4729,7 +4771,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20167114793",
@@ -5028,7 +5073,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20172560289",
@@ -5377,7 +5425,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20174363995",
@@ -5562,7 +5613,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20174469610",
@@ -5861,7 +5915,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20177354490",
@@ -6098,7 +6155,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20178155505",
@@ -6579,7 +6639,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20179367018",
@@ -7041,7 +7104,10 @@
           "posible_crédito": false,
           "cambios_nivel": false
         }
-      ]
+      ],
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20179691249",
@@ -7196,7 +7262,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20180815695",
@@ -7471,7 +7540,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20182946576",
@@ -7770,7 +7842,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20184965241",
@@ -8075,7 +8150,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20185219462",
@@ -8230,7 +8308,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20185412726",
@@ -8469,7 +8550,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20210762370",
@@ -9022,7 +9106,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20214381800",
@@ -9491,7 +9578,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20214633184",
@@ -10003,7 +10093,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20215063896",
@@ -10164,7 +10257,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20218346414",
@@ -10325,7 +10421,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20219571594",
@@ -10624,7 +10723,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20220325831",
@@ -10831,7 +10933,10 @@
         }
       ],
       "posible_crédito": true,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20222355797",
@@ -11262,7 +11367,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20223769463",
@@ -11561,7 +11669,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20224707933",
@@ -12138,7 +12249,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20228552241",
@@ -12419,7 +12533,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20234094379",
@@ -12856,7 +12973,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20235687659",
@@ -13403,7 +13523,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20238493944",
@@ -13618,7 +13741,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20242096380",
@@ -13839,7 +13965,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20246311014",
@@ -14306,7 +14435,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20249629805",
@@ -14611,7 +14743,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20254783855",
@@ -14930,7 +15065,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20256417600",
@@ -15037,7 +15175,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20267576956",
@@ -15440,7 +15581,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20280522067",
@@ -15755,7 +15899,10 @@
           "posible_crédito": false,
           "cambios_nivel": false
         }
-      ]
+      ],
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20281432894",
@@ -16054,7 +16201,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20287940883",
@@ -16215,7 +16365,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20289709658",
@@ -16370,7 +16523,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20292065273",
@@ -16671,7 +16827,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20292473150",
@@ -16970,7 +17129,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20293269697",
@@ -17281,7 +17443,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20296842657",
@@ -17456,7 +17621,15 @@
         }
       ],
       "posible_crédito": true,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": true,
+        "monto_miles_pesos": 1509.0,
+        "entidades": [
+          "00014"
+        ],
+        "fecha": "2026-01"
+      }
     },
     {
       "cuit": "20297149149",
@@ -17655,7 +17828,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20303981560",
@@ -18076,7 +18252,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20309470037",
@@ -18333,7 +18512,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20312581818",
@@ -18620,7 +18802,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20334984827",
@@ -18955,7 +19140,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "20399113610",
@@ -19448,7 +19636,15 @@
           "posible_crédito": false,
           "cambios_nivel": true
         }
-      ]
+      ],
+      "hipoteca_bcra": {
+        "tiene": true,
+        "monto_miles_pesos": 115640.0,
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-01"
+      }
     },
     {
       "cuit": "20416403423",
@@ -19609,7 +19805,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23106687269",
@@ -19908,7 +20107,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23118371909",
@@ -20183,7 +20385,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23146098819",
@@ -20338,7 +20543,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23148861749",
@@ -20637,7 +20845,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23173819889",
@@ -20870,7 +21081,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23176379219",
@@ -21031,7 +21245,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23201860334",
@@ -21444,7 +21661,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23217558824",
@@ -21881,7 +22101,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23270929419",
@@ -22078,7 +22301,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "23317275609",
@@ -22131,7 +22357,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "27176138551",
@@ -22484,7 +22713,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "27208812586",
@@ -22783,7 +23015,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "27213745943",
@@ -23256,7 +23491,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "27232929869",
@@ -23729,7 +23967,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "27245633128",
@@ -24043,7 +24284,10 @@
         }
       ],
       "posible_crédito": false,
-      "cambios_nivel": true
+      "cambios_nivel": true,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     },
     {
       "cuit": "27293942957",
@@ -24354,7 +24598,10 @@
       ],
       "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": false
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      }
     }
   ]
 }
