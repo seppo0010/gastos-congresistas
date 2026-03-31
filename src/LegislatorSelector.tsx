@@ -1,8 +1,18 @@
 import { useMemo, useState, useEffect } from 'react';
-import { Home, AlertCircle, X, Users } from 'lucide-react';
+import { Home, AlertCircle, X, Users, ShieldAlert } from 'lucide-react';
 
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
+
+export const SITUACION_BCRA: Record<number, { label: string; color: string }> = {
+  0:  { label: 'Sin datos',          color: '#9ca3af' },
+  1:  { label: 'Normal',             color: '#16a34a' },
+  2:  { label: 'Riesgo bajo',        color: '#ca8a04' },
+  3:  { label: 'Riesgo medio',       color: '#ea580c' },
+  4:  { label: 'Riesgo alto',        color: '#dc2626' },
+  5:  { label: 'Irrecuperable',      color: '#7f1d1d' },
+  11: { label: 'Con garantías "A"',  color: '#0284c7' },
+};
 
 const getDebtStats = (l: Legislator) => {
   const monthly: { [key: string]: number } = {};
@@ -31,6 +41,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const [creditFilter, setCreditFilter] = useState("todos");
   const [levelChangeFilter, setLevelChangeFilter] = useState("todos");
   const [familiaresFilter, setFamiliaresFilter] = useState("todos");
+  const [situacionFilter, setSituacionFilter] = useState("todos");
   const [sortOrder, setSortOrder] = useState("nombre_asc");
 
   const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
@@ -69,7 +80,8 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const filteredAndSorted = useMemo(() => {
     return legisladores
       .filter(l => {
-        const searchMatch = debouncedSearchTerm === "" || l.nombre.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
+        const searchMatch = debouncedSearchTerm === "" || l.nombre.toLowerCase().includes(debouncedSearchTerm.toLowerCase());
+
 
         const isLegislador = !!l.periodos;
         const positionMatch = positionFilter === 'todos' ||
@@ -83,8 +95,9 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
         const levelChangeMatch = levelChangeFilter === 'todos' || (levelChangeFilter === 'si' ? l.cambios_nivel : !l.cambios_nivel);
         const hasFamiliares = l.familiares && l.familiares.length > 0;
         const familiaresMatch = familiaresFilter === 'todos' || (familiaresFilter === 'si' ? hasFamiliares : !hasFamiliares);
+        const situacionMatch = situacionFilter === 'todos' || String(l.situacion_bcra ?? 1) === situacionFilter;
 
-        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && creditMatch && levelChangeMatch && familiaresMatch);
+        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && creditMatch && levelChangeMatch && familiaresMatch && situacionMatch);
       })
       .sort((a, b) => {
         const aSelected = selectedIds.includes(a.cuit);
@@ -102,7 +115,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
 
         return 0;
       });
-  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, creditFilter, levelChangeFilter, familiaresFilter, selectedIds, sortOrder, debtStats]);
+  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, creditFilter, levelChangeFilter, familiaresFilter, situacionFilter, selectedIds, sortOrder, debtStats]);
 
   return (
     <div className="w-full md:w-80 h-full flex flex-col border-r border-gray-200 bg-white">
@@ -160,7 +173,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
               </select>
             </div>
           )}
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 gap-2">
             <div>
               <label htmlFor="credit" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1">
                 <span title="Garantía preferida (hipoteca/prenda)" className="flex"><Home size={14} className="text-green-600" /></span>
@@ -183,6 +196,8 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
                 <option value="no">No</option>
               </select>
             </div>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
             <div>
               <label htmlFor="familiares" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1">
                 <span title="Tiene familiares" className="flex"><Users size={14} className="text-blue-400" /></span>
@@ -192,6 +207,18 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
                 <option value="todos">Todos</option>
                 <option value="si">Sí</option>
                 <option value="no">No</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="situacion" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1">
+                <span title="Situación en el BCRA" className="flex"><ShieldAlert size={14} className="text-red-500" /></span>
+                Situación
+              </label>
+              <select id="situacion" value={situacionFilter} onChange={e => setSituacionFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                <option value="todos">Todas</option>
+                {Object.entries(SITUACION_BCRA).map(([val, { label }]) => (
+                  <option key={val} value={val}>{label}</option>
+                ))}
               </select>
             </div>
           </div>
@@ -209,6 +236,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
               setCreditFilter("todos");
               setLevelChangeFilter("todos");
               setFamiliaresFilter("todos");
+              setSituacionFilter("todos");
             }}
             className="w-full py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 text-xs font-semibold rounded transition-colors"
           >
@@ -252,6 +280,15 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
                       <div title="Tiene datos de familiares en el BCRA." className="shrink-0 flex">
                         <Users size={14} className="text-blue-400" />
                       </div>
+                    )}
+                    {l.situacion_bcra !== undefined && l.situacion_bcra !== 1 && (
+                      <span
+                        title={`Situación BCRA: ${SITUACION_BCRA[l.situacion_bcra]?.label ?? l.situacion_bcra}`}
+                        className="shrink-0 text-[9px] font-bold px-1 py-0.5 rounded leading-none"
+                        style={{ backgroundColor: SITUACION_BCRA[l.situacion_bcra]?.color ?? '#9ca3af', color: '#fff' }}
+                      >
+                        {l.situacion_bcra}
+                      </span>
                     )}
                   </div>
                   {max > 0 && (

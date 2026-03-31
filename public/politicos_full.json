@@ -395,7 +395,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20102021291",
@@ -925,7 +926,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 4
     },
     {
       "cuit": "20131324236",
@@ -1305,7 +1307,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20132084263",
@@ -1463,7 +1466,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20134281635",
@@ -1621,7 +1625,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20139651317",
@@ -1941,7 +1946,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20142222567",
@@ -2339,7 +2345,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20142236916",
@@ -2623,7 +2630,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20145588465",
@@ -2895,7 +2903,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20149615262",
@@ -3343,7 +3352,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20161007707",
@@ -3681,7 +3691,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 5
     },
     {
       "cuit": "20162136748",
@@ -3995,7 +4006,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20162609263",
@@ -4356,7 +4368,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20162665589",
@@ -4514,7 +4527,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20164983146",
@@ -4774,7 +4788,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20167114793",
@@ -5076,7 +5091,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20172560289",
@@ -5428,7 +5444,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 2
     },
     {
       "cuit": "20174363995",
@@ -5616,7 +5633,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20174469610",
@@ -5918,7 +5936,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20177354490",
@@ -6158,7 +6177,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20178155505",
@@ -6642,7 +6662,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20179367018",
@@ -7107,7 +7128,8 @@
       ],
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20179691249",
@@ -7265,7 +7287,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20180815695",
@@ -7543,7 +7566,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20181769271",
@@ -7671,7 +7695,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 0
     },
     {
       "cuit": "20182946576",
@@ -7973,7 +7998,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20184965241",
@@ -8281,7 +8307,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20185219462",
@@ -8439,7 +8466,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20185412726",
@@ -8681,7 +8709,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20210762370",
@@ -9237,7 +9266,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20214381800",
@@ -9709,7 +9739,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20214633184",
@@ -10224,7 +10255,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20215063896",
@@ -10388,7 +10420,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20218346414",
@@ -10552,7 +10585,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20219571594",
@@ -10854,7 +10888,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20220325831",
@@ -11064,7 +11099,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20222355797",
@@ -11498,7 +11534,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20223769463",
@@ -11800,7 +11837,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20224707933",
@@ -12380,7 +12418,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20228552241",
@@ -12664,7 +12703,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20234094379",
@@ -13104,7 +13144,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20235687659",
@@ -13654,7 +13695,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20238493944",
@@ -13872,7 +13914,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20242096380",
@@ -14096,7 +14139,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20246311014",
@@ -14566,7 +14610,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20249629805",
@@ -14874,7 +14919,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20254783855",
@@ -15196,7 +15242,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20256417600",
@@ -15306,7 +15353,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20265201076",
@@ -15602,7 +15650,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20267576956",
@@ -16008,7 +16057,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20280522067",
@@ -16326,7 +16376,8 @@
       ],
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20281432894",
@@ -16628,7 +16679,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20287940883",
@@ -16792,7 +16844,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20288616729",
@@ -16950,7 +17003,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20289709658",
@@ -17108,7 +17162,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20292065273",
@@ -17412,7 +17467,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20292473150",
@@ -17714,7 +17770,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20292474386",
@@ -17980,7 +18037,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20293269697",
@@ -18294,7 +18352,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20296842657",
@@ -18477,7 +18536,8 @@
           "00014"
         ],
         "fecha": "2026-01"
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20297149149",
@@ -18679,7 +18739,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20303981560",
@@ -19103,7 +19164,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20309470037",
@@ -19363,7 +19425,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20312581818",
@@ -19653,7 +19716,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20334984827",
@@ -19991,7 +20055,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20399113610",
@@ -20492,7 +20557,8 @@
           "00011"
         ],
         "fecha": "2026-01"
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "20416403423",
@@ -20656,7 +20722,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23106687269",
@@ -20958,7 +21025,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23118371909",
@@ -21236,7 +21304,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23146098819",
@@ -21394,7 +21463,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23148861749",
@@ -21696,7 +21766,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23173819889",
@@ -21932,7 +22003,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23176379219",
@@ -22096,7 +22168,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23201860334",
@@ -22512,7 +22585,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23217558824",
@@ -22952,7 +23026,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23270929419",
@@ -23152,7 +23227,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "23317275609",
@@ -23208,7 +23284,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "27176138551",
@@ -23564,7 +23641,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "27208812586",
@@ -23866,7 +23944,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "27213745943",
@@ -24342,7 +24421,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "27232929869",
@@ -24818,7 +24898,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "27245633128",
@@ -25135,7 +25216,8 @@
       "cambios_nivel": true,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     },
     {
       "cuit": "27293942957",
@@ -25449,7 +25531,8 @@
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
-      }
+      },
+      "situacion_bcra": 1
     }
   ]
 }

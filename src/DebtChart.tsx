@@ -5,6 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import type { Legislator, Milestone, CurrencyMode } from './types';
 import { Eye, EyeOff, Flag, HelpCircle, Share2, Users, X } from 'lucide-react';
 import { COLORS } from './Colors';
+import { SITUACION_BCRA } from './LegislatorSelector';
 
 interface DebtChartProps {
   legislators: Legislator[];
@@ -678,10 +679,19 @@ const DebtChart = forwardRef(({
                     </span>
                   )}
                 </div>
-                <div className="flex gap-1 mt-1 min-w-0">
+                <div className="flex gap-1 mt-1 min-w-0 flex-wrap">
                   {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.partido}</span>}
                   {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.distrito}</span>}
                   {l.unidad && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.unidad}</span>}
+                  {l.situacion_bcra !== undefined && (
+                    <span
+                      title="Situación en el BCRA (Central de Deudores)"
+                      className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full shrink-0"
+                      style={{ backgroundColor: SITUACION_BCRA[l.situacion_bcra]?.color ?? '#9ca3af', color: '#fff' }}
+                    >
+                      {SITUACION_BCRA[l.situacion_bcra]?.label ?? `Sit. ${l.situacion_bcra}`}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
