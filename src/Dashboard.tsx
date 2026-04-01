@@ -23,20 +23,27 @@ type LegislatorWithSlug = Legislator & { slug: string };
 interface DashboardProps {
   dbData: DashboardData;
   politicosData: DashboardData;
+  judicialData: DashboardData;
 }
 
-export default function Dashboard({ dbData, politicosData }: DashboardProps) {
+export default function Dashboard({ dbData, politicosData, judicialData }: DashboardProps) {
   const { meta, data: rawLegisladores } = dbData;
   const { data: rawPoliticos } = politicosData;
+  const { data: rawJudicial } = judicialData;
 
   const legisladores = useMemo(() => {
     const politicosByCuit = new Map(rawPoliticos.map(p => [p.cuit, p]));
     const merged = rawLegisladores.map(l => {
       const pol = politicosByCuit.get(l.cuit);
-      return pol ? { ...l, unidad: pol.unidad } : l;
+      return pol ? { ...l, unidad: pol.unidad, poder: 'legislativo' as const } : { ...l, poder: 'legislativo' as const };
     });
     const legCuits = new Set(rawLegisladores.map(l => l.cuit));
-    const combined = [...merged, ...rawPoliticos.filter(p => !legCuits.has(p.cuit))];
+    const execCuits = new Set(rawPoliticos.map(p => p.cuit));
+    const combined = [
+      ...merged,
+      ...rawPoliticos.filter(p => !legCuits.has(p.cuit)).map(p => ({ ...p, poder: 'ejecutivo' as const })),
+      ...rawJudicial.filter(j => !legCuits.has(j.cuit) && !execCuits.has(j.cuit)).map(j => ({ ...j, poder: 'judicial' as const })),
+    ];
 
     const seen = new Map<string, number>();
     return combined.map(l => {
@@ -50,7 +57,7 @@ export default function Dashboard({ dbData, politicosData }: DashboardProps) {
       }
       return { ...l, slug } as LegislatorWithSlug;
     });
-  }, [rawLegisladores]);
+  }, [rawLegisladores, rawPoliticos, rawJudicial]);
 
   const [selected, setSelected] = useState<LegislatorWithSlug[]>(() => {
     const params = new URLSearchParams(window.location.search);

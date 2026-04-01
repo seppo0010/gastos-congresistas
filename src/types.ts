@@ -31,6 +31,8 @@ export interface Legislator {
   distrito?: string;  // Solo legisladores
   partido?: string;   // Solo legisladores
   cargo: string;
+  poder?: 'legislativo' | 'ejecutivo' | 'judicial';
+  es_candidato?: boolean;
   unidad?: string;    // Solo funcionarios del ejecutivo (ej: "Ministerio de Salud")
   periodos?: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];  // Solo legisladores
   hipoteca_bcra: { tiene: boolean; monto_miles_pesos?: number; entidades?: string[]; fecha?: string };

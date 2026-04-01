@@ -11,21 +11,25 @@ function scrollToExplorer() {
 export default function App() {
   const [dbData, setDbData] = useState<DashboardData | null>(null);
   const [politicosData, setPoliticosData] = useState<DashboardData | null>(null);
+  const [judicialData, setJudicialData] = useState<DashboardData | null>(null);
 
   useEffect(() => {
     Promise.all([
       fetch('/legisladores_full.json').then(r => r.json()),
       fetch('/politicos_full.json').then(r => r.json()),
-    ]).then(([db, pol]) => {
+      fetch('/judicial_full.json').then(r => r.json()),
+    ]).then(([db, pol, jud]) => {
       setDbData(db);
       setPoliticosData(pol);
+      setJudicialData(jud);
     });
   }, []);
 
   const heroMetrics = useMemo(() => {
-    if (!dbData || !politicosData) return null;
+    if (!dbData || !politicosData || !judicialData) return null;
     const rawLegisladores = dbData.data;
     const rawPoliticos = politicosData.data;
+    const rawJudicial = judicialData.data;
 
     const politicosByCuit = new Map(rawPoliticos.map((p) => [p.cuit, p]));
     const merged = rawLegisladores.map((l) => {
@@ -33,7 +37,12 @@ export default function App() {
       return pol ? { ...l, unidad: pol.unidad } : l;
     });
     const legCuits = new Set(rawLegisladores.map((l) => l.cuit));
-    const combined = [...merged, ...rawPoliticos.filter((p) => !legCuits.has(p.cuit))];
+    const execCuits = new Set(rawPoliticos.map((p) => p.cuit));
+    const combined = [
+      ...merged,
+      ...rawPoliticos.filter((p) => !legCuits.has(p.cuit)),
+      ...rawJudicial.filter((j) => !legCuits.has(j.cuit) && !execCuits.has(j.cuit)),
+    ];
 
     let latestMonth = '';
 
@@ -63,7 +72,7 @@ export default function App() {
       funcionariosCount: combined.length,
       latestMonthLabel,
     };
-  }, [dbData, politicosData]);
+  }, [dbData, politicosData, judicialData]);
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800">
@@ -114,8 +123,8 @@ export default function App() {
         </section>
 
         <section id="explorador" className="h-screen w-full border-b border-gray-200 bg-gray-100">
-          {dbData && politicosData ? (
-            <Dashboard dbData={dbData} politicosData={politicosData} />
+          {dbData && politicosData && judicialData ? (
+            <Dashboard dbData={dbData} politicosData={politicosData} judicialData={judicialData} />
           ) : (
             <div className="flex h-full items-center justify-center">
               <p className="text-gray-500">Cargando datos…</p>
