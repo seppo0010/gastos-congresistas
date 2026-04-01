@@ -665,7 +665,7 @@
     {
       "cuit": "20076026808",
       "nombre": "LUGONES MARIO IVAN",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Salud",
       "historial": [
         {
@@ -956,7 +956,7 @@
     {
       "cuit": "20081463450",
       "nombre": "MAGNAGHI (ADH) EMILIO LUIS",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Fábrica Argentina de Aviones 'Brig. San Martín' S.A.",
       "historial": [
         {
@@ -2009,7 +2009,7 @@
     {
       "cuit": "20084002047",
       "nombre": "FRANCOS GUILLERMO ALBERTO",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "YPF S.A.",
       "historial": [
         {
@@ -2306,7 +2306,7 @@
     {
       "cuit": "20101340326",
       "nombre": "FERRARI OSCAR",
-      "cargo": "Vicepresidente - Director Titular Clase 'A'",
+      "cargo": "Vicepresidente/a",
       "unidad": "Agua y Saneamientos Argentinos S.A. ",
       "historial": [
         {
@@ -2766,14 +2766,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente - Director Titular Clase 'A'"
+          "cargo": "Vicepresidente/a"
         },
         {
           "fecha": "2024-11",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente - Director Titular Clase 'A'"
+          "cargo": "Vicepresidente/a"
         }
       ],
       "posible_crédito": false,
@@ -3626,7 +3626,7 @@
     {
       "cuit": "20131039469",
       "nombre": "ANTELO (ADH) JORGE JESÚS",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Fábrica Argentina de Aviones 'Brig. San Martín' S.A.",
       "historial": [
         {
@@ -3953,7 +3953,7 @@
     {
       "cuit": "20131324236",
       "nombre": "PETRUNGARO VIRGILIO",
-      "cargo": "Director/a Ejecutivo/a",
+      "cargo": "Director/a",
       "unidad": "Comisión Nacional de Evaluación de Tecnologías Sanitarias y Excelencia Clínica (CONETEC)",
       "historial": [
         {
@@ -4499,7 +4499,7 @@
     {
       "cuit": "20132084263",
       "nombre": "PAN NESTOR RAUL",
-      "cargo": "Miembro en representación del Consejo Interuniversitario Nacional",
+      "cargo": "Miembro",
       "unidad": "Comisión Nacional de Evaluación y Acreditación Universitaria",
       "historial": [
         {
@@ -4817,7 +4817,7 @@
     {
       "cuit": "20139651317",
       "nombre": "VAZQUEZ ANDRES EDGARDO",
-      "cargo": "Director/a Ejecutivo/a",
+      "cargo": "Director/a",
       "unidad": "Agencia de Recaudación y Control Aduanero",
       "historial": [
         {
@@ -5519,7 +5519,7 @@
     {
       "cuit": "20140815846",
       "nombre": "LARRETEGUY AXEL EDUARDO",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Nucleoeléctrica Argentina S.A.",
       "historial": [
         {
@@ -5678,7 +5678,7 @@
     {
       "cuit": "20142222567",
       "nombre": "CUNEO LIBARONA MARIANO",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Justicia",
       "historial": [
         {
@@ -6635,7 +6635,7 @@
     {
       "cuit": "20146214224",
       "nombre": "HENKE ALEJANDRO GUILLERMO",
-      "cargo": "Vicepresidente/a - Director/a",
+      "cargo": "Vicepresidente/a",
       "unidad": "Banco de la Nación Argentina Sociedad Anónima (BNA S.A.)",
       "historial": [
         {
@@ -7022,7 +7022,7 @@
     {
       "cuit": "20149023357",
       "nombre": "ORDOÑEZ JUAN BAUTISTA",
-      "cargo": "Vicepresidente/a - Director/a Titular Clase 'C'",
+      "cargo": "Vicepresidente/a",
       "unidad": "Aerolíneas Argentinas S.A.",
       "historial": [
         {
@@ -7350,7 +7350,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente/a - Director/a Titular Clase 'C'"
+          "cargo": "Vicepresidente/a"
         }
       ],
       "posible_crédito": false,
@@ -7363,7 +7363,7 @@
     {
       "cuit": "20149615262",
       "nombre": "GONZALEZ EDUARDO ROBERTO",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Agencia de Publicidad del Estado Sociedad Anónima Unipersonal (APE S.A.U.)",
       "historial": [
         {
@@ -7799,7 +7799,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Presidente/a - Director/a Titular"
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": false,
@@ -8987,7 +8987,7 @@
     {
       "cuit": "20164168434",
       "nombre": "VEGA HUGO RENE",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -9621,7 +9621,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": false,
@@ -10401,7 +10401,7 @@
     {
       "cuit": "20168675314",
       "nombre": "SOLE (ADH) PABLO JAIME",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Fábrica Argentina de Aviones 'Brig. San Martín' S.A.",
       "historial": [
         {
@@ -10698,7 +10698,7 @@
     {
       "cuit": "20172346244",
       "nombre": "CANSECO GERARDO DAMIÁN",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "YPF S.A.",
       "historial": [
         {
@@ -11001,7 +11001,7 @@
     {
       "cuit": "20172560289",
       "nombre": "CAPUTO LUIS ANDRES",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Economía",
       "historial": [
         {
@@ -11341,7 +11341,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         }
       ],
       "posible_crédito": false,
@@ -12138,7 +12138,7 @@
     {
       "cuit": "20174363995",
       "nombre": "GIMENEZ PEREZ GUILLERMO JOSE",
-      "cargo": "Prefecto Nacional Naval",
+      "cargo": "Prefecto/a",
       "unidad": "Prefectura Naval Argentina",
       "historial": [
         {
@@ -12630,7 +12630,7 @@
     {
       "cuit": "20175750992",
       "nombre": "KOENIG GUILLERMO GUSTAVO",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "YPF S.A.",
       "historial": [
         {
@@ -13041,7 +13041,7 @@
     {
       "cuit": "20177354490",
       "nombre": "SANTILLI DIEGO CESAR",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio del Interior",
       "historial": [
         {
@@ -13255,21 +13255,21 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         },
         {
           "fecha": "2025-05",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         },
         {
           "fecha": "2025-09",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         }
       ],
       "posible_crédito": false,
@@ -13282,7 +13282,7 @@
     {
       "cuit": "20178155505",
       "nombre": "STURZENEGGER FEDERICO ADOLFO",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Desregulación y Transformación del Estado",
       "historial": [
         {
@@ -13754,7 +13754,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         }
       ],
       "posible_crédito": false,
@@ -13767,7 +13767,7 @@
     {
       "cuit": "20179367018",
       "nombre": "QUIRNO PABLO",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Relaciones Exteriores, Comercio Internacional y Culto",
       "historial": [
         {
@@ -14167,14 +14167,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         },
         {
           "fecha": "2025-05",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Ministro"
+          "cargo": "Ministro/a"
         }
       ],
       "posible_crédito": false,
@@ -14233,7 +14233,7 @@
     {
       "cuit": "20179691249",
       "nombre": "PRESTI CARLOS ALBERTO",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Defensa",
       "historial": [
         {
@@ -14800,7 +14800,7 @@
     {
       "cuit": "20182946576",
       "nombre": "LOMBARDO NORBERTO FABIAN",
-      "cargo": "Presidente/a - Director/a Titular Clase 'C'",
+      "cargo": "Presidente/a",
       "unidad": "Aerolíneas Argentinas S.A.",
       "historial": [
         {
@@ -15103,7 +15103,7 @@
     {
       "cuit": "20184317142",
       "nombre": "OSTUNI LEANDRO NICOLÁS",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -15317,21 +15317,21 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         },
         {
           "fecha": "2025-03",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         },
         {
           "fecha": "2025-08",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": false,
@@ -15344,7 +15344,7 @@
     {
       "cuit": "20184486947",
       "nombre": "BASICH SERGIO GABRIEL",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Desarrollo del Capital Humano Ferroviario Sociedad Anónima con Participación Estatal Mayoritaria",
       "historial": [
         {
@@ -15956,7 +15956,7 @@
     {
       "cuit": "20185219462",
       "nombre": "COMPERATORE LEONARDO FABIAN",
-      "cargo": "Presidente - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Administración de Infraestructuras Ferroviarias S.A.",
       "historial": [
         {
@@ -16358,7 +16358,7 @@
     {
       "cuit": "20202022708",
       "nombre": "MACRA CARLOS JAVIER",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Empresa Argentina de Soluciones Satelitales - ARSAT S.A.",
       "historial": [
         {
@@ -16860,14 +16860,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         },
         {
           "fecha": "2025-08",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": false,
@@ -17230,7 +17230,7 @@
     {
       "cuit": "20206068788",
       "nombre": "VISPO DANIEL ALBERTO",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -17683,7 +17683,7 @@
     {
       "cuit": "20206365308",
       "nombre": "GUNNING PABLO MARTÍN",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -17842,7 +17842,7 @@
     {
       "cuit": "20210762370",
       "nombre": "BEARZI FERNANDO OMAR",
-      "cargo": "Director/a Ejecutivo/a",
+      "cargo": "Director/a",
       "unidad": "Administración Nacional de la Seguridad Social ",
       "historial": [
         {
@@ -18386,7 +18386,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Ejecutivo/a"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": false,
@@ -19553,7 +19553,7 @@
     {
       "cuit": "20217459347",
       "nombre": "CATALÁN LISANDRO",
-      "cargo": "Director/a Titular Clase 'A'",
+      "cargo": "Director/a",
       "unidad": "Aerolíneas Argentinas S.A.",
       "historial": [
         {
@@ -19934,7 +19934,7 @@
     {
       "cuit": "20218346414",
       "nombre": "MILEI JAVIER GERARDO",
-      "cargo": "Presidente",
+      "cargo": "Presidente/a",
       "unidad": "Presidencia de la Nación",
       "historial": [
         {
@@ -20099,7 +20099,7 @@
     {
       "cuit": "20219571594",
       "nombre": "BALDINI CAMILO",
-      "cargo": "Presidente - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Correo Oficial de la República Argentina Sociedad Anónima",
       "historial": [
         {
@@ -22106,7 +22106,7 @@
     {
       "cuit": "20224707933",
       "nombre": "WASSERMAN DARIO",
-      "cargo": "Presidente/a - Director/a",
+      "cargo": "Presidente/a",
       "unidad": "Banco de la Nación Argentina Sociedad Anónima (BNA S.A.)",
       "historial": [
         {
@@ -22674,7 +22674,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Presidente/a - Director/a"
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": false,
@@ -22687,7 +22687,7 @@
     {
       "cuit": "20225276510",
       "nombre": "CHAHER DIEGO MARTIN",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Nucleoeléctrica Argentina S.A.",
       "historial": [
         {
@@ -23146,7 +23146,7 @@
     {
       "cuit": "20226060171",
       "nombre": "VALLONE HUGO MARCELO",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -24060,7 +24060,7 @@
     {
       "cuit": "20234094379",
       "nombre": "BOSCHIN GERARDO",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Operadora Ferroviaria S.A.",
       "historial": [
         {
@@ -24501,7 +24501,7 @@
     {
       "cuit": "20234704797",
       "nombre": "PIRAN JOSE MARIA",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Desarrollo del Capital Humano Ferroviario Sociedad Anónima con Participación Estatal Mayoritaria",
       "historial": [
         {
@@ -25484,7 +25484,7 @@
     {
       "cuit": "20239694323",
       "nombre": "SCIOLI NICOLÁS JOSÉ",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Banco de Inversión y Comercio Exterior S.A.",
       "historial": [
         {
@@ -25919,7 +25919,7 @@
     {
       "cuit": "20242096380",
       "nombre": "MAXIT ALEJO",
-      "cargo": "Presidente - Director/a Titular Clase 'A'",
+      "cargo": "Presidente/a",
       "unidad": "Agua y Saneamientos Argentinos S.A. ",
       "historial": [
         {
@@ -26144,7 +26144,7 @@
     {
       "cuit": "20245082038",
       "nombre": "CABRERA JUAN CRUZ",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Empresa Argentina de Soluciones Satelitales - ARSAT S.A.",
       "historial": [
         {
@@ -26447,7 +26447,7 @@
     {
       "cuit": "20246311014",
       "nombre": "FIGUERAS LUCAS MARTIN",
-      "cargo": "Presidente/a Consejo Directivo",
+      "cargo": "Presidente/a",
       "unidad": "Autoridad de Cuenca Matanza Riachuelo",
       "historial": [
         {
@@ -26918,7 +26918,7 @@
     {
       "cuit": "20247337467",
       "nombre": "BAGÚ GONZALO MARTÍN",
-      "cargo": "Vicepresidente - Director/a Titular",
+      "cargo": "Vicepresidente/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -27077,7 +27077,7 @@
     {
       "cuit": "20249578992",
       "nombre": "CRUZATE PATRICIO",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Desarrollo del Capital Humano Ferroviario Sociedad Anónima con Participación Estatal Mayoritaria",
       "historial": [
         {
@@ -28276,7 +28276,7 @@
     {
       "cuit": "20267576956",
       "nombre": "SIBILLA FERNANDO JORGE",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Fábrica Argentina de Aviones 'Brig. San Martín' S.A.",
       "historial": [
         {
@@ -28670,7 +28670,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Presidente/a - Director/a Titular"
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": false,
@@ -28683,7 +28683,7 @@
     {
       "cuit": "20267867942",
       "nombre": "GERMÁN NICOLÁS ANDRÉS",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Correo Oficial de la República Argentina Sociedad Anónima",
       "historial": [
         {
@@ -29103,7 +29103,7 @@
     {
       "cuit": "20271839406",
       "nombre": "ROLANDI JOSÉ",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "YPF S.A.",
       "historial": [
         {
@@ -29448,7 +29448,7 @@
     {
       "cuit": "20277113059",
       "nombre": "JACCOUD GIRART PATRICIO EZEQUIEL",
-      "cargo": "Director/a Titular Clase 'A'",
+      "cargo": "Director/a",
       "unidad": "Agua y Saneamientos Argentinos S.A. ",
       "historial": [
         {
@@ -29626,7 +29626,7 @@
           "texto": "Posible crédito",
           "color": "#ef4444",
           "tipo": "economico",
-          "cargo": "Director/a Titular Clase 'A'"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": true,
@@ -29644,7 +29644,7 @@
     {
       "cuit": "20280522067",
       "nombre": "ADORNI MANUEL",
-      "cargo": "Jefe de Gabinete de Ministros",
+      "cargo": "Jefe de Gabinete",
       "unidad": "Jefatura de Gabinete de Ministros",
       "historial": [
         {
@@ -29963,7 +29963,7 @@
     {
       "cuit": "20281432894",
       "nombre": "MAHIQUES JUAN BAUTISTA",
-      "cargo": "Ministro",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Justicia",
       "historial": [
         {
@@ -30661,7 +30661,7 @@
     {
       "cuit": "20287940883",
       "nombre": "BORDA GREGORIO",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Intercargo Sociedad Anónima Unipersonal",
       "historial": [
         {
@@ -31144,7 +31144,7 @@
     {
       "cuit": "20292065273",
       "nombre": "CANEDI LUIS FEDERICO",
-      "cargo": "Presidente - Director/a Titular en representación de DECAHF",
+      "cargo": "Presidente/a",
       "unidad": "Ferrocarriles Argentinos S.A.",
       "historial": [
         {
@@ -31436,7 +31436,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Presidente - Director/a Titular en representación de DECAHF"
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": false,
@@ -32019,7 +32019,7 @@
     {
       "cuit": "20293269697",
       "nombre": "CAVAGNARO PEDRO DANIEL",
-      "cargo": "Presidente - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Casa de Moneda Sociedad Anónima Unipersonal",
       "historial": [
         {
@@ -32334,7 +32334,7 @@
     {
       "cuit": "20296842657",
       "nombre": "ADORNI FRANCISCO JORGE",
-      "cargo": "Presidente/a y Director/a Representante del Ministerio de Defensa",
+      "cargo": "Presidente/a",
       "unidad": "Instituto de Ayuda Financiera para Pago de Retiros y Pensiones Militares",
       "historial": [
         {
@@ -32500,7 +32500,7 @@
           "texto": "Posible crédito",
           "color": "#ef4444",
           "tipo": "economico",
-          "cargo": "Presidente/a y Director/a Representante del Ministerio de Defensa"
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": true,
@@ -33178,7 +33178,7 @@
     {
       "cuit": "20303981560",
       "nombre": "CORREA RODRIGO MARTIN",
-      "cargo": "Presidente - Representante del Poder Ejecutivo Nacional",
+      "cargo": "Presidente/a",
       "unidad": "Instituto Nacional de la Yerba Mate",
       "historial": [
         {
@@ -33590,7 +33590,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Presidente - Representante del Poder Ejecutivo Nacional"
+          "cargo": "Presidente/a"
         }
       ],
       "posible_crédito": false,
@@ -34155,7 +34155,7 @@
     {
       "cuit": "20321881565",
       "nombre": "VAUTHIER MARTÍN",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Banco de Inversión y Comercio Exterior S.A.",
       "historial": [
         {
@@ -34452,7 +34452,7 @@
     {
       "cuit": "20325908603",
       "nombre": "MONGILARDI EMILIANO JOSÉ",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "YPF S.A.",
       "historial": [
         {
@@ -34768,14 +34768,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         },
         {
           "fecha": "2025-10",
           "texto": "Posible crédito",
           "color": "#ef4444",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": true,
@@ -35116,7 +35116,7 @@
     {
       "cuit": "20334984827",
       "nombre": "NUÑEZ ALEJANDRO MARTIN",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
@@ -35455,7 +35455,7 @@
     {
       "cuit": "20386145661",
       "nombre": "PAKGOJZ NICOLÁS ALBERTO",
-      "cargo": "Vicepresidente/a - Director/a Titular",
+      "cargo": "Vicepresidente/a",
       "unidad": "Playas Ferroviarias de Buenos Aires S.A.",
       "historial": [
         {
@@ -35770,7 +35770,7 @@
     {
       "cuit": "20390283009",
       "nombre": "NUÑEZ FELIPE",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Banco de Inversión y Comercio Exterior S.A.",
       "historial": [
         {
@@ -36050,7 +36050,7 @@
           "texto": "Posible crédito",
           "color": "#ef4444",
           "tipo": "economico",
-          "cargo": "Director/a Titular"
+          "cargo": "Director/a"
         }
       ],
       "posible_crédito": true,
@@ -36570,7 +36570,7 @@
     {
       "cuit": "20416403423",
       "nombre": "POTENTE JUAN NICOLAS",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Playas Ferroviarias de Buenos Aires S.A.",
       "historial": [
         {
@@ -36894,7 +36894,7 @@
     {
       "cuit": "20939443151",
       "nombre": "GONZÁLEZ BOTTO MAURICIO MIGUEL",
-      "cargo": "Director/a Titular Clase 'A'",
+      "cargo": "Director/a",
       "unidad": "Agua y Saneamientos Argentinos S.A. ",
       "historial": [
         {
@@ -37899,7 +37899,7 @@
     {
       "cuit": "23138228029",
       "nombre": "SOLIS JOSÉ ALEJANDRO",
-      "cargo": "Vicepresidente/a - Director/a Titular",
+      "cargo": "Vicepresidente/a",
       "unidad": "Fábrica Argentina de Aviones 'Brig. San Martín' S.A.",
       "historial": [
         {
@@ -38341,14 +38341,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente/a - Director/a Titular"
+          "cargo": "Vicepresidente/a"
         },
         {
           "fecha": "2025-11",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente/a - Director/a Titular"
+          "cargo": "Vicepresidente/a"
         }
       ],
       "posible_crédito": false,
@@ -38520,7 +38520,7 @@
     {
       "cuit": "23148861749",
       "nombre": "VAQUER JUAN MANUEL",
-      "cargo": "Presidente/a - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Fabricaciones Militares Sociedad Anónima Unipersonal",
       "historial": [
         {
@@ -38823,7 +38823,7 @@
     {
       "cuit": "23169143919",
       "nombre": "GRANZELLA GUSTAVO OSCAR",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Empresa Argentina de Soluciones Satelitales - ARSAT S.A.",
       "historial": [
         {
@@ -39384,7 +39384,7 @@
     {
       "cuit": "23201860334",
       "nombre": "PETTOVELLO SANDRA VIVIANA",
-      "cargo": "Ministra",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Capital Humano",
       "historial": [
         {
@@ -40184,7 +40184,7 @@
     {
       "cuit": "23217558824",
       "nombre": "MONTEOLIVA ALEJANDRA SUSANA",
-      "cargo": "Ministra",
+      "cargo": "Ministro/a",
       "unidad": "Ministerio de Seguridad Nacional",
       "historial": [
         {
@@ -41087,7 +41087,7 @@
     {
       "cuit": "23270929419",
       "nombre": "GILLIGAN PATRICIO QUINTO JOSE",
-      "cargo": "Presidente - Director/a Titular",
+      "cargo": "Presidente/a",
       "unidad": "Desarrollo del Capital Humano Ferroviario Sociedad Anónima con Participación Estatal Mayoritaria",
       "historial": [
         {
@@ -41792,7 +41792,7 @@
     {
       "cuit": "27112028914",
       "nombre": "GOTTERO SILVIA MARÍA EVA",
-      "cargo": "Director/a Titular en representación del Estado Nacional",
+      "cargo": "Director/a",
       "unidad": "Corporación Antiguo Puerto Madero S.A. ",
       "historial": [
         {
@@ -43397,7 +43397,7 @@
     {
       "cuit": "27208812586",
       "nombre": "ROTTA NORMA BEATRIZ",
-      "cargo": "Presidente/a -  Director/a Titular en representación del Ministerio de Economía",
+      "cargo": "Presidente/a",
       "unidad": "Empresa Argentina de Navegación Aérea S.A.",
       "historial": [
         {
@@ -44753,7 +44753,7 @@
     {
       "cuit": "27231385776",
       "nombre": "HUMENUK GLADYS NOEMÍ",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Correo Oficial de la República Argentina Sociedad Anónima",
       "historial": [
         {
@@ -45836,7 +45836,7 @@
     {
       "cuit": "27245633128",
       "nombre": "VILLARRUEL VICTORIA EUGENIA",
-      "cargo": "Vicepresidente",
+      "cargo": "Vicepresidente/a",
       "unidad": "Presidencia de la Nación",
       "historial": [
         {
@@ -46134,14 +46134,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente"
+          "cargo": "Vicepresidente/a"
         },
         {
           "fecha": "2025-09",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "Vicepresidente"
+          "cargo": "Vicepresidente/a"
         }
       ],
       "posible_crédito": false,
@@ -47778,7 +47778,7 @@
     {
       "cuit": "27419286163",
       "nombre": "AVALOS MAGALI MILAGROS",
-      "cargo": "Director/a Titular",
+      "cargo": "Director/a",
       "unidad": "Belgrano Cargas y Logística S.A.",
       "historial": [
         {
