@@ -92,7 +92,8 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const filteredAndSorted = useMemo(() => {
     return legisladores
       .filter(l => {
-        const searchMatch = debouncedSearchTerm === "" || l.nombre.toLowerCase().includes(debouncedSearchTerm.toLowerCase());
+        const normalize = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        const searchMatch = debouncedSearchTerm === "" || normalize(l.nombre).includes(normalize(debouncedSearchTerm));
 
 
         const isLegislador = l.poder === 'legislativo';
