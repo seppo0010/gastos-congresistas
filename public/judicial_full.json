@@ -110,7 +110,7 @@
     {
       "cuit": "20179070104",
       "nombre": "LOMBARDO RICARDO SANTIAGO",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL DE MENORES N* 3 DE LA CAPITAL FEDERAL",
       "dni": "17907010",
       "mensaje": "MEN-2026-25-APN-PTE",
@@ -603,7 +603,7 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         }
       ],
       "posible_crédito": false,
@@ -616,7 +616,7 @@
     {
       "cuit": "20307421349",
       "nombre": "PACILIO NICOLÁS ANTONIO",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL N? 1 DE LA CAPITAL FEDERAL",
       "dni": "30742134",
       "mensaje": "MEN-2026-26-APN-PTE",
@@ -778,7 +778,7 @@
     {
       "cuit": "20234542657",
       "nombre": "PONCIO SANTIAGO ALBERTO",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL N? 13 DE LA CAPITAL FEDERAL",
       "dni": "23454265",
       "mensaje": "MEN-2026-27-APN-PTE",
@@ -940,7 +940,7 @@
     {
       "cuit": "20217631166",
       "nombre": "SANTISO JAVIER ALBERTO",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO CIVIL N* 5 DE LA CAPITAL FEDERAL",
       "dni": "21763116",
       "mensaje": "MEN-2026-28-APN-PTE",
@@ -1444,7 +1444,7 @@
     {
       "cuit": "20252276603",
       "nombre": "LABADENS IGNACIO",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE MENORES N” 2 DE LA CAPITAL FEDERAL",
       "dni": "25227660",
       "mensaje": "MEN-2026-29-APN-PTE",
@@ -1649,7 +1649,7 @@
           "texto": "Posible crédito",
           "color": "#ef4444",
           "tipo": "economico",
-          "cargo": "JUEZ"
+          "cargo": "JUEZ/A"
         }
       ],
       "posible_crédito": true,
@@ -1667,7 +1667,7 @@
     {
       "cuit": "20259652643",
       "nombre": "HERRERA JULIÁN",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO CIVIL N* 44 DE LA CAPITAL FEDERAL",
       "dni": "25965264",
       "mensaje": "MEN-2026-30-APN-PTE",
@@ -2674,323 +2674,26 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27263800163",
+      "cuit": "20263800169",
       "nombre": "QUINTEROS IVANA SANDRA",
-      "cargo": "JUEZA DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL N? 20 DE LA CAPITAL FEDERAL",
       "dni": "26380016",
       "mensaje": "MEN-2026-33-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 1889
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 2138
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 3093
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 2094
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 2115
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 1847
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 2916
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 1892
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 3490
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 1798
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 7901
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 4398
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 8118
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 5985
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 7452
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 4980
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 7792
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 4607
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 6318
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 7500
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 8352
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 4070
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 8140
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 4609
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 7033
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 3772
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 5117
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 3384
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 7003
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 3055
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 4932
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 2833
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 5077
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 2831
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 5531
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 2198
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 6157
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 3213
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 7834
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 1550
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 5895
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 1304
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 7517
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 749
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 6850
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 833
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 7397
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 765
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2024-07",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "JUEZA DE CÁMARA"
-        }
-      ],
+      "historial": [],
+      "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": true,
+      "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cuit": "20241480993",
       "nombre": "JAIMES MUNILLA SANTIAGO JOSÉ",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL N? 59 DE LA CAPITAL FEDERAL",
       "dni": "24148099",
       "mensaje": "MEN-2026-34-APN-PTE",
@@ -3887,688 +3590,43 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27216130842",
+      "cuit": "20216130848",
       "nombre": "CAPANEGRA MARÍA GLORIA",
-      "cargo": "JUEZA",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL N?* 17 DE LA CAPITAL FEDERAL",
       "dni": "21613084",
       "mensaje": "MEN-2026-36-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 2704
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 2935
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 3337
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 2517
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 2029
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 2776
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 4369
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 10094
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 5661
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2887
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 3254
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 2719
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 2813
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 2205
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 5767
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 3888
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 3846
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 2614
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 2664
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 2179
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 2610
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 8753
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 5006
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 3200
-        }
-      ],
+      "historial": [],
       "hitos_personales": [],
       "posible_crédito": false,
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
-      "cuit": "27249574452",
+      "cuit": "20249574458",
       "nombre": "RESTON MARÍA INÉS",
-      "cargo": "LA DEFENSORA PÚBLICA OFICIAL",
+      "cargo": "DEFENSOR/A PÚBLICO/A OFICIAL",
       "organo": "JUZGADOS Y ANTE LA CÁMARA NACIONAL DE APELACIONES EN LO PENAL ECONÓMICO, DEFENSORÍA N? 1",
       "dni": "24957445",
       "mensaje": "MEN-2026-37-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 1700
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 806
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 208
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 1054
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 1345
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 184
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 590
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 2054
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 94
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 582
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 2124
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 103
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 889
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 4321
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 105
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 708
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 1651
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 27
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 351
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 2469
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 280
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 1322
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 340
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2113
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 666
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 1729
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 140439
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 896
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 2156
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 144527
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 647
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 2267
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 147399
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 553
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 6692
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 323
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 150230
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 513
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 5603
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 587
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 153035
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 1947
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 6654
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 437
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 157049
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 2013
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 5421
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 739
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 161582
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 695
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 6667
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 885
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 164217
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 908
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 6698
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 792
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 166190
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 1425
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 5182
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 652
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 168304
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 1046
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 4796
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 559
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 170701
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 3930
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 3752
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 788
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 173383
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 3596
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 4562
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 2296
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 176249
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 4090
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 5330
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 2325
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 179765
-        },
-        {
-          "entidad": "BANCO PATAGONIA S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 2807
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 2883
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 1113
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 183678
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2024-11",
-          "texto": "Posible crédito",
-          "color": "#ef4444",
-          "tipo": "economico",
-          "cargo": "LA DEFENSORA PÚBLICA OFICIAL"
-        }
-      ],
-      "posible_crédito": true,
+      "historial": [],
+      "hitos_personales": [],
+      "posible_crédito": false,
       "cambios_nivel": false,
       "hipoteca_bcra": {
-        "tiene": true,
-        "monto_miles_pesos": 183584.0,
-        "entidades": [
-          "00029"
-        ],
-        "fecha": "2026-01"
+        "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cuit": "23176023759",
       "nombre": "SILVESTRI CLAUDIO RICARDO",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL N? 1 DE LA PLATA, PROVINCIA DE BUENOS AIRES",
       "dni": "17602375",
       "mensaje": "MEN-2026-38-APN-PTE",
@@ -5037,28 +4095,28 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         },
         {
           "fecha": "2025-02",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         },
         {
           "fecha": "2025-06",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         },
         {
           "fecha": "2025-10",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         }
       ],
       "posible_crédito": false,
@@ -5074,787 +4132,43 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27246627407",
+      "cuit": "20246627402",
       "nombre": "FUERTES PAULA",
-      "cargo": "JUEZA",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL N? 14 DE LA CAPITAL FEDERAL",
       "dni": "24662740",
       "mensaje": "MEN-2026-39-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 1944
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 4350
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 1978
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 4985
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 3104
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 5635
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 3540
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 5364
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 3553
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 5148
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 4018
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 4841
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 3664
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 701
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 5073
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 2267
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 3599
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 486
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 5102
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 2795
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2296
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 254
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 5227
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2517
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2821
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 7450
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2765
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 3334
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 6024
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 4969
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 4316
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 5768
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 9175
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 5737
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 6998
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 4271
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 5402
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 6313
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 5348
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 5762
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 8356
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 6242
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 5598
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 8313
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 4347
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 9121
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 7050
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 6263
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 7386
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 13294
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 4633
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 7546
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 15155
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 2411
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 9864
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 14779
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 3426
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 6911
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 18114
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 8109
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 8269
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 3210
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 16273
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 8958
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 7634
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 2790
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 17268
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 12423
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 6266
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 2332
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 18005
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 12243
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2025-11",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "JUEZA"
-        }
-      ],
+      "historial": [],
+      "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": true,
+      "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
-      "cuit": "27257391782",
+      "cuit": "20257391788",
       "nombre": "MARIÑO SOLEDAD EUGENIA",
-      "cargo": "JUEZA",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL N? 18 DE LA CAPITAL FEDERAL",
       "dni": "25739178",
       "mensaje": "MEN-2026-40-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 12
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 1384
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 540
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 1005
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 449
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 962
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 492
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 710
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 449
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 1323
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 362
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 1607
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 349
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 1366
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 294
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 1608
-        },
-        {
-          "entidad": "BANCO BMA S.A.U.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 221
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2046
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 146
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2672
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 64
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 3173
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 57
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 3440
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 57
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 2740
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 58
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 2712
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 58
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 3356
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 59
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 3533
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 59
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 19036
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 60
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 18972
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 60
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 17908
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 60
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 18123
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 63
-        },
-        {
-          "entidad": "MERCADOLIBRE S.R.L.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 31
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 17720
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 63
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 18533
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 64
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 17792
-        },
-        {
-          "entidad": "BANCO MACRO S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 64
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 19185
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2025-05",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "JUEZA"
-        }
-      ],
+      "historial": [],
+      "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": true,
+      "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cuit": "20172334114",
       "nombre": "CUESTA CARLOS FABIÁN",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL N? 3 DE LA PLATA, PROVINCIA DE BUENOS AIRES",
       "dni": "17233411",
       "mensaje": "MEN-2026-41-APN-PTE",
@@ -6299,14 +4613,14 @@
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         },
         {
           "fecha": "2024-12",
           "texto": "Cambio nivel deuda",
           "color": "#f97316",
           "tipo": "economico",
-          "cargo": "JUEZ DE CÁMARA"
+          "cargo": "JUEZ/A DE CÁMARA"
         }
       ],
       "posible_crédito": false,
@@ -6317,769 +4631,26 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27241671238",
+      "cuit": "20241671233",
       "nombre": "MICHELLI MARÍA VERÓNICA",
-      "cargo": "LA JUEZA DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL N* 3 DE LA PLATA, PROVINCIA DE BUENOS AIRES",
       "dni": "24167123",
       "mensaje": "MEN-2026-42-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 172
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 6639
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 454
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 2479
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 2239
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 176
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 6364
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 216
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 3404
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 1983
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 233
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 8234
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 84
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 5046
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 2005
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 405
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 9913
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 272
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 8851
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 1970
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 531
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 16210
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 621
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 8888
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 2200
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 352
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 16486
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 1761
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 9111
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 1940
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 706
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 20761
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 1925
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 10362
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 1874
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 584
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 22132
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 2127
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 9996
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 1874
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 166
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 34369
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 1828
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 11480
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2186
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 281
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 36695
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 1561
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 14768
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2162
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 259
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 42045
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 1654
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 2,
-          "monto": 9570
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 2147
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 115
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 55737
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 1507
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 8658
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 1735
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 1330
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-02",
-          "situacion": 2,
-          "monto": 60656
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 1692
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 12167
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 1688
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 9084
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-03",
-          "situacion": 2,
-          "monto": 63308
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 1515
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 9376
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 1609
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 10036
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-04",
-          "situacion": 2,
-          "monto": 59476
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 1664
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 12368
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 2263
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 14762
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-05",
-          "situacion": 3,
-          "monto": 58806
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 2083
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 2,
-          "monto": 13588
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 2205
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 23136
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-06",
-          "situacion": 3,
-          "monto": 52804
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 2271
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 2,
-          "monto": 14912
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 1971
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 26184
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-07",
-          "situacion": 2,
-          "monto": 57404
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 1680
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 3,
-          "monto": 14914
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 2164
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 27379
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-08",
-          "situacion": 2,
-          "monto": 59832
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-08",
-          "situacion": 2,
-          "monto": 1826
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 3,
-          "monto": 15012
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 2157
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-09",
-          "situacion": 2,
-          "monto": 30184
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 59190
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-09",
-          "situacion": 2,
-          "monto": 1792
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 3,
-          "monto": 15012
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 2862
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-10",
-          "situacion": 2,
-          "monto": 32908
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 58520
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-10",
-          "situacion": 2,
-          "monto": 1943
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 4,
-          "monto": 15061
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 2703
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-11",
-          "situacion": 3,
-          "monto": 35716
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 57982
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-11",
-          "situacion": 3,
-          "monto": 2152
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 4,
-          "monto": 15061
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 2,
-          "monto": 2928
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2025-12",
-          "situacion": 3,
-          "monto": 36313
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 54673
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2025-12",
-          "situacion": 3,
-          "monto": 2152
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 4,
-          "monto": 15061
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2025-12",
-          "situacion": 3,
-          "monto": 3142
-        },
-        {
-          "entidad": "BANCO HIPOTECARIO S.A.",
-          "fecha": "2026-01",
-          "situacion": 3,
-          "monto": 36313
-        },
-        {
-          "entidad": "BANCO DE LA NACION ARGENTINA",
-          "fecha": "2026-01",
-          "situacion": 2,
-          "monto": 56658
-        },
-        {
-          "entidad": "CENCOSUD S.A.",
-          "fecha": "2026-01",
-          "situacion": 3,
-          "monto": 2155
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 4,
-          "monto": 15061
-        },
-        {
-          "entidad": "BANCO SANTANDER ARGENTINA S.A.",
-          "fecha": "2026-01",
-          "situacion": 3,
-          "monto": 3463
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2024-07",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "LA JUEZA DE CÁMARA"
-        },
-        {
-          "fecha": "2024-11",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "LA JUEZA DE CÁMARA"
-        },
-        {
-          "fecha": "2025-03",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "LA JUEZA DE CÁMARA"
-        }
-      ],
+      "historial": [],
+      "hitos_personales": [],
       "posible_crédito": false,
-      "cambios_nivel": true,
+      "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 4
+      "situacion_bcra": 0
     },
     {
       "cuit": "20208913698",
       "nombre": "BALCAZAR JUAN MARTÍN",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO CIVIL N* 95 DE LA CAPITAL FEDERAL",
       "dni": "20891369",
       "mensaje": "MEN-2026-43-APN-PTE",
@@ -7455,178 +5026,21 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27175423112",
+      "cuit": "20175423118",
       "nombre": "SOSA MARÍA JULIA",
-      "cargo": "JUEZA DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL N? 3 DE LA PLATA, PROVINCIA DE BUENOS AIRES",
       "dni": "17542311",
       "mensaje": "MEN-2026-44-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 81
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 4687
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 2512
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 1831
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 1593
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 1268
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 3017
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 2209
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 8847
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 3946
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 6170
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 1486
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 2442
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 7713
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 3962
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 2821
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 3306
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 4252
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 8965
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 10016
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 8940
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 7790
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 16448
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 8350
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 5028
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 17216
-        }
-      ],
+      "historial": [],
       "hitos_personales": [],
       "posible_crédito": false,
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cuit": "20246233838",
@@ -7793,7 +5207,7 @@
     {
       "cuit": "20269275546",
       "nombre": "WILK PABLO EZEQUIEL",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL N? 2 DE LA PLATA, PROVINCIA DE BUENOS AIRES",
       "dni": "26927554",
       "mensaje": "MEN-2026-47-APN-PTE",
@@ -9062,485 +6476,43 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27290403052",
+      "cuit": "20290403058",
       "nombre": "POLVERINI VERÓNICA MABEL",
-      "cargo": "DEFENSORA PÚBLICA DE MENORES E INCAPACES",
+      "cargo": "DEFENSOR/A PÚBLICO/A DE MENORES E INCAPACES",
       "organo": "JUZGADOS NACIONALES DE PRIMERA INSTANCIA EN LO CIVIL, COMERCIAL Y DEL TRABAJO DE LA CAPITAL FEDERAL, DEFENSORÍA N? 7",
       "dni": "29040305",
       "mensaje": "MEN-2026-49-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 3179
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 2334
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 3101
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 2246
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 2416
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 2603
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 2911
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 2636
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2892
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2945
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 6204
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 6708
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 14056
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 14307
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 13491
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 14662
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 16210
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 15711
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 13588
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 11839
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 10462
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 10406
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 14836
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 5441
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2025-01",
-          "texto": "Cambio nivel deuda",
-          "color": "#f97316",
-          "tipo": "economico",
-          "cargo": "DEFENSORA PÚBLICA DE MENORES E INCAPACES"
-        }
-      ],
-      "posible_crédito": false,
-      "cambios_nivel": true,
-      "hipoteca_bcra": {
-        "tiene": false
-      },
-      "situacion_bcra": 1
-    },
-    {
-      "cuit": "27307002278",
-      "nombre": "SASSO MARCELA LORENA",
-      "cargo": "DEFENSORA PÚBLICA DE MENORES E INCAPACES",
-      "organo": "JUZGADOS NACIONALES DE PRIMERA INSTANCIA EN LO CIVIL, COMERCIAL Y DEL TRABAJO DE LA CAPITAL FEDERAL, DEFENSORÍA N? 3 Z",
-      "dni": "30700227",
-      "mensaje": "MEN-2026-50-APN-PTE",
-      "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 1140
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 113
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 2350
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 116
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 3415
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 97
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 7336
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 110
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 1387
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 131
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 1495
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 291
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 1694
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 376
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 2154
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 95
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2745
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 313
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2410
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 418
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 3192
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 298
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 5176
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 332
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 4568
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 390
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 5890
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 166
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 4886
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 175
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 2971
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-05",
-          "situacion": 2,
-          "monto": 182
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 3967
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 37
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 4427
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 1123
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 4298
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 638
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 3906
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 479
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 5140
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 119
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 5578
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 118
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 5344
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 145
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 4348
-        },
-        {
-          "entidad": "BANCO BBVA ARGENTINA S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 139
-        }
-      ],
+      "historial": [],
       "hitos_personales": [],
       "posible_crédito": false,
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
+    },
+    {
+      "cuit": "20307002273",
+      "nombre": "SASSO MARCELA LORENA",
+      "cargo": "DEFENSOR/A PÚBLICO/A DE MENORES E INCAPACES",
+      "organo": "JUZGADOS NACIONALES DE PRIMERA INSTANCIA EN LO CIVIL, COMERCIAL Y DEL TRABAJO DE LA CAPITAL FEDERAL, DEFENSORÍA N? 3 Z",
+      "dni": "30700227",
+      "mensaje": "MEN-2026-50-APN-PTE",
+      "es_candidato": true,
+      "historial": [],
+      "hitos_personales": [],
+      "posible_crédito": false,
+      "cambios_nivel": false,
+      "hipoteca_bcra": {
+        "tiene": false
+      },
+      "situacion_bcra": 0
     },
     {
       "cuit": "20372737981",
       "nombre": "BELLOTTI SAN MARTÍN LUCAS MARCELO",
-      "cargo": "DEFENSOR PÚBLICO DE MENORES E INCAPACES",
+      "cargo": "DEFENSOR/A PÚBLICO/A DE MENORES E INCAPACES",
       "organo": "JUZGADOS NACIONALES DE PRIMERA INSTANCIA EN LO CIVIL, COMERCIAL Y DEL TRABAJO DE LA CAPITAL FEDERAL, DEFENSORÍA N*2",
       "dni": "37273798",
       "mensaje": "MEN-2026-51-APN-PTE",
@@ -9787,7 +6759,7 @@
           "texto": "Posible crédito",
           "color": "#ef4444",
           "tipo": "economico",
-          "cargo": "DEFENSOR PÚBLICO DE MENORES E INCAPACES"
+          "cargo": "DEFENSOR/A PÚBLICO/A DE MENORES E INCAPACES"
         }
       ],
       "posible_crédito": true,
@@ -9800,7 +6772,7 @@
     {
       "cuit": "20303326449",
       "nombre": "ALLIAUD FELIPE ALBERTO",
-      "cargo": "DEFENSOR PÚBLICO CURADOR",
+      "cargo": "DEFENSOR/A PÚBLICO/A CURADOR",
       "organo": "DEFENSORÍA GENERAL DE LA NACIÓN, DEFENSORÍA PÚBLICA CURADURÍA N%4",
       "dni": "30332644",
       "mensaje": "MEN-2026-52-APN-PTE",
@@ -9962,7 +6934,7 @@
     {
       "cuit": "20177815374",
       "nombre": "DECARIA HUGO FABIÁN",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL N? 3 DE LA CAPITAL FEDERAL",
       "dni": "17781537",
       "mensaje": "MEN-2026-53-APN-PTE",
@@ -10412,7 +7384,7 @@
     {
       "cuit": "20324017691",
       "nombre": "SOBRINO REIG EZEQUIEL JAVIER",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO CIVIL N* 80 DE LA CAPITAL FEDERAL",
       "dni": "32401769",
       "mensaje": "MEN-2026-54-APN-PTE",
@@ -10723,7 +7695,7 @@
     {
       "cuit": "23281574299",
       "nombre": "DEGANO GERMÁN AUGUSTO",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO CIVIL N* 64 DE LA CAPITAL FEDERAL",
       "dni": "28157429",
       "mensaje": "MEN-2026-55-APN-PTE",
@@ -10915,7 +7887,7 @@
     {
       "cuit": "23227452269",
       "nombre": "CACACE GERARDO DANIEL",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "TRIBUNAL FEDERAL DE JUICIO DE FORMOSA, PROVINCIA DE FORMOSA",
       "dni": "22745226",
       "mensaje": "MEN-2026-56-APN-PTE",
@@ -14904,7 +11876,7 @@
     {
       "cuit": "20277455901",
       "nombre": "FLORES PABLO JAVIER",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL N* 3 DE SAN MARTÍN, PROVINCIA DE BUENOS AIRES",
       "dni": "27745590",
       "mensaje": "MEN-2026-31-APN-PTE",
@@ -15064,328 +12036,26 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27223623234",
+      "cuit": "23223623239",
       "nombre": "KVITKO LAURA FABIANA",
-      "cargo": "JUEZA",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL N? 23 DE LA CAPITAL FEDERAL",
       "dni": "22362323",
       "mensaje": "MEN-2026-65-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 134504
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 1210
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 155244
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 1095
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 175078
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 1078
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 192584
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 1194
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 204165
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 1140
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 213213
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 823
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 222371
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 574
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 230291
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 579
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 239495
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 558
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 249445
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 509
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 253914
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 364
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 263869
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 1437
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 263846
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 1261
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 269171
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 239
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 276860
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 393
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 285094
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 441
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 291120
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 1198
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 295079
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 1264
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 299412
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 1182
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 303996
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 1304
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 308392
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 1432
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 316305
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 2253
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 322523
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 1803
-        },
-        {
-          "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 330626
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 705
-        }
-      ],
-      "hitos_personales": [
-        {
-          "fecha": "2024-02",
-          "texto": "Posible crédito",
-          "color": "#ef4444",
-          "tipo": "economico",
-          "cargo": "JUEZA"
-        }
-      ],
-      "posible_crédito": true,
+      "historial": [],
+      "hitos_personales": [],
+      "posible_crédito": false,
       "cambios_nivel": false,
       "hipoteca_bcra": {
-        "tiene": true,
-        "monto_miles_pesos": 326117.0,
-        "entidades": [
-          "00007"
-        ],
-        "fecha": "2026-01"
+        "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cuit": "20254305805",
       "nombre": "CEBALLOS NICOLÁS RAMÓN",
-      "cargo": "JUEZ DE CÁMARA",
+      "cargo": "JUEZ/A DE CÁMARA",
       "organo": "TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL N* 7 DE LA CAPITAL FEDERAL",
       "dni": "25430580",
       "mensaje": "MEN-2026-66-APN-PTE",
@@ -15689,291 +12359,26 @@
       "situacion_bcra": 1
     },
     {
-      "cuit": "27239521180",
+      "cuit": "20239521186",
       "nombre": "WISZNIACKI LAURA",
-      "cargo": "JUEZA",
+      "cargo": "JUEZ/A",
       "organo": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO CIVIL N* 62 DE LA CAPITAL FEDERAL",
       "dni": "23952118",
       "mensaje": "MEN-2026-67-APN-PTE",
       "es_candidato": true,
-      "historial": [
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 89
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-02",
-          "situacion": 1,
-          "monto": 2886
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 5354
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-03",
-          "situacion": 1,
-          "monto": 708
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 606
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-04",
-          "situacion": 1,
-          "monto": 1885
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 533
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-05",
-          "situacion": 1,
-          "monto": 1387
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-06",
-          "situacion": 1,
-          "monto": 1820
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 2105
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-07",
-          "situacion": 1,
-          "monto": 4864
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 270
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-08",
-          "situacion": 1,
-          "monto": 5019
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 3128
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-09",
-          "situacion": 1,
-          "monto": 3351
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 1557
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-10",
-          "situacion": 1,
-          "monto": 2730
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 361
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-11",
-          "situacion": 1,
-          "monto": 2497
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 69
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2024-12",
-          "situacion": 1,
-          "monto": 2386
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 54
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-01",
-          "situacion": 1,
-          "monto": 3112
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 39
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-02",
-          "situacion": 1,
-          "monto": 4659
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-03",
-          "situacion": 1,
-          "monto": 3752
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-04",
-          "situacion": 1,
-          "monto": 2828
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-05",
-          "situacion": 1,
-          "monto": 3251
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 158
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-06",
-          "situacion": 1,
-          "monto": 5995
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 348
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-07",
-          "situacion": 1,
-          "monto": 4041
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 377
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-08",
-          "situacion": 1,
-          "monto": 4057
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 215
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-09",
-          "situacion": 1,
-          "monto": 3865
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 53
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-10",
-          "situacion": 1,
-          "monto": 3890
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 26
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-11",
-          "situacion": 1,
-          "monto": 4568
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 2176
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2025-12",
-          "situacion": 1,
-          "monto": 3836
-        },
-        {
-          "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 286
-        },
-        {
-          "entidad": "BANCO DE LA CIUDAD DE BUENOS AIRES",
-          "fecha": "2026-01",
-          "situacion": 1,
-          "monto": 3766
-        }
-      ],
+      "historial": [],
       "hitos_personales": [],
       "posible_crédito": false,
       "cambios_nivel": false,
       "hipoteca_bcra": {
         "tiene": false
       },
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cuit": "20294833774",
       "nombre": "ROSATTI EMILIO",
-      "cargo": "JUEZ",
+      "cargo": "JUEZ/A",
       "organo": "TRIBUNAL FEDERAL DE JUICIO DE SANTA FE, PROVINCIA DE SANTA FE",
       "dni": "29483377",
       "mensaje": "MEN-2026-68-APN-PTE",
