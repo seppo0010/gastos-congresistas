@@ -2,10 +2,10 @@ import { useMemo, useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
 import type { DashboardData } from './types';
 
-function scrollToExplorer() {
+function scrollToExplorer(behavior: ScrollBehavior = 'smooth') {
   const target = document.getElementById('explorador');
   if (!target) return;
-  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  target.scrollIntoView({ behavior, block: 'start' });
 }
 
 export default function App() {
@@ -14,6 +14,9 @@ export default function App() {
   const [judicialData, setJudicialData] = useState<DashboardData | null>(null);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const hasPreselected = !!(params.get('funcionarios') || params.get('legisladores'));
+
     Promise.all([
       fetch('/legisladores_full.json').then(r => r.json()),
       fetch('/politicos_full.json').then(r => r.json()),
@@ -22,6 +25,9 @@ export default function App() {
       setDbData(db);
       setPoliticosData(pol);
       setJudicialData(jud);
+      if (hasPreselected) {
+        requestAnimationFrame(() => scrollToExplorer('instant'));
+      }
     });
   }, []);
 

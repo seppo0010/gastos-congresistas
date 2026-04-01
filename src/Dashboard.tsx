@@ -73,7 +73,11 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
 
   const [hiddenIds, setHiddenIds] = useState<Set<string>>(new Set());
   const [warning, setWarning] = useState<string | null>(null);
-  const [mobileView, setMobileView] = useState<'list' | 'chart'>('list');
+  const [mobileView, setMobileView] = useState<'list' | 'chart'>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const hasSlugs = !!(params.get('funcionarios') || params.get('legisladores'));
+    return hasSlugs && window.innerWidth < 768 ? 'chart' : 'list';
+  });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [copied, setCopied] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
