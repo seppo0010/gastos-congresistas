@@ -307,16 +307,16 @@ function buildImage(metrics) {
           },
           React.createElement(
             "div",
-            { style: rowStyle },
+            {
+              style: {
+                ...rowStyle,
+                justifyContent: "center",
+              },
+            },
             React.createElement(
               "div",
-              { style: { fontSize: 18, color: MUTED } },
-              "Ultimo mes",
-            ),
-            React.createElement(
-              "div",
-              { style: { fontSize: 24, fontWeight: 700 } },
-              metrics.latestMonthLabel,
+              { style: { fontSize: 24, fontWeight: 700, textTransform: "lowercase" } },
+              "enero 2025",
             ),
           ),
           React.createElement(
