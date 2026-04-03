@@ -1,9 +1,9 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import './Dashboard.css'
 import DebtChart from './DebtChart';
 import LegislatorSelector from './LegislatorSelector';
 import type { DashboardData, Legislator } from './types';
-import { Share2, HelpCircle, X } from 'lucide-react';
+import { Share2, HelpCircle, X, Camera } from 'lucide-react';
 import { COLORS } from './Colors';
 
 const slugify = (text: string) => {
@@ -81,6 +81,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [copied, setCopied] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+  const debtChartRef = useRef<{ getChartElement: () => HTMLDivElement | null; openExportMenu: () => void }>(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -145,21 +146,32 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
     }
   };
 
-  const handleShare = async () => {
-    if (navigator.share) {
+  const handleShare = () => {
+    const url = window.location.href;
+    const copyFallback = () => {
       try {
-        await navigator.share({
-          title: 'Gastos Congresistas',
-          url: window.location.href,
-        });
-      } catch (err) {
-        console.error(err);
-      }
-    } else {
-      navigator.clipboard.writeText(window.location.href).then(() => {
+        const el = document.createElement('textarea');
+        el.value = url;
+        el.style.position = 'fixed';
+        el.style.opacity = '0';
+        document.body.appendChild(el);
+        el.focus();
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
-      });
+      } catch {
+        alert('Link: ' + url);
+      }
+    };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }).catch(copyFallback);
+    } else {
+      copyFallback();
     }
   };
 
@@ -190,6 +202,13 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
                 >
                   <Share2 size={18} />
                 </button>
+                <button
+                  onClick={() => debtChartRef.current?.openExportMenu()}
+                  className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+                  title="Exportar imagen"
+                >
+                  <Camera size={18} />
+                </button>
               </div>
             )}
           </div>
@@ -206,7 +225,8 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
 
       <div className={`absolute inset-0 z-10 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:flex-1 md:translate-x-0 ${mobileView === 'chart' ? 'translate-x-0' : 'translate-x-full'} pt-14 md:pt-0`}>
         <DebtChart
-          legislators={selected} 
+          ref={debtChartRef}
+          legislators={selected}
           globalMilestones={meta.hitos_globales} 
           ipc={meta.ipc}
           mep={meta.mep}

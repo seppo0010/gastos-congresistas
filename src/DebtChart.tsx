@@ -127,6 +127,7 @@ const DebtChart = forwardRef(({
 
   useImperativeHandle(ref, () => ({
     getChartElement: () => chartContainerRef.current,
+    openExportMenu: () => setShowExportMenu(true),
   }));
 
   const ipcDates = useMemo(() => {
@@ -343,8 +344,8 @@ const DebtChart = forwardRef(({
       const target = e.target as Element | null;
       if (!target?.closest('[data-export-menu]')) setShowExportMenu(false);
     };
-    document.addEventListener('click', handler);
-    return () => document.removeEventListener('click', handler);
+    const t = setTimeout(() => document.addEventListener('click', handler), 0);
+    return () => { clearTimeout(t); document.removeEventListener('click', handler); };
   }, [showExportMenu]);
 
   const buildExportCanvas = async (): Promise<HTMLCanvasElement> => {
@@ -830,7 +831,7 @@ const DebtChart = forwardRef(({
             <div className="relative" data-export-menu>
               <button
                 onClick={() => setShowExportMenu(v => !v)}
-                className="p-2 rounded-full hover:bg-gray-100 transition-colors disabled:opacity-50"
+                className="hidden md:block p-2 rounded-full hover:bg-gray-100 transition-colors disabled:opacity-50"
                 style={{ color: exportState === 'done' ? '#22c55e' : '#6b7280' }}
                 title="Exportar imagen"
                 disabled={exportState === 'loading'}
@@ -840,7 +841,7 @@ const DebtChart = forwardRef(({
                  <Camera size={18} />}
               </button>
               {showExportMenu && (
-                <div className="absolute right-0 top-10 bg-white border border-gray-200 shadow-lg rounded-lg z-50 py-1 min-w-44" data-export-menu>
+                <div className="fixed top-14 right-2 md:absolute md:top-10 md:right-0 bg-white border border-gray-200 shadow-lg rounded-lg z-50 py-1 min-w-44" data-export-menu>
                   <button onClick={handleExportDownload} className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-2">
                     <Download size={14} /> Descargar imagen
                   </button>
