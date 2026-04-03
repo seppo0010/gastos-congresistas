@@ -168,56 +168,6 @@ export default function App() {
           )}
         </section>
       </main>
-
-      <footer className="border-t border-gray-200 bg-white">
-        <div className="mx-auto grid w-full max-w-6xl gap-6 px-6 py-10 text-sm text-gray-700 md:grid-cols-2">
-          <div>
-            <h2 className="mb-2 text-base font-bold text-gray-900">About</h2>
-            <p className="leading-relaxed">
-              Proyecto civico para facilitar la lectura publica de datos financieros de funcionarios y legisladores,
-              con foco en transparencia y comparacion historica.
-            </p>
-          </div>
-          <div className="md:text-right">
-            <h2 className="mb-2 text-base font-bold text-gray-900">Repositorio</h2>
-            <a
-              href="https://github.com/seppo0010/gastos-congresistas"
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold text-blue-700 underline-offset-4 transition hover:text-blue-800 hover:underline"
-            >
-              github.com/seppo0010/gastos-congresistas
-            </a>
-            <div className="mt-3 space-y-1 text-xs text-gray-600">
-              <p>
-                Autor: Sebastian Waisbrot (
-                <a
-                  href="https://github.com/seppo0010"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-700 underline-offset-4 transition hover:text-blue-800 hover:underline"
-                >
-                  seppo0010
-                </a>
-                )
-              </p>
-              <p>
-                Andres Snitcofsky (diseno, viz y ux):
-                {' '}
-                <a
-                  href="https://visualizando.ar"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-700 underline-offset-4 transition hover:text-blue-800 hover:underline"
-                >
-                  visualizando.ar
-                </a>
-              </p>
-            </div>
-            <p className="mt-3 text-xs text-gray-500">Hecho para exploracion publica y periodismo de datos.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
