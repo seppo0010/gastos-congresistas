@@ -40,6 +40,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const [unitFilter, setUnitFilter] = useState("todas");
   const [cargoApnFilter, setCargoApnFilter] = useState("todos");
   const [cargoJudicialFilter, setCargoJudicialFilter] = useState("todos");
+  const [camaraFilter, setCamaraFilter] = useState("todas");
   const [creditFilter, setCreditFilter] = useState("todos");
   const [levelChangeFilter, setLevelChangeFilter] = useState("todos");
   const [familiaresFilter, setFamiliaresFilter] = useState("todos");
@@ -51,6 +52,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
   const units = useMemo(() => [...new Set(legisladores.filter(l => l.unidad !== undefined).map(l => l.unidad).filter(u => (u || '').trim() !== ''))].sort(), [legisladores]);
   const cargosApn = useMemo(() => [...new Set(legisladores.filter(l => l.poder === 'ejecutivo' && l.cargo).map(l => l.cargo).filter(c => (c || '').trim() !== ''))].sort(), [legisladores]);
   const cargosJudicial = useMemo(() => [...new Set(legisladores.filter(l => l.poder === 'judicial' && l.cargo).map(l => l.cargo).filter(c => (c || '').trim() !== ''))].sort(), [legisladores]);
+  const camaras = useMemo(() => [...new Set(legisladores.filter(l => l.poder === 'judicial' && l.camara).map(l => l.camara).filter(c => (c || '').trim() !== ''))].sort(), [legisladores]);
 
   const garantiaFecha = useMemo(() => {
     const l = legisladores.find(l => l.hipoteca_bcra.tiene && l.hipoteca_bcra.fecha);
@@ -86,6 +88,9 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
       setPartyFilter('todos');
       setUnitFilter('todas');
       setCargoApnFilter('todos');
+    } else {
+      setCamaraFilter('todas');
+      setCargoJudicialFilter('todos');
     }
   }, [positionFilter]);
 
@@ -107,6 +112,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
         const unitMatch = unitFilter === 'todas' || l.unidad === unitFilter;
         const cargoApnMatch = cargoApnFilter === 'todos' || l.cargo === cargoApnFilter;
         const cargoJudicialMatch = cargoJudicialFilter === 'todos' || l.cargo === cargoJudicialFilter;
+        const camaraMatch = camaraFilter === 'todas' || l.camara === camaraFilter;
 
         const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.hipoteca_bcra.tiene : !l.hipoteca_bcra.tiene);
         const levelChangeMatch = levelChangeFilter === 'todos' || (levelChangeFilter === 'si' ? l.cambios_nivel : !l.cambios_nivel);
@@ -114,7 +120,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
         const familiaresMatch = familiaresFilter === 'todos' || (familiaresFilter === 'si' ? hasFamiliares : !hasFamiliares);
         const situacionMatch = situacionFilter === 'todos' || String(l.situacion_bcra ?? 1) === situacionFilter;
 
-        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && cargoApnMatch && cargoJudicialMatch && creditMatch && levelChangeMatch && familiaresMatch && situacionMatch);
+        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && cargoApnMatch && cargoJudicialMatch && camaraMatch && creditMatch && levelChangeMatch && familiaresMatch && situacionMatch);
       })
       .sort((a, b) => {
         const aSelected = selectedIds.includes(a.cuit);
@@ -132,7 +138,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
 
         return 0;
       });
-  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, cargoApnFilter, cargoJudicialFilter, creditFilter, levelChangeFilter, familiaresFilter, situacionFilter, selectedIds, sortOrder, debtStats]);
+  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, cargoApnFilter, cargoJudicialFilter, camaraFilter, creditFilter, levelChangeFilter, familiaresFilter, situacionFilter, selectedIds, sortOrder, debtStats]);
 
   return (
     <div className="w-full md:w-80 h-full flex flex-col border-r border-gray-200 bg-white">
@@ -213,12 +219,21 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
             </div>
           )}
           {positionFilter === 'judicial' && (
-            <div>
-              <label htmlFor="cargoJudicial" className="block text-gray-600 text-xs font-semibold mb-1">Cargo</label>
-              <select id="cargoJudicial" value={cargoJudicialFilter} onChange={e => setCargoJudicialFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
-                <option value="todos">Todos</option>
-                {cargosJudicial.map(c => <option key={c} value={c}>{c}</option>)}
-              </select>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label htmlFor="cargoJudicial" className="block text-gray-600 text-xs font-semibold mb-1">Cargo</label>
+                <select id="cargoJudicial" value={cargoJudicialFilter} onChange={e => setCargoJudicialFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                  <option value="todos">Todos</option>
+                  {cargosJudicial.map(c => <option key={c} value={c}>{c}</option>)}
+                </select>
+              </div>
+              <div>
+                <label htmlFor="camara" className="block text-gray-600 text-xs font-semibold mb-1">Cámara</label>
+                <select id="camara" value={camaraFilter} onChange={e => setCamaraFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+                  <option value="todas">Todas</option>
+                  {camaras.map(c => <option key={c} value={c}>{c}</option>)}
+                </select>
+              </div>
             </div>
           )}
           <div className="grid grid-cols-2 gap-2">
@@ -283,6 +298,7 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
               setUnitFilter("todas");
               setCargoApnFilter("todos");
               setCargoJudicialFilter("todos");
+              setCamaraFilter("todas");
               setCreditFilter("todos");
               setLevelChangeFilter("todos");
               setFamiliaresFilter("todos");

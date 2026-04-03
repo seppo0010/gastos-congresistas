@@ -477,7 +477,7 @@ const DebtChart = forwardRef(({
       ctx.fillText(l.nombre, textX, y);
       y += px(4);
 
-      const details = [l.cargo, l.partido, l.distrito, l.unidad].filter(Boolean).join(' · ');
+      const details = [l.cargo, l.partido, l.distrito, l.unidad, l.organo].filter(Boolean).join(' · ');
       ctx.fillStyle = '#6b7280';
       ctx.font = `${DETAIL_SIZE}px system-ui,Arial,sans-serif`;
       if (details) {
@@ -959,6 +959,7 @@ const DebtChart = forwardRef(({
                   {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.partido}</span>}
                   {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.distrito}</span>}
                   {l.unidad && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.unidad}</span>}
+                  {l.organo && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.organo}</span>}
                   {l.situacion_bcra !== undefined && (
                     <span
                       title="Situación en el BCRA (Central de Deudores)"

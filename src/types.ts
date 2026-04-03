@@ -34,6 +34,8 @@ export interface Legislator {
   poder?: 'legislativo' | 'ejecutivo' | 'judicial';
   es_candidato?: boolean;
   unidad?: string;    // Solo funcionarios del ejecutivo (ej: "Ministerio de Salud")
+  organo?: string;    // Solo judiciales (ej: "Tribunal Oral de Menores N° 3")
+  camara?: string;    // Solo judiciales (ej: "Cámara Federal de Apelaciones de Córdoba")
   periodos?: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];  // Solo legisladores
   hipoteca_bcra: { tiene: boolean; monto_miles_pesos?: number; entidades?: string[]; fecha?: string };
   situacion_bcra?: number; // 0=no reportado, 1=normal, 2=riesgo bajo, 3=riesgo medio, 4=riesgo alto, 5=irrecuperable, 11=garantías preferidas "A"
