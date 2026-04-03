@@ -212,37 +212,7 @@ function buildImage(metrics) {
           "Explorador publico para comparar personas, seguir la evolucion mensual y revisar familiares declarados.",
         ),
       ),
-      React.createElement(
-        "div",
-        {
-          style: {
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            borderTop: `1px solid ${BORDER}`,
-            paddingTop: 22,
-          },
-        },
-        React.createElement(
-          "div",
-          {
-            style: {
-              display: "flex",
-              gap: 8,
-            },
-          },
-          ...STRIPES.map((color, index) =>
-            React.createElement("div", {
-              key: `${color}-${index}`,
-              style: {
-                width: 42,
-                height: 8,
-                backgroundColor: color,
-              },
-            }),
-          ),
-        ),
-      ),
+      React.createElement("div", { style: { height: 1 } }),
     ),
     React.createElement(
       "div",
@@ -286,6 +256,7 @@ function buildImage(metrics) {
             display: "flex",
             flexDirection: "column",
             gap: 20,
+            width: "100%",
           },
         },
         React.createElement(
@@ -336,16 +307,16 @@ function buildImage(metrics) {
           },
           React.createElement(
             "div",
-            { style: rowStyle },
+            {
+              style: {
+                ...rowStyle,
+                justifyContent: "center",
+              },
+            },
             React.createElement(
               "div",
-              { style: { fontSize: 18, color: MUTED } },
-              "Ultimo mes",
-            ),
-            React.createElement(
-              "div",
-              { style: { fontSize: 24, fontWeight: 700 } },
-              metrics.latestMonthLabel,
+              { style: { fontSize: 24, fontWeight: 700, textTransform: "lowercase" } },
+              "enero 2025",
             ),
           ),
           React.createElement(
@@ -378,6 +349,20 @@ function buildImage(metrics) {
           ),
           React.createElement(
             "div",
+            { style: rowStyle },
+            React.createElement(
+              "div",
+              { style: { fontSize: 18, color: MUTED } },
+              "Judicial",
+            ),
+            React.createElement(
+              "div",
+              { style: { fontSize: 24, fontWeight: 700 } },
+              formatNumber(metrics.judicialCount),
+            ),
+          ),
+          React.createElement(
+            "div",
             {
               style: {
                 ...rowStyle,
@@ -395,24 +380,6 @@ function buildImage(metrics) {
               formatNumber(metrics.familiaresCount),
             ),
           ),
-        ),
-      ),
-      React.createElement(
-        "div",
-        {
-          style: {
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            fontSize: 17,
-            color: MUTED,
-          },
-        },
-        React.createElement("div", null, "Judicial"),
-        React.createElement(
-          "div",
-          { style: { fontWeight: 700, color: TEXT } },
-          formatNumber(metrics.judicialCount),
         ),
       ),
     ),
