@@ -8,6 +8,20 @@ import { Camera, Check, Copy, Download, Eye, EyeOff, Flag, HelpCircle, Loader2, 
 import { COLORS } from './Colors';
 import { SITUACION_BCRA } from './LegislatorSelector';
 
+const abbreviateOrgano = (text: string): string =>
+  text
+    .toLowerCase()
+    .replace(/(?:^|\s)\S/g, c => c.toUpperCase())
+    .replace(/Tribunal(?:es)?\s+Oral(?:es)?\s+en\s+lo\s+Criminal\s+y\s+Correccional/gi, 'TOC CyC')
+    .replace(/Tribunal(?:es)?\s+Oral(?:es)?\s+en\s+lo\s+Criminal/gi, 'TOC')
+    .replace(/en\s+lo\s+Contencioso\s+Administrativo\s+Federal/gi, 'CAF')
+    .replace(/en\s+lo\s+Criminal\s+y\s+Correccional/gi, 'CyC')
+    .replace(/\s+de\s+Primera\s+Instancia/gi, '')
+    .replace(/\s+en\s+Primera\s+Instancia/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\b(Ii|Iii|Iv)\b/g, s => s.toUpperCase())
+    .trim();
+
 interface DebtChartProps {
   legislators: Legislator[];
   globalMilestones: Milestone[];
@@ -477,7 +491,7 @@ const DebtChart = forwardRef(({
       ctx.fillText(l.nombre, textX, y);
       y += px(4);
 
-      const details = [l.cargo, l.partido, l.distrito, l.unidad, l.organo].filter(Boolean).join(' · ');
+      const details = [l.cargo, l.partido, l.distrito, l.unidad, l.organo ? abbreviateOrgano(l.organo) : undefined].filter(Boolean).join(' · ');
       ctx.fillStyle = '#6b7280';
       ctx.font = `${DETAIL_SIZE}px system-ui,Arial,sans-serif`;
       if (details) {
@@ -959,7 +973,7 @@ const DebtChart = forwardRef(({
                   {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.partido}</span>}
                   {l.distrito && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.distrito}</span>}
                   {l.unidad && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.unidad}</span>}
-                  {l.organo && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.organo}</span>}
+                  {l.organo && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{abbreviateOrgano(l.organo)}</span>}
                   {l.situacion_bcra !== undefined && (
                     <span
                       title="Situación en el BCRA (Central de Deudores)"
