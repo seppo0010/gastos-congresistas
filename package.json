@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate:og && tsc -b && vite build && node scripts/generate-person-pages.mjs",
+    "build": "npm run generate:og && tsc -b && node scripts/build-client.mjs && node scripts/generate-person-pages.mjs",
     "generate:og": "node scripts/generate-og-image.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -34,6 +34,7 @@
     "satori": "^0.26.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-prerender-plugin": "^0.5.13"
   }
 }

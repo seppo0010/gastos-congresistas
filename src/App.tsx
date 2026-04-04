@@ -16,8 +16,15 @@ function scrollToExplorer(behavior: ScrollBehavior = 'smooth') {
   target.scrollIntoView({ behavior, block: 'start' });
 }
 
-export default function App() {
-  const personSlug = useMemo(() => getPersonSlugFromPath(window.location.pathname), []);
+interface AppProps {
+  initialPathname?: string;
+  initialSearch?: string;
+}
+
+export default function App({ initialPathname, initialSearch }: AppProps) {
+  const pathname = initialPathname ?? (typeof window !== 'undefined' ? window.location.pathname : '/');
+  const search = initialSearch ?? (typeof window !== 'undefined' ? window.location.search : '');
+  const personSlug = useMemo(() => getPersonSlugFromPath(pathname), [pathname]);
   const [embeddedPerson] = useState<LegislatorWithSlug | null>(() => (
     personSlug ? readEmbeddedPersonData() : null
   ));
@@ -30,7 +37,7 @@ export default function App() {
   useEffect(() => {
     if (personSlug && embeddedPerson) return;
 
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(search);
     const hasPreselected = !!(params.get('funcionarios') || params.get('legisladores'));
 
     Promise.all([
@@ -53,7 +60,7 @@ export default function App() {
         requestAnimationFrame(() => scrollToExplorer('instant'));
       }
     });
-  }, [embeddedPerson, personSlug]);
+  }, [embeddedPerson, personSlug, search]);
 
   const heroMetrics = useMemo(() => {
     if (!dbData || !politicosData || !judicialData) return null;

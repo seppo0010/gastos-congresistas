@@ -311,37 +311,37 @@ async function main() {
     html = replaceMetaTag(html, /<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
     html = replaceMetaTag(
       html,
-      /<meta\s+name="description"\s+content="[^"]*"\s*\/>/,
+      /<meta\s+[^>]*name="description"[^>]*>/,
       `<meta name="description" content="${escapeHtml(description)}" />`,
     );
     html = replaceMetaTag(
       html,
-      /<link\s+rel="canonical"\s+href="[^"]*"\s*\/>/,
+      /<link\s+[^>]*rel="canonical"[^>]*>/,
       `<link rel="canonical" href="${canonicalUrl}" />`,
     );
     html = replaceMetaTag(
       html,
-      /<meta\s+property="og:url"\s+content="[^"]*"\s*\/>/,
+      /<meta\s+[^>]*property="og:url"[^>]*>/,
       `<meta property="og:url" content="${canonicalUrl}" />`,
     );
     html = replaceMetaTag(
       html,
-      /<meta\s+property="og:title"\s+content="[^"]*"\s*\/>/,
+      /<meta\s+[^>]*property="og:title"[^>]*>/,
       `<meta property="og:title" content="${escapeHtml(title)}" />`,
     );
     html = replaceMetaTag(
       html,
-      /<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/,
+      /<meta\s+[^>]*property="og:description"[^>]*>/,
       `<meta property="og:description" content="${escapeHtml(description)}" />`,
     );
     html = replaceMetaTag(
       html,
-      /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/>/,
+      /<meta\s+[^>]*name="twitter:title"[^>]*>/,
       `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
     );
     html = replaceMetaTag(
       html,
-      /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/>/,
+      /<meta\s+[^>]*name="twitter:description"[^>]*>/,
       `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
     );
     html = replaceMetaTag(
@@ -351,8 +351,8 @@ async function main() {
     );
     html = replaceMetaTag(
       html,
-      /<div id="root"><\/div>/,
-      `<div id="root">${fallbackBody}</div>\n    <script id="person-page-data" type="application/json">${escapeJson(person)}</script>`,
+      /<!--app-html-->[\s\S]*?<!--\/app-html-->/,
+      `<!--app-html--><div id="root">${fallbackBody}</div>\n    <script id="person-page-data" type="application/json">${escapeJson(person)}</script><!--/app-html-->`,
     );
 
     const outDir = path.join(DIST_DIR, 'persona', person.slug);
