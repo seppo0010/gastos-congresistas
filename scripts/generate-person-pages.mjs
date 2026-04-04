@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const DIST_DIR = path.join(ROOT, 'dist');
 const PUBLIC_DIR = path.join(ROOT, 'public');
 const SITE_URL = 'https://cuantodeben.visualizando.ar';
+const PEOPLE_DIRECTORY_PATH = '/personas/';
 
 function slugify(text) {
   return text
@@ -197,10 +198,14 @@ function buildDescription(person, stats) {
     ? `y su pico fue ${formatMoneyArs(stats.peakDebt)} en ${formatMonthLabel(stats.peakMonth)}`
     : 'y no hay un pico identificable';
 
-  return `${person.nombre}. ${getContextLine(person) || getPowerLabel(person)}. ${latest} ${peak}. Ficha individual con estadísticas del BCRA en ¿Cuánto deben?`;
+  return `${person.nombre}. ${getContextLine(person) || getPowerLabel(person)}. ${latest} ${peak}. Ficha individual del BCRA en ¿Cuánto deben?`;
 }
 
-function buildFallbackBody(person, stats, description) {
+function buildPeopleDirectoryDescription(count) {
+  return `Listado alfabético de ${count.toLocaleString('es-AR')} funcionarios, legisladores y miembros del Poder Judicial con ficha pública y enlaces internos.`;
+}
+
+function buildFallbackBody(person, stats, description, navigation) {
   const latestRows = [...stats.monthlySeries].slice(-6).reverse();
   const latestVariation = stats.latestVariationPct == null
     ? 'Sin variación comparable contra el mes anterior.'
@@ -212,6 +217,11 @@ function buildFallbackBody(person, stats, description) {
         <p>${escapeHtml(getPowerLabel(person))}</p>
         <h1>${escapeHtml(person.nombre)}</h1>
         <p>${escapeHtml(description)}</p>
+        <nav aria-label="Navegación entre fichas">
+          <a href="${PEOPLE_DIRECTORY_PATH}">Ver directorio completo</a>
+          ${navigation.previous ? `<a href="/persona/${encodeURIComponent(navigation.previous.slug)}/">Ficha anterior: ${escapeHtml(navigation.previous.nombre)}</a>` : '<span>Primera ficha</span>'}
+          ${navigation.next ? `<a href="/persona/${encodeURIComponent(navigation.next.slug)}/">Ficha siguiente: ${escapeHtml(navigation.next.nombre)}</a>` : '<span>Última ficha</span>'}
+        </nav>
       </header>
       <section>
         <h2>Estadísticas</h2>
@@ -235,6 +245,36 @@ function buildFallbackBody(person, stats, description) {
         </ul>
       </section>
       <p><a href="/?funcionarios=${encodeURIComponent(person.slug)}">Abrir ficha interactiva y compararla en el explorador</a></p>
+    </article>
+  `.trim();
+}
+
+function buildPeopleDirectoryBody(entries, description) {
+  return `
+    <article>
+      <header>
+        <p>Directorio público</p>
+        <h1>Personas incluidas en el sitio</h1>
+        <p>${escapeHtml(description)}</p>
+      </header>
+      <section>
+        <h2>Listado alfabético</h2>
+        <ul>
+          ${entries.map((entry, index) => {
+            const previous = entries[index - 1];
+            const next = entries[index + 1];
+            const context = getContextLine(entry) || getPowerLabel(entry);
+            return `<li>
+              <a href="/persona/${encodeURIComponent(entry.slug)}/">${escapeHtml(entry.nombre)}</a>
+              <p>${escapeHtml(context)}</p>
+              <p>
+                ${previous ? `<a href="/persona/${encodeURIComponent(previous.slug)}/">Anterior: ${escapeHtml(previous.nombre)}</a>` : 'Inicio del listado'}
+                ${next ? ` · <a href="/persona/${encodeURIComponent(next.slug)}/">Siguiente: ${escapeHtml(next.nombre)}</a>` : ' · Fin del listado'}
+              </p>
+            </li>`;
+          }).join('')}
+        </ul>
+      </section>
     </article>
   `.trim();
 }
@@ -283,6 +323,132 @@ function buildStructuredData(person, canonicalUrl, title, description) {
   );
 }
 
+function buildPeopleDirectoryStructuredData(entries, canonicalUrl, title, description) {
+  return JSON.stringify(
+    {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'WebSite',
+          '@id': `${SITE_URL}/#website`,
+          name: '¿Cuánto deben?',
+          url: `${SITE_URL}/`,
+          inLanguage: 'es-AR',
+        },
+        {
+          '@type': 'CollectionPage',
+          '@id': `${canonicalUrl}#webpage`,
+          url: canonicalUrl,
+          name: title,
+          description,
+          isPartOf: { '@id': `${SITE_URL}/#website` },
+          inLanguage: 'es-AR',
+        },
+        {
+          '@type': 'ItemList',
+          '@id': `${canonicalUrl}#list`,
+          name: title,
+          numberOfItems: entries.length,
+          itemListElement: entries.map((entry, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            url: `${SITE_URL}/persona/${entry.slug}/`,
+            name: entry.nombre,
+          })),
+        },
+      ],
+    },
+    null,
+    2,
+  );
+}
+
+function buildDirectoryEntries(people) {
+  return [...people]
+    .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es', { sensitivity: 'base' }))
+    .map((person) => ({
+      slug: person.slug,
+      nombre: person.nombre,
+      cargo: person.cargo,
+      distrito: person.distrito,
+      partido: person.partido,
+      unidad: person.unidad,
+      camara: person.camara,
+      organo: person.organo,
+      poder: person.poder,
+    }));
+}
+
+function buildNavigation(entries, slug) {
+  const index = entries.findIndex((entry) => entry.slug === slug);
+  return {
+    previous: index > 0 ? { slug: entries[index - 1].slug, nombre: entries[index - 1].nombre } : null,
+    next: index >= 0 && index < entries.length - 1 ? { slug: entries[index + 1].slug, nombre: entries[index + 1].nombre } : null,
+  };
+}
+
+async function writeHtmlPage({
+  template,
+  outDir,
+  title,
+  description,
+  canonicalUrl,
+  structuredData,
+  fallbackBody,
+  extraScripts = '',
+}) {
+  let html = template;
+  html = replaceMetaTag(html, /<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
+  html = replaceMetaTag(
+    html,
+    /<meta\s+name="description"\s+content="[^"]*"\s*\/>/,
+    `<meta name="description" content="${escapeHtml(description)}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<link\s+rel="canonical"\s+href="[^"]*"\s*\/>/,
+    `<link rel="canonical" href="${canonicalUrl}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<meta\s+property="og:url"\s+content="[^"]*"\s*\/>/,
+    `<meta property="og:url" content="${canonicalUrl}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<meta\s+property="og:title"\s+content="[^"]*"\s*\/>/,
+    `<meta property="og:title" content="${escapeHtml(title)}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/,
+    `<meta property="og:description" content="${escapeHtml(description)}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/>/,
+    `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/>/,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<script type="application\/ld\+json">[\s\S]*?<\/script>/,
+    `<script type="application/ld+json">\n${structuredData}\n</script>`,
+  );
+  html = replaceMetaTag(
+    html,
+    /<div id="root"><\/div>/,
+    `<div id="root">${fallbackBody}</div>${extraScripts}`,
+  );
+
+  await fs.mkdir(outDir, { recursive: true });
+  await fs.writeFile(path.join(outDir, 'index.html'), html, 'utf8');
+}
+
 async function main() {
   const [template, dbRaw, politicosRaw, judicialRaw] = await Promise.all([
     fs.readFile(path.join(DIST_DIR, 'index.html'), 'utf8'),
@@ -295,6 +461,7 @@ async function main() {
   const politicosData = JSON.parse(politicosRaw);
   const judicialData = JSON.parse(judicialRaw);
   const people = mergeDashboardPeople(dbData, politicosData, judicialData);
+  const directoryEntries = buildDirectoryEntries(people);
 
   const sitemapEntries = [`${SITE_URL}/`];
 
@@ -305,61 +472,47 @@ async function main() {
     const title = `${person.nombre} | Deuda BCRA y estadísticas`;
     const description = buildDescription(person, stats);
     const structuredData = buildStructuredData(person, canonicalUrl, title, description);
-    const fallbackBody = buildFallbackBody(person, stats, description);
-
-    let html = template;
-    html = replaceMetaTag(html, /<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
-    html = replaceMetaTag(
-      html,
-      /<meta\s+name="description"\s+content="[^"]*"\s*\/>/,
-      `<meta name="description" content="${escapeHtml(description)}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<link\s+rel="canonical"\s+href="[^"]*"\s*\/>/,
-      `<link rel="canonical" href="${canonicalUrl}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<meta\s+property="og:url"\s+content="[^"]*"\s*\/>/,
-      `<meta property="og:url" content="${canonicalUrl}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<meta\s+property="og:title"\s+content="[^"]*"\s*\/>/,
-      `<meta property="og:title" content="${escapeHtml(title)}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/,
-      `<meta property="og:description" content="${escapeHtml(description)}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/>/,
-      `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/>/,
-      `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<script type="application\/ld\+json">[\s\S]*?<\/script>/,
-      `<script type="application/ld+json">\n${structuredData}\n</script>`,
-    );
-    html = replaceMetaTag(
-      html,
-      /<div id="root"><\/div>/,
-      `<div id="root">${fallbackBody}</div>\n    <script id="person-page-data" type="application/json">${escapeJson(person)}</script>`,
-    );
+    const navigation = buildNavigation(directoryEntries, person.slug);
+    const fallbackBody = buildFallbackBody(person, stats, description, navigation);
+    const extraScripts = `\n    <script id="person-page-data" type="application/json">${escapeJson(person)}</script>\n    <script id="person-page-navigation" type="application/json">${escapeJson(navigation)}</script>`;
 
     const outDir = path.join(DIST_DIR, 'persona', person.slug);
-    await fs.mkdir(outDir, { recursive: true });
-    await fs.writeFile(path.join(outDir, 'index.html'), html, 'utf8');
+    await writeHtmlPage({
+      template,
+      outDir,
+      title,
+      description,
+      canonicalUrl,
+      structuredData,
+      fallbackBody,
+      extraScripts,
+    });
     sitemapEntries.push(canonicalUrl);
   }
+
+  const directoryUrl = `${SITE_URL}${PEOPLE_DIRECTORY_PATH}`;
+  const directoryTitle = 'Personas incluidas en el sitio | ¿Cuánto deben?';
+  const directoryDescription = buildPeopleDirectoryDescription(directoryEntries.length);
+  const directoryStructuredData = buildPeopleDirectoryStructuredData(
+    directoryEntries,
+    directoryUrl,
+    directoryTitle,
+    directoryDescription,
+  );
+  const directoryBody = buildPeopleDirectoryBody(directoryEntries, directoryDescription);
+  const directoryScript = `\n    <script id="people-directory-data" type="application/json">${escapeJson(directoryEntries)}</script>`;
+
+  await writeHtmlPage({
+    template,
+    outDir: path.join(DIST_DIR, 'personas'),
+    title: directoryTitle,
+    description: directoryDescription,
+    canonicalUrl: directoryUrl,
+    structuredData: directoryStructuredData,
+    fallbackBody: directoryBody,
+    extraScripts: directoryScript,
+  });
+  sitemapEntries.push(directoryUrl);
 
   const sitemapXml = [
     '<?xml version="1.0" encoding="UTF-8"?>',
@@ -370,7 +523,7 @@ async function main() {
   ].join('\n');
 
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf8');
-  console.log(`Generadas ${people.length} páginas de persona y sitemap.xml`);
+  console.log(`Generadas ${people.length} páginas de persona, directorio público y sitemap.xml`);
 }
 
 main().catch((error) => {

@@ -4,7 +4,7 @@ import { Home, AlertCircle, X, Users, ShieldAlert, ArrowDownAZ, ArrowUpAZ, Trend
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
 
-export const SITUACION_BCRA: Record<number, { label: string; color: string }> = {
+const SITUACION_BCRA: Record<number, { label: string; color: string }> = {
   0:  { label: 'Sin datos',          color: '#9ca3af' },
   1:  { label: 'Normal',             color: '#16a34a' },
   2:  { label: 'Riesgo bajo',        color: '#ca8a04' },
@@ -12,7 +12,7 @@ export const SITUACION_BCRA: Record<number, { label: string; color: string }> = 
   4:  { label: 'Riesgo alto',        color: '#dc2626' },
   5:  { label: 'Irrecuperable',      color: '#7f1d1d' },
   11: { label: 'Con garantías "A"',  color: '#0284c7' },
-};
+}
 
 const getDebtStats = (l: Legislator) => {
   const monthly: { [key: string]: number } = {};
@@ -31,7 +31,19 @@ const getDebtStats = (l: Legislator) => {
   };
 };
 
-export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[], selectedColors?: Record<string, string> }) => {
+interface LegislatorSelectorProps {
+  legisladores: Legislator[];
+  onSelect: (l: Legislator) => void;
+  selectedIds?: string[];
+  selectedColors?: Record<string, string>;
+}
+
+export default function LegislatorSelector({
+  legisladores,
+  onSelect,
+  selectedIds = [],
+  selectedColors = {},
+}: LegislatorSelectorProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("todos");
@@ -74,25 +86,6 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
     return () => clearTimeout(handler);
   }, [searchTerm]);
 
-  useEffect(() => {
-    if (positionFilter === 'apn') {
-      setProvinceFilter('todas');
-      setPartyFilter('todos');
-      setCargoJudicialFilter('todos');
-    } else if (positionFilter === 'legisladores') {
-      setUnitFilter('todas');
-      setCargoApnFilter('todos');
-      setCargoJudicialFilter('todos');
-    } else if (positionFilter === 'judicial') {
-      setProvinceFilter('todas');
-      setPartyFilter('todos');
-      setUnitFilter('todas');
-      setCargoApnFilter('todos');
-    } else {
-      setCamaraFilter('todas');
-      setCargoJudicialFilter('todos');
-    }
-  }, [positionFilter]);
 
   const filteredAndSorted = useMemo(() => {
     return legisladores
@@ -175,7 +168,27 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           </div>
           <div>
             <label htmlFor="position" className="block text-gray-600 text-xs font-semibold mb-1">Poder</label>
-            <select id="position" value={positionFilter} onChange={e => setPositionFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+            <select id="position" value={positionFilter} onChange={e => {
+                const nextValue = e.target.value;
+                setPositionFilter(nextValue);
+                if (nextValue === 'apn') {
+                  setProvinceFilter('todas');
+                  setPartyFilter('todos');
+                  setCargoJudicialFilter('todos');
+                } else if (nextValue === 'legisladores') {
+                  setUnitFilter('todas');
+                  setCargoApnFilter('todos');
+                  setCargoJudicialFilter('todos');
+                } else if (nextValue === 'judicial') {
+                  setProvinceFilter('todas');
+                  setPartyFilter('todos');
+                  setUnitFilter('todas');
+                  setCargoApnFilter('todos');
+                } else {
+                  setCamaraFilter('todas');
+                  setCargoJudicialFilter('todos');
+                }
+              }} className="w-full p-2 border rounded bg-white">
               <option value="todos">Todos</option>
               <option value="legisladores">Legislativo</option>
               <option value="apn">Ejecutivo</option>
@@ -376,3 +389,5 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
     </div>
   );
 };
+
+export { SITUACION_BCRA };

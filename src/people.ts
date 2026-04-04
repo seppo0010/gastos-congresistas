@@ -25,6 +25,28 @@ export interface PersonStats {
   latestVariationPct: number | null;
 }
 
+export interface PersonNavigationLink {
+  slug: string;
+  nombre: string;
+}
+
+export interface PersonNavigation {
+  previous: PersonNavigationLink | null;
+  next: PersonNavigationLink | null;
+}
+
+export interface PersonDirectoryItem {
+  slug: string;
+  nombre: string;
+  cargo?: string;
+  distrito?: string;
+  partido?: string;
+  unidad?: string;
+  camara?: string;
+  organo?: string;
+  poder?: Legislator['poder'];
+}
+
 export const SITE_URL = 'https://cuantodeben.visualizando.ar';
 
 export function slugify(text: string) {
@@ -89,15 +111,32 @@ export function getPersonSlugFromPath(pathname: string) {
   return match?.[1] ?? null;
 }
 
-export function readEmbeddedPersonData() {
-  const node = document.getElementById('person-page-data');
+export function isPeopleDirectoryPath(pathname: string) {
+  const normalized = pathname.replace(/\/+$/, '') || '/';
+  return normalized === '/personas';
+}
+
+function readEmbeddedJson<T>(id: string) {
+  const node = document.getElementById(id);
   if (!node?.textContent) return null;
 
   try {
-    return JSON.parse(node.textContent) as LegislatorWithSlug;
+    return JSON.parse(node.textContent) as T;
   } catch {
     return null;
   }
+}
+
+export function readEmbeddedPersonData() {
+  return readEmbeddedJson<LegislatorWithSlug>('person-page-data');
+}
+
+export function readEmbeddedPersonNavigation() {
+  return readEmbeddedJson<PersonNavigation>('person-page-navigation');
+}
+
+export function readEmbeddedPeopleDirectory() {
+  return readEmbeddedJson<PersonDirectoryItem[]>('people-directory-data');
 }
 
 export function formatMonthLabel(value: string | null) {
@@ -195,7 +234,7 @@ export function getPersonStats(legislator: Legislator): PersonStats {
   };
 }
 
-export function getPowerLabel(legislator: Legislator) {
+export function getPowerLabel(legislator: { poder?: Legislator['poder'] }) {
   switch (legislator.poder) {
     case 'legislativo':
       return 'Poder Legislativo';
@@ -208,6 +247,56 @@ export function getPowerLabel(legislator: Legislator) {
   }
 }
 
+export function getPersonContextLine(person: Pick<PersonDirectoryItem, 'cargo' | 'distrito' | 'partido' | 'unidad' | 'camara' | 'organo'>) {
+  const parts = [person.cargo];
+
+  if (person.distrito) parts.push(person.distrito);
+  if (person.partido) parts.push(person.partido);
+  if (person.unidad) parts.push(person.unidad);
+  if (person.camara) parts.push(person.camara);
+  if (person.organo) parts.push(person.organo);
+
+  return parts.filter(Boolean).join(' · ');
+}
+
+
+export function getPeopleDirectoryEntries(people: LegislatorWithSlug[]): PersonDirectoryItem[] {
+  return [...people]
+    .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es', { sensitivity: 'base' }))
+    .map((person) => ({
+      slug: person.slug,
+      nombre: person.nombre,
+      cargo: person.cargo,
+      distrito: person.distrito,
+      partido: person.partido,
+      unidad: person.unidad,
+      camara: person.camara,
+      organo: person.organo,
+      poder: person.poder,
+    }));
+}
+
+export function getPersonNavigation(entries: PersonDirectoryItem[], slug: string): PersonNavigation {
+  const index = entries.findIndex((entry) => entry.slug === slug);
+
+  if (index === -1) {
+    return { previous: null, next: null };
+  }
+
+  const toLink = (entry: PersonDirectoryItem | undefined): PersonNavigationLink | null => (
+    entry ? { slug: entry.slug, nombre: entry.nombre } : null
+  );
+
+  return {
+    previous: toLink(entries[index - 1]),
+    next: toLink(entries[index + 1]),
+  };
+}
+
 export function getPersonRoute(slug: string) {
   return `/persona/${slug}/`;
+}
+
+export function getPeopleDirectoryRoute() {
+  return '/personas/';
 }

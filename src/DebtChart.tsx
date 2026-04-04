@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, forwardRef, useImperativeHandle, useEffect } from 'react';
+import { useMemo, useState, useRef, forwardRef, useImperativeHandle, useEffect, useCallback, type MouseEvent as ReactMouseEvent } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, ReferenceDot, Brush } from 'recharts';
 import { toPng } from 'html-to-image';
 
@@ -61,6 +61,62 @@ interface MilestoneChipStyle {
   borderColor: string;
 }
 
+interface MilestoneWithOwner extends Milestone {
+  legislatorId?: string;
+  legislatorColor?: string;
+  displayColor?: string;
+  convertedMonto?: number;
+}
+
+interface VerticalMilestone {
+  fecha: string;
+  texto: string;
+  color: string;
+  tipo?: Milestone['tipo'];
+}
+
+interface EconomicMilestone extends MilestoneWithOwner {
+  color: string;
+  convertedMonto: number;
+}
+
+interface ChartBankGroup {
+  propio: Bank[];
+  familiares: Record<string, Bank[]>;
+}
+
+interface ChartDatum extends Record<string, unknown> {
+  date: string;
+  banks: Record<string, ChartBankGroup>;
+  [key: string]: unknown;
+}
+
+interface EconomicMarkerProps {
+  cx?: number;
+  cy?: number;
+  color?: string;
+}
+
+interface XAxisTickProps {
+  x?: number | string;
+  y?: number | string;
+  payload?: { value?: string };
+}
+
+interface MilestoneLabelProps {
+  x?: number;
+  text: string;
+  color?: string;
+  milestoneKey: string;
+  viewBox?: { x?: number; cx?: number };
+}
+
+interface TooltipPayloadItem {
+  dataKey: string;
+  value?: number;
+  payload: ChartDatum;
+}
+
 function tintColor(hex: string, amount: number): string {
   // amount 0 = original color, 1 = white
   const r = parseInt(hex.slice(1, 3), 16);
@@ -97,8 +153,7 @@ const teniaCargo = (legislator: Legislator, cargo: string | undefined, fecha: st
 const GRAY = '#9ca3af';
 const ORANGE = '#FFA800';
 
-const CustomEconomicMarker = (props: any) => {
-  const { cx, cy, color } = props;
+const CustomEconomicMarker = ({ cx, cy, color }: EconomicMarkerProps) => {
   if (!cx || !cy) return null;
   return (
     <g>
@@ -157,7 +212,7 @@ const DebtChart = forwardRef(({
     return 0;
   }, [currencyMode, ipc, ipcDates]);
 
-  const convertMonto = (monto: number, fecha: string) => {
+  const convertMonto = useCallback((monto: number, fecha: string) => {
     if (currencyMode === 'real' && ipc && latestIPC > 0) {
       const val = ipc[fecha];
       if (val) return (monto * latestIPC) / val;
@@ -166,7 +221,7 @@ const DebtChart = forwardRef(({
       return (val && val > 0) ? (monto * 1000) / val : 0;
     }
     return monto;
-  };
+  }, [currencyMode, ipc, latestIPC, mep]);
 
   // 1. Unificar Hitos (Globales + Personales)
   const { verticalMilestones, economicMilestones } = useMemo(() => {
@@ -186,40 +241,40 @@ const DebtChart = forwardRef(({
     const all = [...relevantes, ...personales];
 
     // Milestones with monto are economic
-    const eco = all.filter(m => m.monto != null).map(m => ({
+    const eco: EconomicMilestone[] = all.filter((m): m is MilestoneWithOwner & { monto: number } => m.monto != null).map(m => ({
       ...m,
       color: ORANGE,
       convertedMonto: convertMonto((m.monto || 0) / 1000, m.fecha)
     }));
 
     // Grouping only for vertical milestones
-    const grouped = all.filter(m => m.monto == null).reduce((acc: Record<string, any[]>, m: any) => {
-      (acc[m.fecha] ??= []).push(m);
+    const grouped = all.filter((m): m is MilestoneWithOwner => m.monto == null).reduce<Record<string, MilestoneWithOwner[]>>((acc, milestone) => {
+      (acc[milestone.fecha] ??= []).push(milestone);
       return acc;
     }, {});
 
-    const vertical = Object.values(grouped).map((group: any) => {
-      const legislatorIds = new Set(group.map((m: any) => m.legislatorId).filter(Boolean));
-      const hasGlobal = group.some((m: any) => !m.legislatorId);
+    const vertical: VerticalMilestone[] = Object.values(grouped).map((group) => {
+      const legislatorIds = new Set(group.map((milestone) => milestone.legislatorId).filter(Boolean));
+      const hasGlobal = group.some((milestone) => !milestone.legislatorId);
 
       let color = GRAY;
 
       if (legislatorIds.size === 1 && !hasGlobal) {
-        color = group.find((m: any) => m.legislatorId).legislatorColor;
+        color = group.find((milestone) => milestone.legislatorId)?.legislatorColor || GRAY;
       } else if (legislatorIds.size === 0 && hasGlobal && visibleLegislators.length === 1) {
         color = group[0].color;
       }
 
       return {
         fecha: group[0].fecha,
-        texto: group.map((y: any) => y.texto).join(', '),
+        texto: group.map((milestone) => milestone.texto).join(', '),
         color,
         tipo: group[0].tipo,
       }
     });
 
     return { verticalMilestones: vertical, economicMilestones: eco };
-  }, [visibleLegislators, globalMilestones, currencyMode, latestIPC, ipc, mep]);
+  }, [convertMonto, globalMilestones, visibleLegislators]);
 
   // 2a. Calcular segmentos únicos (cuit × deudor × entidad) con total acumulado
   const barSegments = useMemo(() => {
@@ -285,7 +340,7 @@ const DebtChart = forwardRef(({
 
   // 2c. Procesar Datos de Deuda (Agrupar por mes)
   const chartData = useMemo(() => {
-    const grouped: { [key: string]: any } = {};
+    const grouped: Record<string, ChartDatum> = {};
 
     const ensureEntry = (fecha: string, cuit: string) => {
       if (!grouped[fecha]) grouped[fecha] = { date: fecha, banks: {} };
@@ -298,7 +353,8 @@ const DebtChart = forwardRef(({
         ensureEntry(r.fecha, l.cuit);
         const monto = convertMonto(r.monto, r.fecha);
         const key = `${l.cuit}${SEP}propio${SEP}${r.entidad}`;
-        grouped[r.fecha][key] = (grouped[r.fecha][key] || 0) + monto;
+        const currentValue = grouped[r.fecha][key];
+        grouped[r.fecha][key] = (typeof currentValue === 'number' ? currentValue : 0) + monto;
         grouped[r.fecha].banks[l.cuit].propio.push({ ...r, monto });
       });
 
@@ -309,7 +365,8 @@ const DebtChart = forwardRef(({
             ensureEntry(r.fecha, l.cuit);
             const monto = convertMonto(r.monto, r.fecha);
             const key = `${l.cuit}${SEP}${familiar.parentesco}${SEP}${r.entidad}`;
-            grouped[r.fecha][key] = (grouped[r.fecha][key] || 0) + monto;
+            const currentValue = grouped[r.fecha][key];
+            grouped[r.fecha][key] = (typeof currentValue === 'number' ? currentValue : 0) + monto;
             const fams = grouped[r.fecha].banks[l.cuit].familiares;
             if (!fams[familiar.parentesco]) fams[familiar.parentesco] = [];
             fams[familiar.parentesco].push({ ...r, monto });
@@ -319,7 +376,7 @@ const DebtChart = forwardRef(({
     });
 
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [visibleLegislators, currencyMode, ipc, mep, ipcDates, includeFamiliares, latestIPC]);
+  }, [convertMonto, includeFamiliares, visibleLegislators]);
 
 
   const xAxisInterval = useMemo(() => {
@@ -433,7 +490,7 @@ const DebtChart = forwardRef(({
       const monthlyTotals = chartData
         .map(entry => Object.entries(entry)
           .filter(([k]) => k.startsWith(l.cuit + SEP))
-          .reduce((sum, [, v]) => sum + (v as number), 0))
+          .reduce((sum, [, v]) => sum + (typeof v === 'number' ? v : 0), 0))
         .filter(v => v > 0);
       const avg = monthlyTotals.length > 0 ? monthlyTotals.reduce((a, b) => a + b, 0) / monthlyTotals.length : 0;
       const max = monthlyTotals.length > 0 ? Math.max(...monthlyTotals) : 0;
@@ -609,15 +666,17 @@ const DebtChart = forwardRef(({
     return () => document.removeEventListener('click', handleOutsideClick);
   }, [milestoneHint]);
 
-  const renderXAxisTick = (props: any) => {
-    const { x, y, payload } = props;
-    const label = xAxisTickFormatter(payload.value);
+  const renderXAxisTick = (props: XAxisTickProps) => {
+    const { x = 0, y = 0, payload } = props;
+    const numericX = typeof x === 'number' ? x : Number(x) || 0;
+    const numericY = typeof y === 'number' ? y : Number(y) || 0;
+    const label = xAxisTickFormatter(payload?.value || '');
     const lines = String(label).split('\n');
 
     return (
-      <text x={x} y={y + 10} textAnchor="middle" fontSize={10} fill="#4b5563">
+      <text x={numericX} y={numericY + 10} textAnchor="middle" fontSize={10} fill="#4b5563">
         {lines.map((line: string, index: number) => (
-          <tspan key={index} x={x} dy={index === 0 ? 0 : 12}>
+          <tspan key={index} x={numericX} dy={index === 0 ? 0 : 12}>
             {line}
           </tspan>
         ))}
@@ -625,7 +684,7 @@ const DebtChart = forwardRef(({
     );
   };
 
-  const MilestoneLabel = (props: any) => {
+  const MilestoneLabel = (props: MilestoneLabelProps) => {
     const { x, text, color, milestoneKey, viewBox } = props;
     // Recharts no siempre entrega `x` en labels custom de ReferenceLine; usamos fallback para mantener alineación.
     const resolvedX = [x, viewBox?.x, viewBox?.cx].find((v) => typeof v === 'number');
@@ -641,7 +700,7 @@ const DebtChart = forwardRef(({
         transform={`translate(${resolvedX}, ${topY})`}
         cursor="pointer"
         data-milestone-icon="true"
-        onClick={(e: any) => {
+        onClick={(e: ReactMouseEvent<SVGGElement>) => {
           e.stopPropagation();
           if (activeMilestoneKey === milestoneKey) {
             setMilestoneHint(null);
@@ -742,7 +801,7 @@ const DebtChart = forwardRef(({
   if (legislators.length === 0) return (
     <div className="flex-1 flex items-center justify-center p-6 bg-gray-50 h-full">
       <div className="max-w-md w-full">
-        <h1 className="text-2xl font-bold text-gray-800 mb-2">Central de Deudores</h1>
+        <h2 className="text-2xl font-bold text-gray-800 mb-2">Central de Deudores</h2>
         <p className="text-gray-600 mb-6 text-sm leading-relaxed">
           Explorá los registros de deuda de legisladores y funcionarios del Estado argentino
           según el BCRA. Los datos muestran el total informado cada mes por los bancos,
@@ -772,7 +831,7 @@ const DebtChart = forwardRef(({
   };
 
   // Tooltip Personalizado con Hitos
-  const CustomTooltip = ({ active, payload, label }: { active?: boolean, payload?: any, label?: string | number }) => {
+  const CustomTooltip = ({ active, payload, label }: { active?: boolean, payload?: readonly TooltipPayloadItem[], label?: string | number }) => {
     if (!active || !payload || !payload.length) return null;
 
     return (
@@ -780,16 +839,16 @@ const DebtChart = forwardRef(({
         <p className="font-bold mb-1">{label}</p>
 
         {visibleLegislators.map((l, idx) => {
-          const lPayloads = payload.filter((p: any) => p.dataKey.startsWith(l.cuit + SEP));
+          const lPayloads = payload.filter((p) => p.dataKey.startsWith(l.cuit + SEP));
           if (lPayloads.length === 0) return null;
-          const total = lPayloads.reduce((sum: number, p: any) => sum + (p.value || 0), 0);
+          const total = lPayloads.reduce((sum, p) => sum + (p.value || 0), 0);
           const banks = lPayloads[0].payload.banks[l.cuit] || { propio: [], familiares: {} };
 
           const personalMilestones = (l.hitos_personales || []).filter(h => h.fecha === label);
           const relevantGlobalMilestones = globalMilestones.filter(m =>
             m.fecha === label && (
               ['global', 'voto', 'politico'].includes(m.tipo || '') ||
-              teniaCargo(l, m.tipo as any, m.fecha)
+              teniaCargo(l, m.tipo, m.fecha)
             )
           );
           const milestones = [
@@ -807,7 +866,7 @@ const DebtChart = forwardRef(({
                 <div
                   key={i}
                   className="mb-1 p-1 rounded border font-semibold flex items-center gap-1"
-                  style={getMilestoneChipStyle((m as any).displayColor)}
+                  style={getMilestoneChipStyle(m.displayColor)}
                 >
                     <Flag size={10} /> {m.texto}
                 </div>

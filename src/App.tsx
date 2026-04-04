@@ -1,13 +1,19 @@
 import { useMemo, useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
+import PeopleDirectoryPage from './PeopleDirectoryPage';
 import PersonPage from './PersonPage';
 import type { DashboardData } from './types';
 import {
   type LegislatorWithSlug,
+  type PersonDirectoryItem,
   formatMonthLabel,
+  getPeopleDirectoryEntries,
   getPersonSlugFromPath,
+  isPeopleDirectoryPath,
   mergeDashboardPeople,
+  readEmbeddedPeopleDirectory,
   readEmbeddedPersonData,
+  readEmbeddedPersonNavigation,
 } from './people';
 
 function scrollToExplorer(behavior: ScrollBehavior = 'smooth') {
@@ -18,17 +24,26 @@ function scrollToExplorer(behavior: ScrollBehavior = 'smooth') {
 
 export default function App() {
   const personSlug = useMemo(() => getPersonSlugFromPath(window.location.pathname), []);
+  const isPeopleDirectory = useMemo(() => isPeopleDirectoryPath(window.location.pathname), []);
   const [embeddedPerson] = useState<LegislatorWithSlug | null>(() => (
     personSlug ? readEmbeddedPersonData() : null
+  ));
+  const [embeddedNavigation] = useState(() => (
+    personSlug ? readEmbeddedPersonNavigation() : null
+  ));
+  const [embeddedPeopleDirectory] = useState<PersonDirectoryItem[] | null>(() => (
+    isPeopleDirectory ? readEmbeddedPeopleDirectory() : null
   ));
   const [dbData, setDbData] = useState<DashboardData | null>(null);
   const [politicosData, setPoliticosData] = useState<DashboardData | null>(null);
   const [judicialData, setJudicialData] = useState<DashboardData | null>(null);
+  const [peopleDirectory, setPeopleDirectory] = useState<PersonDirectoryItem[] | null>(embeddedPeopleDirectory);
   const [person, setPerson] = useState<LegislatorWithSlug | null>(embeddedPerson);
   const [personNotFound, setPersonNotFound] = useState(false);
 
   useEffect(() => {
     if (personSlug && embeddedPerson) return;
+    if (isPeopleDirectory && embeddedPeopleDirectory) return;
 
     const params = new URLSearchParams(window.location.search);
     const hasPreselected = !!(params.get('funcionarios') || params.get('legisladores'));
@@ -38,11 +53,17 @@ export default function App() {
       fetch('/politicos_full.json').then(r => r.json()),
       fetch('/judicial_full.json').then(r => r.json()),
     ]).then(([db, pol, jud]) => {
+      const merged = mergeDashboardPeople(db, pol, jud);
+
       if (personSlug) {
-        const merged = mergeDashboardPeople(db, pol, jud);
         const found = merged.find((candidate) => candidate.slug === personSlug) || null;
         setPerson(found);
         setPersonNotFound(!found);
+        return;
+      }
+
+      if (isPeopleDirectory) {
+        setPeopleDirectory(getPeopleDirectoryEntries(merged));
         return;
       }
 
@@ -53,7 +74,7 @@ export default function App() {
         requestAnimationFrame(() => scrollToExplorer('instant'));
       }
     });
-  }, [embeddedPerson, personSlug]);
+  }, [embeddedPeopleDirectory, embeddedPerson, isPeopleDirectory, personSlug]);
 
   const heroMetrics = useMemo(() => {
     if (!dbData || !politicosData || !judicialData) return null;
@@ -81,7 +102,8 @@ export default function App() {
 
   if (personSlug) {
     if (person) {
-      return <PersonPage person={person} />;
+      const navigation = embeddedNavigation ?? { previous: null, next: null };
+      return <PersonPage person={person} navigation={navigation} />;
     }
 
     if (personNotFound) {
@@ -106,6 +128,18 @@ export default function App() {
     return (
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
         <p className="text-gray-500">Cargando ficha…</p>
+      </div>
+    );
+  }
+
+  if (isPeopleDirectory) {
+    if (peopleDirectory) {
+      return <PeopleDirectoryPage entries={peopleDirectory} />;
+    }
+
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-100">
+        <p className="text-gray-500">Cargando directorio…</p>
       </div>
     );
   }
@@ -146,7 +180,7 @@ export default function App() {
               </div>
             </div>
 
-            <div>
+            <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => scrollToExplorer()}
                 className="inline-flex items-center gap-3 rounded-2xl bg-blue-600 px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-blue-700"
@@ -154,6 +188,12 @@ export default function App() {
                 Bajar al explorador
                 <span aria-hidden="true">↓</span>
               </button>
+              <a
+                href="/personas/"
+                className="inline-flex items-center gap-3 rounded-2xl border border-blue-200 bg-white px-6 py-4 text-sm font-bold uppercase tracking-wide text-blue-700 transition hover:border-blue-300 hover:bg-blue-50"
+              >
+                Ver todas las fichas
+              </a>
             </div>
           </div>
         </section>
