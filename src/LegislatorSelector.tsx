@@ -1,4 +1,40 @@
 import { useMemo, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+
+function parseCuit(cuit: string): { dni: string; genero: 'M' | 'F' } | null {
+  const digits = cuit.replace(/\D/g, '');
+  if (digits.length !== 11) return null;
+  const prefix = digits.slice(0, 2);
+  const dniRaw = digits.slice(2, 10);
+  const dni = String(parseInt(dniRaw, 10)); // strip leading zeros
+  if (prefix === '20') return { dni, genero: 'M' };
+  if (prefix === '27') return { dni, genero: 'F' };
+  if (prefix === '23' || prefix === '24') {
+    // Infer gender by checking which one produces this exact CUIT
+    return { dni, genero: calcularCuit(dniRaw, 'M') === digits ? 'M' : 'F' };
+  }
+  return null;
+}
+
+function calcularCuit(dni: string, genero: 'M' | 'F'): string {
+  const dniPadded = dni.padStart(8, '0');
+  const multipliers = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2];
+
+  const checkDigit = (prefix: string): number => {
+    const digits = (prefix + dniPadded).split('').map(Number);
+    const sum = digits.reduce((acc, d, i) => acc + d * multipliers[i], 0);
+    const rem = sum % 11;
+    return rem === 0 ? 0 : rem === 1 ? -1 : 11 - rem;
+  };
+
+  const prefixes = genero === 'M' ? ['20', '23', '24'] : ['27', '23', '24'];
+  for (const prefix of prefixes) {
+    const cd = checkDigit(prefix);
+    if (cd !== -1) return `${prefix}-${dniPadded}-${cd}`;
+  }
+  // Extremely unlikely fallback
+  return `${prefixes[0]}-${dniPadded}-0`;
+}
 import { Home, AlertCircle, X, Users, ShieldAlert, ArrowDownAZ, ArrowUpAZ, TrendingUp, BarChart2 } from 'lucide-react';
 
 import type { Legislator } from './types';
@@ -31,8 +67,14 @@ const getDebtStats = (l: Legislator) => {
   };
 };
 
-export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[], selectedColors?: Record<string, string> }) => {
+export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {}, onAddCuit, extraCuits = new Set() }: { legisladores: Legislator[], onSelect: (l: Legislator) => void, selectedIds?: string[], selectedColors?: Record<string, string>, onAddCuit?: (cuit: string) => Promise<void>, extraCuits?: Set<string> }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [cuitInput, setCuitInput] = useState("");
+  const [dniInput, setDniInput] = useState("");
+  const [genero, setGenero] = useState<'M' | 'F'>('M');
+  const [cuitLoading, setCuitLoading] = useState(false);
+  const [cuitError, setCuitError] = useState<string | null>(null);
+  const [showCuitModal, setShowCuitModal] = useState(false);
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("todos");
   const [provinceFilter, setProvinceFilter] = useState("todas");
@@ -94,6 +136,23 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
     }
   }, [positionFilter]);
 
+  const handleCuitSubmit = async () => {
+    const cuit = cuitInput.replace(/\D/g, '');
+    if (!onAddCuit || cuit.length < 10) return;
+    setCuitLoading(true);
+    setCuitError(null);
+    try {
+      await onAddCuit(cuit);
+      setCuitInput('');
+      setDniInput('');
+      setShowCuitModal(false);
+    } catch (e) {
+      setCuitError(e instanceof Error ? e.message : 'Error al buscar el CUIT');
+    } finally {
+      setCuitLoading(false);
+    }
+  };
+
   const filteredAndSorted = useMemo(() => {
     return legisladores
       .filter(l => {
@@ -151,6 +210,14 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
         />
+        {onAddCuit && (
+          <button
+            onClick={() => { setShowCuitModal(true); setCuitError(null); }}
+            className="mt-2 text-xs text-blue-600 hover:underline"
+          >
+            + Agregar CUIT
+          </button>
+        )}
         <div className="mt-4 space-y-2 text-sm">
           <div>
             <span className="block text-gray-600 text-xs font-semibold mb-1">Orden</span>
@@ -332,6 +399,11 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
                 <div className="flex justify-between items-center w-full">
                   <div className="font-semibold text-sm mr-2 flex-1 flex items-center gap-1 min-w-0">
                     <span className="truncate">{l.nombre}</span>
+                    {extraCuits.has(l.cuit) && (
+                      <span className="shrink-0 text-[9px] font-bold px-1 py-0.5 rounded leading-none bg-purple-100 text-purple-700 border border-purple-300">
+                        CUIT agregado
+                      </span>
+                    )}
                     {l.es_candidato && (
                       <span title="Candidato: aún no ocupa el cargo" className="shrink-0 text-[9px] font-bold px-1 py-0.5 rounded leading-none bg-amber-100 text-amber-700 border border-amber-300">
                         Candidato
@@ -373,6 +445,110 @@ export default ({ legisladores, onSelect, selectedIds = [], selectedColors = {} 
           );
         })}
       </div>
+
+      {showCuitModal && createPortal(
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          onClick={() => setShowCuitModal(false)}
+        >
+          <div
+            className="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm relative"
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowCuitModal(false)}
+              className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 cursor-pointer"
+              title="Cerrar"
+            >
+              <X size={20} />
+            </button>
+            <h3 className="font-bold text-lg mb-2">Agregar CUIT</h3>
+            <p className="text-sm text-gray-600 mb-4">
+              La información proviene de la Central de Deudores del BCRA.
+            </p>
+
+            <div className="space-y-3">
+              <div className="border rounded-lg p-3">
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Opción 1 — DNI y género</label>
+                <div className="flex gap-4">
+                  <div>
+                    <label className="block text-xs text-gray-500 mb-1">Género</label>
+                    <div className="flex rounded border overflow-hidden text-sm">
+                      {(['M', 'F'] as const).map(g => (
+                        <button
+                          key={g}
+                          onClick={() => {
+                            setGenero(g);
+                            const digits = dniInput.replace(/\D/g, '');
+                            if (digits.length >= 7) setCuitInput(calcularCuit(digits, g));
+                          }}
+                          className={`px-3 py-2 ${genero === g ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
+                        >
+                          {g === 'M' ? 'Masc.' : 'Fem.'}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <label className="block text-xs text-gray-500 mb-1">DNI</label>
+                    <input
+                    autoFocus
+                    className="w-full p-2 border rounded text-sm"
+                    placeholder="99.999.999"
+                    value={dniInput}
+                    onChange={e => {
+                      const raw = e.target.value;
+                      setDniInput(raw);
+                      const digits = raw.replace(/\D/g, '');
+                      if (digits.length >= 7) setCuitInput(calcularCuit(digits, genero));
+                      else setCuitInput('');
+                      setCuitError(null);
+                    }}
+                    maxLength={10}
+                  />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 text-xs text-gray-400 font-semibold">
+                <div className="flex-1 border-t border-gray-200" />
+                O
+                <div className="flex-1 border-t border-gray-200" />
+              </div>
+
+              <div className="border rounded-lg p-3">
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Opción 2 — CUIL / CUIT</label>
+                <div className="flex gap-2">
+                  <input
+                    className="flex-1 p-2 border rounded text-sm font-mono"
+                    placeholder="99-9999999-9"
+                    value={cuitInput}
+                    onChange={e => {
+                      const raw = e.target.value;
+                      setCuitInput(raw);
+                      setCuitError(null);
+                      const parsed = parseCuit(raw);
+                      if (parsed) { setDniInput(parsed.dni); setGenero(parsed.genero); }
+                    }}
+                    maxLength={13}
+                    onKeyDown={e => e.key === 'Enter' && handleCuitSubmit()}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={handleCuitSubmit}
+              disabled={cuitLoading || cuitInput.replace(/\D/g, '').length < 10}
+              className="mt-4 w-full py-2 bg-blue-600 text-white text-sm font-semibold rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {cuitLoading ? '...' : 'Buscar'}
+            </button>
+            {cuitError && <p className="text-red-500 text-xs mt-2">{cuitError}</p>}
+          </div>
+        </div>,
+        document.body
+      )}
     </div>
   );
 };

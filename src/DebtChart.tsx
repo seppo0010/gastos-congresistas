@@ -36,6 +36,7 @@ interface DebtChartProps {
   includeFamiliares?: boolean;
   onToggleFamiliares?: () => void;
   hiddenIds?: Set<string>;
+  extraCuits?: Set<string>;
 }
 
 interface Bank {
@@ -129,6 +130,7 @@ const DebtChart = forwardRef(({
   includeFamiliares = false,
   onToggleFamiliares,
   hiddenIds = new Set<string>(),
+  extraCuits = new Set<string>(),
 }: DebtChartProps, ref) => {
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
   const chartContainerRef = useRef<HTMLDivElement>(null);
@@ -968,6 +970,7 @@ const DebtChart = forwardRef(({
                   )}
                 </div>
                 <div className="flex gap-1 mt-1 min-w-0 flex-wrap">
+                  {extraCuits.has(l.cuit) && <span className="text-[10px] font-bold bg-purple-100 text-purple-700 border border-purple-300 px-1.5 py-0.5 rounded-full shrink-0">CUIT agregado</span>}
                   {l.cargo && <span className="text-[10px] bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full shrink-0">{l.cargo}</span>}
                   {l.es_candidato && <span title="Candidato: aún no ocupa el cargo" className="text-[10px] font-semibold bg-amber-100 text-amber-700 border border-amber-300 px-1.5 py-0.5 rounded-full shrink-0">Candidato</span>}
                   {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.partido}</span>}
