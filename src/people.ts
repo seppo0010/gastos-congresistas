@@ -1,5 +1,5 @@
 import type { DashboardData, Legislator } from './types';
-import { withBasePath } from './site';
+import { stripBasePath, withBasePath } from './site';
 
 export type LegislatorWithSlug = Legislator & { slug: string };
 
@@ -107,13 +107,13 @@ export function mergeDashboardPeople(
 }
 
 export function getPersonSlugFromPath(pathname: string) {
-  const normalized = pathname.replace(/\/+$/, '') || '/';
+  const normalized = stripBasePath(pathname).replace(/\/+$/, '') || '/';
   const match = normalized.match(/^\/persona\/([^/]+)$/);
   return match?.[1] ?? null;
 }
 
 export function isPeopleDirectoryPath(pathname: string) {
-  const normalized = pathname.replace(/\/+$/, '') || '/';
+  const normalized = stripBasePath(pathname).replace(/\/+$/, '') || '/';
   return normalized === '/personas';
 }
 

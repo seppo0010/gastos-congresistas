@@ -16,6 +16,18 @@ export function withBasePath(path: string) {
   return `${BASE_PATH}${normalizedPath}`;
 }
 
+export function stripBasePath(path: string) {
+  if (!path) return '/';
+  if (BASE_PATH === '/') return path || '/';
+  if (path === BASE_PATH.slice(0, -1)) return '/';
+  if (path.startsWith(BASE_PATH)) {
+    const stripped = `/${path.slice(BASE_PATH.length)}`.replace(/\/+/g, '/');
+    return stripped === '//' ? '/' : stripped;
+  }
+
+  return path || '/';
+}
+
 export function toAbsoluteSiteUrl(path: string) {
   if (typeof window !== 'undefined') {
     return new URL(withBasePath(path), window.location.origin).toString();
