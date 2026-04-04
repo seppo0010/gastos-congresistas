@@ -144,16 +144,25 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
     addedCuits.current.add(cuit);
 
     const hash = await sha1Hex(cuit);
-    const prefix = hash.slice(0, 2);
-    const fetchUrl = `https://cuantodeben-cuit.storage.googleapis.com/202601/${prefix}/${cuit}.json`;
+    const dir = hash.slice(0, 2);
+    const file = hash.slice(2, 4);
+    const fetchUrl = `https://cuantodeben-cuit.storage.googleapis.com/202601/${dir}/${file}.json.gz`;
     const response = await fetch(fetchUrl);
     if (!response.ok) {
       addedCuits.current.delete(cuit);
       throw new Error(`No se encontraron datos para el CUIT ${cuit}`);
     }
-    const data = await response.json();
+    const ds = new DecompressionStream('gzip');
+    const decompressed = response.body!.pipeThrough(ds);
+    const text = await new Response(decompressed).text();
+    const bucket = JSON.parse(text);
+    const entry = bucket[cuit];
+    if (!entry || entry.status !== 200) {
+      addedCuits.current.delete(cuit);
+      throw new Error(`No se encontraron datos para el CUIT ${cuit}`);
+    }
 
-    const results = data.results;
+    const results = entry.results;
     if (!results) throw new Error(`Respuesta inesperada para el CUIT ${cuit}`);
 
     const nombre: string = results.denominacion || `CUIT ${cuit}`;
