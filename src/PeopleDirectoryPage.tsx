@@ -1,4 +1,4 @@
-import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import {
   type PersonDirectoryItem,
   getPeopleDirectoryRoute,
@@ -62,9 +62,7 @@ export default function PeopleDirectoryPage({ entries }: PeopleDirectoryPageProp
           </div>
 
           <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            {entries.map((entry, index) => {
-              const previous = entries[index - 1];
-              const next = entries[index + 1];
+            {entries.map((entry) => {
               const contextLine = getPersonContextLine(entry);
 
               return (
@@ -82,33 +80,15 @@ export default function PeopleDirectoryPage({ entries }: PeopleDirectoryPageProp
                       {contextLine || 'Sin detalle institucional adicional.'}
                     </p>
                   </div>
-
-                  <div className="mt-4 flex items-center justify-between gap-3 text-xs font-semibold text-blue-700">
-                    <span>
-                      {previous ? (
-                        <a href={getPersonRoute(previous.slug)} className="inline-flex items-center gap-1 hover:underline">
-                          <ChevronLeft size={14} />
-                          {previous.nombre}
-                        </a>
-                      ) : (
-                        <span className="text-gray-400">Inicio</span>
-                      )}
-                    </span>
-                    <span>
-                      {next ? (
-                        <a href={getPersonRoute(next.slug)} className="inline-flex items-center gap-1 hover:underline">
-                          {next.nombre}
-                          <ChevronRight size={14} />
-                        </a>
-                      ) : (
-                        <span className="text-gray-400">Fin</span>
-                      )}
-                    </span>
-                  </div>
                 </article>
               );
             })}
           </div>
+
+          <p className="mt-5 text-xs leading-relaxed text-gray-500">
+            Cada ficha individual mantiene enlaces a la persona anterior y siguiente para mejorar la navegación interna,
+            pero en este directorio se muestra solo el listado completo para evitar redundancia.
+          </p>
         </section>
       </main>
     </div>

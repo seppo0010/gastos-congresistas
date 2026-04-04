@@ -268,21 +268,18 @@ function buildPeopleDirectoryBody(entries, description) {
       <section>
         <h2>Listado alfabético</h2>
         <ul>
-          ${entries.map((entry, index) => {
-            const previous = entries[index - 1];
-            const next = entries[index + 1];
+          ${entries.map((entry) => {
             const context = getContextLine(entry) || getPowerLabel(entry);
             return `<li>
               <a href="${withSitePath(`/persona/${encodeURIComponent(entry.slug)}/`)}">${escapeHtml(entry.nombre)}</a>
               <p>${escapeHtml(context)}</p>
-              <p>
-                ${previous ? `<a href="${withSitePath(`/persona/${encodeURIComponent(previous.slug)}/`)}">Anterior: ${escapeHtml(previous.nombre)}</a>` : 'Inicio del listado'}
-                ${next ? ` · <a href="${withSitePath(`/persona/${encodeURIComponent(next.slug)}/`)}">Siguiente: ${escapeHtml(next.nombre)}</a>` : ' · Fin del listado'}
-              </p>
             </li>`;
           }).join('')}
         </ul>
       </section>
+      <footer>
+        <p>Cada ficha individual mantiene enlaces a la persona anterior y siguiente para mejorar la navegación interna, pero este directorio muestra solo el listado completo para evitar redundancia.</p>
+      </footer>
     </article>
   `.trim();
 }
