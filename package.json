@@ -11,9 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@posthog/react": "^1.8.3",
     "@tailwindcss/vite": "^4.1.17",
     "html-to-image": "^1.11.13",
     "lucide-react": "^0.556.0",
+    "posthog-js": "^1.364.7",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "recharts": "^3.5.1",

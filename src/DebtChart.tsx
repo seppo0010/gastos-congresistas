@@ -7,6 +7,7 @@ import type { Legislator, Milestone, CurrencyMode } from './types';
 import { Camera, Check, Copy, Download, Eye, EyeOff, Flag, HelpCircle, Loader2, Share2, Users, X } from 'lucide-react';
 import { COLORS } from './Colors';
 import { SITUACION_BCRA } from './LegislatorSelector';
+import { usePostHog } from '@posthog/react';
 
 const abbreviateOrgano = (text: string): string =>
   text
@@ -185,6 +186,7 @@ const DebtChart = forwardRef(({
   onToggleFamiliares,
   hiddenIds = new Set<string>(),
 }: DebtChartProps, ref) => {
+  const posthog = usePostHog();
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
   const chartContainerRef = useRef<HTMLDivElement>(null);
 
@@ -591,6 +593,7 @@ const DebtChart = forwardRef(({
   const handleExportDownload = async () => {
     setExportState('loading');
     setShowExportMenu(false);
+    posthog?.capture('chart_exported', { method: 'download', currency_mode: currencyMode, funcionarios_count: legislators.length });
     try {
       const canvas = await buildExportCanvas();
       const link = document.createElement('a');
@@ -610,6 +613,7 @@ const DebtChart = forwardRef(({
   const handleExportCopy = async () => {
     setExportState('loading');
     setShowExportMenu(false);
+    posthog?.capture('chart_exported', { method: 'copy', currency_mode: currencyMode, funcionarios_count: legislators.length });
     try {
       const canvas = await buildExportCanvas();
       await new Promise<void>((resolve, reject) => {
@@ -631,6 +635,7 @@ const DebtChart = forwardRef(({
   const handleExportShare = async () => {
     setExportState('loading');
     setShowExportMenu(false);
+    posthog?.capture('chart_exported', { method: 'share', currency_mode: currencyMode, funcionarios_count: legislators.length });
     try {
       const canvas = await buildExportCanvas();
       await new Promise<void>((resolve, reject) => {
@@ -982,7 +987,7 @@ const DebtChart = forwardRef(({
               </label>
               <select
                 value={currencyMode}
-                onChange={e => setCurrencyMode(e.target.value as CurrencyMode)}
+                onChange={e => { posthog?.capture('currency_mode_changed', { mode: e.target.value }); setCurrencyMode(e.target.value as CurrencyMode); }}
                 className="min-w-0 flex-1 text-xs border border-gray-300 rounded px-2 py-1 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none sm:flex-none"
               >
                 <option value="nominal">Pesos (Nominal)</option>

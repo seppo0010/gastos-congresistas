@@ -6,6 +6,7 @@ import type { DashboardData, Legislator } from './types';
 import { Share2, HelpCircle, X, Camera } from 'lucide-react';
 import { COLORS } from './Colors';
 import { type LegislatorWithSlug, mergeDashboardPeople } from './people';
+import { usePostHog } from '@posthog/react';
 
 interface DashboardProps {
   dbData: DashboardData;
@@ -14,6 +15,7 @@ interface DashboardProps {
 }
 
 export default function Dashboard({ dbData, politicosData, judicialData }: DashboardProps) {
+  const posthog = usePostHog();
   const { meta } = dbData;
 
   const legisladores = useMemo(() => {
@@ -87,6 +89,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
         setMobileView('list');
       }
       selectionChanged = true;
+      posthog?.capture('legislator_removed', { nombre: lWithSlug.nombre, poder: lWithSlug.poder, cuit: lWithSlug.cuit });
     } else if (selected.length >= 4) {
       setWarning("Solo se pueden comparar hasta 4 personas");
     } else {
@@ -94,6 +97,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
       const nextColor = COLORS.find(c => !usedColors.has(c)) || COLORS[selected.length % COLORS.length];
       setSelected(prev => [...prev, { ...lWithSlug, color: nextColor }]);
       selectionChanged = true;
+      posthog?.capture('legislator_selected', { nombre: lWithSlug.nombre, poder: lWithSlug.poder, cuit: lWithSlug.cuit, total_selected: selected.length + 1 });
     }
 
     if (isMobile && selectionChanged) {
@@ -124,6 +128,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
         alert('Link: ' + url);
       }
     };
+    posthog?.capture('comparison_shared', { funcionarios_count: selected.length, funcionarios: selected.map(l => l.nombre) });
     if (navigator.clipboard) {
       navigator.clipboard.writeText(url).then(() => {
         setCopied(true);
@@ -195,7 +200,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
           onShare={handleShare}
           onShowHelp={() => setShowHelp(true)}
           includeFamiliares={includeFamiliares}
-          onToggleFamiliares={() => setIncludeFamiliares(v => !v)}
+          onToggleFamiliares={() => { posthog?.capture('familiares_toggled', { enabled: !includeFamiliares }); setIncludeFamiliares(v => !v); }}
           hiddenIds={hiddenIds}
           onToggleVisibility={(cuit) => setHiddenIds(prev => {
             const next = new Set(prev);
