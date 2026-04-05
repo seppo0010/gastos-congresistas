@@ -3,6 +3,7 @@ import { Home, AlertCircle, X, Users, ShieldAlert, ArrowDownAZ, ArrowUpAZ, Trend
 
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
+import { usePostHog } from '@posthog/react';
 
 const SITUACION_BCRA: Record<number, { label: string; color: string }> = {
   0:  { label: 'Sin datos',          color: '#9ca3af' },
@@ -44,6 +45,7 @@ export default function LegislatorSelector({
   selectedIds = [],
   selectedColors = {},
 }: LegislatorSelectorProps) {
+  const posthog = usePostHog();
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("todos");
@@ -156,7 +158,7 @@ export default function LegislatorSelector({
               ].map(opt => (
                 <button
                   key={opt.value}
-                  onClick={() => setSortOrder(opt.value)}
+                  onClick={() => { posthog?.capture('sort_order_changed', { sort_order: opt.value }); setSortOrder(opt.value); }}
                   title={{ nombre_asc: 'Nombre A-Z', nombre_desc: 'Nombre Z-A', max_deuda_desc: 'Mayor Deuda Histórica', promedio_deuda_desc: 'Promedio Deuda Histórica' }[opt.value]}
                   className={`flex-1 flex items-center justify-center gap-1 py-1 px-1 rounded border text-xs ${sortOrder === opt.value ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}`}
                 >
@@ -170,6 +172,7 @@ export default function LegislatorSelector({
             <label htmlFor="position" className="block text-gray-600 text-xs font-semibold mb-1">Poder</label>
             <select id="position" value={positionFilter} onChange={e => {
                 const nextValue = e.target.value;
+                posthog?.capture('filter_applied', { filter: 'poder', value: nextValue });
                 setPositionFilter(nextValue);
                 if (nextValue === 'apn') {
                   setProvinceFilter('todas');
@@ -255,7 +258,7 @@ export default function LegislatorSelector({
                 <span title="Garantía preferida (hipoteca/prenda)" className="flex"><Home size={14} className="text-green-600" /></span>
                 Garantía†
               </label>
-              <select id="credit" value={creditFilter} onChange={e => setCreditFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+              <select id="credit" value={creditFilter} onChange={e => { posthog?.capture('filter_applied', { filter: 'garantia', value: e.target.value }); setCreditFilter(e.target.value); }} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todos</option>
                 <option value="si">Sí</option>
                 <option value="no">No</option>
@@ -266,7 +269,7 @@ export default function LegislatorSelector({
                 <span title="Cambio de nivel de deuda*" className="flex"><AlertCircle size={14} className="text-orange-500" /></span>
                 Nivel*
               </label>
-              <select id="levelChange" value={levelChangeFilter} onChange={e => setLevelChangeFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+              <select id="levelChange" value={levelChangeFilter} onChange={e => { posthog?.capture('filter_applied', { filter: 'cambio_nivel', value: e.target.value }); setLevelChangeFilter(e.target.value); }} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todos</option>
                 <option value="si">Sí</option>
                 <option value="no">No</option>
@@ -279,7 +282,7 @@ export default function LegislatorSelector({
                 <span title="Tiene familiares" className="flex"><Users size={14} className="text-blue-400" /></span>
                 Familiares
               </label>
-              <select id="familiares" value={familiaresFilter} onChange={e => setFamiliaresFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+              <select id="familiares" value={familiaresFilter} onChange={e => { posthog?.capture('filter_applied', { filter: 'familiares', value: e.target.value }); setFamiliaresFilter(e.target.value); }} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todos</option>
                 <option value="si">Sí</option>
                 <option value="no">No</option>
@@ -290,7 +293,7 @@ export default function LegislatorSelector({
                 <span title="Situación en el BCRA" className="flex"><ShieldAlert size={14} className="text-red-500" /></span>
                 Situación
               </label>
-              <select id="situacion" value={situacionFilter} onChange={e => setSituacionFilter(e.target.value)} className="w-full p-2 border rounded bg-white">
+              <select id="situacion" value={situacionFilter} onChange={e => { posthog?.capture('filter_applied', { filter: 'situacion_bcra', value: e.target.value }); setSituacionFilter(e.target.value); }} className="w-full p-2 border rounded bg-white">
                 <option value="todos">Todas</option>
                 {Object.entries(SITUACION_BCRA).map(([val, { label }]) => (
                   <option key={val} value={val}>{label}</option>

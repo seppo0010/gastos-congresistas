@@ -15,6 +15,7 @@ import {
   readEmbeddedPersonData,
 } from './people';
 import { withBasePath } from './site';
+import { usePostHog } from '@posthog/react';
 
 function scrollToExplorer(behavior: ScrollBehavior = 'smooth') {
   const target = document.getElementById('explorador');
@@ -28,6 +29,7 @@ interface AppProps {
 }
 
 export default function App({ initialPathname, initialSearch }: AppProps) {
+  const posthog = usePostHog();
   const pathname = initialPathname ?? (typeof window !== 'undefined' ? window.location.pathname : '/');
   const search = initialSearch ?? (typeof window !== 'undefined' ? window.location.search : '');
   const personSlug = useMemo(() => getPersonSlugFromPath(pathname), [pathname]);
@@ -185,7 +187,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
 
             <div className="flex flex-wrap gap-3">
               <button
-                onClick={() => scrollToExplorer()}
+                onClick={() => { posthog?.capture('explorer_scrolled_to'); scrollToExplorer(); }}
                 className="inline-flex items-center gap-3 rounded-2xl bg-blue-600 px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-blue-700"
               >
                 Bajar al explorador
