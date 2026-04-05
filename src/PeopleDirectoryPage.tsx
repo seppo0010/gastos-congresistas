@@ -1,18 +1,20 @@
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from "lucide-react";
 import {
   type PersonDirectoryItem,
   getPeopleDirectoryRoute,
   getPersonContextLine,
   getPersonRoute,
   getPowerLabel,
-} from './people';
-import { withBasePath } from './site';
+} from "./people";
+import { withBasePath } from "./site";
 
 interface PeopleDirectoryPageProps {
   entries: PersonDirectoryItem[];
 }
 
-export default function PeopleDirectoryPage({ entries }: PeopleDirectoryPageProps) {
+export default function PeopleDirectoryPage({
+  entries,
+}: PeopleDirectoryPageProps) {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
       <header className="border-b border-gray-200 bg-white">
@@ -26,20 +28,27 @@ export default function PeopleDirectoryPage({ entries }: PeopleDirectoryPageProp
               Volver al inicio
             </a>
             <div className="space-y-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Directorio público</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">
+                Directorio público
+              </p>
               <h1 className="text-3xl font-black uppercase tracking-tight text-gray-950 md:text-5xl">
                 Personas incluidas en el sitio
               </h1>
               <p className="max-w-3xl text-sm leading-relaxed text-gray-700 md:text-base">
-                Listado alfabético de funcionarios, legisladores y miembros del Poder Judicial con ficha individual,
-                enlaces internos y acceso a la comparativa interactiva.
+                Listado alfabético de funcionarios, legisladores y miembros del
+                Poder Judicial con ficha individual y acceso a la comparativa
+                interactiva.
               </p>
             </div>
           </div>
 
           <div className="rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-900">
-            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Total</p>
-            <p className="mt-1 text-2xl font-black">{entries.length.toLocaleString('es-AR')}</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+              Total
+            </p>
+            <p className="mt-1 text-2xl font-black">
+              {entries.length.toLocaleString("es-AR")}
+            </p>
           </div>
         </div>
       </header>
@@ -48,17 +57,10 @@ export default function PeopleDirectoryPage({ entries }: PeopleDirectoryPageProp
         <section className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
           <div className="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-lg font-bold text-gray-950">Listado alfabético</h2>
-              <p className="mt-1 text-sm text-gray-600">
-                Cada ficha tiene metadatos, resumen y enlaces navegables para mejorar la exploración del sitio.
-              </p>
+              <h2 className="text-lg font-bold text-gray-950">
+                Listado alfabético
+              </h2>
             </div>
-            <a
-              href={getPeopleDirectoryRoute()}
-              className="text-sm font-semibold text-blue-700 underline-offset-4 hover:underline"
-            >
-              URL pública del directorio
-            </a>
           </div>
 
           <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -66,29 +68,30 @@ export default function PeopleDirectoryPage({ entries }: PeopleDirectoryPageProp
               const contextLine = getPersonContextLine(entry);
 
               return (
-                <article key={entry.slug} className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                <article
+                  key={entry.slug}
+                  className="rounded-xl border border-gray-200 bg-gray-50 p-4"
+                >
                   <div className="space-y-2">
                     <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
                       {getPowerLabel(entry)}
                     </p>
                     <h2 className="text-base font-black uppercase leading-tight text-gray-950">
-                      <a href={getPersonRoute(entry.slug)} className="hover:text-blue-700">
+                      <a
+                        href={getPersonRoute(entry.slug)}
+                        className="hover:text-blue-700"
+                      >
                         {entry.nombre}
                       </a>
                     </h2>
                     <p className="text-sm leading-relaxed text-gray-600">
-                      {contextLine || 'Sin detalle institucional adicional.'}
+                      {contextLine || "Sin detalle institucional adicional."}
                     </p>
                   </div>
                 </article>
               );
             })}
           </div>
-
-          <p className="mt-5 text-xs leading-relaxed text-gray-500">
-            Cada ficha individual mantiene enlaces a la persona anterior y siguiente para mejorar la navegación interna,
-            pero en este directorio se muestra solo el listado completo para evitar redundancia.
-          </p>
         </section>
       </main>
     </div>
