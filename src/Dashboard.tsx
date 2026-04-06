@@ -7,12 +7,38 @@ import { Share2, HelpCircle, X, Camera } from 'lucide-react';
 import { COLORS } from './Colors';
 import { type LegislatorWithSlug, mergeDashboardPeople, slugify } from './people';
 
-async function sha1Hex(text: string): Promise<string> {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(text);
-  const hashBuffer = await crypto.subtle.digest('SHA-1', data);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+// Pure-JS SHA-1 — crypto.subtle is unavailable on non-secure origins (LAN IPs over HTTP)
+function sha1Hex(text: string): string {
+  const rotl = (n: number, s: number) => (n << s) | (n >>> (32 - s));
+  const hex8 = (n: number) => (n >>> 0).toString(16).padStart(8, '0');
+
+  const msg = unescape(encodeURIComponent(text));
+  const len = msg.length;
+  const words: number[] = [];
+  for (let i = 0; i < len; i++)
+    words[i >> 2] |= (msg.charCodeAt(i) & 0xff) << (24 - (i % 4) * 8);
+  words[len >> 2] |= 0x80 << (24 - (len % 4) * 8);
+  const padLen = ((len + 8 >> 6) + 1) * 16;
+  words[padLen - 1] = len * 8;
+
+  let H0 = 0x67452301, H1 = 0xefcdab89, H2 = 0x98badcfe, H3 = 0x10325476, H4 = 0xc3d2e1f0;
+  const W = new Array<number>(80);
+  for (let blk = 0; blk < padLen; blk += 16) {
+    for (let i = 0; i < 16; i++) W[i] = words[blk + i] || 0;
+    for (let i = 16; i < 80; i++) W[i] = rotl(W[i-3] ^ W[i-8] ^ W[i-14] ^ W[i-16], 1);
+    let a = H0, b = H1, c = H2, d = H3, e = H4;
+    for (let i = 0; i < 80; i++) {
+      const [f, k] = i < 20 ? [(b & c) | (~b & d), 0x5a827999]
+                   : i < 40 ? [b ^ c ^ d,           0x6ed9eba1]
+                   : i < 60 ? [(b & c) | (b & d) | (c & d), 0x8f1bbcdc]
+                   :          [b ^ c ^ d,           0xca62c1d6];
+      const t = (rotl(a, 5) + f + e + k + W[i]) >>> 0;
+      e = d; d = c; c = rotl(b, 30); b = a; a = t;
+    }
+    H0 = (H0 + a) >>> 0; H1 = (H1 + b) >>> 0; H2 = (H2 + c) >>> 0;
+    H3 = (H3 + d) >>> 0; H4 = (H4 + e) >>> 0;
+  }
+  return hex8(H0) + hex8(H1) + hex8(H2) + hex8(H3) + hex8(H4);
 }
 
 interface DashboardProps {
@@ -143,7 +169,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
 
     addedCuits.current.add(cuit);
 
-    const hash = await sha1Hex(cuit);
+    const hash = sha1Hex(cuit);
     const dir = hash.slice(0, 2);
     const file = hash.slice(2, 4);
     const fetchUrl = `${import.meta.env.VITE_BCRA_BASE_URL}/202601/${dir}/${file}.json.gz`;
