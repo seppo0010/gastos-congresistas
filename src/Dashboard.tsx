@@ -146,7 +146,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
     const hash = await sha1Hex(cuit);
     const dir = hash.slice(0, 2);
     const file = hash.slice(2, 4);
-    const fetchUrl = `https://cuantodeben-cuit.storage.googleapis.com/202601/${dir}/${file}.json.gz`;
+    const fetchUrl = `${import.meta.env.VITE_BCRA_BASE_URL}/202601/${dir}/${file}.json.gz`;
     const response = await fetch(fetchUrl);
     if (!response.ok) {
       addedCuits.current.delete(cuit);
