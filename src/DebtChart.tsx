@@ -516,7 +516,9 @@ const DebtChart = forwardRef(({
     const FOOTER_FONT = px(14);
     ctx.fillStyle = '#6b7280';
     ctx.font = `${FOOTER_FONT}px system-ui,Arial,sans-serif`;
-    const baseUrl = `${window.location.host}${window.location.pathname}`;
+    const host = window.location.host;
+    const isLocalHost = /^localhost(:\d+)?$/.test(host) || /^(\d{1,3}\.){3}\d{1,3}(:\d+)?$/.test(host);
+    const baseUrl = isLocalHost ? null : `${host}${window.location.pathname}`;
     const lastDate = chartData.length > 0 ? chartData[chartData.length - 1].date : null;
     const lastDateStr = lastDate
       ? new Date(lastDate + '-02').toLocaleDateString('es-AR', { month: 'long', year: 'numeric' })
