@@ -583,7 +583,7 @@ const DebtChart = forwardRef(({
       : currencyMode === 'usd'
       ? 'Dólares MEP'
       : null;
-    const footerParts = [baseUrl, lastDateStr ? `Última actualización: ${lastDateStr}` : null, currencyLabel].filter(Boolean);
+    const footerParts = ['Fuente: BCRA · Central de Deudores', baseUrl, lastDateStr ? `Última actualización: ${lastDateStr}` : null, currencyLabel].filter(Boolean);
     const footerText = footerParts.join('  ·  ');
     ctx.fillText(footerText, PADDING, H - FOOTER_H / 2 + FOOTER_FONT / 3);
 
@@ -1139,6 +1139,7 @@ const DebtChart = forwardRef(({
               </BarChart>
             </ResponsiveContainer>
           </div>
+          <p className="text-right text-[9px] text-gray-400 pr-2">Fuente: BCRA · Central de Deudores</p>
         </div>
       </div>
     </div>
