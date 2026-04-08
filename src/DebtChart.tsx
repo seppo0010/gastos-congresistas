@@ -491,6 +491,27 @@ const DebtChart = forwardRef(({
       ctx.font = `bold ${NAME_SIZE}px system-ui,Arial,sans-serif`;
       y += NAME_SIZE;
       ctx.fillText(l.nombre, textX, y);
+
+      if (l.situacion_bcra !== undefined) {
+        const badgeInfo = SITUACION_BCRA[l.situacion_bcra] ?? { label: `Sit. ${l.situacion_bcra}`, color: '#9ca3af' };
+        const nameWidth = ctx.measureText(l.nombre).width;
+        const BADGE_FONT = px(11);
+        const hPad = px(5);
+        const vPad = px(3);
+        ctx.font = `bold ${BADGE_FONT}px system-ui,Arial,sans-serif`;
+        const labelW = ctx.measureText(badgeInfo.label).width;
+        const badgeW = labelW + hPad * 2;
+        const badgeH = BADGE_FONT + vPad * 2;
+        const badgeX = textX + nameWidth + px(8);
+        const badgeY = y - NAME_SIZE + (NAME_SIZE - badgeH) / 2;
+        ctx.fillStyle = badgeInfo.color;
+        ctx.beginPath();
+        ctx.roundRect(badgeX, badgeY, badgeW, badgeH, badgeH / 2);
+        ctx.fill();
+        ctx.fillStyle = '#ffffff';
+        ctx.fillText(badgeInfo.label, badgeX + hPad, badgeY + vPad + BADGE_FONT);
+      }
+
       y += px(4);
 
       const details = [l.cargo, l.partido, l.distrito, l.unidad, l.organo ? abbreviateOrgano(l.organo) : undefined].filter(Boolean).join(' · ');
