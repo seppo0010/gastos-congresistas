@@ -442,12 +442,23 @@ const DebtChart = forwardRef(({
       return { avg, max };
     });
 
+    // Per-legislator acreedor segments, sorted by total debt desc
+    const LEGEND_FONT = px(12);
+    const LEGEND_GAP = px(3);
+    const legislatorSegments = legislators.map(l =>
+      [...barSegments.entries()]
+        .filter(([, v]) => v.cuit === l.cuit)
+        .sort((a, b) => b[1].totalMonto - a[1].totalMonto)
+    );
+
     // Calculate header height
     let headerH = PADDING + TITLE_SIZE + px(12);
-    legislators.forEach(() => {
+    legislators.forEach((_, lIdx) => {
       headerH += NAME_SIZE + px(4);
-      headerH += DETAIL_SIZE + px(4); // details or stats line
+      headerH += DETAIL_SIZE + px(4); // details line
       headerH += DETAIL_SIZE + px(4); // stats line
+      const nSegs = legislatorSegments[lIdx].length;
+      if (nSegs > 0) headerH += px(4) + nSegs * (LEGEND_FONT + LEGEND_GAP);
       headerH += px(6);
     });
     headerH += PADDING;
@@ -524,8 +535,28 @@ const DebtChart = forwardRef(({
       }
 
       y += DETAIL_SIZE;
-      ctx.fillText(`Promedio: ${formatMoney(stats.avg)}  ·  Máximo: ${formatMoney(stats.max)}`, textX, y);
+      const statsParts = [`Promedio: ${formatMoney(stats.avg)}`, `Máximo: ${formatMoney(stats.max)}`];
+      if (l.hipoteca_bcra.tiene && l.hipoteca_bcra.monto_miles_pesos) {
+        statsParts.push(`Preferido: ${formatMoney(l.hipoteca_bcra.monto_miles_pesos)}`);
+      }
+      ctx.fillText(statsParts.join('  ·  '), textX, y);
       y += px(4);
+
+      // Acreedor legend
+      const segments = legislatorSegments[idx];
+      if (segments.length > 0) {
+        y += px(4);
+        ctx.font = `${LEGEND_FONT}px system-ui,Arial,sans-serif`;
+        segments.forEach(([key, seg]) => {
+          const segColor = segmentColors.get(key) ?? '#9ca3af';
+          ctx.fillStyle = segColor;
+          ctx.fillRect(textX, y, LEGEND_FONT, LEGEND_FONT);
+          ctx.fillStyle = '#374151';
+          const label = seg.isFamiliar ? `${seg.entidad} (${seg.parentesco})` : seg.entidad;
+          ctx.fillText(label, textX + LEGEND_FONT + px(4), y + LEGEND_FONT - px(1));
+          y += LEGEND_FONT + LEGEND_GAP;
+        });
+      }
 
       y += px(6);
     });
