@@ -5,8 +5,42 @@ import LegislatorSelector from './LegislatorSelector';
 import type { DashboardData, Legislator } from './types';
 import { Share2, HelpCircle, X, Camera } from 'lucide-react';
 import { COLORS } from './Colors';
-import { type LegislatorWithSlug, mergeDashboardPeople } from './people';
+import { type LegislatorWithSlug, mergeDashboardPeople, slugify } from './people';
 import { usePostHog } from '@posthog/react';
+
+// Pure-JS SHA-1 — crypto.subtle is unavailable on non-secure origins (LAN IPs over HTTP)
+function sha1Hex(text: string): string {
+  const rotl = (n: number, s: number) => (n << s) | (n >>> (32 - s));
+  const hex8 = (n: number) => (n >>> 0).toString(16).padStart(8, '0');
+
+  const msg = unescape(encodeURIComponent(text));
+  const len = msg.length;
+  const words: number[] = [];
+  for (let i = 0; i < len; i++)
+    words[i >> 2] |= (msg.charCodeAt(i) & 0xff) << (24 - (i % 4) * 8);
+  words[len >> 2] |= 0x80 << (24 - (len % 4) * 8);
+  const padLen = ((len + 8 >> 6) + 1) * 16;
+  words[padLen - 1] = len * 8;
+
+  let H0 = 0x67452301, H1 = 0xefcdab89, H2 = 0x98badcfe, H3 = 0x10325476, H4 = 0xc3d2e1f0;
+  const W = new Array<number>(80);
+  for (let blk = 0; blk < padLen; blk += 16) {
+    for (let i = 0; i < 16; i++) W[i] = words[blk + i] || 0;
+    for (let i = 16; i < 80; i++) W[i] = rotl(W[i-3] ^ W[i-8] ^ W[i-14] ^ W[i-16], 1);
+    let a = H0, b = H1, c = H2, d = H3, e = H4;
+    for (let i = 0; i < 80; i++) {
+      const [f, k] = i < 20 ? [(b & c) | (~b & d), 0x5a827999]
+                   : i < 40 ? [b ^ c ^ d,           0x6ed9eba1]
+                   : i < 60 ? [(b & c) | (b & d) | (c & d), 0x8f1bbcdc]
+                   :          [b ^ c ^ d,           0xca62c1d6];
+      const t = (rotl(a, 5) + f + e + k + W[i]) >>> 0;
+      e = d; d = c; c = rotl(b, 30); b = a; a = t;
+    }
+    H0 = (H0 + a) >>> 0; H1 = (H1 + b) >>> 0; H2 = (H2 + c) >>> 0;
+    H3 = (H3 + d) >>> 0; H4 = (H4 + e) >>> 0;
+  }
+  return hex8(H0) + hex8(H1) + hex8(H2) + hex8(H3) + hex8(H4);
+}
 
 interface DashboardProps {
   dbData: DashboardData;
@@ -18,14 +52,32 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
   const posthog = usePostHog();
   const { meta } = dbData;
 
+  const [extraLegisladores, setExtraLegisladores] = useState<Legislator[]>([]);
+  const addedCuits = useRef(new Set<string>());
+
+  const [initialCuitsFromUrl] = useState<string[]>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const entries = (params.get('funcionarios') || params.get('legisladores'))?.split(',') || [];
+    return entries.filter(e => e.startsWith('cuit-')).map(e => e.slice(5));
+  });
+
   const legisladores = useMemo(() => {
-    return mergeDashboardPeople(dbData, politicosData, judicialData);
-  }, [dbData, politicosData, judicialData]);
+    const base = mergeDashboardPeople(dbData, politicosData, judicialData);
+    const baseCuits = new Set(base.map(l => l.cuit));
+    const extras = extraLegisladores
+      .filter(e => !baseCuits.has(e.cuit))
+      .map(e => ({ ...e, slug: slugify(e.nombre) }));
+    return [...base, ...extras];
+  }, [dbData, politicosData, judicialData, extraLegisladores]);
 
   const [selected, setSelected] = useState<LegislatorWithSlug[]>(() => {
     const params = new URLSearchParams(window.location.search);
-    const slugs = (params.get('funcionarios') || params.get('legisladores'))?.split(',') || [];
-    const found = slugs.map(s => legisladores.find(l => l.slug === s)).filter((l): l is LegislatorWithSlug => !!l).slice(0, 4);
+    const entries = (params.get('funcionarios') || params.get('legisladores'))?.split(',') || [];
+    const found = entries
+      .filter(s => !s.startsWith('cuit-'))
+      .map(s => legisladores.find(l => l.slug === s))
+      .filter((l): l is LegislatorWithSlug => !!l)
+      .slice(0, 4);
     return found.map((l, i) => ({ ...l, color: COLORS[i % COLORS.length] }));
   });
 
@@ -63,7 +115,8 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
   useEffect(() => {
     const url = new URL(window.location.href);
     if (selected.length > 0) {
-      url.searchParams.set('funcionarios', selected.map(l => l.slug).join(','));
+      const extraCuits = new Set(extraLegisladores.map(e => e.cuit));
+      url.searchParams.set('funcionarios', selected.map(l => extraCuits.has(l.cuit) ? `cuit-${l.cuit}` : l.slug).join(','));
       url.searchParams.delete('legisladores');
     } else {
       url.searchParams.delete('funcionarios');
@@ -77,7 +130,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
     }
 
     window.history.replaceState({}, '', url);
-  }, [selected, includeFamiliares]);
+  }, [selected, includeFamiliares, extraLegisladores]);
 
   const handleSelect = (legislator: Legislator) => {
     const lWithSlug = legislator as LegislatorWithSlug;
@@ -109,6 +162,74 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
       setHiddenIds(prev => { const next = new Set(prev); next.delete(lWithSlug.cuit); return next; });
     }
   };
+
+  const handleAddCuit = async (cuit: string): Promise<void> => {
+    if (addedCuits.current.has(cuit)) return;
+
+    const existing = legisladores.find(l => l.cuit === cuit);
+    if (existing) {
+      handleSelect(existing);
+      return;
+    }
+
+    addedCuits.current.add(cuit);
+
+    const hash = sha1Hex(cuit);
+    const dir = hash.slice(0, 2);
+    const file = hash.slice(2, 4);
+    const fetchUrl = `${import.meta.env.VITE_BCRA_BASE_URL}/202601/${dir}/${file}.json.gz`;
+    const response = await fetch(fetchUrl);
+    if (!response.ok) {
+      addedCuits.current.delete(cuit);
+      throw new Error(`No se encontraron datos para el CUIT ${cuit}`);
+    }
+    const ds = new DecompressionStream('gzip');
+    const decompressed = response.body!.pipeThrough(ds);
+    const text = await new Response(decompressed).text();
+    const bucket = JSON.parse(text);
+    const entry = bucket[cuit];
+    if (!entry || entry.status !== 200) {
+      addedCuits.current.delete(cuit);
+      throw new Error(`No se encontraron datos para el CUIT ${cuit}`);
+    }
+
+    const results = entry.results;
+    if (!results) throw new Error(`Respuesta inesperada para el CUIT ${cuit}`);
+
+    const nombre: string = results.denominacion || `CUIT ${cuit}`;
+
+    const historial = (results.periodos || []).flatMap((p: { periodo: string; entidades: { entidad: string; situacion: number; monto: number }[] }) => {
+      const fecha = `${p.periodo.slice(0, 4)}-${p.periodo.slice(4, 6)}`;
+      return p.entidades.map(e => ({ entidad: e.entidad, fecha, situacion: e.situacion, monto: e.monto }));
+    });
+
+    const situaciones = historial.map((r: { situacion: number }) => r.situacion).filter((s: number) => s > 0);
+    const situacion_bcra = situaciones.length > 0 ? Math.max(...situaciones) : undefined;
+
+    const newLegislator: Legislator = {
+      cuit,
+      nombre,
+      historial,
+      hitos_personales: [],
+      cargo: '',
+      hipoteca_bcra: { tiene: false },
+      cambios_nivel: false,
+      situacion_bcra,
+    };
+
+    setExtraLegisladores(prev => [...prev, newLegislator]);
+    setSelected(prev => {
+      const usedColors = new Set(prev.map(l => l.color));
+      const nextColor = COLORS.find(c => !usedColors.has(c)) || COLORS[prev.length % COLORS.length];
+      return [...prev, { ...newLegislator, slug: slugify(nombre), color: nextColor } as LegislatorWithSlug];
+    });
+    if (isMobile) setMobileView('chart');
+  };
+
+  // Restore manually-added CUITs from URL on mount
+  useEffect(() => {
+    initialCuitsFromUrl.forEach(cuit => handleAddCuit(cuit).catch(console.error));
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleShare = () => {
     const url = window.location.href;
@@ -180,11 +301,13 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
         </div>
 
       <div className={`absolute inset-0 z-20 w-full h-full transition-transform duration-300 ease-in-out md:relative md:z-0 md:w-auto md:translate-x-0 ${mobileView === 'list' ? 'translate-x-0' : '-translate-x-full'} pt-14 md:pt-0`}>
-        <LegislatorSelector 
-          legisladores={legisladores} 
-          onSelect={handleSelect} 
-          selectedIds={selected.map(l => l.cuit)} 
+        <LegislatorSelector
+          legisladores={legisladores}
+          onSelect={handleSelect}
+          selectedIds={selected.map(l => l.cuit)}
           selectedColors={selected.reduce((acc, l) => ({ ...acc, [l.cuit]: l.color! }), {} as Record<string, string>)}
+          onAddCuit={handleAddCuit}
+          extraCuits={new Set(extraLegisladores.map(e => e.cuit))}
         />
       </div>
 
@@ -192,7 +315,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
         <DebtChart
           ref={debtChartRef}
           legislators={selected}
-          globalMilestones={meta.hitos_globales} 
+          globalMilestones={meta.hitos_globales}
           ipc={meta.ipc}
           mep={meta.mep}
           onRemove={handleSelect}
@@ -212,6 +335,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
             }
             return next;
           })}
+          extraCuits={new Set(extraLegisladores.map(e => e.cuit))}
         />
       </div>
 

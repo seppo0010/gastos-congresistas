@@ -37,6 +37,7 @@ interface DebtChartProps {
   includeFamiliares?: boolean;
   onToggleFamiliares?: () => void;
   hiddenIds?: Set<string>;
+  extraCuits?: Set<string>;
 }
 
 interface Bank {
@@ -185,6 +186,7 @@ const DebtChart = forwardRef(({
   includeFamiliares = false,
   onToggleFamiliares,
   hiddenIds = new Set<string>(),
+  extraCuits = new Set<string>(),
 }: DebtChartProps, ref) => {
   const posthog = usePostHog();
   const [currencyMode, setCurrencyMode] = useState<CurrencyMode>('nominal');
@@ -499,12 +501,23 @@ const DebtChart = forwardRef(({
       return { avg, max };
     });
 
+    // Per-legislator acreedor segments, sorted by total debt desc
+    const LEGEND_FONT = px(12);
+    const LEGEND_GAP = px(3);
+    const legislatorSegments = legislators.map(l =>
+      [...barSegments.entries()]
+        .filter(([, v]) => v.cuit === l.cuit)
+        .sort((a, b) => b[1].totalMonto - a[1].totalMonto)
+    );
+
     // Calculate header height
     let headerH = PADDING + TITLE_SIZE + px(12);
-    legislators.forEach(() => {
+    legislators.forEach((_, lIdx) => {
       headerH += NAME_SIZE + px(4);
-      headerH += DETAIL_SIZE + px(4); // details or stats line
+      headerH += DETAIL_SIZE + px(4); // details line
       headerH += DETAIL_SIZE + px(4); // stats line
+      const nSegs = legislatorSegments[lIdx].length;
+      if (nSegs > 0) headerH += px(4) + nSegs * (LEGEND_FONT + LEGEND_GAP);
       headerH += px(6);
     });
     headerH += PADDING;
@@ -548,6 +561,27 @@ const DebtChart = forwardRef(({
       ctx.font = `bold ${NAME_SIZE}px system-ui,Arial,sans-serif`;
       y += NAME_SIZE;
       ctx.fillText(l.nombre, textX, y);
+
+      if (l.situacion_bcra !== undefined) {
+        const badgeInfo = SITUACION_BCRA[l.situacion_bcra] ?? { label: `Sit. ${l.situacion_bcra}`, color: '#9ca3af' };
+        const nameWidth = ctx.measureText(l.nombre).width;
+        const BADGE_FONT = px(11);
+        const hPad = px(5);
+        const vPad = px(3);
+        ctx.font = `bold ${BADGE_FONT}px system-ui,Arial,sans-serif`;
+        const labelW = ctx.measureText(badgeInfo.label).width;
+        const badgeW = labelW + hPad * 2;
+        const badgeH = BADGE_FONT + vPad * 2;
+        const badgeX = textX + nameWidth + px(8);
+        const badgeY = y - NAME_SIZE + (NAME_SIZE - badgeH) / 2;
+        ctx.fillStyle = badgeInfo.color;
+        ctx.beginPath();
+        ctx.roundRect(badgeX, badgeY, badgeW, badgeH, badgeH / 2);
+        ctx.fill();
+        ctx.fillStyle = '#ffffff';
+        ctx.fillText(badgeInfo.label, badgeX + hPad, badgeY + vPad + BADGE_FONT);
+      }
+
       y += px(4);
 
       const details = [l.cargo, l.partido, l.distrito, l.unidad, l.organo ? abbreviateOrgano(l.organo) : undefined].filter(Boolean).join(' · ');
@@ -560,8 +594,28 @@ const DebtChart = forwardRef(({
       }
 
       y += DETAIL_SIZE;
-      ctx.fillText(`Promedio: ${formatMoney(stats.avg)}  ·  Máximo: ${formatMoney(stats.max)}`, textX, y);
+      const statsParts = [`Promedio: ${formatMoney(stats.avg)}`, `Máximo: ${formatMoney(stats.max)}`];
+      if (l.hipoteca_bcra.tiene && l.hipoteca_bcra.monto_miles_pesos) {
+        statsParts.push(`Preferido: ${formatMoney(l.hipoteca_bcra.monto_miles_pesos)}`);
+      }
+      ctx.fillText(statsParts.join('  ·  '), textX, y);
       y += px(4);
+
+      // Acreedor legend
+      const segments = legislatorSegments[idx];
+      if (segments.length > 0) {
+        y += px(4);
+        ctx.font = `${LEGEND_FONT}px system-ui,Arial,sans-serif`;
+        segments.forEach(([key, seg]) => {
+          const segColor = segmentColors.get(key) ?? '#9ca3af';
+          ctx.fillStyle = segColor;
+          ctx.fillRect(textX, y, LEGEND_FONT, LEGEND_FONT);
+          ctx.fillStyle = '#374151';
+          const label = seg.isFamiliar ? `${seg.entidad} (${seg.parentesco})` : seg.entidad;
+          ctx.fillText(label, textX + LEGEND_FONT + px(4), y + LEGEND_FONT - px(1));
+          y += LEGEND_FONT + LEGEND_GAP;
+        });
+      }
 
       y += px(6);
     });
@@ -573,7 +627,9 @@ const DebtChart = forwardRef(({
     const FOOTER_FONT = px(14);
     ctx.fillStyle = '#6b7280';
     ctx.font = `${FOOTER_FONT}px system-ui,Arial,sans-serif`;
-    const baseUrl = `${window.location.host}${window.location.pathname}`;
+    const host = window.location.host;
+    const isLocalHost = /^localhost(:\d+)?$/.test(host) || /^(\d{1,3}\.){3}\d{1,3}(:\d+)?$/.test(host);
+    const baseUrl = isLocalHost ? null : `${host}${window.location.pathname}`;
     const lastDate = chartData.length > 0 ? chartData[chartData.length - 1].date : null;
     const lastDateStr = lastDate
       ? new Date(lastDate + '-02').toLocaleDateString('es-AR', { month: 'long', year: 'numeric' })
@@ -1032,6 +1088,7 @@ const DebtChart = forwardRef(({
                   )}
                 </div>
                 <div className="flex gap-1 mt-1 min-w-0 flex-wrap">
+                  {extraCuits.has(l.cuit) && <span className="text-[10px] font-bold bg-purple-100 text-purple-700 border border-purple-300 px-1.5 py-0.5 rounded-full shrink-0">CUIT agregado</span>}
                   {l.cargo && <span className="text-[10px] bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full shrink-0">{l.cargo}</span>}
                   {l.es_candidato && <span title="Candidato: aún no ocupa el cargo" className="text-[10px] font-semibold bg-amber-100 text-amber-700 border border-amber-300 px-1.5 py-0.5 rounded-full shrink-0">Candidato</span>}
                   {l.partido && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full truncate max-w-[35vw]">{l.partido}</span>}
