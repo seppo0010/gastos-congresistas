@@ -52,6 +52,8 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
   const posthog = usePostHog();
   const { meta } = dbData;
 
+  const showCuitLookup = new URLSearchParams(window.location.search).get('cuit') === '1';
+
   const [extraLegisladores, setExtraLegisladores] = useState<Legislator[]>([]);
   const addedCuits = useRef(new Set<string>());
 
@@ -306,7 +308,7 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
           onSelect={handleSelect}
           selectedIds={selected.map(l => l.cuit)}
           selectedColors={selected.reduce((acc, l) => ({ ...acc, [l.cuit]: l.color! }), {} as Record<string, string>)}
-          onAddCuit={handleAddCuit}
+          onAddCuit={showCuitLookup ? handleAddCuit : undefined}
           extraCuits={new Set(extraLegisladores.map(e => e.cuit))}
         />
       </div>

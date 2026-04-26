@@ -149,6 +149,7 @@ function CuitModal({ onClose, onAddCuit }: { onClose: () => void; onAddCuit: (cu
                     setError(null);
                   }}
                   maxLength={10}
+                  onKeyDown={e => e.key === 'Enter' && handleSubmit()}
                 />
               </div>
             </div>
