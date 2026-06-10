@@ -2,6 +2,12 @@ import type { DashboardData, Legislator } from './types';
 import { stripBasePath, withBasePath } from './site';
 
 export type LegislatorWithSlug = Legislator & { slug: string };
+export interface AfipRegimenEntry {
+  nombres: string[];
+  solicitudes: { nombre: string; fecha: string }[];
+}
+
+export type AfipRegimenesMap = Record<string, AfipRegimenEntry>;
 
 export interface MonthlyDebtPoint {
   date: string;
@@ -56,6 +62,7 @@ export function mergeDashboardPeople(
   dbData: DashboardData,
   politicosData: DashboardData,
   judicialData: DashboardData,
+  afipRegimenes: AfipRegimenesMap = {},
 ): LegislatorWithSlug[] {
   const rawLegisladores = dbData.data;
   const rawPoliticos = politicosData.data;
@@ -92,7 +99,25 @@ export function mergeDashboardPeople(
       seen.set(slug, 1);
     }
 
-    return { ...l, slug };
+    const afip = afipRegimenes[l.cuit];
+    const regimenes_afip = afip?.nombres?.filter(Boolean);
+    const hitosAfip = (afip?.solicitudes || [])
+      .filter((solicitud) => solicitud.nombre && solicitud.fecha)
+      .map((solicitud) => ({
+        fecha: solicitud.fecha,
+        texto: `${solicitud.nombre}: fecha de solicitud`,
+        color: '#0d9488',
+        tipo: 'personal' as const,
+      }));
+
+    return regimenes_afip?.length
+      ? {
+          ...l,
+          slug,
+          regimenes_afip,
+          hitos_personales: [...(l.hitos_personales || []), ...hitosAfip],
+        }
+      : { ...l, slug };
   });
 }
 

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ArrowLeft, Building2, CircleAlert, FileBarChart2, Home, Landmark, ShieldAlert, Users } from 'lucide-react';
+import { ArrowLeft, BadgePercent, Building2, CircleAlert, FileBarChart2, Home, Landmark, ShieldAlert, Users } from 'lucide-react';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { SITUACION_BCRA } from './LegislatorSelector';
 import {
@@ -251,6 +251,18 @@ export default function PersonPage({ person }: PersonPageProps) {
                 <div>
                   <p className="font-semibold text-gray-900">Situación BCRA</p>
                   <p>{situation ? situation.label : 'Sin situación consolidada.'}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <BadgePercent size={16} className="mt-0.5 shrink-0 text-blue-700" />
+                <div>
+                  <p className="font-semibold text-gray-900">Regímenes AFIP/ARCA</p>
+                  <p>
+                    {(person.regimenes_afip || []).length > 0
+                      ? person.regimenes_afip!.join(', ')
+                      : 'Sin regímenes detallados publicados en la constancia procesada.'}
+                  </p>
                 </div>
               </div>
             </div>

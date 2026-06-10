@@ -5,7 +5,7 @@ import LegislatorSelector from './LegislatorSelector';
 import type { DashboardData, Legislator } from './types';
 import { Share2, HelpCircle, X, Camera } from 'lucide-react';
 import { COLORS } from './Colors';
-import { type LegislatorWithSlug, mergeDashboardPeople, slugify } from './people';
+import { type AfipRegimenesMap, type LegislatorWithSlug, mergeDashboardPeople, slugify } from './people';
 import { usePostHog } from '@posthog/react';
 
 // Pure-JS SHA-1 — crypto.subtle is unavailable on non-secure origins (LAN IPs over HTTP)
@@ -102,9 +102,10 @@ interface DashboardProps {
   dbData: DashboardData;
   politicosData: DashboardData;
   judicialData: DashboardData;
+  afipRegimenes: AfipRegimenesMap;
 }
 
-export default function Dashboard({ dbData, politicosData, judicialData }: DashboardProps) {
+export default function Dashboard({ dbData, politicosData, judicialData, afipRegimenes }: DashboardProps) {
   const posthog = usePostHog();
   const { meta } = dbData;
 
@@ -120,13 +121,18 @@ export default function Dashboard({ dbData, politicosData, judicialData }: Dashb
   });
 
   const legisladores = useMemo(() => {
-    const base = mergeDashboardPeople(dbData, politicosData, judicialData);
+    const base = mergeDashboardPeople(dbData, politicosData, judicialData, afipRegimenes);
     const baseCuits = new Set(base.map(l => l.cuit));
     const extras = extraLegisladores
       .filter(e => !baseCuits.has(e.cuit))
-      .map(e => ({ ...e, slug: slugify(e.nombre) }));
+      .map(e => {
+        const regimenes_afip = afipRegimenes[e.cuit]?.nombres?.filter(Boolean);
+        return regimenes_afip?.length
+          ? { ...e, slug: slugify(e.nombre), regimenes_afip }
+          : { ...e, slug: slugify(e.nombre) };
+      });
     return [...base, ...extras];
-  }, [dbData, politicosData, judicialData, extraLegisladores]);
+  }, [dbData, politicosData, judicialData, afipRegimenes, extraLegisladores]);
 
   const [selected, setSelected] = useState<LegislatorWithSlug[]>(() => {
     const params = new URLSearchParams(window.location.search);
