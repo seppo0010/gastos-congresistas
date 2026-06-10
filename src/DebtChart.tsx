@@ -379,8 +379,12 @@ const DebtChart = forwardRef(({
       }
     });
 
+    [...verticalMilestones, ...economicMilestones].forEach((milestone) => {
+      if (!grouped[milestone.fecha]) grouped[milestone.fecha] = { date: milestone.fecha, banks: {} };
+    });
+
     return Object.values(grouped).sort((a, b) => a.date.localeCompare(b.date));
-  }, [convertMonto, includeFamiliares, visibleLegislators]);
+  }, [convertMonto, economicMilestones, includeFamiliares, verticalMilestones, visibleLegislators]);
 
 
   const xAxisInterval = useMemo(() => {
@@ -800,17 +804,22 @@ const DebtChart = forwardRef(({
     const clampedLeft = containerWidth > 0
       ? Math.max(12, Math.min(milestoneHint.x, containerWidth - 12))
       : milestoneHint.x;
+    const desktopJustify = containerWidth > 0 && clampedLeft < containerWidth * 0.33
+      ? 'flex-start'
+      : containerWidth > 0 && clampedLeft > containerWidth * 0.67
+      ? 'flex-end'
+      : 'center';
     const hintStyle = getMilestoneChipStyle(activeMilestoneKey ? verticalMilestones.find((m, idx) => `${m.fecha}-${m.texto}-${idx}` === activeMilestoneKey)?.color : undefined);
 
     return (
       <div
-        className={`${isMobile ? 'h-6 w-full overflow-hidden' : 'absolute top-0 z-30 w-max max-w-[calc(100%-1rem)]'}`}
+        className={`${isMobile ? 'h-6 w-full overflow-hidden' : 'absolute left-2 right-2 top-0 z-30 flex pointer-events-none'}`}
         data-milestone-hint="true"
         onClick={(e) => e.stopPropagation()}
-        style={isMobile ? undefined : { left: clampedLeft, transform: 'translateX(-50%)' }}
+        style={isMobile ? undefined : { justifyContent: desktopJustify }}
       >
         <div
-          className={`rounded border font-semibold flex items-center gap-1 w-full ${isMobile ? 'px-1.5 py-0.5 text-[11px] leading-none' : 'px-2 py-1 text-xs'}`}
+          className={`rounded border font-semibold flex items-center gap-1 ${isMobile ? 'w-full px-1.5 py-0.5 text-[11px] leading-none' : 'pointer-events-auto max-w-full px-2 py-1 text-xs'}`}
           style={hintStyle}
         >
           <Flag size={isMobile ? 9 : 11} className="shrink-0" />

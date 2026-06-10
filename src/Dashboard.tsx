@@ -126,7 +126,7 @@ export default function Dashboard({ dbData, politicosData, judicialData, afipReg
     const extras = extraLegisladores
       .filter(e => !baseCuits.has(e.cuit))
       .map(e => {
-        const regimenes_afip = afipRegimenes[e.cuit]?.filter(Boolean);
+        const regimenes_afip = afipRegimenes[e.cuit]?.nombres?.filter(Boolean);
         return regimenes_afip?.length
           ? { ...e, slug: slugify(e.nombre), regimenes_afip }
           : { ...e, slug: slugify(e.nombre) };

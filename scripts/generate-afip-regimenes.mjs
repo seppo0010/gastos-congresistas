@@ -11,6 +11,11 @@ const parsed = JSON.parse(await fs.readFile(INPUT, 'utf8'));
 const regimenes = {};
 const source = {};
 
+function fechaSolicitudToMonth(value) {
+  const match = String(value || '').match(/^(\d{2})-(\d{2})-(\d{4})$/);
+  return match ? `${match[3]}-${match[2]}` : null;
+}
+
 for (const [cuit, record] of Object.entries(parsed)) {
   const detallados = Array.isArray(record.regimenesDetallados)
     ? record.regimenesDetallados
@@ -23,7 +28,15 @@ for (const [cuit, record] of Object.entries(parsed)) {
 
   if (nombres.length === 0) continue;
 
-  regimenes[cuit] = nombres;
+  regimenes[cuit] = {
+    nombres,
+    solicitudes: detallados
+      .map((regimen) => ({
+        nombre: typeof regimen?.nombre === 'string' ? regimen.nombre.trim() : '',
+        fecha: fechaSolicitudToMonth(regimen?.fechaSolicitud),
+      }))
+      .filter((solicitud) => solicitud.nombre && solicitud.fecha),
+  };
   source[cuit] = {
     cuit,
     nombre: record.nombre ?? null,

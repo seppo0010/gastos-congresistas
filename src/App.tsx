@@ -62,7 +62,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
       regimenesPromise.then((regimenes: AfipRegimenesMap) => {
         setAfipRegimenes(regimenes);
         if (personSlug && embeddedPerson) {
-          const regimenes_afip = regimenes[embeddedPerson.cuit]?.filter(Boolean);
+          const regimenes_afip = regimenes[embeddedPerson.cuit]?.nombres?.filter(Boolean);
           if (regimenes_afip?.length) setPerson({ ...embeddedPerson, regimenes_afip });
         }
       });
