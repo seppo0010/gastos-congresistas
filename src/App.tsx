@@ -4,6 +4,7 @@ import PeopleDirectoryPage from './PeopleDirectoryPage';
 import PersonPage from './PersonPage';
 import type { DashboardData } from './types';
 import {
+  type AfipRegimenesMap,
   type LegislatorWithSlug,
   type PersonDirectoryItem,
   formatMonthLabel,
@@ -43,23 +44,39 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
   const [dbData, setDbData] = useState<DashboardData | null>(null);
   const [politicosData, setPoliticosData] = useState<DashboardData | null>(null);
   const [judicialData, setJudicialData] = useState<DashboardData | null>(null);
+  const [afipRegimenes, setAfipRegimenes] = useState<AfipRegimenesMap | null>(null);
   const [peopleDirectory, setPeopleDirectory] = useState<PersonDirectoryItem[] | null>(embeddedPeopleDirectory);
   const [person, setPerson] = useState<LegislatorWithSlug | null>(embeddedPerson);
   const [personNotFound, setPersonNotFound] = useState(false);
 
   useEffect(() => {
-    if (personSlug && embeddedPerson) return;
-    if (isPeopleDirectory && embeddedPeopleDirectory) return;
-
     const params = new URLSearchParams(search);
     const hasPreselected = !!(params.get('funcionarios') || params.get('legisladores'));
+    const shouldLoadCoreData = !((personSlug && embeddedPerson) || (isPeopleDirectory && embeddedPeopleDirectory));
+
+    const regimenesPromise = fetch(withBasePath('/regimenes.json'))
+      .then(r => (r.ok ? r.json() : {}))
+      .catch(() => ({} as AfipRegimenesMap));
+
+    if (!shouldLoadCoreData) {
+      regimenesPromise.then((regimenes: AfipRegimenesMap) => {
+        setAfipRegimenes(regimenes);
+        if (personSlug && embeddedPerson) {
+          const regimenes_afip = regimenes[embeddedPerson.cuit]?.filter(Boolean);
+          if (regimenes_afip?.length) setPerson({ ...embeddedPerson, regimenes_afip });
+        }
+      });
+      return;
+    }
 
     Promise.all([
       fetch(withBasePath('/legisladores_full.json')).then(r => r.json()),
       fetch(withBasePath('/politicos_full.json')).then(r => r.json()),
       fetch(withBasePath('/judicial_full.json')).then(r => r.json()),
-    ]).then(([db, pol, jud]) => {
-      const merged = mergeDashboardPeople(db, pol, jud);
+      regimenesPromise,
+    ]).then(([db, pol, jud, regimenes]) => {
+      setAfipRegimenes(regimenes);
+      const merged = mergeDashboardPeople(db, pol, jud, regimenes);
 
       if (personSlug) {
         const found = merged.find((candidate) => candidate.slug === personSlug) || null;
@@ -84,7 +101,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
 
   const heroMetrics = useMemo(() => {
     if (!dbData || !politicosData || !judicialData) return null;
-    const combined = mergeDashboardPeople(dbData, politicosData, judicialData);
+    const combined = mergeDashboardPeople(dbData, politicosData, judicialData, afipRegimenes ?? {});
 
     let latestMonth = '';
 
@@ -104,7 +121,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
       funcionariosCount: combined.length,
       latestMonthLabel: formatMonthLabel(latestMonth),
     };
-  }, [dbData, politicosData, judicialData]);
+  }, [dbData, politicosData, judicialData, afipRegimenes]);
 
   if (personSlug) {
     if (person) {
@@ -205,7 +222,12 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
 
         <section id="explorador" className="h-screen w-full border-b border-gray-200 bg-gray-100">
           {dbData && politicosData && judicialData ? (
-            <Dashboard dbData={dbData} politicosData={politicosData} judicialData={judicialData} />
+            <Dashboard
+              dbData={dbData}
+              politicosData={politicosData}
+              judicialData={judicialData}
+              afipRegimenes={afipRegimenes ?? {}}
+            />
           ) : (
             <div className="flex h-full items-center justify-center">
               <p className="text-gray-500">Cargando datos…</p>

@@ -35,7 +35,7 @@ function calcularCuit(dni: string, genero: 'M' | 'F'): string {
   // Extremely unlikely fallback
   return `${prefixes[0]}-${dniPadded}-0`;
 }
-import { Home, AlertCircle, X, Users, ShieldAlert, ArrowDownAZ, ArrowUpAZ, TrendingUp, BarChart2, Zap } from 'lucide-react';
+import { Home, AlertCircle, X, Users, ShieldAlert, ArrowDownAZ, ArrowUpAZ, TrendingUp, BarChart2, Zap, BadgePercent } from 'lucide-react';
 
 import type { Legislator } from './types';
 import { COLORS } from './Colors';
@@ -236,6 +236,7 @@ export default function LegislatorSelector({
   const [levelChangeFilter, setLevelChangeFilter] = useState("todos");
   const [familiaresFilter, setFamiliaresFilter] = useState("todos");
   const [situacionFilter, setSituacionFilter] = useState("todos");
+  const [afipFilter, setAfipFilter] = useState("todos");
   const [sortOrder, setSortOrder] = useState("nombre_asc");
 
   const provinces = useMemo(() => [...new Set(legisladores.filter(l => l.distrito !== undefined).map(l => l.distrito).filter(p => (p || '').trim() !== ''))].sort(), [legisladores]);
@@ -270,7 +271,8 @@ export default function LegislatorSelector({
     return legisladores
       .filter(l => {
         const normalize = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-        const searchMatch = debouncedSearchTerm === "" || normalize(l.nombre).includes(normalize(debouncedSearchTerm));
+        const searchableText = [l.nombre, ...(l.regimenes_afip || [])].join(' ');
+        const searchMatch = debouncedSearchTerm === "" || normalize(searchableText).includes(normalize(debouncedSearchTerm));
 
 
         const isLegislador = l.poder === 'legislativo';
@@ -291,8 +293,10 @@ export default function LegislatorSelector({
         const hasFamiliares = l.familiares && l.familiares.length > 0;
         const familiaresMatch = familiaresFilter === 'todos' || (familiaresFilter === 'si' ? hasFamiliares : !hasFamiliares);
         const situacionMatch = situacionFilter === 'todos' || String(l.situacion_bcra ?? 1) === situacionFilter;
+        const hasAfipRegimenes = (l.regimenes_afip || []).length > 0;
+        const afipMatch = afipFilter === 'todos' || (afipFilter === 'si' ? hasAfipRegimenes : !hasAfipRegimenes);
 
-        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && cargoApnMatch && cargoJudicialMatch && camaraMatch && creditMatch && levelChangeMatch && familiaresMatch && situacionMatch);
+        return selectedIds.includes(l.cuit) || (searchMatch && positionMatch && provinceMatch && partyMatch && unitMatch && cargoApnMatch && cargoJudicialMatch && camaraMatch && creditMatch && levelChangeMatch && familiaresMatch && situacionMatch && afipMatch);
       })
       .sort((a, b) => {
         const aSelected = selectedIds.includes(a.cuit);
@@ -311,7 +315,7 @@ export default function LegislatorSelector({
 
         return 0;
       });
-  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, cargoApnFilter, cargoJudicialFilter, camaraFilter, creditFilter, levelChangeFilter, familiaresFilter, situacionFilter, selectedIds, sortOrder, debtStats]);
+  }, [legisladores, debouncedSearchTerm, positionFilter, provinceFilter, partyFilter, unitFilter, cargoApnFilter, cargoJudicialFilter, camaraFilter, creditFilter, levelChangeFilter, familiaresFilter, situacionFilter, afipFilter, selectedIds, sortOrder, debtStats]);
 
   return (
     <div className="w-full md:w-80 h-full flex flex-col border-r border-gray-200 bg-white">
@@ -488,6 +492,17 @@ export default function LegislatorSelector({
               </select>
             </div>
           </div>
+          <div>
+            <label htmlFor="afip-regimenes" className="block text-gray-600 text-xs font-semibold mb-1 flex gap-1">
+              <span title="Tiene Ganancias Simplificada Ley 27.799 publicado por AFIP/ARCA" className="flex"><BadgePercent size={14} className="text-teal-600" /></span>
+              Ganancias simplificada Ley 27.799
+            </label>
+            <select id="afip-regimenes" value={afipFilter} onChange={e => { posthog?.capture('filter_applied', { filter: 'regimenes_afip', value: e.target.value }); setAfipFilter(e.target.value); }} className="w-full p-2 border rounded bg-white">
+              <option value="todos">Todos</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
           <p className="text-[10px] text-gray-500 leading-tight space-y-0.5">
             {garantiaFecha && <span className="block">† Preferido (hipoteca, prenda, etc.) al {garantiaFecha} según BCRA.</span>}
             <span className="block">* Cambio de nivel: heurística inferida a partir de los montos.</span>
@@ -506,6 +521,7 @@ export default function LegislatorSelector({
               setLevelChangeFilter("todos");
               setFamiliaresFilter("todos");
               setSituacionFilter("todos");
+              setAfipFilter("todos");
             }}
             className="w-full py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 text-xs font-semibold rounded transition-colors"
           >
@@ -558,6 +574,11 @@ export default function LegislatorSelector({
                     {l.familiares && l.familiares.length > 0 && (
                       <div title="Tiene datos de familiares en el BCRA." className="shrink-0 flex">
                         <Users size={14} className="text-blue-400" />
+                      </div>
+                    )}
+                    {(l.regimenes_afip || []).length > 0 && (
+                      <div title={`Regímenes AFIP: ${l.regimenes_afip!.join(', ')}`} className="shrink-0 flex">
+                        <BadgePercent size={14} className="text-teal-600" />
                       </div>
                     )}
                     {l.situacion_bcra !== undefined && l.situacion_bcra !== 1 && (
