@@ -53,6 +53,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
     const params = new URLSearchParams(search);
     const hasPreselected = !!(params.get('funcionarios') || params.get('legisladores'));
     const shouldLoadCoreData = !((personSlug && embeddedPerson) || (isPeopleDirectory && embeddedPeopleDirectory));
+    const isJgm = params.get('jgm') === '1';
 
     const regimenesPromise = fetch(withBasePath('/regimenes.json'))
       .then(r => (r.ok ? r.json() : {}))
@@ -69,14 +70,20 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
       return;
     }
 
-    Promise.all([
-      fetch(withBasePath('/legisladores_full.json')).then(r => r.json()),
-      fetch(withBasePath('/politicos_full.json')).then(r => r.json()),
-      fetch(withBasePath('/judicial_full.json')).then(r => r.json()),
-      regimenesPromise,
-    ]).then(([db, pol, jud, regimenes]) => {
-      setAfipRegimenes(regimenes);
-      const merged = mergeDashboardPeople(db, pol, jud, regimenes);
+    const emptyData = (meta: DashboardData['meta']): DashboardData => ({ meta, data: [] });
+
+    const loadData = isJgm
+      ? fetch(withBasePath('/jgm_full.json')).then(r => r.json()).then((jgm: DashboardData) => [emptyData(jgm.meta), jgm, emptyData(jgm.meta), {}])
+      : Promise.all([
+          fetch(withBasePath('/legisladores_full.json')).then(r => r.json()),
+          fetch(withBasePath('/politicos_full.json')).then(r => r.json()),
+          fetch(withBasePath('/judicial_full.json')).then(r => r.json()),
+          regimenesPromise,
+        ]);
+
+    loadData.then(([db, pol, jud, regimenes]) => {
+      setAfipRegimenes(regimenes as AfipRegimenesMap);
+      const merged = mergeDashboardPeople(db, pol, jud, regimenes as AfipRegimenesMap);
 
       if (personSlug) {
         const found = merged.find((candidate) => candidate.slug === personSlug) || null;
