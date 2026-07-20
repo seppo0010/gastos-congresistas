@@ -242,11 +242,12 @@ async function writeHtmlPage({
 }
 
 async function main() {
-  const [template, dbRaw, politicosRaw, judicialRaw] = await Promise.all([
+  const [template, dbRaw, politicosRaw, judicialRaw, familiaresRaw] = await Promise.all([
     fs.readFile(path.join(DIST_DIR, 'index.html'), 'utf8'),
     fs.readFile(path.join(PUBLIC_DIR, 'legisladores_full.json'), 'utf8'),
     fs.readFile(path.join(PUBLIC_DIR, 'politicos_full.json'), 'utf8'),
     fs.readFile(path.join(PUBLIC_DIR, 'judicial_full.json'), 'utf8'),
+    fs.readFile(path.join(PUBLIC_DIR, 'familiares.json'), 'utf8').catch(() => '{}'),
   ]);
 
   const vite = await createServer({
@@ -263,7 +264,8 @@ async function main() {
     const dbData = JSON.parse(dbRaw);
     const politicosData = JSON.parse(politicosRaw);
     const judicialData = JSON.parse(judicialRaw);
-    const mergedPeople = people.mergeDashboardPeople(dbData, politicosData, judicialData);
+    const familiaresDdjj = JSON.parse(familiaresRaw);
+    const mergedPeople = people.mergeDashboardPeople(dbData, politicosData, judicialData, {}, familiaresDdjj);
     const directoryEntries = people.getPeopleDirectoryEntries(mergedPeople);
 
     const homeHtml = injectAppHtml(template, staticPages.renderHomePage());
