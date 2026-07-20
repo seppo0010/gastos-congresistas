@@ -1,4 +1,4 @@
-import type { DashboardData, Legislator } from './types';
+import type { DashboardData, Familiar, Legislator } from './types';
 import { stripBasePath, withBasePath } from './site';
 
 export type LegislatorWithSlug = Legislator & { slug: string };
@@ -8,6 +8,14 @@ export interface AfipRegimenEntry {
 }
 
 export type AfipRegimenesMap = Record<string, AfipRegimenEntry>;
+
+export interface FamiliaresDdjjEntry {
+  nombre: string;
+  declaraciones: number;
+  familiares: Omit<Familiar, 'historial'>[];
+}
+
+export type FamiliaresDdjjMap = Record<string, FamiliaresDdjjEntry>;
 
 export interface MonthlyDebtPoint {
   date: string;
@@ -63,6 +71,7 @@ export function mergeDashboardPeople(
   politicosData: DashboardData,
   judicialData: DashboardData,
   afipRegimenes: AfipRegimenesMap = {},
+  familiaresDdjj: FamiliaresDdjjMap = {},
 ): LegislatorWithSlug[] {
   const rawLegisladores = dbData.data;
   const rawPoliticos = politicosData.data;
@@ -110,14 +119,23 @@ export function mergeDashboardPeople(
         tipo: 'personal' as const,
       }));
 
-    return regimenes_afip?.length
-      ? {
-          ...l,
-          slug,
-          regimenes_afip,
-          hitos_personales: [...(l.hitos_personales || []), ...hitosAfip],
-        }
-      : { ...l, slug };
+    const declarados = (familiaresDdjj[l.cuit]?.familiares || []).map((f) => ({
+      ...f,
+      historial: [],
+    }));
+    const familiares = [...(l.familiares || []), ...declarados];
+
+    return {
+      ...l,
+      slug,
+      ...(familiares.length > 0 ? { familiares } : {}),
+      ...(regimenes_afip?.length
+        ? {
+            regimenes_afip,
+            hitos_personales: [...(l.hitos_personales || []), ...hitosAfip],
+          }
+        : {}),
+    };
   });
 }
 

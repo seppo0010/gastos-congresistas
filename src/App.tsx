@@ -5,6 +5,7 @@ import PersonPage from './PersonPage';
 import type { DashboardData } from './types';
 import {
   type AfipRegimenesMap,
+  type FamiliaresDdjjMap,
   type LegislatorWithSlug,
   type PersonDirectoryItem,
   formatMonthLabel,
@@ -45,6 +46,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
   const [politicosData, setPoliticosData] = useState<DashboardData | null>(null);
   const [judicialData, setJudicialData] = useState<DashboardData | null>(null);
   const [afipRegimenes, setAfipRegimenes] = useState<AfipRegimenesMap | null>(null);
+  const [familiaresDdjj, setFamiliaresDdjj] = useState<FamiliaresDdjjMap | null>(null);
   const [peopleDirectory, setPeopleDirectory] = useState<PersonDirectoryItem[] | null>(embeddedPeopleDirectory);
   const [person, setPerson] = useState<LegislatorWithSlug | null>(embeddedPerson);
   const [personNotFound, setPersonNotFound] = useState(false);
@@ -59,12 +61,21 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
       .then(r => (r.ok ? r.json() : {}))
       .catch(() => ({} as AfipRegimenesMap));
 
+    const familiaresPromise = fetch(withBasePath('/familiares.json'))
+      .then(r => (r.ok ? r.json() : {}))
+      .catch(() => ({} as FamiliaresDdjjMap));
+
     if (!shouldLoadCoreData) {
-      regimenesPromise.then((regimenes: AfipRegimenesMap) => {
+      Promise.all([regimenesPromise, familiaresPromise]).then(([regimenes, familiares]) => {
         setAfipRegimenes(regimenes);
+        setFamiliaresDdjj(familiares);
         if (personSlug && embeddedPerson) {
-          const regimenes_afip = regimenes[embeddedPerson.cuit]?.nombres?.filter(Boolean);
-          if (regimenes_afip?.length) setPerson({ ...embeddedPerson, regimenes_afip });
+          const regimenes_afip = (regimenes as AfipRegimenesMap)[embeddedPerson.cuit]?.nombres?.filter(Boolean);
+          const declarados = ((familiares as FamiliaresDdjjMap)[embeddedPerson.cuit]?.familiares || []).map((f) => ({ ...f, historial: [] }));
+          const updates: Partial<LegislatorWithSlug> = {};
+          if (regimenes_afip?.length) updates.regimenes_afip = regimenes_afip;
+          if (declarados.length) updates.familiares = [...(embeddedPerson.familiares || []), ...declarados];
+          if (Object.keys(updates).length) setPerson({ ...embeddedPerson, ...updates });
         }
       });
       return;
@@ -73,17 +84,23 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
     const emptyData = (meta: DashboardData['meta']): DashboardData => ({ meta, data: [] });
 
     const loadData = isJgm
-      ? fetch(withBasePath('/jgm_full.json')).then(r => r.json()).then((jgm: DashboardData) => [emptyData(jgm.meta), jgm, emptyData(jgm.meta), {}])
+      ? Promise.all([
+          fetch(withBasePath('/jgm_full.json')).then(r => r.json()).then((jgm: DashboardData) => [emptyData(jgm.meta), jgm, emptyData(jgm.meta)] as const),
+          familiaresPromise,
+          regimenesPromise,
+        ]).then(([data, familiares, regimenes]) => [...data, regimenes, familiares])
       : Promise.all([
           fetch(withBasePath('/legisladores_full.json')).then(r => r.json()),
           fetch(withBasePath('/politicos_full.json')).then(r => r.json()),
           fetch(withBasePath('/judicial_full.json')).then(r => r.json()),
           regimenesPromise,
+          familiaresPromise,
         ]);
 
-    loadData.then(([db, pol, jud, regimenes]) => {
+    loadData.then(([db, pol, jud, regimenes, familiares]) => {
       setAfipRegimenes(regimenes as AfipRegimenesMap);
-      const merged = mergeDashboardPeople(db, pol, jud, regimenes as AfipRegimenesMap);
+      setFamiliaresDdjj(familiares as FamiliaresDdjjMap);
+      const merged = mergeDashboardPeople(db, pol, jud, regimenes as AfipRegimenesMap, familiares as FamiliaresDdjjMap);
 
       if (personSlug) {
         const found = merged.find((candidate) => candidate.slug === personSlug) || null;
@@ -108,7 +125,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
 
   const heroMetrics = useMemo(() => {
     if (!dbData || !politicosData || !judicialData) return null;
-    const combined = mergeDashboardPeople(dbData, politicosData, judicialData, afipRegimenes ?? {});
+    const combined = mergeDashboardPeople(dbData, politicosData, judicialData, afipRegimenes ?? {}, familiaresDdjj ?? {});
 
     let latestMonth = '';
 
@@ -128,7 +145,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
       funcionariosCount: combined.length,
       latestMonthLabel: formatMonthLabel(latestMonth),
     };
-  }, [dbData, politicosData, judicialData, afipRegimenes]);
+  }, [dbData, politicosData, judicialData, afipRegimenes, familiaresDdjj]);
 
   if (personSlug) {
     if (person) {
@@ -234,6 +251,7 @@ export default function App({ initialPathname, initialSearch }: AppProps) {
               politicosData={politicosData}
               judicialData={judicialData}
               afipRegimenes={afipRegimenes ?? {}}
+              familiaresDdjj={familiaresDdjj ?? {}}
             />
           ) : (
             <div className="flex h-full items-center justify-center">

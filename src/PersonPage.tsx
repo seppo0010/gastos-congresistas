@@ -38,6 +38,7 @@ export default function PersonPage({ person }: PersonPageProps) {
   const contextLine = getPersonContextLine(person);
   const situation = stats.latestSituation != null ? SITUACION_BCRA[stats.latestSituation] : null;
   const latestRows = [...stats.monthlySeries].slice(-12).reverse();
+  const familiaresDeclarados = (person.familiares || []).filter((f) => f.nombre);
 
   useEffect(() => {
     posthog?.capture('person_page_viewed', { nombre: person.nombre, poder: person.poder, slug: person.slug });
@@ -226,7 +227,13 @@ export default function PersonPage({ person }: PersonPageProps) {
                 <Users size={16} className="mt-0.5 shrink-0 text-blue-700" />
                 <div>
                   <p className="font-semibold text-gray-900">Familiares con datos</p>
-                  <p>{stats.familiaresCount > 0 ? `${stats.familiaresCount} familiar(es) con historial en las DJ.` : 'Sin familiares cargados.'}</p>
+                  <p>
+                    {stats.familiaresCount > 0
+                      ? `${stats.familiaresCount} familiar(es) con historial en las DJ.`
+                      : familiaresDeclarados.length > 0
+                        ? `${familiaresDeclarados.length} familiar(es) declarados en las DDJJ, sin historial de deuda cargado.`
+                        : 'Sin familiares cargados.'}
+                  </p>
                 </div>
               </div>
 
@@ -268,6 +275,41 @@ export default function PersonPage({ person }: PersonPageProps) {
             </div>
           </article>
         </section>
+
+        {familiaresDeclarados.length > 0 && (
+          <section className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
+            <h2 className="text-lg font-bold text-gray-950">Grupo familiar declarado</h2>
+            <p className="mt-1 text-sm leading-relaxed text-gray-600">
+              Familiares declarados en las declaraciones juradas patrimoniales (Oficina Anticorrupción).
+            </p>
+            <div className="mt-4 overflow-x-auto">
+              <table className="min-w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-gray-200 text-left text-xs uppercase tracking-wide text-gray-500">
+                    <th className="px-3 py-2 font-semibold">Nombre</th>
+                    <th className="px-3 py-2 font-semibold">Parentesco</th>
+                    <th className="px-3 py-2 font-semibold">Fecha de nacimiento</th>
+                    <th className="px-3 py-2 font-semibold">Declarado en</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {familiaresDeclarados.map((familiar) => (
+                    <tr key={`${familiar.cuit || 'sin-cuit'}-${familiar.nombre}`} className="border-b border-gray-100 text-gray-700">
+                      <td className="px-3 py-2 font-medium text-gray-900">{familiar.nombre}</td>
+                      <td className="px-3 py-2">{familiar.parentesco}</td>
+                      <td className="px-3 py-2">{familiar.fecha_nacimiento || 'Sin datos'}</td>
+                      <td className="px-3 py-2">
+                        {[...new Set((familiar.fuentes || []).map((f) => f.anio).filter((a): a is number => a != null))]
+                          .sort((a, b) => a - b)
+                          .join(', ') || 'Sin datos'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
 
         <section className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
           <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">

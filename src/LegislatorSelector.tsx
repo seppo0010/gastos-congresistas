@@ -572,7 +572,7 @@ export default function LegislatorSelector({
                       </div>
                     )}
                     {l.familiares && l.familiares.length > 0 && (
-                      <div title="Tiene datos de familiares en el BCRA." className="shrink-0 flex">
+                      <div title="Tiene familiares declarados (DDJJ) o con datos en el BCRA." className="shrink-0 flex">
                         <Users size={14} className="text-blue-400" />
                       </div>
                     )}

@@ -16,9 +16,19 @@ export interface Milestone {
 }
 
 // 3. Familiar de un legislador
+export interface FamiliarFuente {
+  id: number;       // Id de la declaración jurada en el sistema de la OA
+  anio: number | null; // Año de la declaración
+}
+
 export interface Familiar {
   parentesco: string; // Ej: "CONYUGE / CONVIVIENTE", "HIJO/A"
   historial: DebtRecord[];
+  nombre?: string;           // Solo familiares declarados (DDJJ)
+  cuit?: string;             // Solo familiares declarados (DDJJ)
+  sexo?: string;             // Solo familiares declarados (DDJJ)
+  fecha_nacimiento?: string; // Formato "DD/MM/AAAA", solo DDJJ
+  fuentes?: FamiliarFuente[];// Declaraciones donde figura, solo DDJJ
 }
 
 // 4. El Legislador (La entidad principal)

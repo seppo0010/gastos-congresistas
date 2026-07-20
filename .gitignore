@@ -14,6 +14,7 @@ dist
 dist-ssr
 *.local
 out/afip/*
+out/ddjj/
 
 # Editor directories and files
 .vscode/*
