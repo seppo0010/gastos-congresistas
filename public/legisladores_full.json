@@ -289133,6 +289133,1130 @@
       ],
       "periodos": [],
       "situacion_bcra": 1
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20254305759",
+      "distrito": "San Luis",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/caalvarez/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Innovación Federal",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "ÁLVAREZ CLAUDIO",
+      "partido": "Innovación Federal",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20205726838",
+      "distrito": "Ciudad De Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/jandrade/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "ANDRADE JAVIER",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20229561481",
+      "distrito": "Tierra Del Fuego",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/jaraujoh/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "ARAUJO HERNÁNDEZ JORGE NERI",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20290353123",
+      "distrito": "Misiones",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/rbianchetti/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Pro",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "BIANCHETTI EMMANUEL",
+      "partido": "Pro",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27337541599",
+      "distrito": "Salta",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/ebruno/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "BRUNO ELIANA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27051354805",
+      "distrito": "Santiago Del Estero",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/ccampitelli/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "CAMPITELLI CELIA",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20275742253",
+      "distrito": "San Juan",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/jchicam/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "CHICA JORGE",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "23320336813",
+      "distrito": "San Juan",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/rchiconi/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "CHICONI ABEL",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27319171148",
+      "distrito": "Ciudad De Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/dfernandezm/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Pro",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "FERNÁNDEZ MOLERO DAIANA",
+      "partido": "Pro",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "23127596824",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/mfrade/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Coalicion Civica",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "FRADE MÓNICA",
+      "partido": "Coalicion Civica",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27264184830",
+      "distrito": "Chaco",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/mgoitia/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "GOITIA ROSARIO",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20291658971",
+      "distrito": "San Juan",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/cjaimeq/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Produccion Y Trabajo",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "JAIME QUIROGA CARLOS GUSTAVO",
+      "partido": "Produccion Y Trabajo",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20225959111",
+      "distrito": "Entre Rios",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/alaumann/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "LAUMANN ANDRÉS ARIEL",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27267660633",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/mmacyszyn/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "MACYSZYN LORENA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20173882174",
+      "distrito": "Rio Negro",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/hmango/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "MANGO MARCELO",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20237375263",
+      "distrito": "La Pampa",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/mmatzkin/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2026-06",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "MATZKIN MARTÍN",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2026-06",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20245846828",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/gmontenegro/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "MONTENEGRO GUILLERMO",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27239191288",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/rmonzon/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "MONZÓN ROXANA",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27348606684",
+      "distrito": "Neuquen",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/gmunoz/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "MUÑOZ GABRIELA LUCIANA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20217440743",
+      "distrito": "Tucuman",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/mnoguera/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Independencia",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "NOGUERA JAVIER",
+      "partido": "Independencia",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27276017328",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/mpetrovich/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "PETROVICH MARÍA LORENA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27251183207",
+      "distrito": "San Juan",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/npiconm/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Produccion Y Trabajo",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "PICÓN MARTÍNEZ NANCY VIVIANA",
+      "partido": "Produccion Y Trabajo",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20104458832",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/npitrola/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Partido Obrero En El Frente De Izquierda Y De Trabajadores-Unidad",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "PITROLA NESTOR",
+      "partido": "Partido Obrero En El Frente De Izquierda Y De Trabajadores-Unidad",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27383193562",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/lpotenza/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "POTENZA LUCIANA",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20173488956",
+      "distrito": "La Pampa",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/arauschenberger/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "RAUSCHENBERGER ARIEL",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [
+        "Karen Reichardt"
+      ],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27208314128",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/kreichardt/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "VAZQUEZ BUSTELO KARINA CELIA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20136518772",
+      "distrito": "Santa Fe",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/arossi/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en Unión Por La Patria",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "ROSSI AGUSTÍN OSCAR",
+      "partido": "Unión Por La Patria",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20077998412",
+      "distrito": "Cordoba",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/jschiaretti/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2026-02",
+          "texto": "Inicio (Diputado) en Provincias Unidas",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "SCHIARETTI JUAN",
+      "partido": "Provincias Unidas",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2026-02",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27267199049",
+      "distrito": "Santa Fe",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/ytomassoni/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "TOMASSONI YAMILE",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27142911502",
+      "distrito": "Cordoba",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/ltorres/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en Provincias Unidas",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "TORRES ALEJANDRA",
+      "partido": "Provincias Unidas",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "20255454995",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/rdtorres/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "TORRES RUBÉN DARÍO",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27120466483",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/pvasquez/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2023-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "VÁSQUEZ PATRICIA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2023-12",
+          "fin": "2027-12"
+        }
+      ],
+      "situacion_bcra": 0
+    },
+    {
+      "aliases": [],
+      "cambios_nivel": false,
+      "cargo": "Diputado",
+      "cuit": "27386299175",
+      "distrito": "Buenos Aires",
+      "fuentes": [
+        "https://www.diputados.gob.ar/diputados/index.html",
+        "https://www.diputados.gob.ar/diputados/avera/",
+        "https://www.diputados.gob.ar/system/modules/ar.gob.hcdn.diputados/formatters/generar-lista-diputados.csv"
+      ],
+      "historial": [],
+      "hitos_personales": [
+        {
+          "cargo": "Diputado",
+          "color": "#8A2BE2",
+          "fecha": "2025-12",
+          "texto": "Inicio (Diputado) en La Libertad Avanza",
+          "tipo": "politico"
+        }
+      ],
+      "mis_hitos": [],
+      "nombre": "VERA ANDREA FERNANDA",
+      "partido": "La Libertad Avanza",
+      "pdf_paths": [],
+      "periodos": [
+        {
+          "cargo": "Diputado",
+          "inicio": "2025-12",
+          "fin": "2029-12"
+        }
+      ],
+      "situacion_bcra": 0
     }
   ],
   "meta": {

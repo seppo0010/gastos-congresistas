@@ -81,6 +81,7 @@ El proyecto se despliega automáticamente a GitHub Pages en cada push a la rama 
 - Los flags `posible_crédito` y `cambios_nivel` son heurísticos calculados al generar el JSON
 - El `historial` no está ordenado ni agregado; los componentes del gráfico lo agregan por fecha
 - También existe `politicos_full.json` en `src/` que puede ser un dataset alternativo o más nuevo
+- La nómina vigente de Diputados se valida contra el CSV y la página oficial de la HCDN con `npm run check:diputados`. La página oficial vincula cada fila con una foto cuyo identificador es el CUIT usado para cruzar identidades. `--update` agrega las bancas faltantes como registros sin historial; no consulta ni fabrica datos de deuda.
 
 ## Contribuir
 

@@ -247,8 +247,8 @@ export default function LegislatorSelector({
   const camaras = useMemo(() => [...new Set(legisladores.filter(l => l.poder === 'judicial' && l.camara).map(l => l.camara).filter(c => (c || '').trim() !== ''))].sort(), [legisladores]);
 
   const garantiaFecha = useMemo(() => {
-    const l = legisladores.find(l => l.hipoteca_bcra.tiene && l.hipoteca_bcra.fecha);
-    return l?.hipoteca_bcra.fecha ?? null;
+    const l = legisladores.find(l => l.hipoteca_bcra?.tiene && l.hipoteca_bcra.fecha);
+    return l?.hipoteca_bcra?.fecha ?? null;
   }, [legisladores]);
 
   const debtStats = useMemo(() => {
@@ -271,7 +271,7 @@ export default function LegislatorSelector({
     return legisladores
       .filter(l => {
         const normalize = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-        const searchableText = [l.nombre, ...(l.regimenes_afip || [])].join(' ');
+        const searchableText = [l.nombre, ...(l.aliases || []), ...(l.regimenes_afip || [])].join(' ');
         const searchMatch = debouncedSearchTerm === "" || normalize(searchableText).includes(normalize(debouncedSearchTerm));
 
 
@@ -288,7 +288,7 @@ export default function LegislatorSelector({
         const cargoJudicialMatch = cargoJudicialFilter === 'todos' || l.cargo === cargoJudicialFilter;
         const camaraMatch = camaraFilter === 'todas' || l.camara === camaraFilter;
 
-        const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.hipoteca_bcra.tiene : !l.hipoteca_bcra.tiene);
+        const creditMatch = creditFilter === 'todos' || (creditFilter === 'si' ? l.hipoteca_bcra?.tiene === true : l.hipoteca_bcra?.tiene === false);
         const levelChangeMatch = levelChangeFilter === 'todos' || (levelChangeFilter === 'si' ? l.cambios_nivel : !l.cambios_nivel);
         const hasFamiliares = l.familiares && l.familiares.length > 0;
         const familiaresMatch = familiaresFilter === 'todos' || (familiaresFilter === 'si' ? hasFamiliares : !hasFamiliares);
@@ -561,7 +561,7 @@ export default function LegislatorSelector({
                         Candidato
                       </span>
                     )}
-                    {l.hipoteca_bcra.tiene && (
+                    {l.hipoteca_bcra?.tiene && (
                       <div title="Tiene preferido (hipoteca, prenda, etc.) registrado en el BCRA." className="shrink-0 flex">
                         <Home size={14} className="text-green-600" />
                       </div>

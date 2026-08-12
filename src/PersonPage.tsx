@@ -241,7 +241,11 @@ export default function PersonPage({ person }: PersonPageProps) {
                 <Home size={16} className="mt-0.5 shrink-0 text-blue-700" />
                 <div>
                   <p className="font-semibold text-gray-900">Preferido (hipoteca, prenda, etc.)</p>
-                  <p>{person.hipoteca_bcra.tiene ? 'Sí, figura con preferido (hipoteca, prenda, etc.) según BCRA.' : 'No figura con preferido (hipoteca, prenda, etc.) en el BCRA.'}</p>
+                  <p>{person.hipoteca_bcra == null
+                    ? 'Sin datos BCRA importados para esta persona.'
+                    : person.hipoteca_bcra.tiene
+                      ? 'Sí, figura con preferido (hipoteca, prenda, etc.) según BCRA.'
+                      : 'No figura con preferido (hipoteca, prenda, etc.) en el BCRA.'}</p>
                 </div>
               </div>
 
