@@ -607,8 +607,8 @@
         "entidades": [
           "00015"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 33941.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 30666.0,
         "tiene": true
       },
       "historial": [
@@ -2594,7 +2594,7 @@
         "senadores2023/oct2025/mendoza.pdf"
       ],
       "periodos": [],
-      "situacion_bcra": 3
+      "situacion_bcra": 4
     },
     {
       "cambios_nivel": false,
@@ -7580,7 +7580,7 @@
         "senadores2023/dic2024/bedia.pdf"
       ],
       "periodos": [],
-      "situacion_bcra": 3
+      "situacion_bcra": 4
     },
     {
       "cambios_nivel": false,
@@ -12057,7 +12057,7 @@
           "inicio": "2019-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -25392,8 +25392,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 113568.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 123190.0,
         "tiene": true
       },
       "historial": [
@@ -33167,7 +33167,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 265611.0,
         "tiene": true
       },
@@ -34856,12 +34856,7 @@
         }
       ],
       "hipoteca_bcra": {
-        "entidades": [
-          "44088"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 5001.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -36911,8 +36906,8 @@
         "entidades": [
           "44095"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 13333.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 10000.0,
         "tiene": true
       },
       "historial": [
@@ -49969,7 +49964,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 5404.0,
         "tiene": true
       },
@@ -55769,7 +55764,7 @@
         "senadores2023/dic2024/rejal.pdf"
       ],
       "periodos": [],
-      "situacion_bcra": 0
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": true,
@@ -56870,7 +56865,7 @@
           "inicio": "2025-11"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": true,
@@ -56895,8 +56890,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 333.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 331.0,
         "tiene": true
       },
       "historial": [
@@ -58639,7 +58634,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 3
     },
     {
       "cambios_nivel": false,
@@ -59054,7 +59049,7 @@
         "diputados2023/oct2025/frade.pdf"
       ],
       "periodos": [],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -60132,7 +60127,7 @@
           "inicio": "2024-06"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -63795,8 +63790,8 @@
         "entidades": [
           "00191"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 186345.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 207611.0,
         "tiene": true
       },
       "historial": [
@@ -64230,7 +64225,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -68317,7 +68312,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -73046,7 +73041,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 4
     },
     {
       "cambios_nivel": true,
@@ -74006,8 +74001,8 @@
           "00011",
           "44096"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 505785.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 462184.0,
         "tiene": true
       },
       "historial": [
@@ -77772,7 +77767,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 4
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -83193,8 +83188,8 @@
         "entidades": [
           "44095"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 11000.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 7000.0,
         "tiene": true
       },
       "historial": [
@@ -85215,7 +85210,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 4
     },
     {
       "cambios_nivel": false,
@@ -93711,7 +93706,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 3
     },
     {
       "cambios_nivel": false,
@@ -94263,8 +94258,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 330659.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 367870.0,
         "tiene": true
       },
       "historial": [
@@ -98053,7 +98048,12 @@
       "cuit": "27344084039",
       "distrito": "Buenos Aires",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 239954.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -98599,7 +98599,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2620.0,
         "tiene": true
       },
@@ -100870,7 +100870,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 5
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -101305,7 +101305,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 0
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -101919,8 +101919,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 202611.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 226261.0,
         "tiene": true
       },
       "historial": [
@@ -108345,8 +108345,8 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 238.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 172.0,
         "tiene": true
       },
       "historial": [
@@ -111246,7 +111246,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -117406,8 +117406,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 203236.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 226504.0,
         "tiene": true
       },
       "historial": [
@@ -118345,8 +118345,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 106819.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 118422.0,
         "tiene": true
       },
       "historial": [
@@ -120818,12 +120818,7 @@
         }
       ],
       "hipoteca_bcra": {
-        "entidades": [
-          "00311"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 112243.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -123674,8 +123669,8 @@
         "entidades": [
           "00007"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 81370.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 88563.0,
         "tiene": true
       },
       "historial": [
@@ -127654,7 +127649,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -128638,8 +128633,8 @@
         "entidades": [
           "00027"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 81614.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 86632.0,
         "tiene": true
       },
       "historial": [
@@ -128921,7 +128916,7 @@
         "diputados2023/dic2024/ali.pdf"
       ],
       "periodos": [],
-      "situacion_bcra": 2
+      "situacion_bcra": 3
     },
     {
       "cambios_nivel": false,
@@ -131458,7 +131453,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": true,
@@ -131772,8 +131767,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 261261.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 290657.0,
         "tiene": true
       },
       "historial": [
@@ -135731,12 +135726,7 @@
         }
       ],
       "hipoteca_bcra": {
-        "entidades": [
-          "00027"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 23514.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -136142,7 +136132,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -144090,8 +144080,8 @@
         "entidades": [
           "44093"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 3596.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 731.0,
         "tiene": true
       },
       "historial": [
@@ -147389,8 +147379,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 418.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 180.0,
         "tiene": true
       },
       "historial": [
@@ -153515,12 +153505,7 @@
         }
       ],
       "hipoteca_bcra": {
-        "entidades": [
-          "00020"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 131.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -159633,7 +159618,7 @@
           "inicio": "2024-04"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -161460,7 +161445,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 4
     },
     {
       "cambios_nivel": true,
@@ -167499,8 +167484,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 136124.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 150106.0,
         "tiene": true
       },
       "historial": [
@@ -171992,8 +171977,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 213951.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 237403.0,
         "tiene": true
       },
       "historial": [
@@ -172834,7 +172819,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 4
+      "situacion_bcra": 0
     },
     {
       "cambios_nivel": false,
@@ -178580,8 +178565,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 345798.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 385395.0,
         "tiene": true
       },
       "historial": [
@@ -179470,7 +179455,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 4
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -181160,7 +181145,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -181569,7 +181554,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "cambios_nivel": false,
@@ -186514,8 +186499,8 @@
         "entidades": [
           "44088"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 6251.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1252.0,
         "tiene": true
       },
       "historial": [
@@ -192642,8 +192627,8 @@
           "00011",
           "44092"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 324108.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 354758.0,
         "tiene": true
       },
       "historial": [
@@ -196046,7 +196031,7 @@
           "inicio": "2024-08"
         }
       ],
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -196246,7 +196231,7 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 122667.0,
         "tiene": true
       },
@@ -202688,8 +202673,8 @@
         "entidades": [
           "00015"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 24306.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 23495.0,
         "tiene": true
       },
       "historial": [
@@ -207574,8 +207559,8 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 229.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 166.0,
         "tiene": true
       },
       "historial": [
@@ -210187,12 +210172,7 @@
         }
       ],
       "hipoteca_bcra": {
-        "entidades": [
-          "44092"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 4361.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -215985,8 +215965,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 966.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 965.0,
         "tiene": true
       },
       "historial": [
@@ -217660,7 +217640,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 5
     },
     {
       "cambios_nivel": false,
@@ -218757,7 +218737,7 @@
           "inicio": "2023-12"
         }
       ],
-      "situacion_bcra": 0
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -221317,7 +221297,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 3
     },
     {
       "cambios_nivel": true,
@@ -221523,8 +221503,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 201145.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 231303.0,
         "tiene": true
       },
       "historial": [
@@ -223088,8 +223068,8 @@
         "entidades": [
           "00020"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 90.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 160.0,
         "tiene": true
       },
       "historial": [
@@ -225277,7 +225257,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 4
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -226769,7 +226749,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 4
     },
     {
       "cambios_nivel": false,
@@ -230510,7 +230490,12 @@
       "cuit": "20423258609",
       "distrito": "Santa Fe",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00072"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 19627.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -231006,7 +230991,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 0
+      "situacion_bcra": 2
     },
     {
       "cambios_nivel": false,
@@ -231678,8 +231663,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 66.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 63.0,
         "tiene": true
       },
       "historial": [
@@ -232285,8 +232270,8 @@
         "entidades": [
           "00007"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 183670.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 205028.0,
         "tiene": true
       },
       "historial": [
@@ -240498,7 +240483,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 5
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -241953,7 +241938,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 0
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -244079,7 +244064,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 0
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -245034,7 +245019,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -245180,8 +245165,8 @@
         "entidades": [
           "00083"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 485.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 344.0,
         "tiene": true
       },
       "historial": [
@@ -256163,8 +256148,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 176519.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 196078.0,
         "tiene": true
       },
       "historial": [
@@ -257384,8 +257369,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 184538.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 205670.0,
         "tiene": true
       },
       "historial": [
@@ -257703,7 +257688,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -259268,7 +259253,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 3
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -261267,7 +261252,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "cambios_nivel": false,
@@ -262867,8 +262852,8 @@
         "entidades": [
           "00285"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 152126.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 165750.0,
         "tiene": true
       },
       "historial": [
@@ -265031,7 +265016,7 @@
           "inicio": "2025-12"
         }
       ],
-      "situacion_bcra": 4
+      "situacion_bcra": 5
     },
     {
       "cambios_nivel": true,
@@ -265902,8 +265887,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 148.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 109.0,
         "tiene": true
       },
       "historial": [
@@ -269644,8 +269629,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 226858.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 248236.0,
         "tiene": true
       },
       "historial": [
@@ -275148,7 +275133,7 @@
         "entidades": [
           "00285"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 329525.0,
         "tiene": true
       },
@@ -275844,8 +275829,8 @@
         "entidades": [
           "44088"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 12000.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 8002.0,
         "tiene": true
       },
       "historial": [
@@ -276295,8 +276280,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 206157.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 230364.0,
         "tiene": true
       },
       "historial": [
@@ -276838,8 +276823,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 149714.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 166726.0,
         "tiene": true
       },
       "historial": [
@@ -279047,8 +279032,8 @@
         "entidades": [
           "44095"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 12212.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 9006.0,
         "tiene": true
       },
       "historial": [
@@ -282874,8 +282859,8 @@
         "entidades": [
           "44093"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 4025.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1725.0,
         "tiene": true
       },
       "historial": [

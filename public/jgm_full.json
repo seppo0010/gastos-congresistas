@@ -3569,7 +3569,7 @@
       ],
       "hitos_personales": [],
       "nombre": "GULIAN JUAN RODOLFO",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -4030,8 +4030,8 @@
         "entidades": [
           "00017"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 2223.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1235.0,
         "tiene": true
       },
       "historial": [
@@ -9813,12 +9813,7 @@
       "cargo": "Director/a Nacional",
       "cuit": "20177545334",
       "hipoteca_bcra": {
-        "entidades": [
-          "00029"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 67.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -11269,8 +11264,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 160402.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 178427.0,
         "tiene": true
       },
       "historial": [
@@ -13258,7 +13253,7 @@
       ],
       "hitos_personales": [],
       "nombre": "TORRES RICARDO ALBERTO",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Gestión Administrativa"
     },
     {
@@ -16676,7 +16671,12 @@
       "cargo": "Intendente/a",
       "cuit": "20202853707",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44098"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 12333.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -18605,12 +18605,7 @@
       "cargo": "Intendente/a",
       "cuit": "20205715534",
       "hipoteca_bcra": {
-        "entidades": [
-          "44093"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 857.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -18694,7 +18689,7 @@
       ],
       "hitos_personales": [],
       "nombre": "HERVAS JOSÉ MARÍA",
-      "situacion_bcra": 1,
+      "situacion_bcra": 0,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -20286,7 +20281,7 @@
       ],
       "hitos_personales": [],
       "nombre": "SALAZAR JAVIER ALBERTO",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Ciencia y Tecnología"
     },
     {
@@ -23073,7 +23068,7 @@
         }
       ],
       "nombre": "TUR PATRICIO JAVIER",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -27529,7 +27524,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MANDARANO SILVERIO LEANDRO",
-      "situacion_bcra": 3,
+      "situacion_bcra": 4,
       "unidad": "Subsecretaría de Gestión Administrativa"
     },
     {
@@ -29086,8 +29081,8 @@
         "entidades": [
           "44088"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 11001.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 7002.0,
         "tiene": true
       },
       "historial": [
@@ -30331,8 +30326,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 199337.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 221232.0,
         "tiene": true
       },
       "historial": [
@@ -35185,7 +35180,7 @@
       ],
       "hitos_personales": [],
       "nombre": "ZAZZINI DANIEL GERMÁN",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -35486,8 +35481,8 @@
         "entidades": [
           "44099"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 7480.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 5973.0,
         "tiene": true
       },
       "historial": [
@@ -38035,8 +38030,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 198700.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 220348.0,
         "tiene": true
       },
       "historial": [
@@ -38536,8 +38531,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 109963.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 122313.0,
         "tiene": true
       },
       "historial": [
@@ -39506,7 +39501,7 @@
       ],
       "hitos_personales": [],
       "nombre": "DURE ALEXIS ESTEBAN",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Subsecretaría de Comunicación y Actos de Gobierno"
     },
     {
@@ -39810,12 +39805,7 @@
       "cargo": "Auditor/a Interno/a Titular",
       "cuit": "20274226162",
       "hipoteca_bcra": {
-        "entidades": [
-          "00017"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 733.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -41276,8 +41266,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 134779.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 150208.0,
         "tiene": true
       },
       "historial": [
@@ -41960,8 +41950,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 111875.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 124385.0,
         "tiene": true
       },
       "historial": [
@@ -43170,7 +43160,7 @@
       ],
       "hitos_personales": [],
       "nombre": "VALERIO LEONARDO",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -44129,7 +44119,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2350.0,
         "tiene": true
       },
@@ -44666,8 +44656,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 273642.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 305014.0,
         "tiene": true
       },
       "historial": [
@@ -47671,7 +47661,7 @@
       ],
       "hitos_personales": [],
       "nombre": "ZÁRATE PEDRO ORLANDO",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -47844,7 +47834,7 @@
         }
       ],
       "nombre": "GENOVESE LIVIO OSCAR",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -48500,7 +48490,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2149.0,
         "tiene": true
       },
@@ -49121,8 +49111,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 189128.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 209826.0,
         "tiene": true
       },
       "historial": [
@@ -51146,8 +51136,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 166570.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 183650.0,
         "tiene": true
       },
       "historial": [
@@ -52458,8 +52448,8 @@
         "entidades": [
           "00020"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 107124.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 117760.0,
         "tiene": true
       },
       "historial": [
@@ -53805,7 +53795,7 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2687.0,
         "tiene": true
       },
@@ -54241,7 +54231,7 @@
       ],
       "hitos_personales": [],
       "nombre": "CARIGNANO GUILLERMO",
-      "situacion_bcra": 1,
+      "situacion_bcra": 0,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -54554,8 +54544,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 450281.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 501904.0,
         "tiene": true
       },
       "historial": [
@@ -55348,8 +55338,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 99114.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 109889.0,
         "tiene": true
       },
       "historial": [
@@ -55656,7 +55646,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MESA AUGUSTO ALFONSO",
-      "situacion_bcra": 4,
+      "situacion_bcra": 1,
       "unidad": "Banco Nacional de Datos Genéticos"
     },
     {
@@ -62427,7 +62417,12 @@
       "cargo": "Director/a",
       "cuit": "20328908566",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 173581.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -62731,12 +62726,7 @@
       "cargo": "Intendente/a",
       "cuit": "20329189466",
       "hipoteca_bcra": {
-        "entidades": [
-          "44095"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1409.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -64173,8 +64163,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 73300.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 80790.0,
         "tiene": true
       },
       "historial": [
@@ -66186,8 +66176,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 173627.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 192529.0,
         "tiene": true
       },
       "historial": [
@@ -68603,7 +68593,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MITTERREITER ROBERT ALEX",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Gestión Administrativa de Innovación, Ciencia y Tecnología"
     },
     {
@@ -70037,8 +70027,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 116063.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 129591.0,
         "tiene": true
       },
       "historial": [
@@ -70322,8 +70312,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 447356.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 498536.0,
         "tiene": true
       },
       "historial": [
@@ -70503,7 +70493,12 @@
       "cargo": "Coordinador/a",
       "cuit": "20380133823",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 99522.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -71736,8 +71731,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 167615.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 182636.0,
         "tiene": true
       },
       "historial": [
@@ -72351,7 +72346,7 @@
       ],
       "hitos_personales": [],
       "nombre": "FASCIOLO GABRIEL SANTIAGO",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Agencia de Acceso a la Información Pública"
     },
     {
@@ -72565,7 +72560,7 @@
       ],
       "hitos_personales": [],
       "nombre": "SOUBIE SANTIAGO MARTÍN",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Tecnologías de la Información y las Comunicaciones"
     },
     {
@@ -72734,8 +72729,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 208749.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 232653.0,
         "tiene": true
       },
       "historial": [
@@ -74372,8 +74367,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 118625.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 132516.0,
         "tiene": true
       },
       "historial": [
@@ -75701,7 +75696,7 @@
       ],
       "hitos_personales": [],
       "nombre": "GOMEZ IVÁN GABRIEL",
-      "situacion_bcra": 1,
+      "situacion_bcra": 3,
       "unidad": "Subsecretaría de Comunicación y Actos de Gobierno"
     },
     {
@@ -76667,7 +76662,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MILOVICH JORGE ALBERTO",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Comisión Nacional de Actividades Espaciales"
     },
     {
@@ -78775,7 +78770,7 @@
       ],
       "hitos_personales": [],
       "nombre": "ISASA JAVIER GUILLERMO",
-      "situacion_bcra": 2,
+      "situacion_bcra": 4,
       "unidad": "Subsecretaría de Tecnologías de la Información y las Comunicaciones"
     },
     {
@@ -80755,8 +80750,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 91036.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 103505.0,
         "tiene": true
       },
       "historial": [
@@ -83285,8 +83280,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 204.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 193.0,
         "tiene": true
       },
       "historial": [
@@ -85314,8 +85309,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 157076.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 174088.0,
         "tiene": true
       },
       "historial": [
@@ -85492,8 +85487,8 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 32150.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 31040.0,
         "tiene": true
       },
       "historial": [
@@ -86333,8 +86328,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 64063.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 67911.0,
         "tiene": true
       },
       "historial": [
@@ -86580,8 +86575,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 92522.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 102650.0,
         "tiene": true
       },
       "historial": [
@@ -89018,7 +89013,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MAGNETTO MAIA ELIZABETH",
-      "situacion_bcra": 3,
+      "situacion_bcra": 1,
       "unidad": "Agencia Nacional de Promoción de la Investigación, el Desarrollo Tecnológico y la Innovación"
     },
     {
@@ -89169,8 +89164,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 118642.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 129921.0,
         "tiene": true
       },
       "historial": [
@@ -92881,7 +92876,7 @@
       ],
       "hitos_personales": [],
       "nombre": "FRULLA LAURA ADRIANA",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Comisión Nacional de Actividades Espaciales"
     },
     {
@@ -95888,8 +95883,8 @@
         "entidades": [
           "00020"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 33748.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 35159.0,
         "tiene": true
       },
       "historial": [
@@ -99020,7 +99015,7 @@
       ],
       "hitos_personales": [],
       "nombre": "KUIYAN MARÍA RITA",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Subsecretaría de Turismo"
     },
     {
@@ -99439,7 +99434,7 @@
         }
       ],
       "nombre": "SCHIUMA LAURA DANIELA",
-      "situacion_bcra": 3,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Comunicación y Actos de Gobierno"
     },
     {
@@ -100642,7 +100637,7 @@
       ],
       "hitos_personales": [],
       "nombre": "PISANI ALEJANDRA NOEMÍ",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -103965,8 +103960,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 86981.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 96920.0,
         "tiene": true
       },
       "historial": [
@@ -105317,7 +105312,7 @@
       ],
       "hitos_personales": [],
       "nombre": "STEA KARINA ALEJANDRA",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -108121,7 +108116,7 @@
       ],
       "hitos_personales": [],
       "nombre": "SANTORO SILVANA MARISA",
-      "situacion_bcra": 1,
+      "situacion_bcra": 0,
       "unidad": "Oficina Nacional de Contrataciones"
     },
     {
@@ -108569,7 +108564,7 @@
       ],
       "hitos_personales": [],
       "nombre": "HUMENUK GLADYS NOEMÍ",
-      "situacion_bcra": 3,
+      "situacion_bcra": 1,
       "unidad": "Correo Oficial de la República Argentina Sociedad Anónima"
     },
     {
@@ -112266,8 +112261,8 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 114491.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 114490.0,
         "tiene": true
       },
       "historial": [
@@ -115104,8 +115099,8 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 12363.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 12052.0,
         "tiene": true
       },
       "historial": [
@@ -117219,8 +117214,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1121.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1076.0,
         "tiene": true
       },
       "historial": [
@@ -117563,7 +117558,7 @@
       ],
       "hitos_personales": [],
       "nombre": "FLORES NATALIA MELISA",
-      "situacion_bcra": 2,
+      "situacion_bcra": 3,
       "unidad": "Subsecretaría de Gestión Administrativa"
     },
     {
@@ -120329,7 +120324,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MOYA MARIELA ELIZABETH",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Agencia Nacional de Promoción de la Investigación, el Desarrollo Tecnológico y la Innovación"
     },
     {
@@ -124646,7 +124641,7 @@
       ],
       "hitos_personales": [],
       "nombre": "LANZA CARLA PAOLA",
-      "situacion_bcra": 3,
+      "situacion_bcra": 4,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -125820,7 +125815,7 @@
       ],
       "hitos_personales": [],
       "nombre": "SALIM LORENA MARIANA",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Agencia de Acceso a la Información Pública"
     },
     {
@@ -126115,8 +126110,8 @@
         "entidades": [
           "00007"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 42058.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 46138.0,
         "tiene": true
       },
       "historial": [
@@ -128178,7 +128173,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MARTÍNEZ MARÍA GIMENA",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Administración de Parques Nacionales"
     },
     {
@@ -132749,7 +132744,7 @@
       ],
       "hitos_personales": [],
       "nombre": "ENRIORI SELVA",
-      "situacion_bcra": 4,
+      "situacion_bcra": 5,
       "unidad": "Subsecretaría de Gestión Administrativa de Innovación, Ciencia y Tecnología"
     },
     {
@@ -133804,7 +133799,7 @@
         }
       ],
       "nombre": "DUARTE ABRITTA BELÉN AURORA",
-      "situacion_bcra": 5,
+      "situacion_bcra": 4,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -134021,8 +134016,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 80768.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 84484.0,
         "tiene": true
       },
       "historial": [
@@ -134365,7 +134360,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MENDEZ MONZON MELISA ARACELI",
-      "situacion_bcra": 3,
+      "situacion_bcra": 5,
       "unidad": "Agencia de Administración de Bienes del Estado"
     },
     {
@@ -134376,8 +134371,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 86327.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 95771.0,
         "tiene": true
       },
       "historial": [
@@ -134815,7 +134810,7 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 3547.0,
         "tiene": true
       },
@@ -135459,7 +135454,7 @@
       ],
       "hitos_personales": [],
       "nombre": "APRILE FLORENCIA ANABEL",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Gestión Administrativa de Innovación, Ciencia y Tecnología"
     },
     {
@@ -135691,7 +135686,12 @@
       "cargo": "Coordinador/a",
       "cuit": "27319885531",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 177521.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -136586,8 +136586,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 283097.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 313851.0,
         "tiene": true
       },
       "historial": [
@@ -138524,8 +138524,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 236097.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 262345.0,
         "tiene": true
       },
       "historial": [
@@ -141427,8 +141427,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 76342.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 84713.0,
         "tiene": true
       },
       "historial": [
@@ -142850,8 +142850,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 138813.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 155147.0,
         "tiene": true
       },
       "historial": [
@@ -143614,12 +143614,7 @@
       "cargo": "Director/a General",
       "cuit": "27373531354",
       "hipoteca_bcra": {
-        "entidades": [
-          "44088"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 3934.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -146056,8 +146051,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 174237.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 194230.0,
         "tiene": true
       },
       "historial": [

@@ -4812,7 +4812,7 @@
       ],
       "hitos_personales": [],
       "nombre": "BORÚS ADRIANO ÁLVARO",
-      "situacion_bcra": 4,
+      "situacion_bcra": 3,
       "unidad": "Organismo Regulador de Seguridad de Presas"
     },
     {
@@ -6779,8 +6779,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 200162.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 222096.0,
         "tiene": true
       },
       "historial": [
@@ -8497,7 +8497,7 @@
       ],
       "hitos_personales": [],
       "nombre": "VELIS JOSÉ ANDRÉS",
-      "situacion_bcra": 3,
+      "situacion_bcra": 4,
       "unidad": "Agencia de Recaudación y Control Aduanero"
     },
     {
@@ -15434,8 +15434,8 @@
         "entidades": [
           "44099"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 4380.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 2077.0,
         "tiene": true
       },
       "historial": [
@@ -20770,7 +20770,12 @@
       "cargo": "Presidente/a",
       "cuit": "20162665589",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 115294.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -22269,8 +22274,8 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 26.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 20.0,
         "tiene": true
       },
       "historial": [
@@ -23172,7 +23177,12 @@
       "cargo": "Presidente/a",
       "cuit": "20167114793",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00044"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 78817.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -23802,7 +23812,12 @@
       "cargo": "Secretario/a",
       "cuit": "20168204559",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 206571.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -27506,7 +27521,7 @@
         }
       ],
       "nombre": "CAPUTO LUIS ANDRÉS",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Ministerio de Economía"
     },
     {
@@ -27819,8 +27834,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 370.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 355.0,
         "tiene": true
       },
       "historial": [
@@ -35179,8 +35194,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 126651.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 140901.0,
         "tiene": true
       },
       "historial": [
@@ -35977,7 +35992,7 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2979.0,
         "tiene": true
       },
@@ -44378,7 +44393,7 @@
       ],
       "hitos_personales": [],
       "nombre": "MILANO RODRÍGUEZ JAVIER RICARDO",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Secretaría de Provincias y Municipios"
     },
     {
@@ -46911,8 +46926,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 462586.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 512983.0,
         "tiene": true
       },
       "historial": [
@@ -47642,7 +47657,7 @@
         }
       ],
       "nombre": "REIDEL DEMIÁN AXEL",
-      "situacion_bcra": 1,
+      "situacion_bcra": 3,
       "unidad": "Nucleoeléctrica Argentina S.A."
     },
     {
@@ -50776,7 +50791,7 @@
       ],
       "hitos_personales": [],
       "nombre": "CHAHER DIEGO MARTIN",
-      "situacion_bcra": 2,
+      "situacion_bcra": 4,
       "unidad": "Nucleoeléctrica Argentina S.A."
     },
     {
@@ -51854,7 +51869,7 @@
       ],
       "hitos_personales": [],
       "nombre": "HARDIE SANTIAGO",
-      "situacion_bcra": 2,
+      "situacion_bcra": 0,
       "unidad": "Agencia Federal de Emergencias (AFE)"
     },
     {
@@ -52496,7 +52511,7 @@
       ],
       "hitos_personales": [],
       "nombre": "BRONZOVICH NICOLÁS",
-      "situacion_bcra": 1,
+      "situacion_bcra": 2,
       "unidad": "Instituto Nacional de Tecnología Agropecuaria"
     },
     {
@@ -57124,7 +57139,7 @@
       ],
       "hitos_personales": [],
       "nombre": "GILER ESTEBAN RAFAEL",
-      "situacion_bcra": 3,
+      "situacion_bcra": 4,
       "unidad": "Subsecretaría de Políticas de Acceso y Apoyos"
     },
     {
@@ -59771,8 +59786,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 235936.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 261430.0,
         "tiene": true
       },
       "historial": [
@@ -62885,7 +62900,7 @@
         }
       ],
       "nombre": "FIGUERAS LUCAS MARTÍN",
-      "situacion_bcra": 1,
+      "situacion_bcra": 3,
       "unidad": "Autoridad de Cuenca Matanza Riachuelo"
     },
     {
@@ -64686,8 +64701,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 226155.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 252076.0,
         "tiene": true
       },
       "historial": [
@@ -65791,7 +65806,12 @@
       "cargo": "Subsecretario/a",
       "cuit": "20256485142",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44088"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 11335.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -71038,8 +71058,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 91314.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 98590.0,
         "tiene": true
       },
       "historial": [
@@ -71380,7 +71400,12 @@
       "cargo": "Subsecretario/a",
       "cuit": "20280182207",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00011"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 218487.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -72982,7 +73007,7 @@
         "entidades": [
           "00015"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2000.0,
         "tiene": true
       },
@@ -73562,7 +73587,7 @@
       ],
       "hitos_personales": [],
       "nombre": "ESCUDERO LEANDRO NICOLÁS",
-      "situacion_bcra": 0,
+      "situacion_bcra": 1,
       "unidad": "Administración Nacional de Establecimientos de Salud (ANES)"
     },
     {
@@ -73571,10 +73596,11 @@
       "cuit": "20286427503",
       "hipoteca_bcra": {
         "entidades": [
+          "00007",
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 538696.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 660751.0,
         "tiene": true
       },
       "historial": [
@@ -74369,8 +74395,8 @@
         "entidades": [
           "00017"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 111326.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 124350.0,
         "tiene": true
       },
       "historial": [
@@ -74838,7 +74864,7 @@
       ],
       "hitos_personales": [],
       "nombre": "GRASCHINSKY PABLO",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Secretaría de Coordinación Administrativa"
     },
     {
@@ -76982,7 +77008,7 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 1509.0,
         "tiene": true
       },
@@ -77158,8 +77184,8 @@
           "00011",
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 421727.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 470783.0,
         "tiene": true
       },
       "historial": [
@@ -77818,12 +77844,7 @@
       "cargo": "Subsecretario/a",
       "cuit": "20297537378",
       "hipoteca_bcra": {
-        "entidades": [
-          "44092"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 2267.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -78335,7 +78356,7 @@
         }
       ],
       "nombre": "BRUNO (ADH) ESTEBAN",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Subsecretaría de Coordinación Administrativa"
     },
     {
@@ -78938,8 +78959,8 @@
         "entidades": [
           "00017"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 5385.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 3097.0,
         "tiene": true
       },
       "historial": [
@@ -79170,8 +79191,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 450281.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 501904.0,
         "tiene": true
       },
       "historial": [
@@ -79839,7 +79860,12 @@
       "cargo": "Presidente/a",
       "cuit": "20303981560",
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44088"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 6252.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -80986,8 +81012,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 261908.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 291952.0,
         "tiene": true
       },
       "historial": [
@@ -81236,8 +81262,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 150816.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 167294.0,
         "tiene": true
       },
       "historial": [
@@ -82039,8 +82065,8 @@
         "entidades": [
           "00027"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 61480.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 65835.0,
         "tiene": true
       },
       "historial": [
@@ -83615,12 +83641,7 @@
       "cargo": "Secretario/a",
       "cuit": "20314756151",
       "hipoteca_bcra": {
-        "entidades": [
-          "44088"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1556.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -84980,8 +85001,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 330831.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 357702.0,
         "tiene": true
       },
       "historial": [
@@ -85392,8 +85413,8 @@
         "entidades": [
           "00034"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 2449.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 2530.0,
         "tiene": true
       },
       "historial": [
@@ -88348,8 +88369,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 264325.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 293122.0,
         "tiene": true
       },
       "historial": [
@@ -89528,12 +89549,7 @@
       "cargo": "Titular",
       "cuit": "20340206011",
       "hipoteca_bcra": {
-        "entidades": [
-          "44093"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1481.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -90093,8 +90109,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 213951.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 237403.0,
         "tiene": true
       },
       "historial": [
@@ -90746,8 +90762,8 @@
         "entidades": [
           "00007"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 338.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 265.0,
         "tiene": true
       },
       "historial": [
@@ -92806,7 +92822,7 @@
         }
       ],
       "nombre": "MONTERO JUAN CRUZ",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Oficina de Bienes Recuperados"
     },
     {
@@ -93139,8 +93155,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 447356.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 498536.0,
         "tiene": true
       },
       "historial": [
@@ -93323,8 +93339,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 223348.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 247629.0,
         "tiene": true
       },
       "historial": [
@@ -94112,8 +94128,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 167615.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 182636.0,
         "tiene": true
       },
       "historial": [
@@ -94290,8 +94306,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 484001.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 539340.0,
         "tiene": true
       },
       "historial": [
@@ -94612,8 +94628,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 208749.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 232653.0,
         "tiene": true
       },
       "historial": [
@@ -95524,8 +95540,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 118625.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 132516.0,
         "tiene": true
       },
       "historial": [
@@ -96127,7 +96143,7 @@
         }
       ],
       "nombre": "POTENTE JUAN NICOLÁS",
-      "situacion_bcra": 1,
+      "situacion_bcra": 3,
       "unidad": "Playas Ferroviarias de Buenos Aires S.A."
     },
     {
@@ -99095,8 +99111,8 @@
         "entidades": [
           "00007"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 8664.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 9498.0,
         "tiene": true
       },
       "historial": [
@@ -106073,7 +106089,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 1953.0,
         "tiene": true
       },
@@ -106671,7 +106687,7 @@
       ],
       "hitos_personales": [],
       "nombre": "LEPERA MARTÍN DOMINGO",
-      "situacion_bcra": 1,
+      "situacion_bcra": 5,
       "unidad": "Subsecretaría de Promoción Humana"
     },
     {
@@ -109530,7 +109546,7 @@
       ],
       "hitos_personales": [],
       "nombre": "BARELA LILIANA GRACIELA",
-      "situacion_bcra": 2,
+      "situacion_bcra": 3,
       "unidad": "Subsecretaría de Patrimonio Cultural"
     },
     {
@@ -110018,7 +110034,7 @@
       ],
       "hitos_personales": [],
       "nombre": "SOTO SUSANA",
-      "situacion_bcra": 2,
+      "situacion_bcra": 1,
       "unidad": "Biblioteca Nacional Doctor Mariano Moreno"
     },
     {
@@ -111587,8 +111603,8 @@
         "entidades": [
           "44099"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 4581.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1681.0,
         "tiene": true
       },
       "historial": [
@@ -119288,7 +119304,7 @@
       ],
       "hitos_personales": [],
       "nombre": "HUMENUK GLADYS NOEMÍ",
-      "situacion_bcra": 3,
+      "situacion_bcra": 1,
       "unidad": "Correo Oficial de la República Argentina Sociedad Anónima"
     },
     {
@@ -121536,8 +121552,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 102.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 97.0,
         "tiene": true
       },
       "historial": [
@@ -121879,8 +121895,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 206929.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 229512.0,
         "tiene": true
       },
       "historial": [
@@ -123774,7 +123790,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 2620.0,
         "tiene": true
       },
@@ -126247,8 +126263,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 180444.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 200159.0,
         "tiene": true
       },
       "historial": [
@@ -127502,8 +127518,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 325667.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 363036.0,
         "tiene": true
       },
       "historial": [

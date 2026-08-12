@@ -2532,7 +2532,7 @@
       ],
       "nombre": "GREGORASCHÚK CARINA INÉS",
       "organo": "Juzgado Federal de Primera Instancia Nº 2 de Jujuy",
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "camara": "Cámara Federal de Apelaciones de Salta",
@@ -3014,7 +3014,7 @@
       ],
       "nombre": "JUÁREZ ALMARAZ MARIO MARCELO",
       "organo": "Tribunal Oral en lo Criminal Federal N° 1 de Salta",
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "camara": "Cámara Federal de Apelaciones de Salta",
@@ -3027,7 +3027,7 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 450.0,
         "tiene": true
       },
@@ -4520,8 +4520,8 @@
         "entidades": [
           "44099"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 34700.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 31184.0,
         "tiene": true
       },
       "historial": [
@@ -8430,7 +8430,7 @@
       ],
       "nombre": "BELFORTE EDUARDO ARIEL",
       "organo": "Tribunal Oral en lo Criminal Federal de Formosa",
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "camara": "Cámara Federal de Apelaciones de Resistencia",
@@ -12137,7 +12137,12 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44099"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 16131.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -12946,12 +12951,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "44088"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 6223.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -15020,8 +15020,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 238729.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 266594.0,
         "tiene": true
       },
       "historial": [
@@ -25982,8 +25982,8 @@
         "entidades": [
           "00015"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 25150.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 20203.0,
         "tiene": true
       },
       "historial": [
@@ -26496,7 +26496,7 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 212.0,
         "tiene": true
       },
@@ -26928,7 +26928,12 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44093"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 15000.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -27691,8 +27696,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 189386.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 210112.0,
         "tiene": true
       },
       "historial": [
@@ -30223,8 +30228,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 221796.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 245100.0,
         "tiene": true
       },
       "historial": [
@@ -31686,7 +31691,7 @@
       ],
       "nombre": "DILARIO ELENA BEATRIZ",
       "organo": "Tribunal Oral en lo Criminal Federal Nº 2 de Rosario  (con Funciones de Juicio)",
-      "situacion_bcra": 2
+      "situacion_bcra": 1
     },
     {
       "camara": "Cámara Federal de Apelaciones de Rosario",
@@ -35673,12 +35678,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "44088"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1556.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -36206,7 +36206,7 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 176.0,
         "tiene": true
       },
@@ -36778,8 +36778,8 @@
         "entidades": [
           "44098"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 6222.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 3111.0,
         "tiene": true
       },
       "historial": [
@@ -37405,8 +37405,8 @@
         "entidades": [
           "00044"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 329243.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 366261.0,
         "tiene": true
       },
       "historial": [
@@ -38328,8 +38328,8 @@
         "entidades": [
           "00044"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 272834.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 303737.0,
         "tiene": true
       },
       "historial": [
@@ -38679,12 +38679,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "44095"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1591.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -39224,8 +39219,8 @@
         "entidades": [
           "00027"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 10356.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 7624.0,
         "tiene": true
       },
       "historial": [
@@ -40047,8 +40042,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 69298.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 43425.0,
         "tiene": true
       },
       "historial": [
@@ -40254,12 +40249,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "44088"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1556.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -40923,8 +40913,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 461587.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 513279.0,
         "tiene": true
       },
       "historial": [
@@ -43557,8 +43547,8 @@
         "entidades": [
           "44099"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1667.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 18333.0,
         "tiene": true
       },
       "historial": [
@@ -44304,12 +44294,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "00027"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 4914.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -45600,8 +45585,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 156567.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 171389.0,
         "tiene": true
       },
       "historial": [
@@ -46520,8 +46505,8 @@
         "entidades": [
           "00044"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 122392.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 135987.0,
         "tiene": true
       },
       "historial": [
@@ -48399,8 +48384,8 @@
         "entidades": [
           "00044"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 142389.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 157494.0,
         "tiene": true
       },
       "historial": [
@@ -52138,7 +52123,7 @@
       ],
       "nombre": "PLOU HÉCTOR PEDRO",
       "organo": "Juzgado Federal de Primera Instancia de Junin",
-      "situacion_bcra": 4
+      "situacion_bcra": 1
     },
     {
       "camara": "Cámara Federal de Apelaciones de La Plata",
@@ -54052,8 +54037,8 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 18661.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 18640.0,
         "tiene": true
       },
       "historial": [
@@ -54696,7 +54681,7 @@
       ],
       "nombre": "BARRAL NÉSTOR PABLO",
       "organo": "Sala II",
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "camara": "Cámara Federal de Apelaciones de San Martín",
@@ -54709,8 +54694,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 38.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 25.0,
         "tiene": true
       },
       "historial": [
@@ -56038,8 +56023,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1756.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1754.0,
         "tiene": true
       },
       "historial": [
@@ -58747,7 +58732,7 @@
       ],
       "nombre": "PORTOCARRERO TEZANOS PINTO ELPIDIO",
       "organo": "Juzgado Federal de Primera Instancia de Mercedes",
-      "situacion_bcra": 1
+      "situacion_bcra": 2
     },
     {
       "camara": "Cámara Federal de Apelaciones de San Martín",
@@ -60623,8 +60608,8 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 176064.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 193353.0,
         "tiene": true
       },
       "historial": [
@@ -62308,8 +62293,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 429058.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 478220.0,
         "tiene": true
       },
       "historial": [
@@ -65798,8 +65783,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 86474.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 87085.0,
         "tiene": true
       },
       "historial": [
@@ -66731,8 +66716,8 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 1674.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 1663.0,
         "tiene": true
       },
       "historial": [
@@ -68226,8 +68211,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 325792.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 361156.0,
         "tiene": true
       },
       "historial": [
@@ -69114,7 +69099,12 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44098"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 17488.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -69543,7 +69533,12 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "44092"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 19637.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -74124,12 +74119,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "00268"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 764.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -75741,8 +75731,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 162581.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 177882.0,
         "tiene": true
       },
       "historial": [
@@ -81504,8 +81494,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 103.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 64.0,
         "tiene": true
       },
       "historial": [
@@ -88239,7 +88229,7 @@
         "entidades": [
           "00285"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 41100.0,
         "tiene": true
       },
@@ -90718,8 +90708,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 212.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 173.0,
         "tiene": true
       },
       "historial": [
@@ -92723,8 +92713,8 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 233875.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 258897.0,
         "tiene": true
       },
       "historial": [
@@ -93277,7 +93267,7 @@
       ],
       "nombre": "AILAN RITA MARÍA TERESA",
       "organo": "Juzgado Nacional de Primera Instancia en lo Contencioso Administrativo Federal Nº 4",
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "camara": "Cámara Nacional de Apelaciones en lo Contencioso Administrativo Federal",
@@ -93287,12 +93277,7 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "entidades": [
-          "44092"
-        ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 3036.0,
-        "tiene": true
+        "tiene": false
       },
       "historial": [
         {
@@ -94180,7 +94165,7 @@
       ],
       "nombre": "CAYSSIALS PABLO GABRIEL",
       "organo": "Juzgado Nacional de Primera Instancia en lo Contencioso Administrativo Federal Nº 9",
-      "situacion_bcra": 2
+      "situacion_bcra": 3
     },
     {
       "camara": "Cámara Nacional de Apelaciones en lo Contencioso Administrativo Federal",
@@ -94848,7 +94833,12 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00029"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 251552.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -95364,8 +95354,8 @@
         "entidades": [
           "00027"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 167204.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 178204.0,
         "tiene": true
       },
       "historial": [
@@ -97065,7 +97055,7 @@
         "entidades": [
           "00029"
         ],
-        "fecha": "2026-02",
+        "fecha": "2026-06",
         "monto_miles_pesos": 9000.0,
         "tiene": true
       },
@@ -98268,7 +98258,7 @@
       ],
       "nombre": "IRURZUN MARTÍN",
       "organo": "Sala II",
-      "situacion_bcra": 1
+      "situacion_bcra": 0
     },
     {
       "camara": "Cámara Nacional de Apelaciones en lo Criminal y Correccional Federal",
@@ -101478,8 +101468,8 @@
         "entidades": [
           "00072"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 128638.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 125027.0,
         "tiene": true
       },
       "historial": [
@@ -105488,8 +105478,8 @@
         "entidades": [
           "00011"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 395528.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 438620.0,
         "tiene": true
       },
       "historial": [
@@ -107730,7 +107720,12 @@
       "es_candidato": false,
       "es_magistrado": true,
       "hipoteca_bcra": {
-        "tiene": false
+        "entidades": [
+          "00007"
+        ],
+        "fecha": "2026-06",
+        "monto_miles_pesos": 125973.0,
+        "tiene": true
       },
       "historial": [
         {
@@ -109452,8 +109447,8 @@
         "entidades": [
           "00014"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 272.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 234.0,
         "tiene": true
       },
       "historial": [
@@ -114508,8 +114503,8 @@
         "entidades": [
           "44099"
         ],
-        "fecha": "2026-02",
-        "monto_miles_pesos": 24901.0,
+        "fecha": "2026-06",
+        "monto_miles_pesos": 23198.0,
         "tiene": true
       },
       "historial": [
