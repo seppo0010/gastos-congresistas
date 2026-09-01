@@ -599,7 +599,7 @@ const DebtChart = forwardRef(({
 
       y += DETAIL_SIZE;
       const statsParts = [`Promedio: ${formatMoney(stats.avg)}`, `Máximo: ${formatMoney(stats.max)}`];
-      if (l.hipoteca_bcra.tiene && l.hipoteca_bcra.monto_miles_pesos) {
+      if (l.hipoteca_bcra?.tiene && l.hipoteca_bcra.monto_miles_pesos) {
         statsParts.push(`Preferido: ${formatMoney(l.hipoteca_bcra.monto_miles_pesos)}`);
       }
       ctx.fillText(statsParts.join('  ·  '), textX, y);

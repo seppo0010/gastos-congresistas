@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run generate:og && tsc -b && vite build && node scripts/generate-person-pages.mjs",
+    "check:diputados": "node scripts/check-diputados-roster.mjs",
     "generate:og": "node scripts/generate-og-image.mjs",
     "lint": "eslint .",
     "preview": "vite preview"

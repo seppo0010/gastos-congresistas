@@ -35,6 +35,8 @@ export interface Familiar {
 export interface Legislator {
   cuit: string;     // Identificador único (Ej: "20326896684")
   nombre: string;   // Nombre completo
+  aliases?: string[]; // Nombres públicos, artísticos o variantes de la identidad
+  fuentes?: string[]; // Fuentes de identidad/cargo; no implica una fuente de deuda
   pdf_paths?: string[]; // Lista de archivos fuente procesados
   hitos_personales: Milestone[]; // Eventos específicos de esta persona
   historial: DebtRecord[];       // Lista cruda de deudas (sin agrupar)
@@ -47,7 +49,7 @@ export interface Legislator {
   organo?: string;    // Solo judiciales (ej: "Tribunal Oral de Menores N° 3")
   camara?: string;    // Solo judiciales (ej: "Cámara Federal de Apelaciones de Córdoba")
   periodos?: { cargo: 'Senador' | 'Diputado', inicio: string, fin: string }[];  // Solo legisladores
-  hipoteca_bcra: { tiene: boolean; monto_miles_pesos?: number; entidades?: string[]; fecha?: string };
+  hipoteca_bcra?: { tiene: boolean; monto_miles_pesos?: number; entidades?: string[]; fecha?: string };
   situacion_bcra?: number; // 0=no reportado, 1=normal, 2=riesgo bajo, 3=riesgo medio, 4=riesgo alto, 5=irrecuperable, 11=garantías preferidas "A"
   cambios_nivel: boolean;
   regimenes_afip?: string[];
