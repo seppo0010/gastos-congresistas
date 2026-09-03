@@ -33,7 +33,7 @@ import path from 'node:path';
 import { argv, env, exit } from 'node:process';
 
 const ROOT = process.cwd();
-const PUBLIC_DIR = path.join(ROOT, 'public');
+const PUBLIC_DIR = path.join(ROOT, 'web', 'public');
 const OUT_DIR = path.join(ROOT, 'out', 'afip');
 
 const AFIP_BASE = 'https://seti.afip.gob.ar/padron-puc-constancia-internet';

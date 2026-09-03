@@ -19,7 +19,7 @@ La aplicación está desplegada en: [https://seppo0010.github.io/gastos-congresi
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/seppo0010/gastos-congresistas.git
-   cd gastos-congresistas
+   cd gastos-congresistas/web
    ```
 
 2. Instala las dependencias:

@@ -4,7 +4,7 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const INPUT = path.join(ROOT, 'out', 'afip', 'parsed.json');
-const OUTPUT = path.join(ROOT, 'public', 'regimenes.json');
+const OUTPUT = path.join(ROOT, 'web', 'public', 'regimenes.json');
 const SANITIZED_SOURCE = path.join(ROOT, 'out', 'afip', 'regimenes-source-sanitized.json');
 
 const parsed = JSON.parse(await fs.readFile(INPUT, 'utf8'));

@@ -1,7 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { createRequire } from "node:module";
-import { fileURLToPath } from "node:url";
 import React from "react";
 import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
@@ -17,11 +16,10 @@ const TEXT = "#18181b";
 const MUTED = "#52525b";
 const STRIPES = ["#2563eb", "#dc2626", "#16a34a", "#d97706"];
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname, "..");
+// Se invoca vía `npm run generate:og` con cwd = web/ (donde están public/ y node_modules).
+const rootDir = process.cwd();
 const publicDir = path.join(rootDir, "public");
-const require = createRequire(import.meta.url);
+const require = createRequire(path.join(rootDir, "package.json"));
 
 function monthLabel(isoMonth) {
   if (!isoMonth) return "Sin datos";

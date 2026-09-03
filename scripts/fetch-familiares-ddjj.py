@@ -365,7 +365,7 @@ def parse_years(spec):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--input", default="public/legisladores_full.json")
+    ap.add_argument("--input", default="web/public/legisladores_full.json")
     ap.add_argument("--years", default="2012-2025",
                     help="Rango 'AAAA-AAAA' o lista 'AAAA,AAAA' (default 2012-2025)")
     ap.add_argument("--out", default="out/ddjj")
