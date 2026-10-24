@@ -85,7 +85,7 @@ def process_senadores(filepath):
             continue
 
         distrito = record.get('provincia')
-        bloque = clean_bloque(record.get('partido', 'Sin Especificar'))
+        bloque = clean_bloque(record.get('partido') or record.get('bloque') or 'Sin Especificar')
         
         fecha_inicio = record.get('periodoReal', {}).get('inicio')
         fecha_fin_real = record.get('periodoReal', {}).get('fin')
